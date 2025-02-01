@@ -1,0 +1,666 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6371C8CA-1DC2-4CB1-8284-5A3571785FB5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LMS.WIN</RootNamespace>
+    <AssemblyName>LMS.WIN</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>E:\PublishProject\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>LMS</ProductName>
+    <PublisherName>LMS</PublisherName>
+    <SuiteName>LMS</SuiteName>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F3D430B417F5851B1E4938CE4718727394916A33</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>LMS.WIN_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.10.0.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.10.0\lib\net40\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="MANTRA.MFS100">
+      <HintPath>C:\Users\Shaikh Rizwan\Documents\Received Files\LMS\MANTRA.MFS100.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\frmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmChangePassword.Designer.cs">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDashboard.Designer.cs">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Language\frmAddLanguage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Language\frmAddLanguage.Designer.cs">
+      <DependentUpon>frmAddLanguage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageAlerts\ManageAlert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageAlerts\ManageAlert.Designer.cs">
+      <DependentUpon>ManageAlert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageAuthor\frmAddAuthor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageAuthor\frmAddAuthor.Designer.cs">
+      <DependentUpon>frmAddAuthor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageAuthor\ManageAuthor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageAuthor\ManageAuthor.Designer.cs">
+      <DependentUpon>ManageAuthor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageBooks\frmAddbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageBooks\frmAddbook.Designer.cs">
+      <DependentUpon>frmAddbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageBooks\frmBarcodePrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageBooks\frmBarcodePrint.Designer.cs">
+      <DependentUpon>frmBarcodePrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageBooks\frmEditbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageBooks\frmEditbook.Designer.cs">
+      <DependentUpon>frmEditbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageBooks\frmIssueBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageBooks\frmIssueBook.Designer.cs">
+      <DependentUpon>frmIssueBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageBooks\frmMissingBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageBooks\frmMissingBook.Designer.cs">
+      <DependentUpon>frmMissingBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageBooks\frmRenewalBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageBooks\frmRenewalBook.Designer.cs">
+      <DependentUpon>frmRenewalBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageBooks\frmReturnBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageBooks\frmReturnBook.Designer.cs">
+      <DependentUpon>frmReturnBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageBooks\ManageBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageBooks\ManageBook.Designer.cs">
+      <DependentUpon>ManageBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageBooks\ManageBookHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageBooks\ManageBookHistory.Designer.cs">
+      <DependentUpon>ManageBookHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageBooks\ManageIssuebooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageBooks\ManageIssuebooks.Designer.cs">
+      <DependentUpon>ManageIssuebooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageBooks\ManageMissingbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageBooks\ManageMissingbook.Designer.cs">
+      <DependentUpon>ManageMissingbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageBooks\ManageRenewbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageBooks\ManageRenewbook.Designer.cs">
+      <DependentUpon>ManageRenewbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageBooks\ManageReturnbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageBooks\ManageReturnbook.Designer.cs">
+      <DependentUpon>ManageReturnbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageBooks\ViewAvailableBookDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageBooks\ViewAvailableBookDetails.Designer.cs">
+      <DependentUpon>ViewAvailableBookDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageBooks\ViewBookDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageBooks\ViewBookDetails.Designer.cs">
+      <DependentUpon>ViewBookDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageCandidate\frmAddCandidte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageCandidate\frmAddCandidte.Designer.cs">
+      <DependentUpon>frmAddCandidte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageCandidate\frmCandidateBarcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageCandidate\frmCandidateBarcode.Designer.cs">
+      <DependentUpon>frmCandidateBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageCandidate\ManageCandidates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageCandidate\ManageCandidates.Designer.cs">
+      <DependentUpon>ManageCandidates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageCandidate\ViewCandidateDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageCandidate\ViewCandidateDetails.Designer.cs">
+      <DependentUpon>ViewCandidateDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageCourses\AddCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageCourses\AddCourse.Designer.cs">
+      <DependentUpon>AddCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageCourses\ManageCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageCourses\ManageCourse.Designer.cs">
+      <DependentUpon>ManageCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageDue\frmManageDue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageDue\frmManageDue.Designer.cs">
+      <DependentUpon>frmManageDue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageHome\ManageHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageHome\ManageHome.Designer.cs">
+      <DependentUpon>ManageHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageBooks\ManageIssuebook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageBooks\ManageIssuebook.Designer.cs">
+      <DependentUpon>ManageIssuebook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManagePublisher\frmAddPublisher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManagePublisher\frmAddPublisher.Designer.cs">
+      <DependentUpon>frmAddPublisher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManagePublisher\ManagePublisher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManagePublisher\ManagePublisher.Designer.cs">
+      <DependentUpon>ManagePublisher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageUser\frmAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageUser\frmAddUser.Designer.cs">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageUser\ManageLibrarian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageUser\ManageLibrarian.Designer.cs">
+      <DependentUpon>ManageLibrarian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\frmBookWiseReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\frmBookWiseReport.Designer.cs">
+      <DependentUpon>frmBookWiseReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\frmCandidatesReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\frmCandidatesReport.Designer.cs">
+      <DependentUpon>frmCandidatesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\ManageReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\ManageReport.Designer.cs">
+      <DependentUpon>ManageReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search Control\frmSearchAuthor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search Control\frmSearchAuthor.Designer.cs">
+      <DependentUpon>frmSearchAuthor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search Control\frmSearchBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search Control\frmSearchBook.Designer.cs">
+      <DependentUpon>frmSearchBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search Control\frmSearchByUID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search Control\frmSearchByUID.Designer.cs">
+      <DependentUpon>frmSearchByUID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search Control\frmSearchCandidate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search Control\frmSearchCandidate.Designer.cs">
+      <DependentUpon>frmSearchCandidate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search Control\frmSearchCountry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search Control\frmSearchCountry.Designer.cs">
+      <DependentUpon>frmSearchCountry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search Control\frmSearchCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search Control\frmSearchCourse.Designer.cs">
+      <DependentUpon>frmSearchCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search Control\frmSearchFund.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search Control\frmSearchFund.Designer.cs">
+      <DependentUpon>frmSearchFund.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search Control\frmSearchPublisher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search Control\frmSearchPublisher.Designer.cs">
+      <DependentUpon>frmSearchPublisher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search Control\frmSearchRank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search Control\frmSearchRank.Designer.cs">
+      <DependentUpon>frmSearchRank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search Control\frmSearchUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search Control\frmSearchUnit.Designer.cs">
+      <DependentUpon>frmSearchUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Utility\ButtonEllipse.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Utility\demo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility\demo.Designer.cs">
+      <DependentUpon>demo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utill\ImportExcel.cs" />
+    <EmbeddedResource Include="Forms\frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDashboard.resx">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Language\frmAddLanguage.resx">
+      <DependentUpon>frmAddLanguage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageAlerts\ManageAlert.resx">
+      <DependentUpon>ManageAlert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageAuthor\frmAddAuthor.resx">
+      <DependentUpon>frmAddAuthor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageAuthor\ManageAuthor.resx">
+      <DependentUpon>ManageAuthor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageBooks\frmAddbook.resx">
+      <DependentUpon>frmAddbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageBooks\frmBarcodePrint.resx">
+      <DependentUpon>frmBarcodePrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageBooks\frmEditbook.resx">
+      <DependentUpon>frmEditbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageBooks\frmIssueBook.resx">
+      <DependentUpon>frmIssueBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageBooks\frmMissingBook.resx">
+      <DependentUpon>frmMissingBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageBooks\frmRenewalBook.resx">
+      <DependentUpon>frmRenewalBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageBooks\frmReturnBook.resx">
+      <DependentUpon>frmReturnBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageBooks\ManageBook.resx">
+      <DependentUpon>ManageBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageBooks\ManageBookHistory.resx">
+      <DependentUpon>ManageBookHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageBooks\ManageIssuebooks.resx">
+      <DependentUpon>ManageIssuebooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageBooks\ManageMissingbook.resx">
+      <DependentUpon>ManageMissingbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageBooks\ManageRenewbook.resx">
+      <DependentUpon>ManageRenewbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageBooks\ManageReturnbook.resx">
+      <DependentUpon>ManageReturnbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageBooks\RptBarcode.rdlc" />
+    <EmbeddedResource Include="Forms\ManageBooks\ViewAvailableBookDetails.resx">
+      <DependentUpon>ViewAvailableBookDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageBooks\ViewBookDetails.resx">
+      <DependentUpon>ViewBookDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageCandidate\frmAddCandidte.resx">
+      <DependentUpon>frmAddCandidte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageCandidate\frmCandidateBarcode.resx">
+      <DependentUpon>frmCandidateBarcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageCandidate\ManageCandidates.resx">
+      <DependentUpon>ManageCandidates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageCandidate\rptCandidate.rdlc" />
+    <EmbeddedResource Include="Forms\ManageCandidate\ViewCandidateDetails.resx">
+      <DependentUpon>ViewCandidateDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageCourses\AddCourse.resx">
+      <DependentUpon>AddCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageCourses\ManageCourse.resx">
+      <DependentUpon>ManageCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageDue\frmManageDue.resx">
+      <DependentUpon>frmManageDue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageHome\ManageHome.resx">
+      <DependentUpon>ManageHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageBooks\ManageIssuebook.resx">
+      <DependentUpon>ManageIssuebook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManagePublisher\frmAddPublisher.resx">
+      <DependentUpon>frmAddPublisher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManagePublisher\ManagePublisher.resx">
+      <DependentUpon>ManagePublisher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageUser\frmAddUser.resx">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageUser\ManageLibrarian.resx">
+      <DependentUpon>ManageLibrarian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\frmBookWiseReport.resx">
+      <DependentUpon>frmBookWiseReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\frmCandidatesReport.resx">
+      <DependentUpon>frmCandidatesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\ManageReport.resx">
+      <DependentUpon>ManageReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Search Control\frmSearchAuthor.resx">
+      <DependentUpon>frmSearchAuthor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search Control\frmSearchBook.resx">
+      <DependentUpon>frmSearchBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search Control\frmSearchByUID.resx">
+      <DependentUpon>frmSearchByUID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search Control\frmSearchCandidate.resx">
+      <DependentUpon>frmSearchCandidate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search Control\frmSearchCountry.resx">
+      <DependentUpon>frmSearchCountry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search Control\frmSearchCourse.resx">
+      <DependentUpon>frmSearchCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search Control\frmSearchFund.resx">
+      <DependentUpon>frmSearchFund.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search Control\frmSearchPublisher.resx">
+      <DependentUpon>frmSearchPublisher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search Control\frmSearchRank.resx">
+      <DependentUpon>frmSearchRank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search Control\frmSearchUnit.resx">
+      <DependentUpon>frmSearchUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utility\demo.resx">
+      <DependentUpon>demo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="LMS.WIN_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\LMS.MOD.BookBarcode.datasource" />
+    <None Include="Properties\DataSources\LMS.MOD.Candidate.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LMS.BL\LMS.BL.csproj">
+      <Project>{2e1c2540-9c3c-4e21-bdbc-a0a8270ea892}</Project>
+      <Name>LMS.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LMS.DAL\LMS.DAL.csproj">
+      <Project>{2f36de73-b792-40b2-a2be-17f3fbefd6d9}</Project>
+      <Name>LMS.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LMS.MOD\LMS.MOD.csproj">
+      <Project>{5265998f-041b-4d21-a216-83d1ff144174}</Project>
+      <Name>LMS.MOD</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Files\MANTRA.MFS100.dll" />
+    <Content Include="Files\MFS100Dll.dll" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\icons8-trash-can-20 %281%29.png" />
+    <None Include="Resources\icons8-pencil-20 %281%29.png" />
+    <None Include="Resources\icons8-delete-bin-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

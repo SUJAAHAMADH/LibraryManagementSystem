@@ -1,0 +1,16 @@
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.MOD\bin\Debug\LMS.MOD.dll
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.MOD\bin\Debug\LMS.MOD.pdb
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.MOD\obj\Debug\LMS.MOD.csproj.CoreCompileInputs.cache
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.MOD\obj\Debug\LMS.MOD.dll
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.MOD\obj\Debug\LMS.MOD.pdb
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.MOD\bin\Debug\LMS.MOD.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.MOD\bin\Debug\LMS.MOD.pdb
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.MOD\obj\Debug\LMS.MOD.csproj.CoreCompileInputs.cache
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.MOD\obj\Debug\LMS.MOD.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.MOD\obj\Debug\LMS.MOD.pdb
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.MOD\obj\Debug\LMS.MOD.csprojAssemblyReference.cache
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.MOD\bin\Debug\LMS.MOD.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.MOD\bin\Debug\LMS.MOD.pdb
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.MOD\obj\Debug\LMS.MOD.csproj.CoreCompileInputs.cache
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.MOD\obj\Debug\LMS.MOD.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.MOD\obj\Debug\LMS.MOD.pdb

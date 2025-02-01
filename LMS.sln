@@ -1,0 +1,88 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29326.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01_LMS.WIN", "01_LMS.WIN", "{9692897E-667D-4B5D-977F-69B03A5FF59E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02_LMS.BL", "02_LMS.BL", "{1B595DDB-4AA9-4C2C-ABCC-CF966F14B178}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03_LMS.DAL", "03_LMS.DAL", "{736F013E-48CF-4BFC-94B7-A363A4AE3E10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LMS.DAL", "LMS.DAL\LMS.DAL.csproj", "{2F36DE73-B792-40B2-A2BE-17F3FBEFD6D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LMS.MOD", "LMS.MOD\LMS.MOD.csproj", "{5265998F-041B-4D21-A216-83D1FF144174}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LMS.BL", "LMS.BL\LMS.BL.csproj", "{2E1C2540-9C3C-4E21-BDBC-A0A8270EA892}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LMS.WIN", "LMS.WIN\LMS.WIN.csproj", "{6371C8CA-1DC2-4CB1-8284-5A3571785FB5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04_LMS.SETUP", "04_LMS.SETUP", "{FCA362E4-801C-4FFE-9EA2-AED3B3085F64}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "LMS.SETUP\Setup\Setup.vdproj", "{AA63F2D2-0EA8-4544-B895-5ED2202D8E47}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F36DE73-B792-40B2-A2BE-17F3FBEFD6D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F36DE73-B792-40B2-A2BE-17F3FBEFD6D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F36DE73-B792-40B2-A2BE-17F3FBEFD6D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F36DE73-B792-40B2-A2BE-17F3FBEFD6D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5265998F-041B-4D21-A216-83D1FF144174}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5265998F-041B-4D21-A216-83D1FF144174}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5265998F-041B-4D21-A216-83D1FF144174}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5265998F-041B-4D21-A216-83D1FF144174}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E1C2540-9C3C-4E21-BDBC-A0A8270EA892}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E1C2540-9C3C-4E21-BDBC-A0A8270EA892}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E1C2540-9C3C-4E21-BDBC-A0A8270EA892}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E1C2540-9C3C-4E21-BDBC-A0A8270EA892}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6371C8CA-1DC2-4CB1-8284-5A3571785FB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6371C8CA-1DC2-4CB1-8284-5A3571785FB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6371C8CA-1DC2-4CB1-8284-5A3571785FB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6371C8CA-1DC2-4CB1-8284-5A3571785FB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA63F2D2-0EA8-4544-B895-5ED2202D8E47}.Debug|Any CPU.ActiveCfg = Debug
+		{AA63F2D2-0EA8-4544-B895-5ED2202D8E47}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2F36DE73-B792-40B2-A2BE-17F3FBEFD6D9} = {736F013E-48CF-4BFC-94B7-A363A4AE3E10}
+		{5265998F-041B-4D21-A216-83D1FF144174} = {1B595DDB-4AA9-4C2C-ABCC-CF966F14B178}
+		{2E1C2540-9C3C-4E21-BDBC-A0A8270EA892} = {1B595DDB-4AA9-4C2C-ABCC-CF966F14B178}
+		{6371C8CA-1DC2-4CB1-8284-5A3571785FB5} = {9692897E-667D-4B5D-977F-69B03A5FF59E}
+		{AA63F2D2-0EA8-4544-B895-5ED2202D8E47} = {FCA362E4-801C-4FFE-9EA2-AED3B3085F64}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D9277DB-6072-4DDF-B42F-0363F0DFB0E3}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/7techsolutions2
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = LMS.BL\\LMS.BL.csproj
+		SccProjectTopLevelParentUniqueName1 = LMS.sln
+		SccProjectName1 = LMS.BL
+		SccLocalPath1 = LMS.BL
+		SccProjectUniqueName2 = LMS.DAL\\LMS.DAL.csproj
+		SccProjectTopLevelParentUniqueName2 = LMS.sln
+		SccProjectName2 = LMS.DAL
+		SccLocalPath2 = LMS.DAL
+		SccProjectUniqueName3 = LMS.MOD\\LMS.MOD.csproj
+		SccProjectTopLevelParentUniqueName3 = LMS.sln
+		SccProjectName3 = LMS.MOD
+		SccLocalPath3 = LMS.MOD
+		SccProjectUniqueName4 = LMS.SETUP\\Setup\\Setup.vdproj
+		SccProjectTopLevelParentUniqueName4 = LMS.sln
+		SccProjectName4 = LMS.SETUP/Setup
+		SccLocalPath4 = LMS.SETUP\\Setup
+		SccProjectUniqueName5 = LMS.WIN\\LMS.WIN.csproj
+		SccProjectTopLevelParentUniqueName5 = LMS.sln
+		SccProjectName5 = LMS.WIN
+		SccLocalPath5 = LMS.WIN
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,33 @@
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.BL\bin\Debug\LMS.BL.dll
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.BL\bin\Debug\LMS.BL.pdb
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.BL\bin\Debug\LMS.DAL.dll
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.BL\bin\Debug\LMS.MOD.dll
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.BL\bin\Debug\LMS.DAL.pdb
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.BL\bin\Debug\LMS.MOD.pdb
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.BL\obj\Debug\LMS.BL.csprojAssemblyReference.cache
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.BL\obj\Debug\LMS.BL.csproj.CoreCompileInputs.cache
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.BL\obj\Debug\LMS.BL.csproj.CopyComplete
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.BL\obj\Debug\LMS.BL.dll
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.BL\obj\Debug\LMS.BL.pdb
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.BL\bin\Debug\LMS.BL.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.BL\bin\Debug\LMS.BL.pdb
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.BL\bin\Debug\LMS.DAL.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.BL\bin\Debug\LMS.MOD.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.BL\bin\Debug\LMS.DAL.pdb
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.BL\bin\Debug\LMS.MOD.pdb
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.BL\obj\Debug\LMS.BL.csprojAssemblyReference.cache
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.BL\obj\Debug\LMS.BL.csproj.CoreCompileInputs.cache
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.BL\obj\Debug\LMS.BL.csproj.CopyComplete
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.BL\obj\Debug\LMS.BL.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.BL\obj\Debug\LMS.BL.pdb
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.BL\bin\Debug\LMS.BL.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.BL\bin\Debug\LMS.BL.pdb
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.BL\bin\Debug\LMS.DAL.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.BL\bin\Debug\LMS.MOD.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.BL\bin\Debug\LMS.DAL.pdb
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.BL\bin\Debug\LMS.MOD.pdb
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.BL\obj\Debug\LMS.BL.csproj.AssemblyReference.cache
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.BL\obj\Debug\LMS.BL.csproj.CoreCompileInputs.cache
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.BL\obj\Debug\LMS.BL.csproj.CopyComplete
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.BL\obj\Debug\LMS.BL.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.BL\obj\Debug\LMS.BL.pdb

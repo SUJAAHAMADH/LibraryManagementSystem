@@ -1,0 +1,471 @@
+﻿namespace LMS.WIN.Forms.ManageBooks
+{
+    partial class ManageBookHistory
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageBookHistory));
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtBarcode = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblmessage = new System.Windows.Forms.Label();
+            this.pnlbookDetails = new System.Windows.Forms.Panel();
+            this.txtSubCategory = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtbookname = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtLanguage = new System.Windows.Forms.Label();
+            this.txtType = new System.Windows.Forms.Label();
+            this.txtPublisher = new System.Windows.Forms.Label();
+            this.txtAuthor = new System.Windows.Forms.Label();
+            this.lblLanguage = new System.Windows.Forms.Label();
+            this.lblEdition = new System.Windows.Forms.Label();
+            this.lblPublisher = new System.Windows.Forms.Label();
+            this.lblAuthor = new System.Windows.Forms.Label();
+            this.dataGridBookHistory = new System.Windows.Forms.DataGridView();
+            this.UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BookBarcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ContactNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Unit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ReturnDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ReturnedOn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BookHistoryID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BookBarcodeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CandidateID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pnlbookDetails.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridBookHistory)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.DarkGray;
+            this.label3.Location = new System.Drawing.Point(39, 47);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(390, 14);
+            this.label3.TabIndex = 136;
+            this.label3.Text = "Here you can see the record of your All Books  Thurogh Manage Book History.";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(38, 20);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(220, 25);
+            this.label4.TabIndex = 135;
+            this.label4.Text = "Manage Book History";
+            // 
+            // txtBarcode
+            // 
+            this.txtBarcode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBarcode.Location = new System.Drawing.Point(786, 35);
+            this.txtBarcode.Name = "txtBarcode";
+            this.txtBarcode.Size = new System.Drawing.Size(252, 26);
+            this.txtBarcode.TabIndex = 134;
+            this.txtBarcode.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBarcode_KeyDown);
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(1033, 33);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(34, 34);
+            this.button3.TabIndex = 133;
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.label1.ForeColor = System.Drawing.Color.DarkGray;
+            this.label1.Location = new System.Drawing.Point(673, 41);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(107, 19);
+            this.label1.TabIndex = 146;
+            this.label1.Text = "Enter Barcode";
+            // 
+            // lblmessage
+            // 
+            this.lblmessage.AutoSize = true;
+            this.lblmessage.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblmessage.ForeColor = System.Drawing.Color.Red;
+            this.lblmessage.Location = new System.Drawing.Point(422, 99);
+            this.lblmessage.Name = "lblmessage";
+            this.lblmessage.Size = new System.Drawing.Size(185, 25);
+            this.lblmessage.TabIndex = 160;
+            this.lblmessage.Text = "Data Not Found...!";
+            this.lblmessage.Visible = false;
+            // 
+            // pnlbookDetails
+            // 
+            this.pnlbookDetails.Controls.Add(this.txtSubCategory);
+            this.pnlbookDetails.Controls.Add(this.label6);
+            this.pnlbookDetails.Controls.Add(this.txtbookname);
+            this.pnlbookDetails.Controls.Add(this.label5);
+            this.pnlbookDetails.Controls.Add(this.txtLanguage);
+            this.pnlbookDetails.Controls.Add(this.txtType);
+            this.pnlbookDetails.Controls.Add(this.txtPublisher);
+            this.pnlbookDetails.Controls.Add(this.txtAuthor);
+            this.pnlbookDetails.Controls.Add(this.lblLanguage);
+            this.pnlbookDetails.Controls.Add(this.lblEdition);
+            this.pnlbookDetails.Controls.Add(this.lblPublisher);
+            this.pnlbookDetails.Controls.Add(this.lblAuthor);
+            this.pnlbookDetails.Controls.Add(this.dataGridBookHistory);
+            this.pnlbookDetails.Location = new System.Drawing.Point(2, 78);
+            this.pnlbookDetails.Name = "pnlbookDetails";
+            this.pnlbookDetails.Size = new System.Drawing.Size(1064, 484);
+            this.pnlbookDetails.TabIndex = 161;
+            this.pnlbookDetails.Visible = false;
+            // 
+            // txtSubCategory
+            // 
+            this.txtSubCategory.AutoSize = true;
+            this.txtSubCategory.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.txtSubCategory.Location = new System.Drawing.Point(403, 65);
+            this.txtSubCategory.Name = "txtSubCategory";
+            this.txtSubCategory.Size = new System.Drawing.Size(13, 19);
+            this.txtSubCategory.TabIndex = 161;
+            this.txtSubCategory.Text = ".";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.label6.Location = new System.Drawing.Point(293, 65);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(104, 17);
+            this.label6.TabIndex = 160;
+            this.label6.Text = "Sub-Category:";
+            // 
+            // txtbookname
+            // 
+            this.txtbookname.AutoSize = true;
+            this.txtbookname.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.txtbookname.Location = new System.Drawing.Point(115, 8);
+            this.txtbookname.Name = "txtbookname";
+            this.txtbookname.Size = new System.Drawing.Size(13, 19);
+            this.txtbookname.TabIndex = 159;
+            this.txtbookname.Text = ".";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(65, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(46, 17);
+            this.label5.TabIndex = 158;
+            this.label5.Text = "Book:";
+            // 
+            // txtLanguage
+            // 
+            this.txtLanguage.AutoSize = true;
+            this.txtLanguage.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.txtLanguage.Location = new System.Drawing.Point(746, 36);
+            this.txtLanguage.Name = "txtLanguage";
+            this.txtLanguage.Size = new System.Drawing.Size(13, 19);
+            this.txtLanguage.TabIndex = 157;
+            this.txtLanguage.Text = ".";
+            // 
+            // txtType
+            // 
+            this.txtType.AutoSize = true;
+            this.txtType.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.txtType.Location = new System.Drawing.Point(115, 64);
+            this.txtType.Name = "txtType";
+            this.txtType.Size = new System.Drawing.Size(13, 19);
+            this.txtType.TabIndex = 156;
+            this.txtType.Text = ".";
+            // 
+            // txtPublisher
+            // 
+            this.txtPublisher.AutoSize = true;
+            this.txtPublisher.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.txtPublisher.Location = new System.Drawing.Point(403, 37);
+            this.txtPublisher.Name = "txtPublisher";
+            this.txtPublisher.Size = new System.Drawing.Size(13, 19);
+            this.txtPublisher.TabIndex = 155;
+            this.txtPublisher.Text = ".";
+            // 
+            // txtAuthor
+            // 
+            this.txtAuthor.AutoSize = true;
+            this.txtAuthor.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.txtAuthor.Location = new System.Drawing.Point(115, 36);
+            this.txtAuthor.Name = "txtAuthor";
+            this.txtAuthor.Size = new System.Drawing.Size(13, 19);
+            this.txtAuthor.TabIndex = 154;
+            this.txtAuthor.Text = ".";
+            // 
+            // lblLanguage
+            // 
+            this.lblLanguage.AutoSize = true;
+            this.lblLanguage.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.lblLanguage.Location = new System.Drawing.Point(662, 37);
+            this.lblLanguage.Name = "lblLanguage";
+            this.lblLanguage.Size = new System.Drawing.Size(79, 17);
+            this.lblLanguage.TabIndex = 153;
+            this.lblLanguage.Text = "Language:";
+            // 
+            // lblEdition
+            // 
+            this.lblEdition.AutoSize = true;
+            this.lblEdition.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.lblEdition.Location = new System.Drawing.Point(68, 65);
+            this.lblEdition.Name = "lblEdition";
+            this.lblEdition.Size = new System.Drawing.Size(43, 17);
+            this.lblEdition.TabIndex = 152;
+            this.lblEdition.Text = "Type:";
+            // 
+            // lblPublisher
+            // 
+            this.lblPublisher.AutoSize = true;
+            this.lblPublisher.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.lblPublisher.Location = new System.Drawing.Point(325, 37);
+            this.lblPublisher.Name = "lblPublisher";
+            this.lblPublisher.Size = new System.Drawing.Size(72, 17);
+            this.lblPublisher.TabIndex = 151;
+            this.lblPublisher.Text = "Publisher:";
+            // 
+            // lblAuthor
+            // 
+            this.lblAuthor.AutoSize = true;
+            this.lblAuthor.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.lblAuthor.Location = new System.Drawing.Point(56, 37);
+            this.lblAuthor.Name = "lblAuthor";
+            this.lblAuthor.Size = new System.Drawing.Size(55, 17);
+            this.lblAuthor.TabIndex = 150;
+            this.lblAuthor.Text = "Author:";
+            // 
+            // dataGridBookHistory
+            // 
+            this.dataGridBookHistory.AllowUserToResizeColumns = false;
+            this.dataGridBookHistory.AllowUserToResizeRows = false;
+            this.dataGridBookHistory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridBookHistory.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridBookHistory.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
+            this.dataGridBookHistory.ColumnHeadersHeight = 20;
+            this.dataGridBookHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridBookHistory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.UserName,
+            this.BookBarcode,
+            this.ContactNumber,
+            this.Role,
+            this.Unit,
+            this.Date,
+            this.ReturnDate,
+            this.ReturnedOn,
+            this.Status,
+            this.BookHistoryID,
+            this.BookBarcodeID,
+            this.CandidateID});
+            this.dataGridBookHistory.GridColor = System.Drawing.Color.White;
+            this.dataGridBookHistory.Location = new System.Drawing.Point(30, 92);
+            this.dataGridBookHistory.Name = "dataGridBookHistory";
+            this.dataGridBookHistory.ReadOnly = true;
+            this.dataGridBookHistory.RowHeadersVisible = false;
+            this.dataGridBookHistory.RowHeadersWidth = 60;
+            this.dataGridBookHistory.RowTemplate.Height = 30;
+            this.dataGridBookHistory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridBookHistory.Size = new System.Drawing.Size(1022, 381);
+            this.dataGridBookHistory.TabIndex = 149;
+            // 
+            // UserName
+            // 
+            this.UserName.DataPropertyName = "UserName";
+            this.UserName.HeaderText = "Candidate Name";
+            this.UserName.MinimumWidth = 6;
+            this.UserName.Name = "UserName";
+            this.UserName.ReadOnly = true;
+            // 
+            // BookBarcode
+            // 
+            this.BookBarcode.DataPropertyName = "BookBarcode";
+            this.BookBarcode.HeaderText = "Book Barcode";
+            this.BookBarcode.MinimumWidth = 6;
+            this.BookBarcode.Name = "BookBarcode";
+            this.BookBarcode.ReadOnly = true;
+            // 
+            // ContactNumber
+            // 
+            this.ContactNumber.DataPropertyName = "ContactNumber";
+            this.ContactNumber.HeaderText = "ContactNumber";
+            this.ContactNumber.MinimumWidth = 6;
+            this.ContactNumber.Name = "ContactNumber";
+            this.ContactNumber.ReadOnly = true;
+            // 
+            // Role
+            // 
+            this.Role.DataPropertyName = "Role";
+            this.Role.HeaderText = "Role";
+            this.Role.MinimumWidth = 6;
+            this.Role.Name = "Role";
+            this.Role.ReadOnly = true;
+            // 
+            // Unit
+            // 
+            this.Unit.DataPropertyName = "Unit";
+            this.Unit.HeaderText = "Unit";
+            this.Unit.MinimumWidth = 6;
+            this.Unit.Name = "Unit";
+            this.Unit.ReadOnly = true;
+            // 
+            // Date
+            // 
+            this.Date.DataPropertyName = "Date";
+            this.Date.HeaderText = "Date";
+            this.Date.MinimumWidth = 6;
+            this.Date.Name = "Date";
+            this.Date.ReadOnly = true;
+            // 
+            // ReturnDate
+            // 
+            this.ReturnDate.DataPropertyName = "ReturnDate";
+            this.ReturnDate.HeaderText = "Return Date";
+            this.ReturnDate.MinimumWidth = 6;
+            this.ReturnDate.Name = "ReturnDate";
+            this.ReturnDate.ReadOnly = true;
+            this.ReturnDate.Visible = false;
+            // 
+            // ReturnedOn
+            // 
+            this.ReturnedOn.DataPropertyName = "ReturnedOn";
+            this.ReturnedOn.HeaderText = "Returned On";
+            this.ReturnedOn.MinimumWidth = 6;
+            this.ReturnedOn.Name = "ReturnedOn";
+            this.ReturnedOn.ReadOnly = true;
+            this.ReturnedOn.Visible = false;
+            // 
+            // Status
+            // 
+            this.Status.DataPropertyName = "Status";
+            this.Status.HeaderText = "Status";
+            this.Status.MinimumWidth = 6;
+            this.Status.Name = "Status";
+            this.Status.ReadOnly = true;
+            // 
+            // BookHistoryID
+            // 
+            this.BookHistoryID.DataPropertyName = "BookHistoryID";
+            this.BookHistoryID.HeaderText = "BookHistoryID";
+            this.BookHistoryID.MinimumWidth = 6;
+            this.BookHistoryID.Name = "BookHistoryID";
+            this.BookHistoryID.ReadOnly = true;
+            this.BookHistoryID.Visible = false;
+            // 
+            // BookBarcodeID
+            // 
+            this.BookBarcodeID.DataPropertyName = "BookBarcodeID";
+            this.BookBarcodeID.HeaderText = "BookBarcodeID";
+            this.BookBarcodeID.MinimumWidth = 6;
+            this.BookBarcodeID.Name = "BookBarcodeID";
+            this.BookBarcodeID.ReadOnly = true;
+            this.BookBarcodeID.Visible = false;
+            // 
+            // CandidateID
+            // 
+            this.CandidateID.DataPropertyName = "CandidateID";
+            this.CandidateID.HeaderText = "CandidateID";
+            this.CandidateID.MinimumWidth = 6;
+            this.CandidateID.Name = "CandidateID";
+            this.CandidateID.ReadOnly = true;
+            this.CandidateID.Visible = false;
+            // 
+            // ManageBookHistory
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1075, 582);
+            this.Controls.Add(this.pnlbookDetails);
+            this.Controls.Add(this.lblmessage);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtBarcode);
+            this.Controls.Add(this.button3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "ManageBookHistory";
+            this.Text = "ManageBookHistory";
+            this.Load += new System.EventHandler(this.ManageBookHistory_Load);
+            this.pnlbookDetails.ResumeLayout(false);
+            this.pnlbookDetails.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridBookHistory)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtBarcode;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblmessage;
+        private System.Windows.Forms.Panel pnlbookDetails;
+        private System.Windows.Forms.Label txtbookname;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label txtLanguage;
+        private System.Windows.Forms.Label txtType;
+        private System.Windows.Forms.Label txtPublisher;
+        private System.Windows.Forms.Label txtAuthor;
+        private System.Windows.Forms.Label lblLanguage;
+        private System.Windows.Forms.Label lblEdition;
+        private System.Windows.Forms.Label lblPublisher;
+        private System.Windows.Forms.Label lblAuthor;
+        private System.Windows.Forms.DataGridView dataGridBookHistory;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UserName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BookBarcode;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ContactNumber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Role;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Unit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Date;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ReturnDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ReturnedOn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Status;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BookHistoryID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BookBarcodeID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CandidateID;
+        private System.Windows.Forms.Label txtSubCategory;
+        private System.Windows.Forms.Label label6;
+    }
+}

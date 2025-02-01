@@ -1,0 +1,380 @@
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\LMS.WIN.exe.config
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\LMS.WIN.exe
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\LMS.WIN.pdb
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\DocumentFormat.OpenXml.dll
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\LMS.BL.dll
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\LMS.DAL.dll
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\LMS.MOD.dll
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\MANTRA.MFS100.dll
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\LMS.BL.pdb
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\LMS.DAL.pdb
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\LMS.MOD.pdb
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\DocumentFormat.OpenXml.xml
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.csprojAssemblyReference.cache
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.csproj.ResolveComReference.cache
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.frmChangePassword.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.frmDashboard.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.Language.frmAddLanguage.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.Login.Login.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageAlerts.ManageAlert.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageAuthor.frmAddAuthor.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageAuthor.ManageAuthor.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.frmAddbook.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.frmEditbook.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.frmIssueBook.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.frmMissingBook.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.frmRenewalBook.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.frmReturnBook.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.ManageBook.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.ManageBookHistory.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.ManageIssuebooks.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.ManageMissingbook.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.ManageRenewbook.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.ManageReturnbook.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.ViewAvailableBookDetails.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.ViewBookDetails.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageCandidate.frmAddCandidte.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageCandidate.ManageCandidates.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageCandidate.ViewCandidateDetails.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageCourses.AddCourse.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageCourses.ManageCourse.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageDue.frmManageDue.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageHome.ManageHome.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageIssuebook.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManagePublisher.frmAddPublisher.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManagePublisher.ManagePublisher.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageUser.frmAddUser.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageUser.ManageLibrarian.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.Reports.frmBookWiseReport.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.Reports.frmCandidatesReport.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.Reports.ManageReport.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Properties.Resources.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Search_Control.frmSearchAuthor.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Search_Control.frmSearchBook.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Search_Control.frmSearchByUID.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Search_Control.frmSearchCandidate.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Search_Control.frmSearchCountry.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Search_Control.frmSearchCourse.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Search_Control.frmSearchFund.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Search_Control.frmSearchPublisher.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Search_Control.frmSearchRank.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Search_Control.frmSearchUnit.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Utility.demo.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.csproj.GenerateResource.cache
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.csproj.CoreCompileInputs.cache
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.csproj.CopyComplete
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.exe
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.pdb
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.SqlServer.Types.dll
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.frmBarcodePrint.resources
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageCandidate.frmCandidateBarcode.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\LMS.WIN.exe.config
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\LMS.WIN.exe.manifest
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\LMS.WIN.application
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\LMS.WIN.exe
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\LMS.WIN.pdb
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\DocumentFormat.OpenXml.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\LMS.BL.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\LMS.DAL.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\LMS.MOD.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\MANTRA.MFS100.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.ReportViewer.Common.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.ReportViewer.Design.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.SqlServer.Types.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\EnvDTE.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\stdole.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.VSHelp.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.Shell.Interop.9.0.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.ProjectAggregator.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.ComponentModelHost.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.Debugger.InteropA.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\EnvDTE80.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.Build.Tasks.Core.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.Data.Services.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\VSLangProj.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.Shell.Interop.11.0.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.Data.Core.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.Shell.Interop.10.0.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\VSLangProj80.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.ManagedInterfaces.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.Debugger.Interop.11.0.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Newtonsoft.Json.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.GraphModel.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.MSXML.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.Build.Utilities.Core.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.10.0.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.Build.Framework.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\VSLangProj2.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\LMS.BL.pdb
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\LMS.DAL.pdb
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\LMS.MOD.pdb
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\DocumentFormat.OpenXml.xml
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.xml
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.csprojAssemblyReference.cache
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.exe.config
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.csproj.ResolveComReference.cache
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.frmChangePassword.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.frmDashboard.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.Language.frmAddLanguage.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.Login.Login.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageAlerts.ManageAlert.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageAuthor.frmAddAuthor.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageAuthor.ManageAuthor.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.frmAddbook.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.frmBarcodePrint.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.frmEditbook.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.frmIssueBook.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.frmMissingBook.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.frmRenewalBook.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.frmReturnBook.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.ManageBook.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.ManageBookHistory.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.ManageIssuebooks.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.ManageMissingbook.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.ManageRenewbook.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.ManageReturnbook.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.ViewAvailableBookDetails.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.ViewBookDetails.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageCandidate.frmAddCandidte.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageCandidate.frmCandidateBarcode.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageCandidate.ManageCandidates.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageCandidate.ViewCandidateDetails.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageCourses.AddCourse.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageCourses.ManageCourse.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageDue.frmManageDue.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageHome.ManageHome.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageIssuebook.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManagePublisher.frmAddPublisher.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManagePublisher.ManagePublisher.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageUser.frmAddUser.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageUser.ManageLibrarian.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.Reports.frmBookWiseReport.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.Reports.frmCandidatesReport.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.Reports.ManageReport.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Properties.Resources.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Search_Control.frmSearchAuthor.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Search_Control.frmSearchBook.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Search_Control.frmSearchByUID.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Search_Control.frmSearchCandidate.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Search_Control.frmSearchCountry.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Search_Control.frmSearchCourse.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Search_Control.frmSearchFund.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Search_Control.frmSearchPublisher.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Search_Control.frmSearchRank.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Search_Control.frmSearchUnit.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Utility.demo.resources
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.csproj.GenerateResource.cache
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.csproj.CoreCompileInputs.cache
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.exe.manifest
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.application
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.csproj.CopyComplete
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.exe
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.pdb
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\LMS.WIN.exe.config
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\LMS.WIN.exe.manifest
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\LMS.WIN.application
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\LMS.WIN.exe
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\LMS.WIN.pdb
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\DocumentFormat.OpenXml.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\LMS.BL.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\LMS.DAL.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\LMS.MOD.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\MANTRA.MFS100.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.ReportViewer.Common.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.ReportViewer.Design.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.SqlServer.Types.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\EnvDTE.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\stdole.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.VSHelp.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.Shell.Interop.9.0.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.ProjectAggregator.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.ComponentModelHost.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.Debugger.InteropA.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\EnvDTE80.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.Build.Tasks.Core.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.Data.Services.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\VSLangProj.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.Shell.Interop.11.0.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.Data.Core.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.Shell.Interop.10.0.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\VSLangProj80.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.ManagedInterfaces.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.Debugger.Interop.11.0.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.GraphModel.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.MSXML.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.Build.Utilities.Core.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.10.0.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.Build.Framework.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\VSLangProj2.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\LMS.BL.pdb
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\LMS.DAL.pdb
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\LMS.MOD.pdb
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\DocumentFormat.OpenXml.xml
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.xml
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.csproj.AssemblyReference.cache
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.exe.config
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.csproj.ResolveComReference.cache
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.frmChangePassword.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.frmDashboard.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.Language.frmAddLanguage.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.Login.Login.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageAlerts.ManageAlert.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageAuthor.frmAddAuthor.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageAuthor.ManageAuthor.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.frmAddbook.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.frmBarcodePrint.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.frmEditbook.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.frmIssueBook.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.frmMissingBook.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.frmRenewalBook.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.frmReturnBook.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.ManageBook.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.ManageBookHistory.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.ManageIssuebooks.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.ManageMissingbook.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.ManageRenewbook.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.ManageReturnbook.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.ViewAvailableBookDetails.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageBooks.ViewBookDetails.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageCandidate.frmAddCandidte.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageCandidate.frmCandidateBarcode.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageCandidate.ManageCandidates.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageCandidate.ViewCandidateDetails.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageCourses.AddCourse.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageCourses.ManageCourse.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageDue.frmManageDue.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageHome.ManageHome.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageIssuebook.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManagePublisher.frmAddPublisher.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManagePublisher.ManagePublisher.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageUser.frmAddUser.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.ManageUser.ManageLibrarian.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.Reports.frmBookWiseReport.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.Reports.frmCandidatesReport.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Forms.Reports.ManageReport.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Properties.Resources.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Search_Control.frmSearchAuthor.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Search_Control.frmSearchBook.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Search_Control.frmSearchByUID.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Search_Control.frmSearchCandidate.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Search_Control.frmSearchCountry.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Search_Control.frmSearchCourse.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Search_Control.frmSearchFund.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Search_Control.frmSearchPublisher.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Search_Control.frmSearchRank.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Search_Control.frmSearchUnit.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.Utility.demo.resources
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.csproj.GenerateResource.cache
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.csproj.CoreCompileInputs.cache
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.exe.manifest
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.application
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.csproj.CopyComplete
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.exe
+E:\7tech Work\updated library management system\LibraryManagementSystem-Army(03-05-2023)\LibraryManagementSystem-Army\LMS.WIN\obj\Debug\LMS.WIN.pdb

@@ -1,0 +1,12 @@
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.MOD\bin\Release\LMS.MOD.dll
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.MOD\bin\Release\LMS.MOD.pdb
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.MOD\obj\Release\LMS.MOD.csproj.CoreCompileInputs.cache
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.MOD\obj\Release\LMS.MOD.dll
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.MOD\obj\Release\LMS.MOD.pdb
+G:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.MOD\obj\Release\LMS.MOD.csprojAssemblyReference.cache
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.MOD\bin\Release\LMS.MOD.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.MOD\bin\Release\LMS.MOD.pdb
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.MOD\obj\Release\LMS.MOD.csproj.CoreCompileInputs.cache
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.MOD\obj\Release\LMS.MOD.dll
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.MOD\obj\Release\LMS.MOD.pdb
+E:\Junaid\7Tech\LibraryManagementSystem-Army\LMS.MOD\obj\Release\LMS.MOD.csprojAssemblyReference.cache
