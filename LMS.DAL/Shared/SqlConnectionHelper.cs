@@ -14,7 +14,7 @@ namespace LMS.DAL.Shared
             {
                 if (string.IsNullOrWhiteSpace(_connectionString))
                 {
-                    _connectionString = ConfigurationManager.ConnectionStrings["LMS"].ConnectionString;
+                    _connectionString = ConfigurationManager.ConnectionStrings["AMS"].ConnectionString;
                 }
                 return _connectionString;
             }
@@ -29,7 +29,7 @@ namespace LMS.DAL.Shared
 
         public static SqlConnection GetConnectionSync()
         {
-            SqlConnection connection = new SqlConnection(ConnectionString);
+            SqlConnection connection = new SqlConnection(@"Data Source=.; Initial Catalog=LibrarySystem-Army; Integrated Security=True;");
             connection.Open();
             return connection;
         }
