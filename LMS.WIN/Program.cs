@@ -3,6 +3,7 @@ using System.Windows.Forms;
 
 namespace LMS.WIN
 {
+    //LMS main
     static class Program
     {
         /// <summary>
