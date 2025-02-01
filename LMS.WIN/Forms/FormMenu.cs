@@ -17,30 +17,20 @@ namespace LMS.WIN.Forms
             InitializeComponent();
         }
 
-    
-        private void iconCerrar_Click_1(object sender, EventArgs e)
+ 
+        private void AbrirFormInPanel(object formHijo)
         {
-            if (MessageBox.Show("Do You want to close this Application?", "Close Application", MessageBoxButtons.YesNo) == DialogResult.Yes)
-            {
-                //tus codigos
-                Application.Exit();
-            }
-            else
-            {
-                //tus codigos
-            }
+            if (this.panelContenedor.Controls.Count > 0)
+                this.panelContenedor.Controls.RemoveAt(0);
+            Form fh = formHijo as Form;
+            fh.TopLevel = false;
+            fh.FormBorderStyle = FormBorderStyle.None;
+            fh.Dock = DockStyle.Fill;
+            this.panelContenedor.Controls.Add(fh);
+            this.panelContenedor.Tag = fh;
+            fh.Show();
         }
-
-        private void btnmenu_Click(object sender, EventArgs e)
-        {
-            if (MenuVertical.Width == 57)
-            {
-                MenuVertical.Width = 250;
-            }
-            else
-
-                MenuVertical.Width = 57;
-        }
+     
         int LX, LY, SW, SH;
 
         private void btnREPORTES_Click(object sender, EventArgs e)
@@ -57,6 +47,65 @@ namespace LMS.WIN.Forms
         private void FormMenu_Load(object sender, EventArgs e)
         {
             panelHr.Visible = false;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            ManageHome.ManageHome frmmanageHome = new ManageHome.ManageHome();
+            //frm.FormClosed += new FormClosedEventHandler(mostrarlogoAlCerrarForm);
+            AbrirFormInPanel(frmmanageHome);
+        }
+
+        private void iconCerrar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconCerrar_Click_2(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Do You want to close this Application?", "Close Application", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                //tus codigos
+                Application.Exit();
+            }
+            else
+            {
+                //tus codigos
+            }
+        }
+
+        private void iconrestaurar_Click_1(object sender, EventArgs e)
+        {
+            //this.WindowState = FormWindowState.Normal;
+            this.Size = new Size(SW, SH);
+            this.Location = new Point(LX, LY);
+            iconmaximizar.Visible = true;
+            iconrestaurar.Visible = false;
+        }
+
+        private void iconMinimizar_Click_1(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnmenu_Click_1(object sender, EventArgs e)
+        {
+            if (MenuVertical.Width == 57)
+            {
+                MenuVertical.Width = 250;
+            }
+            else
+            {
+                MenuVertical.Width = 57;
+                panelHr.Visible = false;
+            }
+
+              
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void iconMinimizar_Click(object sender, EventArgs e)
@@ -78,11 +127,7 @@ namespace LMS.WIN.Forms
         }
         private void iconrestaurar_Click(object sender, EventArgs e)
         {
-            //this.WindowState = FormWindowState.Normal;
-            this.Size = new Size(SW, SH);
-            this.Location = new Point(LX, LY);
-            iconmaximizar.Visible = true;
-            iconrestaurar.Visible = false;
+   
         }
     }
 }
