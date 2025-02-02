@@ -77,5 +77,51 @@ namespace LMS.WIN.Forms.Login
         {
             Close();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        public void Caps()
+        {
+            if (Control.IsKeyLocked(Keys.CapsLock))
+            {
+                lblWarning.Text = "Caps Lock On";
+                lblWarning.Visible = true;
+                lblWarning.ForeColor = System.Drawing.Color.GreenYellow;
+            }
+            else
+            {
+                lblWarning.Visible = false;
+ 
+            }
+        }
+
+        private void txtpassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            Caps();
+        }
+
+        private void checkbxShowPas_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkbxShowPas.Checked)
+            {
+                txtpassword.PasswordChar = '\0';
+            }
+            else
+            {
+                txtpassword.PasswordChar = '*';
+            }
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtUserName.Text = string.Empty;
+            txtpassword.Text = string.Empty;
+            cbrole.SelectedIndex = -1;
+            txtUserName.Focus();
+
+        }
     }
 }
