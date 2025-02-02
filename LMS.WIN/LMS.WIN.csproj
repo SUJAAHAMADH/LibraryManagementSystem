@@ -654,7 +654,6 @@
   <ItemGroup>
     <Content Include="Files\MANTRA.MFS100.dll" />
     <Content Include="Files\MFS100Dll.dll" />
-    <Content Include="Resources\edit-2.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
