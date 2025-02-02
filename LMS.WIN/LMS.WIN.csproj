@@ -132,6 +132,12 @@
     <Compile Include="Forms\Language\frmAddLanguage.Designer.cs">
       <DependentUpon>frmAddLanguage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Login\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Login\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -432,6 +438,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Language\frmAddLanguage.resx">
       <DependentUpon>frmAddLanguage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
