@@ -47,6 +47,7 @@ namespace LMS.WIN.Forms
         private void FormMenu_Load(object sender, EventArgs e)
         {
             panelHr.Visible = false;
+            MenuVertical.Width = 260;
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -90,13 +91,13 @@ namespace LMS.WIN.Forms
 
         private void btnmenu_Click_1(object sender, EventArgs e)
         {
-            if (MenuVertical.Width == 57)
+            if (MenuVertical.Width == 53)
             {
-                MenuVertical.Width = 250;
+                MenuVertical.Width = 260;
             }
             else
             {
-                MenuVertical.Width = 57;
+                MenuVertical.Width = 53;
                 panelHr.Visible = false;
             }
 
@@ -106,6 +107,13 @@ namespace LMS.WIN.Forms
         private void label7_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnEMPLEADOS_Click(object sender, EventArgs e)
+        {
+            ManageCandidate.ManageCandidates frmmanageCandidate = new ManageCandidate.ManageCandidates();
+            //frm.FormClosed += new FormClosedEventHandler(mostrarlogoAlCerrarForm);
+            AbrirFormInPanel(frmmanageCandidate);
         }
 
         private void iconMinimizar_Click(object sender, EventArgs e)

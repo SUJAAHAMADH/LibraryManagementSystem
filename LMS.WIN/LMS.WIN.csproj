@@ -138,6 +138,12 @@
     <Compile Include="Forms\Login\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Login\SignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login\SignIn.Designer.cs">
+      <DependentUpon>SignIn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ManageAlerts\ManageAlert.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -430,6 +436,9 @@
     <EmbeddedResource Include="Forms\Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login\SignIn.resx">
+      <DependentUpon>SignIn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ManageAlerts\ManageAlert.resx">
       <DependentUpon>ManageAlert.cs</DependentUpon>
     </EmbeddedResource>
@@ -535,7 +544,7 @@
       <DependentUpon>ManageReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -645,6 +654,7 @@
   <ItemGroup>
     <Content Include="Files\MANTRA.MFS100.dll" />
     <Content Include="Files\MFS100Dll.dll" />
+    <Content Include="Resources\edit-2.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
