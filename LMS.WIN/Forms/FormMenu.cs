@@ -116,6 +116,12 @@ namespace LMS.WIN.Forms
             AbrirFormInPanel(frmmanageCandidate);
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ManageIssuebook manageIssueBook = new ManageIssuebook();
+            AbrirFormInPanel(manageIssueBook);
+        }
+
         private void iconMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;

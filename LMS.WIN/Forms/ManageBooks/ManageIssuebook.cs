@@ -34,7 +34,7 @@ namespace LMS.WIN.Forms
                 dataGridissueBook.AutoGenerateColumns = false;
                 dataGridissueBook.DataSource = data;
                 dataGridissueBook.Refresh();
-                getGridviewByDefaultDesign();
+               // getGridviewByDefaultDesign();
             }
             else
             {
