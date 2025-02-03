@@ -74,5 +74,37 @@ namespace LMS.DAL
             }
             return student;
         }
+
+        public static bool HasStudentID(string studentID)
+        {
+            #region Declaration
+            SqlConnection con = null;
+            bool hasStudentID = false;
+            #endregion
+            try
+            {
+                #region Interacting with database
+                con = SqlConnectionHelper.GetConnectionSync();
+                SqlCommand cmd = new SqlCommand("HasStudentID", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add(new SqlParameter { ParameterName = "@StudentID", DbType = DbType.String, Value = studentID });
+                hasStudentID = Convert.ToBoolean(cmd.ExecuteScalar());
+                #endregion
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                #region Close connection
+                if (con != null && con.State == ConnectionState.Open)
+                {
+                    con.Close();
+                }
+                #endregion
+            }
+            return hasStudentID;
+        }
     }
 }
