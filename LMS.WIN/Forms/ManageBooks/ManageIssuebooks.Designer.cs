@@ -206,7 +206,7 @@
             this.Delete.DataPropertyName = "Delete";
             this.Delete.FillWeight = 26.21115F;
             this.Delete.HeaderText = "Delete";
-            this.Delete.Image = global::LMS.WIN.Properties.Resources.delete;
+          
             this.Delete.MinimumWidth = 6;
             this.Delete.Name = "Delete";
             this.Delete.ReadOnly = true;

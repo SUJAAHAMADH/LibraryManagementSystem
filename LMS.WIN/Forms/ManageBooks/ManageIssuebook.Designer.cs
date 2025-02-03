@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageIssuebook));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnissue = new System.Windows.Forms.Button();
             this.btnMissingbook = new System.Windows.Forms.Button();
@@ -75,8 +77,9 @@
             this.panel2.Controls.Add(this.btnrenewbook);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1068, 40);
+            this.panel2.Size = new System.Drawing.Size(1424, 49);
             this.panel2.TabIndex = 99;
             // 
             // btnissue
@@ -87,9 +90,10 @@
             this.btnissue.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnissue.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.btnissue.ForeColor = System.Drawing.Color.White;
-            this.btnissue.Location = new System.Drawing.Point(12, 4);
+            this.btnissue.Location = new System.Drawing.Point(16, 5);
+            this.btnissue.Margin = new System.Windows.Forms.Padding(4);
             this.btnissue.Name = "btnissue";
-            this.btnissue.Size = new System.Drawing.Size(98, 33);
+            this.btnissue.Size = new System.Drawing.Size(131, 41);
             this.btnissue.TabIndex = 120;
             this.btnissue.Text = "Issue Book";
             this.btnissue.UseVisualStyleBackColor = false;
@@ -103,9 +107,10 @@
             this.btnMissingbook.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMissingbook.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.btnMissingbook.ForeColor = System.Drawing.Color.White;
-            this.btnMissingbook.Location = new System.Drawing.Point(324, 3);
+            this.btnMissingbook.Location = new System.Drawing.Point(432, 4);
+            this.btnMissingbook.Margin = new System.Windows.Forms.Padding(4);
             this.btnMissingbook.Name = "btnMissingbook";
-            this.btnMissingbook.Size = new System.Drawing.Size(98, 33);
+            this.btnMissingbook.Size = new System.Drawing.Size(131, 41);
             this.btnMissingbook.TabIndex = 119;
             this.btnMissingbook.Text = "Missing Book";
             this.btnMissingbook.UseVisualStyleBackColor = false;
@@ -120,9 +125,10 @@
             this.btnManageReturnbook.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnManageReturnbook.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.btnManageReturnbook.ForeColor = System.Drawing.Color.White;
-            this.btnManageReturnbook.Location = new System.Drawing.Point(220, 4);
+            this.btnManageReturnbook.Location = new System.Drawing.Point(293, 5);
+            this.btnManageReturnbook.Margin = new System.Windows.Forms.Padding(4);
             this.btnManageReturnbook.Name = "btnManageReturnbook";
-            this.btnManageReturnbook.Size = new System.Drawing.Size(98, 33);
+            this.btnManageReturnbook.Size = new System.Drawing.Size(131, 41);
             this.btnManageReturnbook.TabIndex = 118;
             this.btnManageReturnbook.Text = "Return Book";
             this.btnManageReturnbook.UseVisualStyleBackColor = false;
@@ -136,9 +142,10 @@
             this.btnrenewbook.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnrenewbook.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.btnrenewbook.ForeColor = System.Drawing.Color.White;
-            this.btnrenewbook.Location = new System.Drawing.Point(116, 4);
+            this.btnrenewbook.Location = new System.Drawing.Point(155, 5);
+            this.btnrenewbook.Margin = new System.Windows.Forms.Padding(4);
             this.btnrenewbook.Name = "btnrenewbook";
-            this.btnrenewbook.Size = new System.Drawing.Size(98, 33);
+            this.btnrenewbook.Size = new System.Drawing.Size(131, 41);
             this.btnrenewbook.TabIndex = 113;
             this.btnrenewbook.Text = "Renew Book";
             this.btnrenewbook.UseVisualStyleBackColor = false;
@@ -159,7 +166,6 @@
             this.dataGridViewImageColumn2.DataPropertyName = "Delete";
             this.dataGridViewImageColumn2.FillWeight = 26.21115F;
             this.dataGridViewImageColumn2.HeaderText = "Delete";
-            this.dataGridViewImageColumn2.Image = global::LMS.WIN.Properties.Resources.delete;
             this.dataGridViewImageColumn2.MinimumWidth = 6;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -170,9 +176,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(21, 6);
+            this.label4.Location = new System.Drawing.Point(28, 7);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(288, 25);
+            this.label4.Size = new System.Drawing.Size(365, 32);
             this.label4.TabIndex = 113;
             this.label4.Text = "Manage Total Available Book";
             // 
@@ -181,18 +188,20 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DarkGray;
-            this.label3.Location = new System.Drawing.Point(22, 33);
+            this.label3.Location = new System.Drawing.Point(29, 41);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(189, 14);
+            this.label3.Size = new System.Drawing.Size(232, 18);
             this.label3.TabIndex = 114;
             this.label3.Text = "Total Available Books  Quantity Here";
             // 
             // txtSearch
             // 
             this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(771, 21);
+            this.txtSearch.Location = new System.Drawing.Point(1028, 26);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(252, 26);
+            this.txtSearch.Size = new System.Drawing.Size(335, 30);
             this.txtSearch.TabIndex = 116;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
@@ -200,10 +209,21 @@
             // 
             this.dataGridissueBook.AllowUserToResizeColumns = false;
             this.dataGridissueBook.AllowUserToResizeRows = false;
+            this.dataGridissueBook.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridissueBook.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridissueBook.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridissueBook.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
-            this.dataGridissueBook.ColumnHeadersHeight = 20;
+            this.dataGridissueBook.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(42)))), ((int)(((byte)(129)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(42)))), ((int)(((byte)(129)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridissueBook.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridissueBook.ColumnHeadersHeight = 45;
             this.dataGridissueBook.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridissueBook.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Name,
@@ -222,15 +242,25 @@
             this.BookID,
             this.View,
             this.Delete});
-            this.dataGridissueBook.GridColor = System.Drawing.Color.White;
-            this.dataGridissueBook.Location = new System.Drawing.Point(26, 58);
+            this.dataGridissueBook.EnableHeadersVisualStyles = false;
+            this.dataGridissueBook.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(42)))), ((int)(((byte)(129)))));
+            this.dataGridissueBook.Location = new System.Drawing.Point(35, 71);
+            this.dataGridissueBook.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridissueBook.Name = "dataGridissueBook";
             this.dataGridissueBook.ReadOnly = true;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(42)))), ((int)(((byte)(129)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridissueBook.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridissueBook.RowHeadersVisible = false;
             this.dataGridissueBook.RowHeadersWidth = 60;
             this.dataGridissueBook.RowTemplate.Height = 30;
             this.dataGridissueBook.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridissueBook.Size = new System.Drawing.Size(1032, 454);
+            this.dataGridissueBook.Size = new System.Drawing.Size(1376, 559);
             this.dataGridissueBook.TabIndex = 117;
             this.dataGridissueBook.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridissueBook_CellContentClick);
             // 
@@ -371,7 +401,6 @@
             this.Delete.DataPropertyName = "Delete";
             this.Delete.FillWeight = 26.21115F;
             this.Delete.HeaderText = "Delete";
-            this.Delete.Image = global::LMS.WIN.Properties.Resources.delete;
             this.Delete.MinimumWidth = 6;
             this.Delete.Name = "Delete";
             this.Delete.ReadOnly = true;
@@ -383,9 +412,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.label1.ForeColor = System.Drawing.Color.DarkGray;
-            this.label1.Location = new System.Drawing.Point(671, 27);
+            this.label1.Location = new System.Drawing.Point(895, 33);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 19);
+            this.label1.Size = new System.Drawing.Size(113, 21);
             this.label1.TabIndex = 118;
             this.label1.Text = "Serach Book";
             // 
@@ -398,9 +428,10 @@
             this.button3.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(1023, 16);
+            this.button3.Location = new System.Drawing.Point(1364, 20);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(34, 34);
+            this.button3.Size = new System.Drawing.Size(45, 42);
             this.button3.TabIndex = 122;
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = true;
@@ -408,9 +439,10 @@
             // picboxrefersh
             // 
             this.picboxrefersh.Image = ((System.Drawing.Image)(resources.GetObject("picboxrefersh.Image")));
-            this.picboxrefersh.Location = new System.Drawing.Point(218, 28);
+            this.picboxrefersh.Location = new System.Drawing.Point(291, 34);
+            this.picboxrefersh.Margin = new System.Windows.Forms.Padding(4);
             this.picboxrefersh.Name = "picboxrefersh";
-            this.picboxrefersh.Size = new System.Drawing.Size(31, 26);
+            this.picboxrefersh.Size = new System.Drawing.Size(41, 32);
             this.picboxrefersh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picboxrefersh.TabIndex = 123;
             this.picboxrefersh.TabStop = false;
@@ -426,20 +458,22 @@
             this.pnlManageBook.Controls.Add(this.label3);
             this.pnlManageBook.Controls.Add(this.label4);
             this.pnlManageBook.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlManageBook.Location = new System.Drawing.Point(0, 40);
+            this.pnlManageBook.Location = new System.Drawing.Point(0, 49);
+            this.pnlManageBook.Margin = new System.Windows.Forms.Padding(4);
             this.pnlManageBook.Name = "pnlManageBook";
-            this.pnlManageBook.Size = new System.Drawing.Size(1068, 542);
+            this.pnlManageBook.Size = new System.Drawing.Size(1424, 667);
             this.pnlManageBook.TabIndex = 112;
             // 
             // ManageIssuebook
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1068, 582);
+            this.ClientSize = new System.Drawing.Size(1424, 716);
             this.Controls.Add(this.pnlManageBook);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-           // this.Name = "ManageIssuebook";
+            this.Margin = new System.Windows.Forms.Padding(4);
+           
             this.Text = "ManageIssuebook";
             this.Load += new System.EventHandler(this.ManageIssuebook_Load);
             this.panel2.ResumeLayout(false);
