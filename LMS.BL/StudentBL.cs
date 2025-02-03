@@ -18,5 +18,17 @@ namespace LMS.BL
                 throw new Exception(ex.Message);
             }
         }
+
+        public static bool HasStudentID(string studentID)
+        {
+            try
+            {
+                return StudentDAL.HasStudentID(studentID);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }
