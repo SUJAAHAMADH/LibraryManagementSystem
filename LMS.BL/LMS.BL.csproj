@@ -61,6 +61,7 @@
     <Compile Include="PublisherBL.cs" />
     <Compile Include="ReportBL.cs" />
     <Compile Include="Shared\ResponseWrapper.cs" />
+    <Compile Include="StudentBL.cs" />
     <Compile Include="UserBL.cs" />
   </ItemGroup>
   <ItemGroup>
