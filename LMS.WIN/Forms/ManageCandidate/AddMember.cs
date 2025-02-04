@@ -207,8 +207,8 @@ namespace LMS.WIN.Forms.ManageCandidate
                         {
                             Name = tbName.Text,
                             ContactNumber = tbSContact.Text,
-                            RoleID = tbRoleId.Text, 
-                            Role = cbStream.Text,
+                            RoleID = tbRoleId.Text,
+                            Role = cbPersonType.Text,
                             DOB = dtpDOB.Checked ? dtpDOB.Value : (DateTime?)null, 
                             Stream = string.IsNullOrEmpty(cbStream.Text) ? null : cbStream.Text, 
                             AcademicYear = !string.IsNullOrEmpty(tbYear.Text) && int.TryParse(tbYear.Text, out academicYear) ? academicYear : (int?)null, // Nullable int
@@ -226,7 +226,8 @@ namespace LMS.WIN.Forms.ManageCandidate
                             Name = tbName.Text,
                             ContactNumber = tbSContact.Text,
                             RoleID = tbRoleId.Text, 
-                            Role = cbStream.Text,
+                            Stream = cbStream.Text,
+                            Role = cbPersonType.Text,
                             Photo = photoData, 
                         };
                     }
