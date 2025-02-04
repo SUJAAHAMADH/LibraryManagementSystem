@@ -84,7 +84,7 @@ namespace LMS.WIN.Forms.ManageCandidate
 
             if (candidate.CandidateID != 0)
             {
-                txtServiceNo.Text = candidate.ServiceNo;
+                txtServiceNo.Text = candidate.RoleID;
                 txtName.Text = candidate.Name;
                 txtContactNumber.Text = candidate.ContactNumber;
                 txtCourse.Text = candidate.CourseName;
@@ -127,7 +127,7 @@ namespace LMS.WIN.Forms.ManageCandidate
                             {
                                 Name = txtName.Text,
                                 ContactNumber = txtContactNumber.Text,
-                                ServiceNo = txtServiceNo.Text,
+                                RoleID = txtServiceNo.Text,
                                 Role = cmboxCandidateType.Text,
                                 CourseID = courseID,
                                 FromDate = dtFormDate.Text,
@@ -145,7 +145,7 @@ namespace LMS.WIN.Forms.ManageCandidate
                             {
                                 Name = txtName.Text,
                                 ContactNumber = txtContactNumber.Text,
-                                ServiceNo = txtServiceNo.Text,
+                                RoleID = txtServiceNo.Text,
                                 Role = cmboxCandidateType.Text,
                                 TOSDate = dtTosDate.Text,
                                 SOSDate = dtSosDate.Text,
@@ -183,7 +183,7 @@ namespace LMS.WIN.Forms.ManageCandidate
                             {
                                 Name = txtName.Text,
                                 ContactNumber = txtContactNumber.Text,
-                                ServiceNo = txtServiceNo.Text,
+                                RoleID = txtServiceNo.Text,
                                 Role = cmboxCandidateType.Text,
                                 CourseID = courseID,
                                 FromDate = dtFormDate.Text,
@@ -199,7 +199,7 @@ namespace LMS.WIN.Forms.ManageCandidate
                             {
                                 Name = txtName.Text,
                                 ContactNumber = txtContactNumber.Text,
-                                ServiceNo = txtServiceNo.Text,
+                                RoleID = txtServiceNo.Text,
                                 Role = cmboxCandidateType.Text,
                                 TOSDate = dtTosDate.Text,
                                 SOSDate = dtSosDate.Text,

@@ -117,7 +117,7 @@ namespace LMS.WIN.Forms.ManageCandidate
                     Barcode = dgvRow.Cells["Barcode"].Value.ToString(),
                     ContactNumber = dgvRow.Cells["ContactNumber"].Value.ToString(),
                     Role = dgvRow.Cells["Role"].Value.ToString(),
-                    ServiceNo = dgvRow.Cells["ServiceNo"].Value.ToString(),
+                    RoleID = dgvRow.Cells["ServiceNo"].Value.ToString(),
                     CourseName = dgvRow.Cells["CourseName"].Value.ToString(),
                     FromDate = dgvRow.Cells["FromDate"].Value.ToString(),
                     ToDate = dgvRow.Cells["ToDate"].Value.ToString(),
@@ -322,7 +322,7 @@ namespace LMS.WIN.Forms.ManageCandidate
                         candidate.Role = role;
                         candidate.Name = dt.Rows[i]["Name"].ToString();
                         candidate.ContactNumber = dt.Rows[i]["Contact Number"].ToString();
-                        candidate.ServiceNo = dt.Rows[i]["Service No"].ToString();
+                        candidate.RoleID = dt.Rows[i]["Service No"].ToString();
                         candidate.CourseID = course.CourseID;
                         candidate.FromDate = fromDate.ToString();
                         candidate.ToDate = toDate.ToString();
@@ -343,7 +343,7 @@ namespace LMS.WIN.Forms.ManageCandidate
                         candidate.Role = role;
                         candidate.Name = dt.Rows[i]["Name"].ToString();
                         candidate.ContactNumber = dt.Rows[i]["Contact Number"].ToString();
-                        candidate.ServiceNo = dt.Rows[i]["Service No"].ToString();
+                        candidate.RoleID = dt.Rows[i]["Service No"].ToString();
                         candidate.TOSDate = tosDate.ToString();
                         candidate.SOSDate = sosDate.ToString();
                         candidate.UserID = userID;
@@ -409,7 +409,7 @@ namespace LMS.WIN.Forms.ManageCandidate
                         candidate.Role = role;
                         candidate.Name = dt.Rows[i]["Name"].ToString();
                         candidate.ContactNumber = dt.Rows[i]["Contact Number"].ToString();
-                        candidate.ServiceNo = dt.Rows[i]["Service No"].ToString();
+                        candidate.RoleID = dt.Rows[i]["Service No"].ToString();
                         candidate.CourseID = course.CourseID;
                         candidate.FromDate = fromDate.ToString();
                         candidate.ToDate = toDate.ToString();
@@ -430,7 +430,7 @@ namespace LMS.WIN.Forms.ManageCandidate
                         candidate.Role = role;
                         candidate.Name = dt.Rows[i]["Name"].ToString();
                         candidate.ContactNumber = dt.Rows[i]["Contact Number"].ToString();
-                        candidate.ServiceNo = dt.Rows[i]["Service No"].ToString();
+                        candidate.RoleID = dt.Rows[i]["Service No"].ToString();
                         candidate.TOSDate = tosDate.ToString();
                         candidate.SOSDate = sosDate.ToString();
                         candidate.UserID = userID;

@@ -18,8 +18,16 @@ namespace LMS.DAL
                 new SqlParameter{ParameterName = "@Role", DbType = DbType.String, Value = candidate.Role},
                 new SqlParameter{ParameterName = "@Name", DbType = DbType.String, Value = candidate.Name},
                 new SqlParameter{ParameterName = "@ContactNumber", DbType = DbType.String, Value = candidate.ContactNumber},
-                new SqlParameter{ParameterName = "@ServiceNo", DbType = DbType.String, Value = candidate.ServiceNo},
+                new SqlParameter{ParameterName = "@ServiceNo", DbType = DbType.String, Value = candidate.RoleID},
                 new SqlParameter{ParameterName = "@UserID", DbType = DbType.Int32, Value = candidate.UserID},
+                new SqlParameter{ParameterName = "@DOB", DbType = DbType.DateTime, Value = candidate.DOB},
+                new SqlParameter{ParameterName = "@Stream", DbType = DbType.String, Value = candidate.Stream},
+                new SqlParameter{ParameterName = "@AcademicYear", DbType = DbType.Int32, Value = candidate.AcademicYear},
+                new SqlParameter{ParameterName = "@PermanentAddress", DbType = DbType.String, Value = candidate.PermanentAddress},
+                new SqlParameter{ParameterName = "@PresentAddress", DbType = DbType.String, Value = candidate.PresentAddress},
+                new SqlParameter{ParameterName = "@Email", DbType = DbType.String, Value = candidate.Email},
+                new SqlParameter{ParameterName = "@ParentsContact", DbType = DbType.Int32, Value = candidate.ParentsContact},
+                new SqlParameter{ParameterName = "@Photo", DbType = DbType.Binary, Value = (object)candidate.Photo ?? DBNull.Value },
                 new SqlParameter{ParameterName = "@ID", DbType = DbType.Int32, Direction = ParameterDirection.Output},
                 new SqlParameter{ParameterName = "@OutputMessage", DbType = DbType.String, Direction = ParameterDirection.Output, Size = 2000}
             };
@@ -52,6 +60,7 @@ namespace LMS.DAL
             {
                 param.Add(new SqlParameter { ParameterName = "@ThumbImpression", DbType = DbType.String, Value = candidate.ThumbImpression });
             }
+
             #endregion
 
             try
@@ -144,7 +153,7 @@ namespace LMS.DAL
                         candidate.Role = row["Role"] as string ?? string.Empty;
                         candidate.Name = row["Name"] as string ?? string.Empty;
                         candidate.ContactNumber = row["ContactNumber"] as string ?? string.Empty;
-                        candidate.ServiceNo = row["ServiceNo"] as string ?? string.Empty;
+                        candidate.RoleID = row["ServiceNo"] as string ?? string.Empty;
                         candidate.CourseID = row["CourseID"] as int? ?? 0;
                         candidate.CourseName = row["CourseName"] as string ?? string.Empty;
                         candidate.FromDate = row["FromDate"] as string ?? string.Empty;
@@ -204,7 +213,7 @@ namespace LMS.DAL
                         candidate.Role = row["Role"] as string ?? string.Empty;
                         candidate.Name = row["Name"] as string ?? string.Empty;
                         candidate.ContactNumber = row["ContactNumber"] as string ?? string.Empty;
-                        candidate.ServiceNo = row["ServiceNo"] as string ?? string.Empty;
+                        candidate.RoleID = row["ServiceNo"] as string ?? string.Empty;
                         //candidate.Rank = row["Rank"] as string ?? string.Empty;
                         //candidate.Unit = row["Unit"] as string ?? string.Empty;
                         //candidate.CountryID = row["CountryID"] as int? ?? 0;
@@ -362,7 +371,7 @@ namespace LMS.DAL
                 new SqlParameter{ParameterName = "@Role", DbType = DbType.String, Value = candidate.Role},
                 new SqlParameter{ParameterName = "@Name", DbType = DbType.String, Value = candidate.Name},
                 new SqlParameter{ParameterName = "@ContactNumber", DbType = DbType.String, Value = candidate.ContactNumber},
-                new SqlParameter{ParameterName = "@ServiceNo", DbType = DbType.String, Value = candidate.ServiceNo},
+                new SqlParameter{ParameterName = "@ServiceNo", DbType = DbType.String, Value = candidate.RoleID},
                 //new SqlParameter{ParameterName = "@Rank", DbType = DbType.String, Value = candidate.Rank},
                 //new SqlParameter{ParameterName = "@Unit", DbType = DbType.String, Value = candidate.Unit},
                 //new SqlParameter{ParameterName = "@CountryID", DbType = DbType.Int32, Value = candidate.CountryID},
@@ -468,7 +477,7 @@ namespace LMS.DAL
                         candidate.Role = row["Role"] as string ?? string.Empty;
                         candidate.Name = row["Name"] as string ?? string.Empty;
                         candidate.ContactNumber = row["ContactNumber"] as string ?? string.Empty;
-                        candidate.ServiceNo = row["ServiceNo"] as string ?? string.Empty;
+                        candidate.RoleID = row["ServiceNo"] as string ?? string.Empty;
                         //candidate.Rank = row["Rank"] as string ?? string.Empty;
                         //candidate.Unit = row["Unit"] as string ?? string.Empty;
                         //candidate.CountryID = row["CountryID"] as int? ?? 0;

@@ -72,6 +72,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DB\StoreProcedures%2804.02.2025%29.sql" />
     <Content Include="DB\LibraryManagement%2818-12-2019%29.sql" />
     <Content Include="DB\LibraryManagement%2802.02.2025%29.sql" />
     <Content Include="DB\LibraryManagement%2824-12-2019%29.sql" />

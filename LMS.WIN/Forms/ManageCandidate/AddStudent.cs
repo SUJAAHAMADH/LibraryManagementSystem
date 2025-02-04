@@ -116,7 +116,7 @@ namespace LMS.WIN.Forms.ManageCandidate
                     Student student = new Student();
                     byte[] photoData = null;
 
-                    // Convert image to byte array if there's a photo
+
                     if (pbPhoto.Image != null)
                     {
                         using (var ms = new System.IO.MemoryStream())
@@ -126,7 +126,7 @@ namespace LMS.WIN.Forms.ManageCandidate
                         }
                     }
 
-                    // Set student properties
+     
                     student.StudentID = tbStudentId.Text;
                     student.NameOfStudent = tbStudentName.Text;
                     student.DOB = dtpDOB.Value;

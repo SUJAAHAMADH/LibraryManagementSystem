@@ -49,7 +49,7 @@ namespace LMS.DAL
                         candidate.Role = row["Role"] as string ?? string.Empty;
                         candidate.Name = row["Name"] as string ?? string.Empty;
                         candidate.ContactNumber = row["ContactNumber"] as string ?? string.Empty;
-                        candidate.ServiceNo = row["ServiceNo"] as string ?? string.Empty;
+                        candidate.RoleID = row["ServiceNo"] as string ?? string.Empty;
                         candidate.CourseID = row["CourseID"] as int? ?? 0;
                         candidate.CourseName = row["CourseName"] as string ?? string.Empty;
                         candidate.FromDate = row["FromDate"] as string ?? string.Empty;
