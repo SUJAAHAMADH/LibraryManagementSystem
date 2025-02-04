@@ -123,7 +123,7 @@ namespace LMS.WIN.Forms.ManageBooks
                     {
                         groupBoxCandidateDetails.Visible = true;
                         txtCandidate.Text = candidateDetail.Name;
-                        txtSerialNo.Text = candidateDetail.ServiceNo;
+                        txtSerialNo.Text = candidateDetail.RoleID;
                         lblContactNo.Text = string.Empty;
                        // lblRank.Text = string.Empty;
                         lblRole.Text = string.Empty;
@@ -162,7 +162,7 @@ namespace LMS.WIN.Forms.ManageBooks
                     {
                         groupBoxCandidateDetails.Visible = true;
                         txtCandidate.Text = candidateDetail.Name;
-                        txtSerialNo.Text = candidateDetail.ServiceNo;
+                        txtSerialNo.Text = candidateDetail.RoleID;
                         lblContactNo.Text = string.Empty;
                        // lblRank.Text = string.Empty;
                         lblRole.Text = string.Empty;
@@ -334,7 +334,7 @@ namespace LMS.WIN.Forms.ManageBooks
                             if (candidateDetail != null)
                             {
                                 txtCandidate.Text = candidateDetail.Name;
-                                txtSerialNo.Text = candidateDetail.ServiceNo;
+                                txtSerialNo.Text = candidateDetail.RoleID;
                                 lblContactNo.Text = string.Empty;
                                 //lblRank.Text = string.Empty;
                                 //txtCountry.Text = string.Empty;
@@ -474,7 +474,7 @@ namespace LMS.WIN.Forms.ManageBooks
                     {
                         groupBoxCandidateDetails.Visible = true;
                         txtCandidate.Text = candidateDetail.Name;
-                        txtSerialNo.Text = candidateDetail.ServiceNo;
+                        txtSerialNo.Text = candidateDetail.RoleID;
                         lblContactNo.Text = string.Empty;
                         //lblRank.Text = string.Empty;
                         lblRole.Text = string.Empty;

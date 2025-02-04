@@ -31,7 +31,7 @@ namespace LMS.WIN.Forms.ManageCandidate
                 lblContactNo.Text = candidate.ContactNumber;
                 //lblrank.Text = candidate.Rank;
                 //lblunit.Text = candidate.Unit;
-                lblServiceNo.Text = candidate.ServiceNo;
+                lblServiceNo.Text = candidate.  RoleID;
                // lblCountry.Text = candidate.CountryName;
                 lblrole.Text = candidate.Role;
                 lblCandidateBarcode.Text = candidate.Barcode;
