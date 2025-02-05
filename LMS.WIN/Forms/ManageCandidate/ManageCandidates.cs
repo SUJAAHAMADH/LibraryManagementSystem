@@ -45,7 +45,7 @@ namespace LMS.WIN.Forms.ManageCandidate
             }
             else
             {
-                MessageBox.Show("Candidate list not found");
+                MessageBox.Show("Member list not found");
                 dataGridCandidate.DataSource = null;
                 dataGridCandidate.AutoGenerateColumns = false;
                 dataGridCandidate.Refresh();
@@ -54,17 +54,7 @@ namespace LMS.WIN.Forms.ManageCandidate
 
         public void getGridviewByDefaultDesign()
         {
-            //dataGridCandidate.ColumnHeadersHeight = 35;
-            //dataGridCandidate.BorderStyle = BorderStyle.None;
-            //dataGridCandidate.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
-            //dataGridCandidate.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            //dataGridCandidate.DefaultCellStyle.SelectionBackColor = Color.Aqua;
-            //dataGridCandidate.DefaultCellStyle.SelectionForeColor = Color.Black;
-            //dataGridCandidate.BackgroundColor = Color.White;
-            //dataGridCandidate.EnableHeadersVisualStyles = false;
-            //dataGridCandidate.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            //dataGridCandidate.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(50, 50, 58);
-            //dataGridCandidate.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+
         }
 
         private void btnAddCandidate_Click(object sender, EventArgs e)
@@ -80,7 +70,7 @@ namespace LMS.WIN.Forms.ManageCandidate
             {
                 try
                 {
-                    if (MessageBox.Show("Do you want to delete the Candidate ?", " Candidate / Master ?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                    if (MessageBox.Show("Do You Want To Delete The Member ?", " Membership ?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                     {
                         DataGridViewRow dgvRow = dataGridCandidate.CurrentRow;
                         Candidate candidate = new Candidate
@@ -89,9 +79,10 @@ namespace LMS.WIN.Forms.ManageCandidate
                             UserID = userID,
                         };
                         //candidate = CandidateBL.Deactive(candidate);
-                        MessageBox.Show("Candidate delete successfully...! You Have to write DAL BL for a Delete Candidate.");
+                        MessageBox.Show("Member Delete Successfully...!");
                         bindCandidateList();
                     }
+
                 }
                 catch (Exception ex)
                 {
@@ -366,8 +357,7 @@ namespace LMS.WIN.Forms.ManageCandidate
 
         private void btnAddNewBooks_Click(object sender, EventArgs e)
         {
-            Candidate user1 = new Candidate();
-            frmAddCandidte addCandidte = new frmAddCandidte(user1);
+            AddMember addCandidte = new AddMember();
             addCandidte.Show();
         }
 
@@ -535,7 +525,7 @@ namespace LMS.WIN.Forms.ManageCandidate
             rng.Interior.Color = XlRgbColor.rgbLightBlue;
 
             var saveFileDialoge = new SaveFileDialog();
-            saveFileDialoge.FileName = "Candidate-Details";
+            saveFileDialoge.FileName = "Member-Details";
             saveFileDialoge.DefaultExt = ".xlsx";
             if (saveFileDialoge.ShowDialog() == DialogResult.OK)
             {
