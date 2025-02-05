@@ -17,7 +17,9 @@ namespace LMS.WIN.Forms
             InitializeComponent();
         }
 
- 
+        bool expend = false;
+        bool expend1 = false;
+
         private void AbrirFormInPanel(object formHijo)
         {
             if (this.panelContenedor.Controls.Count > 0)
@@ -35,18 +37,11 @@ namespace LMS.WIN.Forms
 
         private void btnREPORTES_Click(object sender, EventArgs e)
         {
-            if (panelHr.Visible == false)
-            {
-                panelHr.Visible = true;
-            }
-            else
-
-                panelHr.Visible = false;
+           timer1.Start();
         }
 
         private void FormMenu_Load(object sender, EventArgs e)
         {
-            panelHr.Visible = false;
             MenuVertical.Width = 260;
         }
 
@@ -97,8 +92,7 @@ namespace LMS.WIN.Forms
             }
             else
             {
-                MenuVertical.Width = 53;
-                panelHr.Visible = false;
+                MenuVertical.Width = 53;          
             }
 
               
@@ -112,14 +106,12 @@ namespace LMS.WIN.Forms
         private void btnEMPLEADOS_Click(object sender, EventArgs e)
         {
             ManageCandidate.ManageCandidates frmmanageCandidate = new ManageCandidate.ManageCandidates();
-            //frm.FormClosed += new FormClosedEventHandler(mostrarlogoAlCerrarForm);
             AbrirFormInPanel(frmmanageCandidate);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ManageIssuebook manageIssueBook = new ManageIssuebook();
-            AbrirFormInPanel(manageIssueBook);
+            menuTransition.Start();
         }
 
         private void iconmaximizar_Click_1(object sender, EventArgs e)
@@ -132,6 +124,62 @@ namespace LMS.WIN.Forms
             this.Location = Screen.PrimaryScreen.WorkingArea.Location;
             iconmaximizar.Visible = false;
             iconrestaurar.Visible = true;
+        }
+
+        private void btnManageBook_Click(object sender, EventArgs e)
+        {
+            ManageBooks.ManageBook manageBooks = new ManageBooks.ManageBook();
+            AbrirFormInPanel(manageBooks);
+        }
+
+        private void menuTransition_Tick(object sender, EventArgs e)
+        {
+            if (expend == false )
+            {
+                panelBookManagement.Height += 20;
+                if (panelBookManagement.Height >= 160)
+                {
+                    menuTransition.Stop();
+                    expend = true;
+                }
+            }
+            else
+            {
+                panelBookManagement.Height -= 20;
+                if (panelBookManagement.Height <= 60)
+                {
+                    menuTransition.Stop();
+                    expend = false;
+                }
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (expend == false)
+            {
+                reportPanel.Height += 40;
+                if (reportPanel.Height >= 220)
+                {
+                    timer1.Stop();
+                    expend1 = true;
+                }
+            }
+            else
+            {
+                reportPanel.Height -= 40;
+                if (reportPanel.Height <= 60)
+                {
+                    timer1.Stop();
+                    expend1 = false;
+                }
+            }
+        }
+
+        private void btnBookHistory_Click(object sender, EventArgs e)
+        {
+            ManageBooks.ManageBookHistory manageBookHistory = new ManageBooks.ManageBookHistory();
+            AbrirFormInPanel(manageBookHistory);
         }
 
         private void iconMinimizar_Click(object sender, EventArgs e)
