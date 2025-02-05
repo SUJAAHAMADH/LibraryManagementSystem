@@ -96,17 +96,14 @@ namespace LMS.DAL
             return candidate;
         }
 
-        public static List<Candidate> Get(/*int countryID,*/ int courseID, string role, string thumbImpression, int userID, string searchValue)
+        public static List<Candidate> Get(int courseID, string role, string thumbImpression, int userID, string searchValue)
         {
             #region Declaration
             List<Candidate> candidates = null;
             DataTable dt = new DataTable();
             SqlConnection con = null;
             List<SqlParameter> param = new List<SqlParameter>();
-            //if (countryID != -1)
-            //{
-            //    param.Add(new SqlParameter("@CountryID", countryID));
-            //}
+
             if (courseID != -1)
             {
                 param.Add(new SqlParameter("@CourseID", courseID));
@@ -146,21 +143,23 @@ namespace LMS.DAL
                     candidates = new List<Candidate>();
                     foreach (DataRow row in dt.Rows)
                     {
-                        Candidate candidate = new Candidate();
-
-                        candidate.CandidateID = row["CandidateID"] as int? ?? 0;
-                        candidate.Barcode = row["Barcode"] as string ?? string.Empty;
-                        candidate.Role = row["Role"] as string ?? string.Empty;
-                        candidate.Name = row["Name"] as string ?? string.Empty;
-                        candidate.ContactNumber = row["ContactNumber"] as string ?? string.Empty;
-                        candidate.RoleID = row["ServiceNo"] as string ?? string.Empty;
-                        candidate.CourseID = row["CourseID"] as int? ?? 0;
-                        candidate.CourseName = row["CourseName"] as string ?? string.Empty;
-                        candidate.FromDate = row["FromDate"] as string ?? string.Empty;
-                        candidate.ToDate = row["ToDate"] as string ?? string.Empty;
-                        candidate.TOSDate = row["TOSDate"] as string ?? string.Empty;
-                        candidate.SOSDate = row["SOSDate"] as string ?? string.Empty;
-                        candidate.ThumbImpression = row["ThumbImpression"] as string ?? string.Empty;
+                        Candidate candidate = new Candidate
+                        {
+                            CandidateID = row["CandidateID"] as int? ?? 0,
+                            Barcode = row["Barcode"] as string ?? string.Empty,
+                            Role = row["Role"] as string ?? string.Empty,
+                            Name = row["Name"] as string ?? string.Empty,
+                            ContactNumber = row["ContactNumber"] as string ?? string.Empty,
+                            RoleID = row["ServiceNo"] as string ?? string.Empty,  // ServiceNo is mapped to RoleID
+                            Stream = row["Stream"] as string ?? string.Empty,    // Added Stream
+                            CourseID = row["CourseID"] as int? ?? 0,
+                            CourseName = row["CourseName"] as string ?? string.Empty,
+                            FromDate = row["FromDate"] as string ?? string.Empty,
+                            ToDate = row["ToDate"] as string ?? string.Empty,
+                            TOSDate = row["TOSDate"] as string ?? string.Empty,
+                            SOSDate = row["SOSDate"] as string ?? string.Empty,
+                            ThumbImpression = row["ThumbImpression"] as string ?? string.Empty
+                        };
                         candidates.Add(candidate);
                     }
                 }
@@ -181,6 +180,8 @@ namespace LMS.DAL
             }
             return candidates;
         }
+
+
 
         public static Candidate GetByID(int candidateID)
         {
