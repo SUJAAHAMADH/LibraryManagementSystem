@@ -97,19 +97,21 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(35, 57);
+            this.label3.Location = new System.Drawing.Point(47, 70);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(239, 15);
+            this.label3.Size = new System.Drawing.Size(280, 17);
             this.label3.TabIndex = 17;
             this.label3.Text = "All Reports and Dashboard Counting Here";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Poppins ExtraBold", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(26, 10);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(35, 12);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(230, 62);
+            this.label4.Size = new System.Drawing.Size(249, 52);
             this.label4.TabIndex = 16;
             this.label4.Text = "DashBoard";
             // 
@@ -117,11 +119,12 @@
             // 
             this.lblCandidate.AutoSize = true;
             this.lblCandidate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(143)))));
-            this.lblCandidate.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCandidate.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCandidate.ForeColor = System.Drawing.Color.White;
-            this.lblCandidate.Location = new System.Drawing.Point(51, 142);
+            this.lblCandidate.Location = new System.Drawing.Point(68, 175);
+            this.lblCandidate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCandidate.Name = "lblCandidate";
-            this.lblCandidate.Size = new System.Drawing.Size(32, 42);
+            this.lblCandidate.Size = new System.Drawing.Size(33, 36);
             this.lblCandidate.TabIndex = 45;
             this.lblCandidate.Text = "..";
             // 
@@ -129,9 +132,10 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(143)))));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(117, 122);
+            this.pictureBox2.Location = new System.Drawing.Point(156, 150);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(82, 78);
+            this.pictureBox2.Size = new System.Drawing.Size(109, 96);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 44;
             this.pictureBox2.TabStop = false;
@@ -140,20 +144,22 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(143)))));
-            this.label1.Font = new System.Drawing.Font("Poppins", 11F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(53, 99);
+            this.label1.Location = new System.Drawing.Point(71, 122);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 26);
+            this.label1.Size = new System.Drawing.Size(149, 24);
             this.label1.TabIndex = 43;
             this.label1.Text = "Total Members";
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(143)))));
-            this.pictureBox1.Location = new System.Drawing.Point(29, 95);
+            this.pictureBox1.Location = new System.Drawing.Point(39, 117);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(174, 110);
+            this.pictureBox1.Size = new System.Drawing.Size(232, 135);
             this.pictureBox1.TabIndex = 42;
             this.pictureBox1.TabStop = false;
             // 
@@ -161,9 +167,10 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(53)))), ((int)(((byte)(70)))));
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(519, 124);
+            this.pictureBox5.Location = new System.Drawing.Point(692, 153);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(75, 77);
+            this.pictureBox5.Size = new System.Drawing.Size(100, 95);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 41;
             this.pictureBox5.TabStop = false;
@@ -172,20 +179,22 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(53)))), ((int)(((byte)(70)))));
-            this.label8.Font = new System.Drawing.Font("Poppins", 11F, System.Drawing.FontStyle.Bold);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(460, 99);
+            this.label8.Location = new System.Drawing.Point(613, 122);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(103, 26);
+            this.label8.Size = new System.Drawing.Size(124, 24);
             this.label8.TabIndex = 39;
             this.label8.Text = "Issued Book";
             // 
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(53)))), ((int)(((byte)(70)))));
-            this.pictureBox6.Location = new System.Drawing.Point(421, 94);
+            this.pictureBox6.Location = new System.Drawing.Point(561, 116);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(174, 110);
+            this.pictureBox6.Size = new System.Drawing.Size(232, 135);
             this.pictureBox6.TabIndex = 38;
             this.pictureBox6.TabStop = false;
             // 
@@ -193,9 +202,10 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(9)))));
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(322, 124);
+            this.pictureBox3.Location = new System.Drawing.Point(429, 153);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(73, 77);
+            this.pictureBox3.Size = new System.Drawing.Size(97, 95);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 37;
             this.pictureBox3.TabStop = false;
@@ -204,20 +214,22 @@
             // 
             this.lblbook.AutoSize = true;
             this.lblbook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(9)))));
-            this.lblbook.Font = new System.Drawing.Font("Poppins", 11F, System.Drawing.FontStyle.Bold);
+            this.lblbook.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.lblbook.ForeColor = System.Drawing.Color.Black;
-            this.lblbook.Location = new System.Drawing.Point(263, 99);
+            this.lblbook.Location = new System.Drawing.Point(351, 122);
+            this.lblbook.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblbook.Name = "lblbook";
-            this.lblbook.Size = new System.Drawing.Size(93, 26);
+            this.lblbook.Size = new System.Drawing.Size(109, 24);
             this.lblbook.TabIndex = 35;
             this.lblbook.Text = "Total Book";
             // 
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(9)))));
-            this.pictureBox4.Location = new System.Drawing.Point(223, 94);
+            this.pictureBox4.Location = new System.Drawing.Point(297, 116);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(174, 110);
+            this.pictureBox4.Size = new System.Drawing.Size(232, 135);
             this.pictureBox4.TabIndex = 34;
             this.pictureBox4.TabStop = false;
             // 
@@ -225,11 +237,12 @@
             // 
             this.lbltotalbooks.AutoSize = true;
             this.lbltotalbooks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(9)))));
-            this.lbltotalbooks.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltotalbooks.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltotalbooks.ForeColor = System.Drawing.Color.Black;
-            this.lbltotalbooks.Location = new System.Drawing.Point(244, 142);
+            this.lbltotalbooks.Location = new System.Drawing.Point(325, 175);
+            this.lbltotalbooks.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbltotalbooks.Name = "lbltotalbooks";
-            this.lbltotalbooks.Size = new System.Drawing.Size(32, 42);
+            this.lbltotalbooks.Size = new System.Drawing.Size(33, 36);
             this.lbltotalbooks.TabIndex = 46;
             this.lbltotalbooks.Text = "..";
             // 
@@ -237,23 +250,25 @@
             // 
             this.lbltotalIssueBok.AutoSize = true;
             this.lbltotalIssueBok.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(53)))), ((int)(((byte)(70)))));
-            this.lbltotalIssueBok.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltotalIssueBok.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltotalIssueBok.ForeColor = System.Drawing.Color.White;
-            this.lbltotalIssueBok.Location = new System.Drawing.Point(436, 142);
+            this.lbltotalIssueBok.Location = new System.Drawing.Point(581, 175);
+            this.lbltotalIssueBok.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbltotalIssueBok.Name = "lbltotalIssueBok";
-            this.lbltotalIssueBok.Size = new System.Drawing.Size(32, 42);
+            this.lbltotalIssueBok.Size = new System.Drawing.Size(33, 36);
             this.lbltotalIssueBok.TabIndex = 47;
             this.lbltotalIssueBok.Text = "..";
             // 
             // dataGridissueBook
             // 
             this.dataGridissueBook.AllowUserToResizeRows = false;
+            this.dataGridissueBook.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridissueBook.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridissueBook.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridissueBook.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Poppins SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -276,21 +291,22 @@
             this.Remark});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Poppins SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridissueBook.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridissueBook.GridColor = System.Drawing.Color.White;
-            this.dataGridissueBook.Location = new System.Drawing.Point(29, 278);
+            this.dataGridissueBook.Location = new System.Drawing.Point(39, 342);
+            this.dataGridissueBook.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridissueBook.Name = "dataGridissueBook";
             this.dataGridissueBook.ReadOnly = true;
             this.dataGridissueBook.RowHeadersVisible = false;
             this.dataGridissueBook.RowHeadersWidth = 60;
             this.dataGridissueBook.RowTemplate.Height = 30;
             this.dataGridissueBook.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridissueBook.Size = new System.Drawing.Size(1034, 188);
+            this.dataGridissueBook.Size = new System.Drawing.Size(1379, 231);
             this.dataGridissueBook.TabIndex = 118;
             // 
             // IssueBookID
@@ -406,11 +422,12 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(53)))), ((int)(((byte)(70)))));
-            this.label6.Location = new System.Drawing.Point(26, 248);
+            this.label6.Location = new System.Drawing.Point(35, 305);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(261, 28);
+            this.label6.Size = new System.Drawing.Size(312, 25);
             this.label6.TabIndex = 123;
             this.label6.Text = "Recently Issued Books (Last 5)";
             // 
@@ -418,11 +435,12 @@
             // 
             this.lblPendingBook.AutoSize = true;
             this.lblPendingBook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(135)))), ((int)(((byte)(84)))));
-            this.lblPendingBook.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPendingBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPendingBook.ForeColor = System.Drawing.Color.White;
-            this.lblPendingBook.Location = new System.Drawing.Point(636, 142);
+            this.lblPendingBook.Location = new System.Drawing.Point(848, 175);
+            this.lblPendingBook.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPendingBook.Name = "lblPendingBook";
-            this.lblPendingBook.Size = new System.Drawing.Size(32, 42);
+            this.lblPendingBook.Size = new System.Drawing.Size(33, 36);
             this.lblPendingBook.TabIndex = 127;
             this.lblPendingBook.Text = "..";
             // 
@@ -430,9 +448,10 @@
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(135)))), ((int)(((byte)(84)))));
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(724, 122);
+            this.pictureBox7.Location = new System.Drawing.Point(965, 150);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(71, 79);
+            this.pictureBox7.Size = new System.Drawing.Size(95, 97);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 126;
             this.pictureBox7.TabStop = false;
@@ -441,20 +460,22 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(135)))), ((int)(((byte)(84)))));
-            this.label5.Font = new System.Drawing.Font("Poppins", 11F, System.Drawing.FontStyle.Bold);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(649, 99);
+            this.label5.Location = new System.Drawing.Point(865, 122);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(116, 26);
+            this.label5.Size = new System.Drawing.Size(141, 24);
             this.label5.TabIndex = 125;
             this.label5.Text = "Pending Book";
             // 
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(135)))), ((int)(((byte)(84)))));
-            this.pictureBox8.Location = new System.Drawing.Point(621, 94);
+            this.pictureBox8.Location = new System.Drawing.Point(828, 116);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(174, 110);
+            this.pictureBox8.Size = new System.Drawing.Size(232, 135);
             this.pictureBox8.TabIndex = 124;
             this.pictureBox8.TabStop = false;
             this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
@@ -465,15 +486,18 @@
             this.lblAlert.BackColor = System.Drawing.Color.Transparent;
             this.lblAlert.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAlert.ForeColor = System.Drawing.Color.Black;
-            this.lblAlert.Location = new System.Drawing.Point(29, 469);
+            this.lblAlert.Location = new System.Drawing.Point(39, 577);
+            this.lblAlert.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAlert.Name = "lblAlert";
-            this.lblAlert.Size = new System.Drawing.Size(53, 19);
+            this.lblAlert.Size = new System.Drawing.Size(65, 24);
             this.lblAlert.TabIndex = 129;
             this.lblAlert.Text = "Alerts";
             // 
             // dataGridAlertBook
             // 
             this.dataGridAlertBook.AllowUserToResizeRows = false;
+            this.dataGridAlertBook.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridAlertBook.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridAlertBook.BackgroundColor = System.Drawing.Color.White;
             this.dataGridAlertBook.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
@@ -495,14 +519,15 @@
             this.dataGridViewTextBoxColumn9,
             this.Delete});
             this.dataGridAlertBook.GridColor = System.Drawing.Color.White;
-            this.dataGridAlertBook.Location = new System.Drawing.Point(29, 491);
+            this.dataGridAlertBook.Location = new System.Drawing.Point(39, 604);
+            this.dataGridAlertBook.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridAlertBook.Name = "dataGridAlertBook";
             this.dataGridAlertBook.ReadOnly = true;
             this.dataGridAlertBook.RowHeadersVisible = false;
             this.dataGridAlertBook.RowHeadersWidth = 60;
             this.dataGridAlertBook.RowTemplate.Height = 30;
             this.dataGridAlertBook.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridAlertBook.Size = new System.Drawing.Size(1034, 127);
+            this.dataGridAlertBook.Size = new System.Drawing.Size(1379, 156);
             this.dataGridAlertBook.TabIndex = 130;
             // 
             // BookName
@@ -628,18 +653,21 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(56)))), ((int)(((byte)(86)))));
-            this.panel1.Location = new System.Drawing.Point(30, 228);
+            this.panel1.Location = new System.Drawing.Point(40, 281);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1032, 4);
+            this.panel1.Size = new System.Drawing.Size(1376, 5);
             this.panel1.TabIndex = 131;
             // 
             // ManageHome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1077, 640);
+            this.ClientSize = new System.Drawing.Size(1436, 788);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblbook);
             this.Controls.Add(this.label1);
@@ -664,6 +692,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
+
             this.Load += new System.EventHandler(this.ManageHome_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
