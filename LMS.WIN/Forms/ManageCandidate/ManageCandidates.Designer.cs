@@ -35,6 +35,20 @@
             this.button3 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridCandidate = new System.Windows.Forms.DataGridView();
+            this.btnAddCandidate = new System.Windows.Forms.Button();
+            this.picboxrefersh = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cmboxCandidateType = new System.Windows.Forms.ComboBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.btnExportExcel = new System.Windows.Forms.Button();
+            this.btnImportExcel = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.btnAddNewBooks = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
             this.CandidateID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ContactNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,20 +65,6 @@
             this.View = new System.Windows.Forms.DataGridViewImageColumn();
             this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
-            this.btnAddCandidate = new System.Windows.Forms.Button();
-            this.picboxrefersh = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cmboxCandidateType = new System.Windows.Forms.ComboBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.btnExportExcel = new System.Windows.Forms.Button();
-            this.btnImportExcel = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.btnAddNewBooks = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridCandidate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxrefersh)).BeginInit();
             this.panel1.SuspendLayout();
@@ -173,150 +173,6 @@
             this.dataGridCandidate.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridCandidate_CellFormatting);
             this.dataGridCandidate.SelectionChanged += new System.EventHandler(this.dataGridCandidate_SelectionChanged);
             this.dataGridCandidate.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dataGridCandidate_KeyDown);
-            // 
-            // CandidateID
-            // 
-            this.CandidateID.DataPropertyName = "CandidateID";
-            this.CandidateID.HeaderText = "CandidateID";
-            this.CandidateID.MinimumWidth = 6;
-            this.CandidateID.Name = "CandidateID";
-            this.CandidateID.ReadOnly = true;
-            this.CandidateID.Visible = false;
-            // 
-            // Name
-            // 
-            this.Name.DataPropertyName = "Name";
-            this.Name.HeaderText = "Name";
-            this.Name.MinimumWidth = 6;
-            this.Name.Name = "Name";
-            this.Name.ReadOnly = true;
-            // 
-            // ContactNumber
-            // 
-            this.ContactNumber.DataPropertyName = "ContactNumber";
-            this.ContactNumber.HeaderText = "ContactNumber";
-            this.ContactNumber.MinimumWidth = 6;
-            this.ContactNumber.Name = "ContactNumber";
-            this.ContactNumber.ReadOnly = true;
-            // 
-            // Role
-            // 
-            this.Role.DataPropertyName = "Role";
-            this.Role.HeaderText = "Role";
-            this.Role.MinimumWidth = 6;
-            this.Role.Name = "Role";
-            this.Role.ReadOnly = true;
-            // 
-            // ServiceNo
-            // 
-            this.ServiceNo.DataPropertyName = "ServiceNo";
-            this.ServiceNo.HeaderText = "ServiceNo";
-            this.ServiceNo.MinimumWidth = 6;
-            this.ServiceNo.Name = "ServiceNo";
-            this.ServiceNo.ReadOnly = true;
-            // 
-            // CourseID
-            // 
-            this.CourseID.DataPropertyName = "CourseID";
-            this.CourseID.HeaderText = "CourseID";
-            this.CourseID.MinimumWidth = 6;
-            this.CourseID.Name = "CourseID";
-            this.CourseID.ReadOnly = true;
-            this.CourseID.Visible = false;
-            // 
-            // CourseName
-            // 
-            this.CourseName.DataPropertyName = "CourseName";
-            this.CourseName.HeaderText = "CourseName";
-            this.CourseName.MinimumWidth = 6;
-            this.CourseName.Name = "CourseName";
-            this.CourseName.ReadOnly = true;
-            this.CourseName.Visible = false;
-            // 
-            // FromDate
-            // 
-            this.FromDate.DataPropertyName = "FromDate";
-            this.FromDate.HeaderText = "FromDate";
-            this.FromDate.MinimumWidth = 6;
-            this.FromDate.Name = "FromDate";
-            this.FromDate.ReadOnly = true;
-            this.FromDate.Visible = false;
-            // 
-            // ToDate
-            // 
-            this.ToDate.DataPropertyName = "ToDate";
-            this.ToDate.HeaderText = "ToDate";
-            this.ToDate.MinimumWidth = 6;
-            this.ToDate.Name = "ToDate";
-            this.ToDate.ReadOnly = true;
-            this.ToDate.Visible = false;
-            // 
-            // TOSDate
-            // 
-            this.TOSDate.DataPropertyName = "TOSDate";
-            this.TOSDate.HeaderText = "TOSDate";
-            this.TOSDate.MinimumWidth = 6;
-            this.TOSDate.Name = "TOSDate";
-            this.TOSDate.ReadOnly = true;
-            this.TOSDate.Visible = false;
-            // 
-            // SOSDate
-            // 
-            this.SOSDate.DataPropertyName = "SOSDate";
-            this.SOSDate.HeaderText = "SOSDate";
-            this.SOSDate.MinimumWidth = 6;
-            this.SOSDate.Name = "SOSDate";
-            this.SOSDate.ReadOnly = true;
-            this.SOSDate.Visible = false;
-            // 
-            // Barcode
-            // 
-            this.Barcode.DataPropertyName = "Barcode";
-            this.Barcode.HeaderText = "Barcode";
-            this.Barcode.MinimumWidth = 6;
-            this.Barcode.Name = "Barcode";
-            this.Barcode.ReadOnly = true;
-            this.Barcode.Visible = false;
-            // 
-            // ThumbImpression
-            // 
-            this.ThumbImpression.DataPropertyName = "ThumbImpression";
-            this.ThumbImpression.HeaderText = "ThumbImpression";
-            this.ThumbImpression.MinimumWidth = 6;
-            this.ThumbImpression.Name = "ThumbImpression";
-            this.ThumbImpression.ReadOnly = true;
-            this.ThumbImpression.Visible = false;
-            // 
-            // View
-            // 
-            this.View.DataPropertyName = "View";
-            this.View.FillWeight = 30F;
-            this.View.HeaderText = "View";
-            this.View.Image = ((System.Drawing.Image)(resources.GetObject("View.Image")));
-            this.View.MinimumWidth = 6;
-            this.View.Name = "View";
-            this.View.ReadOnly = true;
-            // 
-            // Edit
-            // 
-            this.Edit.DataPropertyName = "Edit";
-            this.Edit.FillWeight = 30F;
-            this.Edit.HeaderText = "Edit";
-            this.Edit.Image = ((System.Drawing.Image)(resources.GetObject("Edit.Image")));
-            this.Edit.MinimumWidth = 6;
-            this.Edit.Name = "Edit";
-            this.Edit.ReadOnly = true;
-            // 
-            // Delete
-            // 
-            this.Delete.DataPropertyName = "Delete";
-            this.Delete.FillWeight = 30F;
-            this.Delete.HeaderText = "Delete";
-            this.Delete.Image = ((System.Drawing.Image)(resources.GetObject("Delete.Image")));
-            this.Delete.MinimumWidth = 6;
-            this.Delete.Name = "Delete";
-            this.Delete.ReadOnly = true;
-            this.Delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
             // btnAddCandidate
             // 
@@ -527,6 +383,150 @@
             this.label7.TabIndex = 28;
             this.label7.Text = "Copyrights © 2025. All rights Reserved ";
             // 
+            // CandidateID
+            // 
+            this.CandidateID.DataPropertyName = "CandidateID";
+            this.CandidateID.HeaderText = "CandidateID";
+            this.CandidateID.MinimumWidth = 6;
+            this.CandidateID.Name = "CandidateID";
+            this.CandidateID.ReadOnly = true;
+            this.CandidateID.Visible = false;
+            // 
+            // Name
+            // 
+            this.Name.DataPropertyName = "Name";
+            this.Name.HeaderText = "Name";
+            this.Name.MinimumWidth = 6;
+            this.Name.Name = "Name";
+            this.Name.ReadOnly = true;
+            // 
+            // ContactNumber
+            // 
+            this.ContactNumber.DataPropertyName = "ContactNumber";
+            this.ContactNumber.HeaderText = "ContactNumber";
+            this.ContactNumber.MinimumWidth = 6;
+            this.ContactNumber.Name = "ContactNumber";
+            this.ContactNumber.ReadOnly = true;
+            // 
+            // Role
+            // 
+            this.Role.DataPropertyName = "Role";
+            this.Role.HeaderText = "Role";
+            this.Role.MinimumWidth = 6;
+            this.Role.Name = "Role";
+            this.Role.ReadOnly = true;
+            // 
+            // ServiceNo
+            // 
+            this.ServiceNo.DataPropertyName = "RoleID";
+            this.ServiceNo.HeaderText = "ServiceNo";
+            this.ServiceNo.MinimumWidth = 6;
+            this.ServiceNo.Name = "ServiceNo";
+            this.ServiceNo.ReadOnly = true;
+            // 
+            // CourseID
+            // 
+            this.CourseID.DataPropertyName = "CourseID";
+            this.CourseID.HeaderText = "CourseID";
+            this.CourseID.MinimumWidth = 6;
+            this.CourseID.Name = "CourseID";
+            this.CourseID.ReadOnly = true;
+            this.CourseID.Visible = false;
+            // 
+            // CourseName
+            // 
+            this.CourseName.DataPropertyName = "CourseName";
+            this.CourseName.HeaderText = "CourseName";
+            this.CourseName.MinimumWidth = 6;
+            this.CourseName.Name = "CourseName";
+            this.CourseName.ReadOnly = true;
+            this.CourseName.Visible = false;
+            // 
+            // FromDate
+            // 
+            this.FromDate.DataPropertyName = "FromDate";
+            this.FromDate.HeaderText = "FromDate";
+            this.FromDate.MinimumWidth = 6;
+            this.FromDate.Name = "FromDate";
+            this.FromDate.ReadOnly = true;
+            this.FromDate.Visible = false;
+            // 
+            // ToDate
+            // 
+            this.ToDate.DataPropertyName = "ToDate";
+            this.ToDate.HeaderText = "ToDate";
+            this.ToDate.MinimumWidth = 6;
+            this.ToDate.Name = "ToDate";
+            this.ToDate.ReadOnly = true;
+            this.ToDate.Visible = false;
+            // 
+            // TOSDate
+            // 
+            this.TOSDate.DataPropertyName = "TOSDate";
+            this.TOSDate.HeaderText = "TOSDate";
+            this.TOSDate.MinimumWidth = 6;
+            this.TOSDate.Name = "TOSDate";
+            this.TOSDate.ReadOnly = true;
+            this.TOSDate.Visible = false;
+            // 
+            // SOSDate
+            // 
+            this.SOSDate.DataPropertyName = "SOSDate";
+            this.SOSDate.HeaderText = "SOSDate";
+            this.SOSDate.MinimumWidth = 6;
+            this.SOSDate.Name = "SOSDate";
+            this.SOSDate.ReadOnly = true;
+            this.SOSDate.Visible = false;
+            // 
+            // Barcode
+            // 
+            this.Barcode.DataPropertyName = "Barcode";
+            this.Barcode.HeaderText = "Barcode";
+            this.Barcode.MinimumWidth = 6;
+            this.Barcode.Name = "Barcode";
+            this.Barcode.ReadOnly = true;
+            this.Barcode.Visible = false;
+            // 
+            // ThumbImpression
+            // 
+            this.ThumbImpression.DataPropertyName = "ThumbImpression";
+            this.ThumbImpression.HeaderText = "ThumbImpression";
+            this.ThumbImpression.MinimumWidth = 6;
+            this.ThumbImpression.Name = "ThumbImpression";
+            this.ThumbImpression.ReadOnly = true;
+            this.ThumbImpression.Visible = false;
+            // 
+            // View
+            // 
+            this.View.DataPropertyName = "View";
+            this.View.FillWeight = 30F;
+            this.View.HeaderText = "View";
+            this.View.Image = ((System.Drawing.Image)(resources.GetObject("View.Image")));
+            this.View.MinimumWidth = 6;
+            this.View.Name = "View";
+            this.View.ReadOnly = true;
+            // 
+            // Edit
+            // 
+            this.Edit.DataPropertyName = "Edit";
+            this.Edit.FillWeight = 30F;
+            this.Edit.HeaderText = "Edit";
+            this.Edit.Image = ((System.Drawing.Image)(resources.GetObject("Edit.Image")));
+            this.Edit.MinimumWidth = 6;
+            this.Edit.Name = "Edit";
+            this.Edit.ReadOnly = true;
+            // 
+            // Delete
+            // 
+            this.Delete.DataPropertyName = "Delete";
+            this.Delete.FillWeight = 30F;
+            this.Delete.HeaderText = "Delete";
+            this.Delete.Image = ((System.Drawing.Image)(resources.GetObject("Delete.Image")));
+            this.Delete.MinimumWidth = 6;
+            this.Delete.Name = "Delete";
+            this.Delete.ReadOnly = true;
+            this.Delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
             // ManageCandidates
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -546,7 +546,7 @@
             this.Controls.Add(this.btnAddCandidate);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
-        
+            
             this.Text = "ManageCandidates";
             this.Load += new System.EventHandler(this.ManageCandidates_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridCandidate)).EndInit();
