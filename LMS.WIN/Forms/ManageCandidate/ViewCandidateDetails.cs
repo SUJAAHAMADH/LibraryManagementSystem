@@ -24,39 +24,27 @@ namespace LMS.WIN.Forms.ManageCandidate
             if (candidate != null)
             {
                 lblcandidateName.Text = string.Empty;
-                lblunit.Text = string.Empty;
-                lblrank.Text = string.Empty;
                 lblContactNo.Text = string.Empty;
                 lblcandidateName.Text = candidate.Name;
                 lblContactNo.Text = candidate.ContactNumber;
-                //lblrank.Text = candidate.Rank;
-                //lblunit.Text = candidate.Unit;
+                lblStream.Text = candidate.Stream;
+                lblDOB.Text = candidate.DOB?.ToString() ?? string.Empty;
+                lblYear.Text = candidate.AcademicYear?.ToString() ?? string.Empty;
+                lblEmail.Text = candidate.Email;
+                lblAddress.Text = candidate.PresentAddress;
                 lblServiceNo.Text = candidate.  RoleID;
-               // lblCountry.Text = candidate.CountryName;
                 lblrole.Text = candidate.Role;
                 lblCandidateBarcode.Text = candidate.Barcode;
-                //txtBarcode.Text = string.Concat("*",candidate.Barcode, candidate.Name,"*"); 
-                //txtBarcode.Text = string.Concat("*", candidate.Barcode, "*");
-                txtBarcode.Text = candidate.Barcode;
-                txtBarcode.Font = new Font("IDAHC39M Code 39 Barcode", 12, FontStyle.Regular);
+                //txtBarcode.Text = candidate.Barcode;
+                //txtBarcode.Font = new Font("IDAHC39M Code 39 Barcode", 12, FontStyle.Regular);
 
                 if (candidate.Role == "Student")
                 {
-                    lblType.Text = "Course Name:";
-                    lblFormDate.Text = "    From Date:";
-                    lbltoDate.Text = "        To Date:";
-                    lbltypebinding.Text = candidate.CourseName;
-                    lblFromDateBind.Text = candidate.FromDate;
-                    lblToDateBinding.Text = candidate.ToDate;
+
                 }
                 else
                 {
-                 //   lblType.Text = "       Battalion:";
-                    lblFormDate.Text = "    TOS Date:";
-                    lbltoDate.Text = "     SOS Date:";
-                   // lbltypebinding.Text = candidate.Battalion;
-                    lblFromDateBind.Text = candidate.TOSDate;
-                    lblToDateBinding.Text = candidate.SOSDate;
+
                 }
                 bindBookHistoryList();
             }
@@ -112,7 +100,7 @@ namespace LMS.WIN.Forms.ManageCandidate
         
         private void btnPrint_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtBarcode.Text) && !string.IsNullOrEmpty(lblCandidateBarcode.Text))
+            if (string.IsNullOrEmpty(lblCandidateBarcode.Text))
             {
                 //List<Candidate> barcodes = new List<Candidate>();
                 List<BookBarcode> barcodes = new List<BookBarcode>();

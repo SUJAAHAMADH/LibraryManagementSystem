@@ -156,7 +156,7 @@ namespace LMS.WIN.Forms
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (expend == false)
+            if (expend1 == false)
             {
                 reportPanel.Height += 40;
                 if (reportPanel.Height >= 220)

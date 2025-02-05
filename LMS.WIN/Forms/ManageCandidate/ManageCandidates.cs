@@ -45,7 +45,7 @@ namespace LMS.WIN.Forms.ManageCandidate
             }
             else
             {
-                MessageBox.Show("Candidate list not found");
+                MessageBox.Show("Member list not found");
                 dataGridCandidate.DataSource = null;
                 dataGridCandidate.AutoGenerateColumns = false;
                 dataGridCandidate.Refresh();
@@ -80,7 +80,7 @@ namespace LMS.WIN.Forms.ManageCandidate
             {
                 try
                 {
-                    if (MessageBox.Show("Do you want to delete the Candidate ?", " Candidate / Master ?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                    if (MessageBox.Show("Do You Want To Delete The Member ?", " Member ?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                     {
                         DataGridViewRow dgvRow = dataGridCandidate.CurrentRow;
                         Candidate candidate = new Candidate
@@ -89,7 +89,7 @@ namespace LMS.WIN.Forms.ManageCandidate
                             UserID = userID,
                         };
                         //candidate = CandidateBL.Deactive(candidate);
-                        MessageBox.Show("Candidate delete successfully...! You Have to write DAL BL for a Delete Candidate.");
+                        MessageBox.Show("Member Delete Successfully...! ");
                         bindCandidateList();
                     }
                 }
@@ -101,8 +101,23 @@ namespace LMS.WIN.Forms.ManageCandidate
 
             else if (dataGridCandidate.Columns[e.ColumnIndex].Name == "Edit")
             {
-                Candidate candidate = new Candidate();
-                candidate = (Candidate)dataGridCandidate.CurrentRow.DataBoundItem;
+                DataGridViewRow dgvRow = dataGridCandidate.CurrentRow;
+                Candidate candidate = new Candidate
+                {
+                    CandidateID = Convert.ToInt32(dgvRow.Cells["CandidateID"].Value.ToString()),
+                    Name = dgvRow.Cells["Name"].Value.ToString(),
+                    Barcode = dgvRow.Cells["Barcode"].Value.ToString(),
+                    ContactNumber = dgvRow.Cells["ContactNumber"].Value.ToString(),
+                    Role = dgvRow.Cells["Role"].Value.ToString(),
+                    Stream = dgvRow.Cells["Stream"].Value.ToString(),
+                    AcademicYear = Convert.ToInt32(dgvRow.Cells["AcademicYear"].Value.ToString()),
+                    RoleID = dgvRow.Cells["ServiceNo"].Value.ToString(),
+                    CourseName = dgvRow.Cells["CourseName"].Value.ToString(),
+                    FromDate = dgvRow.Cells["FromDate"].Value.ToString(),
+                    ToDate = dgvRow.Cells["ToDate"].Value.ToString(),
+                    SOSDate = dgvRow.Cells["SOSDate"].Value.ToString(),
+                    TOSDate = dgvRow.Cells["TOSDate"].Value.ToString(),
+                };
                 frmAddCandidte frmcandidate = new frmAddCandidte(candidate);
                 frmcandidate.Show();
             }
@@ -117,6 +132,8 @@ namespace LMS.WIN.Forms.ManageCandidate
                     Barcode = dgvRow.Cells["Barcode"].Value.ToString(),
                     ContactNumber = dgvRow.Cells["ContactNumber"].Value.ToString(),
                     Role = dgvRow.Cells["Role"].Value.ToString(),
+                    Stream = dgvRow.Cells["Stream"].Value.ToString(),
+                    AcademicYear = Convert.ToInt32(dgvRow.Cells["AcademicYear"].Value.ToString()),
                     RoleID = dgvRow.Cells["ServiceNo"].Value.ToString(),
                     CourseName = dgvRow.Cells["CourseName"].Value.ToString(),
                     FromDate = dgvRow.Cells["FromDate"].Value.ToString(),
@@ -437,7 +454,7 @@ namespace LMS.WIN.Forms.ManageCandidate
                         CandidateBL.Save(candidate);
                     }
                 }
-                MessageBox.Show("Candidate Record Import successfully...!");
+                MessageBox.Show("Member Record Import successfully...!");
                 bindCandidateList();
             }
             catch (Exception ex)
@@ -535,7 +552,7 @@ namespace LMS.WIN.Forms.ManageCandidate
             rng.Interior.Color = XlRgbColor.rgbLightBlue;
 
             var saveFileDialoge = new SaveFileDialog();
-            saveFileDialoge.FileName = "Candidate-Details";
+            saveFileDialoge.FileName = "Member-Details";
             saveFileDialoge.DefaultExt = ".xlsx";
             if (saveFileDialoge.ShowDialog() == DialogResult.OK)
             {
