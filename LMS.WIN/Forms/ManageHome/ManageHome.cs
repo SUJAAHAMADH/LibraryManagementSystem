@@ -44,7 +44,7 @@ namespace LMS.WIN.Forms.ManageHome
                 dataGridissueBook.AutoGenerateColumns = false;
                 dataGridissueBook.DataSource = data;
                 dataGridissueBook.Refresh();
-                getGridviewByDefaultDesign();
+                //getGridviewByDefaultDesign();
             }
             else
             {
@@ -84,7 +84,7 @@ namespace LMS.WIN.Forms.ManageHome
                 dataGridAlertBook.AutoGenerateColumns = false;
                 dataGridAlertBook.Refresh();
                 dataGridAlertBook.DataSource = data;
-                getGridviewByDefaultDesign();
+                //getGridviewByDefaultDesign();
             }
             else
             {
