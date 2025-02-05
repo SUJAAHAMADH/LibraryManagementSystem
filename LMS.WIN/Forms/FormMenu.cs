@@ -122,6 +122,18 @@ namespace LMS.WIN.Forms
             AbrirFormInPanel(manageIssueBook);
         }
 
+        private void iconmaximizar_Click_1(object sender, EventArgs e)
+        {
+            LX = this.Location.X;
+            LY = this.Location.Y;
+            SW = this.Size.Width;
+            SH = this.Size.Height;
+            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+            this.Location = Screen.PrimaryScreen.WorkingArea.Location;
+            iconmaximizar.Visible = false;
+            iconrestaurar.Visible = true;
+        }
+
         private void iconMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
