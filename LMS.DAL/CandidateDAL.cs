@@ -110,7 +110,7 @@ namespace LMS.DAL
             }
             if (!string.IsNullOrEmpty(role))
             {
-                param.Add(new SqlParameter("@Role", role));
+                param.Add(new SqlParameter("@ServiceNo", role));
             }
             if (!string.IsNullOrEmpty(thumbImpression))
             {
@@ -150,8 +150,9 @@ namespace LMS.DAL
                             Role = row["Role"] as string ?? string.Empty,
                             Name = row["Name"] as string ?? string.Empty,
                             ContactNumber = row["ContactNumber"] as string ?? string.Empty,
-                            RoleID = row["ServiceNo"] as string ?? string.Empty,  // ServiceNo is mapped to RoleID
-                            Stream = row["Stream"] as string ?? string.Empty,    // Added Stream
+                            RoleID = row["ServiceNo"] as string ?? string.Empty,  
+                            Stream = row["Stream"] as string ?? string.Empty,
+                            AcademicYear = row["AcademicYear"] as int? ?? 0,
                             CourseID = row["CourseID"] as int? ?? 0,
                             CourseName = row["CourseName"] as string ?? string.Empty,
                             FromDate = row["FromDate"] as string ?? string.Empty,
