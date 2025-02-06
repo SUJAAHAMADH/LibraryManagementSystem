@@ -1,4 +1,8 @@
-﻿using System;
+﻿using LMS.BL;
+using LMS.MOD;
+using LMS.WIN.Forms.Login;
+using Microsoft.Reporting.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +16,7 @@ namespace LMS.WIN.Forms
 {
     public partial class FormMenu : Form
     {
+        int userID = Convert.ToInt32(GlobalVariable.GlobalUserID);
         public FormMenu()
         {
             InitializeComponent();
@@ -40,13 +45,31 @@ namespace LMS.WIN.Forms
            timer1.Start();
         }
 
+        private void bindUserList(string searchValue = null)
+        {
+            User data = new User();
+            data = UserBL.GetByID(userID);
+            if (data != null)
+            {
+                txtuserName.Text = data.UserName.ToString();
+            }
+        }
+
         private void FormMenu_Load(object sender, EventArgs e)
         {
             MenuVertical.Width = 260;
+            bindUserList();
+            panelContenedor.Controls.Clear();
+            ManageHome.ManageHome manageHome = new ManageHome.ManageHome();
+            manageHome.TopLevel = false;
+            manageHome.Dock = DockStyle.Fill;
+            panelContenedor.Controls.Add(manageHome);
+            manageHome.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
+            panelContenedor.Controls.Clear();
             ManageHome.ManageHome frmmanageHome = new ManageHome.ManageHome();
             //frm.FormClosed += new FormClosedEventHandler(mostrarlogoAlCerrarForm);
             AbrirFormInPanel(frmmanageHome);
@@ -105,6 +128,7 @@ namespace LMS.WIN.Forms
 
         private void btnEMPLEADOS_Click(object sender, EventArgs e)
         {
+            panelContenedor.Controls.Clear();
             ManageCandidate.ManageCandidates frmmanageCandidate = new ManageCandidate.ManageCandidates();
             AbrirFormInPanel(frmmanageCandidate);
         }
@@ -128,6 +152,7 @@ namespace LMS.WIN.Forms
 
         private void btnManageBook_Click(object sender, EventArgs e)
         {
+            panelContenedor.Controls.Clear();
             ManageBooks.ManageBook manageBooks = new ManageBooks.ManageBook();
             AbrirFormInPanel(manageBooks);
         }
@@ -178,8 +203,59 @@ namespace LMS.WIN.Forms
 
         private void btnBookHistory_Click(object sender, EventArgs e)
         {
+            panelContenedor.Controls.Clear();
             ManageBooks.ManageBookHistory manageBookHistory = new ManageBooks.ManageBookHistory();
             AbrirFormInPanel(manageBookHistory);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure to Logout?", "User Logout", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                this.Close();
+                Login.frmLogin formLogin = new Login.frmLogin();
+                formLogin.Show();
+            }
+            else
+            {
+
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            panelContenedor.Controls.Clear();
+            ManageIssuebook manageIssuebook = new ManageIssuebook();
+            manageIssuebook.TopLevel = false;
+            panelContenedor.Controls.Add(manageIssuebook);
+            manageIssuebook.Show();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            panelContenedor.Controls.Clear();
+            Reports.frmCandidatesReport frmCandidatesReport = new Reports.frmCandidatesReport();
+            frmCandidatesReport.TopLevel = false;
+            panelContenedor.Controls.Add(frmCandidatesReport);
+            frmCandidatesReport.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            panelContenedor.Controls.Clear();
+            Reports.frmBookWiseReport frmBooksReport = new Reports.frmBookWiseReport();
+            frmBooksReport.TopLevel = false;
+            panelContenedor.Controls.Add(frmBooksReport);
+            frmBooksReport.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            panelContenedor.Controls.Clear();
+            Reports.ManageReport manageReport = new Reports.ManageReport();
+            manageReport.TopLevel = false;
+            panelContenedor.Controls.Add(manageReport);
+            manageReport.Show();
         }
 
         private void iconMinimizar_Click(object sender, EventArgs e)

@@ -56,7 +56,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lblUser = new System.Windows.Forms.Label();
+            this.txtuserName = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.panelHeader = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
@@ -67,6 +67,7 @@
             this.iconCerrar = new System.Windows.Forms.PictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lblCopyrights = new System.Windows.Forms.Label();
             this.menuTransition = new System.Windows.Forms.Timer(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.MenuVertical.SuspendLayout();
@@ -89,6 +90,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnmenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconCerrar)).BeginInit();
             this.panelContenedor.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // MenuVertical
@@ -143,14 +145,15 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button1.Location = new System.Drawing.Point(43, 154);
+            this.button1.Location = new System.Drawing.Point(5, 154);
             this.button1.Margin = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(218, 40);
+            this.button1.Size = new System.Drawing.Size(256, 40);
             this.button1.TabIndex = 21;
-            this.button1.Text = "    Transaction Report";
+            this.button1.Text = "     Transaction Report";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnREPORTES
             // 
@@ -185,14 +188,15 @@
             this.button8.ForeColor = System.Drawing.Color.White;
             this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
             this.button8.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button8.Location = new System.Drawing.Point(43, 62);
+            this.button8.Location = new System.Drawing.Point(5, 62);
             this.button8.Name = "button8";
             this.button8.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.button8.Size = new System.Drawing.Size(218, 40);
+            this.button8.Size = new System.Drawing.Size(256, 40);
             this.button8.TabIndex = 20;
-            this.button8.Text = "   Member Report";
+            this.button8.Text = "    Member Report";
             this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button6
             // 
@@ -206,14 +210,15 @@
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button6.Location = new System.Drawing.Point(43, 108);
+            this.button6.Location = new System.Drawing.Point(5, 108);
             this.button6.Margin = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(218, 40);
+            this.button6.Size = new System.Drawing.Size(256, 40);
             this.button6.TabIndex = 19;
-            this.button6.Text = "    Book Report";
+            this.button6.Text = "     Book Report";
             this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // panel8
             // 
@@ -331,6 +336,7 @@
             this.button3.Text = "   Book Transaction";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // panelBookManagement
             // 
@@ -355,11 +361,11 @@
             this.btnBookHistory.ForeColor = System.Drawing.Color.White;
             this.btnBookHistory.Image = ((System.Drawing.Image)(resources.GetObject("btnBookHistory.Image")));
             this.btnBookHistory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBookHistory.Location = new System.Drawing.Point(42, 112);
+            this.btnBookHistory.Location = new System.Drawing.Point(4, 112);
             this.btnBookHistory.Name = "btnBookHistory";
-            this.btnBookHistory.Size = new System.Drawing.Size(218, 40);
+            this.btnBookHistory.Size = new System.Drawing.Size(258, 40);
             this.btnBookHistory.TabIndex = 22;
-            this.btnBookHistory.Text = "   Book History";
+            this.btnBookHistory.Text = "    Book History";
             this.btnBookHistory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBookHistory.UseVisualStyleBackColor = false;
             this.btnBookHistory.Click += new System.EventHandler(this.btnBookHistory_Click);
@@ -376,11 +382,11 @@
             this.btnManageBook.ForeColor = System.Drawing.Color.White;
             this.btnManageBook.Image = ((System.Drawing.Image)(resources.GetObject("btnManageBook.Image")));
             this.btnManageBook.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnManageBook.Location = new System.Drawing.Point(42, 64);
+            this.btnManageBook.Location = new System.Drawing.Point(4, 64);
             this.btnManageBook.Name = "btnManageBook";
-            this.btnManageBook.Size = new System.Drawing.Size(218, 40);
+            this.btnManageBook.Size = new System.Drawing.Size(258, 40);
             this.btnManageBook.TabIndex = 21;
-            this.btnManageBook.Text = "   Manage Book";
+            this.btnManageBook.Text = "    Manage Book";
             this.btnManageBook.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnManageBook.UseVisualStyleBackColor = false;
             this.btnManageBook.Click += new System.EventHandler(this.btnManageBook_Click);
@@ -462,7 +468,7 @@
             // 
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.lblUser);
+            this.panel1.Controls.Add(this.txtuserName);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 844);
@@ -488,16 +494,16 @@
             this.pictureBox2.TabIndex = 32;
             this.pictureBox2.TabStop = false;
             // 
-            // lblUser
+            // txtuserName
             // 
-            this.lblUser.AutoSize = true;
-            this.lblUser.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUser.ForeColor = System.Drawing.Color.White;
-            this.lblUser.Location = new System.Drawing.Point(98, 30);
-            this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(113, 23);
-            this.lblUser.TabIndex = 31;
-            this.lblUser.Text = "User - Admin";
+            this.txtuserName.AutoSize = true;
+            this.txtuserName.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtuserName.ForeColor = System.Drawing.Color.White;
+            this.txtuserName.Location = new System.Drawing.Point(98, 30);
+            this.txtuserName.Name = "txtuserName";
+            this.txtuserName.Size = new System.Drawing.Size(113, 23);
+            this.txtuserName.TabIndex = 31;
+            this.txtuserName.Text = "User - Admin";
             // 
             // button4
             // 
@@ -517,6 +523,7 @@
             this.button4.Text = "   LogOut";
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // panelHeader
             // 
@@ -626,12 +633,25 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            this.panel3.Controls.Add(this.lblCopyrights);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 952);
+            this.panel3.Location = new System.Drawing.Point(0, 935);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(854, 8);
+            this.panel3.Size = new System.Drawing.Size(854, 25);
             this.panel3.TabIndex = 13;
+            // 
+            // lblCopyrights
+            // 
+            this.lblCopyrights.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.lblCopyrights.AutoSize = true;
+            this.lblCopyrights.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCopyrights.ForeColor = System.Drawing.Color.White;
+            this.lblCopyrights.Location = new System.Drawing.Point(303, 3);
+            this.lblCopyrights.Name = "lblCopyrights";
+            this.lblCopyrights.Size = new System.Drawing.Size(248, 18);
+            this.lblCopyrights.TabIndex = 3;
+            this.lblCopyrights.Text = "Copyrights © 2025. All rights Reserved.";
             // 
             // menuTransition
             // 
@@ -681,6 +701,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnmenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconCerrar)).EndInit();
             this.panelContenedor.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -703,7 +725,7 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label lblUser;
+        private System.Windows.Forms.Label txtuserName;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox iconmaximizar;
@@ -725,5 +747,6 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel reportPanel;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lblCopyrights;
     }
 }

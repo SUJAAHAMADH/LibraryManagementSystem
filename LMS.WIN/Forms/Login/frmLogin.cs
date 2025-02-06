@@ -83,7 +83,7 @@ namespace LMS.WIN.Forms.Login
                             if (user.UserID > 0)
                             {
                                 GlobalVariable.GlobalUserID = Convert.ToInt32(user.UserID);
-                                frmDashboard ds = new frmDashboard();
+                                FormMenu ds = new FormMenu();
                                 ds.Show();
                                 Hide();
                             }
@@ -101,7 +101,7 @@ namespace LMS.WIN.Forms.Login
                             if (user.UserID > 0)
                             {
                                 GlobalVariable.GlobalUserID = Convert.ToInt32(user.UserID);
-                                frmDashboard ds = new frmDashboard();
+                                FormMenu ds = new FormMenu();
                                 ds.Show();
                                 Hide();
                             }
