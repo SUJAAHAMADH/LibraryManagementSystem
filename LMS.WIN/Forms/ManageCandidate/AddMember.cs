@@ -1,8 +1,10 @@
-﻿using LMS.BL;
+﻿using DocumentFormat.OpenXml.Drawing.Spreadsheet;
+using LMS.BL;
 using LMS.MOD;
 using System;
 using System.ComponentModel;
 using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 
 namespace LMS.WIN.Forms.ManageCandidate
@@ -10,9 +12,11 @@ namespace LMS.WIN.Forms.ManageCandidate
     public partial class AddMember : Form
     {
         Candidate candidate = null;
-        public AddMember()
+        int candidateid = -1;
+        public AddMember(Candidate candidateOBJ)
         {
             InitializeComponent();
+            candidate = candidateOBJ;
         }
 
         
@@ -199,7 +203,6 @@ namespace LMS.WIN.Forms.ManageCandidate
                         }
                     }
 
-
                     if (cbPersonType.Text == "STUDENT")
                     {
                         int academicYear;
@@ -209,14 +212,15 @@ namespace LMS.WIN.Forms.ManageCandidate
                             ContactNumber = tbSContact.Text,
                             RoleID = tbRoleId.Text,
                             Role = cbPersonType.Text,
-                            DOB = dtpDOB.Checked ? dtpDOB.Value : (DateTime?)null, 
-                            Stream = string.IsNullOrEmpty(cbStream.Text) ? null : cbStream.Text, 
+                            DOB = dtpDOB.Checked ? dtpDOB.Value : (DateTime?)null,
+                            Stream = string.IsNullOrEmpty(cbStream.Text) ? null : cbStream.Text,
                             AcademicYear = !string.IsNullOrEmpty(tbYear.Text) && int.TryParse(tbYear.Text, out academicYear) ? academicYear : (int?)null, // Nullable int
-                            PermanentAddress = string.IsNullOrEmpty(tbPerAddress.Text) ? null : tbPerAddress.Text, 
-                            PresentAddress = string.IsNullOrEmpty(tbPreAddress.Text) ? null : tbPreAddress.Text, 
-                            Email = string.IsNullOrEmpty(tbEmail.Text) ? null : tbEmail.Text, 
-                            ParentsContact = string.IsNullOrEmpty(tbPContact.Text) ? null : tbPContact.Text, 
+                            PermanentAddress = string.IsNullOrEmpty(tbPerAddress.Text) ? null : tbPerAddress.Text,
+                            PresentAddress = string.IsNullOrEmpty(tbPreAddress.Text) ? null : tbPreAddress.Text,
+                            Email = string.IsNullOrEmpty(tbEmail.Text) ? null : tbEmail.Text,
+                            ParentsContact = string.IsNullOrEmpty(tbPContact.Text) ? null : tbPContact.Text,
                             Photo = photoData,
+                            CandidateID = candidateid
                         };
                     }
                     else if (cbPersonType.Text == "TEACHER")
@@ -234,7 +238,7 @@ namespace LMS.WIN.Forms.ManageCandidate
 
                     try
                     {
-                        candidate = CandidateBL.Save(candidates, -1);
+                        candidate = CandidateBL.Save(candidates, candidateid);
 
                         MessageBox.Show($"Member saved successfully. Member ID: {candidate.RoleID}", "Member", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Clear();
@@ -254,7 +258,38 @@ namespace LMS.WIN.Forms.ManageCandidate
 
         private void AddMember_Load(object sender, EventArgs e)
         {
-            
+            if (candidate.CandidateID != 0)
+            {
+                tbName.Text = candidate.Name;
+                tbSContact.Text = candidate.ContactNumber;
+                tbRoleId.Text = candidate.RoleID;
+                cbPersonType.Text = candidate.Role;
+                if(candidate.DOB != null)  dtpDOB.Value = (DateTime)candidate.DOB;
+                cbStream.Text = candidate.Stream;
+                tbYear.Text = candidate.AcademicYear.ToString();
+                tbPerAddress.Text = candidate.PermanentAddress;
+                tbPreAddress.Text = candidate.PresentAddress;
+                tbEmail.Text = candidate.Email;
+                tbPContact.Text = candidate.ParentsContact;
+
+
+                candidateid = candidate.CandidateID;
+                var data = CandidateBL.GetByID(candidateid);
+                if (data.Photo != null)
+                {
+                    using (MemoryStream memoryStream = new MemoryStream(data.Photo))
+                    {
+                        // Convert MemoryStream to Image
+                        Image image = Image.FromStream(memoryStream);
+
+                        // Display the image in the PictureBox
+                        pbPhoto.Image = image;
+                    }
+                }
+               
+
+
+            }
         }
     }
 }

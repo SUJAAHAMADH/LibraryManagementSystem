@@ -117,9 +117,15 @@ namespace LMS.WIN.Forms.ManageCandidate
                     ToDate = dgvRow.Cells["ToDate"].Value.ToString(),
                     SOSDate = dgvRow.Cells["SOSDate"].Value.ToString(),
                     TOSDate = dgvRow.Cells["TOSDate"].Value.ToString(),
+                    ParentsContact = dgvRow.Cells["ParentsContact"].Value.ToString(),
+                    Email = dgvRow.Cells["Email"].Value.ToString(),
+                    PermanentAddress = dgvRow.Cells["PermanentAddress"].Value.ToString(),
+                    PresentAddress = dgvRow.Cells["PresentAddress"].Value.ToString(),
+
                 };
-                frmAddCandidte frmcandidate = new frmAddCandidte(candidate);
-                frmcandidate.Show();
+                AddMember frmcandidate = new AddMember(candidate);
+                frmcandidate.ShowDialog();
+                bindCandidateList();
             }
 
             else if (dataGridCandidate.Columns[e.ColumnIndex].Name == "View")
