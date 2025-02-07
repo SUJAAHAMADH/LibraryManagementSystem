@@ -48,6 +48,7 @@
     <Compile Include="AlertBL.cs" />
     <Compile Include="AuthBL.cs" />
     <Compile Include="AuthorBL.cs" />
+    <Compile Include="JournalBL.cs" />
     <Compile Include="BookBL.cs" />
     <Compile Include="CandidateBL.cs" />
     <Compile Include="CategoryBL.cs" />

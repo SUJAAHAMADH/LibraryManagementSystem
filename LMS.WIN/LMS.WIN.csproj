@@ -324,6 +324,12 @@
     <Compile Include="Forms\ManageBooks\ManageIssuebook.Designer.cs">
       <DependentUpon>ManageIssuebook.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ManageJournal\AddJournal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageJournal\AddJournal.Designer.cs">
+      <DependentUpon>AddJournal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ManagePublisher\frmAddPublisher.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -549,6 +555,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ManageBooks\ManageIssuebook.resx">
       <DependentUpon>ManageIssuebook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageJournal\AddJournal.resx">
+      <DependentUpon>AddJournal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ManagePublisher\frmAddPublisher.resx">
       <DependentUpon>frmAddPublisher.cs</DependentUpon>
