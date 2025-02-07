@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="Author.cs" />
     <Compile Include="AvailableBook.cs" />
+    <Compile Include="Journal.cs" />
     <Compile Include="Book.cs" />
     <Compile Include="BookBarcode.cs" />
     <Compile Include="BookDetail.cs" />
