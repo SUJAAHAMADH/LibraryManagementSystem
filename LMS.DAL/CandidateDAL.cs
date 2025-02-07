@@ -159,7 +159,11 @@ namespace LMS.DAL
                             ToDate = row["ToDate"] as string ?? string.Empty,
                             TOSDate = row["TOSDate"] as string ?? string.Empty,
                             SOSDate = row["SOSDate"] as string ?? string.Empty,
-                            ThumbImpression = row["ThumbImpression"] as string ?? string.Empty
+                            ThumbImpression = row["ThumbImpression"] as string ?? string.Empty,
+                            ParentsContact = row["ParentsContact"] as string ?? string.Empty,
+                            Email = row["Email"] as string ?? string.Empty,
+                            PermanentAddress = row["PermanentAddress"] as string ?? string.Empty,
+                            PresentAddress = row["PresentAddress"] as string ?? string.Empty
                         };
                         candidates.Add(candidate);
                     }
@@ -228,6 +232,7 @@ namespace LMS.DAL
                         candidate.TOSDate = row["TOSDate"] as string ?? string.Empty;
                         candidate.SOSDate = row["SOSDate"] as string ?? string.Empty;
                         candidate.ThumbImpression = row["ThumbImpression"] as string ?? string.Empty;
+                        candidate.Photo = row["Photo"] as byte[] ??null;
                     }
                 }
                 #endregion
