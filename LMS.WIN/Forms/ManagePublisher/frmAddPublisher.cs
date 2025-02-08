@@ -88,11 +88,6 @@ namespace LMS.WIN.Forms.ManagePublisher
             }
         }
 
-        private void btnCloses_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
         private void txtPublisherName_Leave(object sender, EventArgs e)
         {
             txtPublisherName.BackColor = Color.White;
@@ -109,6 +104,11 @@ namespace LMS.WIN.Forms.ManagePublisher
         {
             txtContactNumber.BackColor = Color.White;
             txtContactNumber.ForeColor = Color.Black;
+        }
+
+        private void pbClose_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

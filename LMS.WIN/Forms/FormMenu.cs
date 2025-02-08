@@ -1,6 +1,8 @@
 ﻿using LMS.BL;
 using LMS.MOD;
 using LMS.WIN.Forms.Login;
+using LMS.WIN.Forms.ManageAuthor;
+using LMS.WIN.Forms.ManagePublisher;
 using Microsoft.Reporting.WinForms;
 using System;
 using System.Collections.Generic;
@@ -24,6 +26,7 @@ namespace LMS.WIN.Forms
 
         bool expend = false;
         bool expend1 = false;
+        bool expend2 = false;
 
         private void AbrirFormInPanel(object formHijo)
         {
@@ -184,7 +187,7 @@ namespace LMS.WIN.Forms
             if (expend1 == false)
             {
                 reportPanel.Height += 40;
-                if (reportPanel.Height >= 220)
+                if (reportPanel.Height >= 210)
                 {
                     timer1.Stop();
                     expend1 = true;
@@ -256,6 +259,65 @@ namespace LMS.WIN.Forms
             manageReport.TopLevel = false;
             panelContenedor.Controls.Add(manageReport);
             manageReport.Show();
+        }
+
+        private void MasterTimer_Tick(object sender, EventArgs e)
+        {
+            if (expend2 == false)
+            {
+                panel9.Height += 40;
+                if (panel9.Height >= 210)
+                {
+                    MasterTimer.Stop();
+                    expend2 = true;
+                }
+            }
+            else
+            {
+                panel9.Height -= 40;
+                if (panel9.Height <= 60)
+                {
+                    MasterTimer.Stop();
+                    expend2 = false;
+                }
+            }       
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            MasterTimer.Start();
+
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            panelContenedor.Controls.Clear();
+            ManageAuthor.ManageAuthor manageAuthor = new ManageAuthor.ManageAuthor();
+            AbrirFormInPanel(manageAuthor);
+            
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            panelContenedor.Controls.Clear();
+            ManagePublisher.ManagePublisher managePublisher = new ManagePublisher.ManagePublisher();
+            AbrirFormInPanel(managePublisher);
+
+
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            panelContenedor.Controls.Clear();
+            Language.frmAddLanguage frmAddLanguage = new Language.frmAddLanguage();
+            frmAddLanguage.Show();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            ManageJournal.AddJournal manageJournal = new ManageJournal.AddJournal();
+            panelContenedor.Controls.Clear();
+            manageJournal.Show();
         }
 
         private void iconMinimizar_Click(object sender, EventArgs e)

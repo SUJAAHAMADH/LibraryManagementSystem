@@ -390,8 +390,8 @@ namespace LMS.WIN.Forms.ManageCandidate
         private void btnAddNewBooks_Click(object sender, EventArgs e)
         {
             Candidate user1 = new Candidate();
-            frmAddCandidte addCandidte = new frmAddCandidte(user1);
-            addCandidte.Show();
+            AddMember addMember = new AddMember(user1);
+            addMember.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
