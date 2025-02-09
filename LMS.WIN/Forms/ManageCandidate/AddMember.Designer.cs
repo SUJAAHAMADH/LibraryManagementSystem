@@ -94,7 +94,7 @@
             this.btnCancel.Location = new System.Drawing.Point(798, 651);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(199, 46);
-            this.btnCancel.TabIndex = 63;
+            this.btnCancel.TabIndex = 15;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -109,7 +109,7 @@
             this.btnClear.Location = new System.Drawing.Point(798, 590);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(199, 46);
-            this.btnClear.TabIndex = 62;
+            this.btnClear.TabIndex = 14;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
@@ -126,7 +126,7 @@
             this.btnSave.Location = new System.Drawing.Point(798, 529);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(199, 46);
-            this.btnSave.TabIndex = 61;
+            this.btnSave.TabIndex = 13;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -143,7 +143,7 @@
             this.btnUpload.Location = new System.Drawing.Point(831, 350);
             this.btnUpload.Name = "btnUpload";
             this.btnUpload.Size = new System.Drawing.Size(127, 38);
-            this.btnUpload.TabIndex = 59;
+            this.btnUpload.TabIndex = 12;
             this.btnUpload.Text = "Upload Photo";
             this.btnUpload.UseVisualStyleBackColor = false;
             this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
@@ -167,7 +167,7 @@
             this.tbSContact.Location = new System.Drawing.Point(294, 771);
             this.tbSContact.Name = "tbSContact";
             this.tbSContact.Size = new System.Drawing.Size(241, 34);
-            this.tbSContact.TabIndex = 57;
+            this.tbSContact.TabIndex = 11;
             // 
             // tbPContact
             // 
@@ -176,7 +176,7 @@
             this.tbPContact.Location = new System.Drawing.Point(294, 706);
             this.tbPContact.Name = "tbPContact";
             this.tbPContact.Size = new System.Drawing.Size(241, 34);
-            this.tbPContact.TabIndex = 56;
+            this.tbPContact.TabIndex = 10;
             // 
             // tbPreAddress
             // 
@@ -186,7 +186,7 @@
             this.tbPreAddress.Multiline = true;
             this.tbPreAddress.Name = "tbPreAddress";
             this.tbPreAddress.Size = new System.Drawing.Size(365, 74);
-            this.tbPreAddress.TabIndex = 55;
+            this.tbPreAddress.TabIndex = 8;
             // 
             // tbEmail
             // 
@@ -195,7 +195,7 @@
             this.tbEmail.Location = new System.Drawing.Point(294, 648);
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(365, 34);
-            this.tbEmail.TabIndex = 54;
+            this.tbEmail.TabIndex = 9;
             // 
             // tbPerAddress
             // 
@@ -205,7 +205,7 @@
             this.tbPerAddress.Multiline = true;
             this.tbPerAddress.Name = "tbPerAddress";
             this.tbPerAddress.Size = new System.Drawing.Size(365, 74);
-            this.tbPerAddress.TabIndex = 53;
+            this.tbPerAddress.TabIndex = 7;
             // 
             // tbYear
             // 
@@ -214,7 +214,7 @@
             this.tbYear.Location = new System.Drawing.Point(294, 408);
             this.tbYear.Name = "tbYear";
             this.tbYear.Size = new System.Drawing.Size(241, 34);
-            this.tbYear.TabIndex = 52;
+            this.tbYear.TabIndex = 6;
             // 
             // cbStream
             // 
@@ -226,7 +226,7 @@
             this.cbStream.Location = new System.Drawing.Point(294, 297);
             this.cbStream.Name = "cbStream";
             this.cbStream.Size = new System.Drawing.Size(241, 34);
-            this.cbStream.TabIndex = 51;
+            this.cbStream.TabIndex = 4;
             // 
             // dtpDOB
             // 
@@ -236,7 +236,7 @@
             this.dtpDOB.Location = new System.Drawing.Point(294, 353);
             this.dtpDOB.Name = "dtpDOB";
             this.dtpDOB.Size = new System.Drawing.Size(241, 34);
-            this.dtpDOB.TabIndex = 50;
+            this.dtpDOB.TabIndex = 5;
             this.dtpDOB.Value = new System.DateTime(2025, 2, 3, 0, 0, 0, 0);
             // 
             // tbName
@@ -246,7 +246,7 @@
             this.tbName.Location = new System.Drawing.Point(294, 243);
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(365, 34);
-            this.tbName.TabIndex = 49;
+            this.tbName.TabIndex = 3;
             // 
             // tbRoleId
             // 
@@ -255,7 +255,7 @@
             this.tbRoleId.Location = new System.Drawing.Point(294, 188);
             this.tbRoleId.Name = "tbRoleId";
             this.tbRoleId.Size = new System.Drawing.Size(241, 34);
-            this.tbRoleId.TabIndex = 48;
+            this.tbRoleId.TabIndex = 2;
             this.tbRoleId.MouseHover += new System.EventHandler(this.tbRoleId_MouseHover);
             this.tbRoleId.Validating += new System.ComponentModel.CancelEventHandler(this.tbRoleId_Validating);
             // 
@@ -463,7 +463,7 @@
             this.cbPersonType.Location = new System.Drawing.Point(293, 141);
             this.cbPersonType.Name = "cbPersonType";
             this.cbPersonType.Size = new System.Drawing.Size(241, 34);
-            this.cbPersonType.TabIndex = 66;
+            this.cbPersonType.TabIndex = 1;
             this.cbPersonType.SelectedIndexChanged += new System.EventHandler(this.cbPersonType_SelectedIndexChanged);
             this.cbPersonType.MouseHover += new System.EventHandler(this.cbPersonType_MouseHover);
             this.cbPersonType.Validating += new System.ComponentModel.CancelEventHandler(this.cbPersonType_Validating);

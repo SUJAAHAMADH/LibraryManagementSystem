@@ -8,6 +8,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
 
@@ -31,6 +32,7 @@ namespace LMS.WIN.Forms.ManageCandidate
         private void ManageCandidates_Load(object sender, EventArgs e)
         {
             bindCandidateList();
+            LoadCandidateTypes();
         }
 
         private void bindCandidateList(string searchValue = null, string stream = null)
@@ -569,6 +571,58 @@ namespace LMS.WIN.Forms.ManageCandidate
             MessageBox.Show("Excel successfully created");
             #endregion
         }
+        private List<Candidate> candidateList = new List<Candidate>();
+        private void cmboxCandidateType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmboxCandidateType.SelectedItem == null) return; // Avoid null errors
+
+            string selectedType = cmboxCandidateType.SelectedItem.ToString().Trim();
+
+            if (candidateList == null || candidateList.Count == 0)
+            {
+                //MessageBox.Show("Candidate list is empty!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            var filteredList = candidateList
+                .Where(c => (c.Stream ?? "").Trim().Equals(selectedType, StringComparison.OrdinalIgnoreCase))
+                .ToList();
+
+            if (filteredList.Count == 0) // Check after filtering
+            {
+                MessageBox.Show($"No candidates available for {selectedType}!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+            dataGridCandidate.DataSource = null;
+            dataGridCandidate.DataSource = filteredList;
+            dataGridCandidate.Refresh();
+
+        }
+        private void LoadCandidateTypes()
+        {
+            try
+            {
+                List<Candidate> candidates = CandidateBL.Get(-1, null);
+                if (candidates != null && candidates.Count > 0)
+                {
+                    candidateList = candidates;
+                    var candidateTypes = candidates
+                        .Select(c => c.Stream)
+                        .Distinct()
+                        .ToList();
+                    if (candidateTypes != null && candidateTypes.Count > 0)
+                    {
+                        cmboxCandidateType.Items.Clear();
+                        cmboxCandidateType.Items.AddRange(candidateTypes.ToArray());
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
     }
 }
 
