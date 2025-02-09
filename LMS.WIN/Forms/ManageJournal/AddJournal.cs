@@ -1,10 +1,12 @@
 ﻿using DocumentFormat.OpenXml.Bibliography;
 using LMS.BL;
+using LMS.DAL.Shared;
 using LMS.MOD;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -18,9 +20,12 @@ namespace LMS.WIN.Forms.ManageJournal
         public AddJournal()
         {
             InitializeComponent();
+    
         }
 
         Journal journal = null;
+
+
 
         private void Clear()
         {
@@ -30,11 +35,7 @@ namespace LMS.WIN.Forms.ManageJournal
             tbInvoiceNo.Text = "";
             dtpIDATE.Value = DateTime.Now;
             tbOrderNo.Text = "";
-            tbLanguage.Text = "";
-            tbVolume.Text = "";
-            tbIssue.Text = "";
-            tbMonth.Text = "";
-            tbRemark.Text = "";
+            cbSubjects.Text = "";
             tbJName.Focus();
 
         }
@@ -110,13 +111,9 @@ namespace LMS.WIN.Forms.ManageJournal
                     Frequency = int.TryParse(tbFrequency.Text, out int frequency) ? frequency : 0,
                     Price = decimal.TryParse(tbPrice.Text, out decimal price) ? price : 0,
                     InvoiceNo = tbInvoiceNo.Text,
-                    OrderDate = dtpIDATE.Value,
+                    InvoiceDate = dtpIDATE.Value,
                     OrderNo = tbOrderNo.Text,
-                    LanguageID = int.TryParse(tbLanguage.Text, out int languageID) ? languageID : 0,
-                    VolumeNo = tbVolume.Text,
-                    IssueNo = tbIssue.Text,
-                    Month = tbMonth.Text,
-                    Remark = tbRemark.Text,
+                    LanguageID = int.TryParse(cbSubjects.SelectedValue.ToString(), out int languageID) ? languageID : -1,
                     IsActive = true
                 };
 
@@ -135,6 +132,44 @@ namespace LMS.WIN.Forms.ManageJournal
                 MessageBox.Show($"Error: {ex.Message}", "Journal", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        private void LoadSubjects()
+        {
+            try
+            {
+                using (SqlConnection con = SqlConnectionHelper.GetConnectionSync())
+                {
+                    string query = "SELECT LanguageID, Name FROM Language ORDER BY Name";
 
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        using (SqlDataAdapter adp = new SqlDataAdapter(cmd))
+                        {
+                            DataTable dt = new DataTable();
+                            adp.Fill(dt);
+
+                            if (dt.Rows.Count > 0)
+                            {
+                                cbSubjects.DataSource = dt;
+                                cbSubjects.DisplayMember = "Name"; // Display language name
+                                cbSubjects.ValueMember = "LanguageID"; // Use LanguageID as value
+                                cbSubjects.SelectedIndex = -1; // Optional: No selection initially
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading Subjects: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+
+
+        private void AddJournal_Load(object sender, EventArgs e)
+        {
+            LoadSubjects();
+        }
     }
 }

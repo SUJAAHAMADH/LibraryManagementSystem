@@ -40,12 +40,10 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.tbRemark = new System.Windows.Forms.TextBox();
             this.tbFrequency = new System.Windows.Forms.TextBox();
             this.dtpIDATE = new System.Windows.Forms.DateTimePicker();
             this.tbJName = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lblRemark = new System.Windows.Forms.Label();
             this.lblFrequency = new System.Windows.Forms.Label();
             this.lblIDate = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
@@ -58,14 +56,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.tbOrderNo = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.tbLanguage = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.tbVolume = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.tbIssue = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.tbMonth = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.cbSubjects = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLibrary)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
@@ -124,10 +116,10 @@
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold);
             this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(8)))), ((int)(((byte)(26)))));
-            this.btnCancel.Location = new System.Drawing.Point(789, 510);
+            this.btnCancel.Location = new System.Drawing.Point(802, 382);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(199, 46);
-            this.btnCancel.TabIndex = 95;
+            this.btnCancel.TabIndex = 10;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -139,10 +131,10 @@
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold);
             this.btnClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
-            this.btnClear.Location = new System.Drawing.Point(789, 449);
+            this.btnClear.Location = new System.Drawing.Point(802, 321);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(199, 46);
-            this.btnClear.TabIndex = 94;
+            this.btnClear.TabIndex = 9;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
@@ -156,25 +148,15 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold);
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(789, 388);
+            this.btnSave.Location = new System.Drawing.Point(802, 260);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(199, 46);
-            this.btnSave.TabIndex = 93;
+            this.btnSave.TabIndex = 8;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             this.btnSave.MouseEnter += new System.EventHandler(this.btnSave_MouseEnter);
             this.btnSave.MouseLeave += new System.EventHandler(this.btnSave_MouseLeave);
-            // 
-            // tbRemark
-            // 
-            this.tbRemark.BackColor = System.Drawing.Color.White;
-            this.tbRemark.Font = new System.Drawing.Font("Calibri", 16F);
-            this.tbRemark.Location = new System.Drawing.Point(294, 718);
-            this.tbRemark.Multiline = true;
-            this.tbRemark.Name = "tbRemark";
-            this.tbRemark.Size = new System.Drawing.Size(365, 74);
-            this.tbRemark.TabIndex = 87;
             // 
             // tbFrequency
             // 
@@ -183,7 +165,7 @@
             this.tbFrequency.Location = new System.Drawing.Point(294, 232);
             this.tbFrequency.Name = "tbFrequency";
             this.tbFrequency.Size = new System.Drawing.Size(365, 34);
-            this.tbFrequency.TabIndex = 84;
+            this.tbFrequency.TabIndex = 2;
             // 
             // dtpIDATE
             // 
@@ -193,7 +175,7 @@
             this.dtpIDATE.Location = new System.Drawing.Point(294, 394);
             this.dtpIDATE.Name = "dtpIDATE";
             this.dtpIDATE.Size = new System.Drawing.Size(241, 34);
-            this.dtpIDATE.TabIndex = 82;
+            this.dtpIDATE.TabIndex = 5;
             this.dtpIDATE.Value = new System.DateTime(2025, 2, 3, 0, 0, 0, 0);
             // 
             // tbJName
@@ -203,7 +185,7 @@
             this.tbJName.Location = new System.Drawing.Point(294, 178);
             this.tbJName.Name = "tbJName";
             this.tbJName.Size = new System.Drawing.Size(365, 34);
-            this.tbJName.TabIndex = 81;
+            this.tbJName.TabIndex = 1;
             // 
             // panel2
             // 
@@ -212,17 +194,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1026, 4);
             this.panel2.TabIndex = 68;
-            // 
-            // lblRemark
-            // 
-            this.lblRemark.AutoSize = true;
-            this.lblRemark.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold);
-            this.lblRemark.ForeColor = System.Drawing.Color.Black;
-            this.lblRemark.Location = new System.Drawing.Point(38, 718);
-            this.lblRemark.Name = "lblRemark";
-            this.lblRemark.Size = new System.Drawing.Size(92, 29);
-            this.lblRemark.TabIndex = 76;
-            this.lblRemark.Text = "Remark";
             // 
             // lblFrequency
             // 
@@ -284,7 +255,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(209)))), ((int)(((byte)(254)))));
-            this.panel3.Location = new System.Drawing.Point(43, 835);
+            this.panel3.Location = new System.Drawing.Point(43, 588);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1026, 23);
             this.panel3.TabIndex = 96;
@@ -296,7 +267,7 @@
             this.tbPrice.Location = new System.Drawing.Point(294, 286);
             this.tbPrice.Name = "tbPrice";
             this.tbPrice.Size = new System.Drawing.Size(365, 34);
-            this.tbPrice.TabIndex = 98;
+            this.tbPrice.TabIndex = 3;
             // 
             // label2
             // 
@@ -316,7 +287,7 @@
             this.tbInvoiceNo.Location = new System.Drawing.Point(294, 340);
             this.tbInvoiceNo.Name = "tbInvoiceNo";
             this.tbInvoiceNo.Size = new System.Drawing.Size(365, 34);
-            this.tbInvoiceNo.TabIndex = 100;
+            this.tbInvoiceNo.TabIndex = 4;
             // 
             // label3
             // 
@@ -336,7 +307,7 @@
             this.tbOrderNo.Location = new System.Drawing.Point(294, 448);
             this.tbOrderNo.Name = "tbOrderNo";
             this.tbOrderNo.Size = new System.Drawing.Size(365, 34);
-            this.tbOrderNo.TabIndex = 102;
+            this.tbOrderNo.TabIndex = 6;
             // 
             // label4
             // 
@@ -349,15 +320,6 @@
             this.label4.TabIndex = 101;
             this.label4.Text = "Order No.";
             // 
-            // tbLanguage
-            // 
-            this.tbLanguage.BackColor = System.Drawing.Color.White;
-            this.tbLanguage.Font = new System.Drawing.Font("Calibri", 16F);
-            this.tbLanguage.Location = new System.Drawing.Point(294, 502);
-            this.tbLanguage.Name = "tbLanguage";
-            this.tbLanguage.Size = new System.Drawing.Size(365, 34);
-            this.tbLanguage.TabIndex = 104;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -365,82 +327,26 @@
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(38, 502);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(107, 29);
+            this.label5.Size = new System.Drawing.Size(86, 29);
             this.label5.TabIndex = 103;
-            this.label5.Text = "Language";
+            this.label5.Text = "Subject";
             // 
-            // tbVolume
+            // cbSubjects
             // 
-            this.tbVolume.BackColor = System.Drawing.Color.White;
-            this.tbVolume.Font = new System.Drawing.Font("Calibri", 16F);
-            this.tbVolume.Location = new System.Drawing.Point(294, 556);
-            this.tbVolume.Name = "tbVolume";
-            this.tbVolume.Size = new System.Drawing.Size(365, 34);
-            this.tbVolume.TabIndex = 106;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold);
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(38, 556);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(130, 29);
-            this.label6.TabIndex = 105;
-            this.label6.Text = "Volume No.";
-            // 
-            // tbIssue
-            // 
-            this.tbIssue.BackColor = System.Drawing.Color.White;
-            this.tbIssue.Font = new System.Drawing.Font("Calibri", 16F);
-            this.tbIssue.Location = new System.Drawing.Point(294, 610);
-            this.tbIssue.Name = "tbIssue";
-            this.tbIssue.Size = new System.Drawing.Size(365, 34);
-            this.tbIssue.TabIndex = 108;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold);
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(38, 610);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(104, 29);
-            this.label7.TabIndex = 107;
-            this.label7.Text = "Issue No.";
-            // 
-            // tbMonth
-            // 
-            this.tbMonth.BackColor = System.Drawing.Color.White;
-            this.tbMonth.Font = new System.Drawing.Font("Calibri", 16F);
-            this.tbMonth.Location = new System.Drawing.Point(294, 664);
-            this.tbMonth.Name = "tbMonth";
-            this.tbMonth.Size = new System.Drawing.Size(365, 34);
-            this.tbMonth.TabIndex = 110;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(38, 664);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(81, 29);
-            this.label8.TabIndex = 109;
-            this.label8.Text = "Month";
+            this.cbSubjects.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbSubjects.Font = new System.Drawing.Font("Calibri", 16F);
+            this.cbSubjects.FormattingEnabled = true;
+            this.cbSubjects.Location = new System.Drawing.Point(294, 502);
+            this.cbSubjects.Name = "cbSubjects";
+            this.cbSubjects.Size = new System.Drawing.Size(365, 34);
+            this.cbSubjects.TabIndex = 104;
             // 
             // AddJournal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1114, 861);
-            this.Controls.Add(this.tbMonth);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.tbIssue);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.tbVolume);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.tbLanguage);
+            this.ClientSize = new System.Drawing.Size(1114, 631);
+            this.Controls.Add(this.cbSubjects);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tbOrderNo);
             this.Controls.Add(this.label4);
@@ -452,12 +358,10 @@
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.tbRemark);
             this.Controls.Add(this.tbFrequency);
             this.Controls.Add(this.dtpIDATE);
             this.Controls.Add(this.tbJName);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.lblRemark);
             this.Controls.Add(this.lblFrequency);
             this.Controls.Add(this.lblIDate);
             this.Controls.Add(this.lblName);
@@ -467,6 +371,7 @@
             this.Name = "AddJournal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddJournal";
+            this.Load += new System.EventHandler(this.AddJournal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLibrary)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
@@ -485,12 +390,10 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.TextBox tbRemark;
         private System.Windows.Forms.TextBox tbFrequency;
         private System.Windows.Forms.DateTimePicker dtpIDATE;
         private System.Windows.Forms.TextBox tbJName;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label lblRemark;
         private System.Windows.Forms.Label lblFrequency;
         private System.Windows.Forms.Label lblIDate;
         private System.Windows.Forms.Label lblName;
@@ -505,15 +408,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tbPrice;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox tbLanguage;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tbOrderNo;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox tbMonth;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox tbIssue;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox tbVolume;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cbSubjects;
     }
 }
