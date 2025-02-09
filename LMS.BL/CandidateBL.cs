@@ -20,11 +20,11 @@ namespace LMS.BL
             }
         }
 
-        public static List<Candidate> Get(/*int countryID = -1,*/ int courseID = -1, string role = null, string thumbImpression = null, int userID = -1, string searchValue = null)
+        public static List<Candidate> Get(/*int countryID = -1,*/ int courseID = -1, string stream = null, string thumbImpression = null, int userID = -1, string searchValue = null)
         {
             try
             {
-                List<Candidate> candidates = CandidateDAL.Get(/*countryID,*/ courseID, role, thumbImpression, userID, searchValue);
+                List<Candidate> candidates = CandidateDAL.Get(/*countryID,*/ courseID, stream, thumbImpression, userID, searchValue);
                 return candidates;
             }
             catch (Exception ex)

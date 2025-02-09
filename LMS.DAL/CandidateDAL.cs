@@ -96,7 +96,7 @@ namespace LMS.DAL
             return candidate;
         }
 
-        public static List<Candidate> Get(int courseID, string role, string thumbImpression, int userID, string searchValue)
+        public static List<Candidate> Get(int courseID, string stream, string thumbImpression, int userID, string searchValue)
         {
             #region Declaration
             List<Candidate> candidates = null;
@@ -108,9 +108,9 @@ namespace LMS.DAL
             {
                 param.Add(new SqlParameter("@CourseID", courseID));
             }
-            if (!string.IsNullOrEmpty(role))
+            if (!string.IsNullOrEmpty(stream))
             {
-                param.Add(new SqlParameter("@ServiceNo", role));
+                param.Add(new SqlParameter("@Stream", stream));
             }
             if (!string.IsNullOrEmpty(thumbImpression))
             {

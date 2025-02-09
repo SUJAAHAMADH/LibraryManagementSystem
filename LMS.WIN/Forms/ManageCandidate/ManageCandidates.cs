@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Reflection;
 using System.Windows.Forms;
 
@@ -32,10 +33,10 @@ namespace LMS.WIN.Forms.ManageCandidate
             bindCandidateList();
         }
 
-        private void bindCandidateList(string searchValue = null, string role = null)
+        private void bindCandidateList(string searchValue = null, string stream = null)
         {
             List<Candidate> data = null;
-            data = CandidateBL.Get(/*-1,*/ -1, role, null, -1, searchValue);
+            data = CandidateBL.Get(/*-1,*/ -1, stream, null, -1, searchValue);
             if (data != null)
             {
                 dataGridCandidate.AutoGenerateColumns = false;
@@ -184,8 +185,8 @@ namespace LMS.WIN.Forms.ManageCandidate
         private void cmboxCandidateType_SelectedValueChanged(object sender, EventArgs e)
         {
             string searchValue = null;
-            string role = cmboxCandidateType.Text;
-            bindCandidateList(searchValue, role);
+            string stream = cmboxCandidateType.Text;
+            bindCandidateList(searchValue, stream);
         }
 
         private void btnExportExcel_Click(object sender, EventArgs e)

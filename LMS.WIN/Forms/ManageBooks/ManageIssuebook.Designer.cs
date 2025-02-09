@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageIssuebook));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnissue = new System.Windows.Forms.Button();
             this.btnMissingbook = new System.Windows.Forms.Button();
@@ -62,6 +64,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.picboxrefersh = new System.Windows.Forms.PictureBox();
             this.pnlManageBook = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridissueBook)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxrefersh)).BeginInit();
@@ -70,7 +73,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Teal;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.panel2.Controls.Add(this.btnissue);
             this.panel2.Controls.Add(this.btnMissingbook);
             this.panel2.Controls.Add(this.btnManageReturnbook);
@@ -79,12 +82,12 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1424, 49);
+            this.panel2.Size = new System.Drawing.Size(1496, 49);
             this.panel2.TabIndex = 99;
             // 
             // btnissue
             // 
-            this.btnissue.BackColor = System.Drawing.Color.Teal;
+            this.btnissue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.btnissue.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnissue.FlatAppearance.BorderSize = 0;
             this.btnissue.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -101,7 +104,7 @@
             // 
             // btnMissingbook
             // 
-            this.btnMissingbook.BackColor = System.Drawing.Color.Teal;
+            this.btnMissingbook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.btnMissingbook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMissingbook.FlatAppearance.BorderSize = 0;
             this.btnMissingbook.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -119,7 +122,7 @@
             // 
             // btnManageReturnbook
             // 
-            this.btnManageReturnbook.BackColor = System.Drawing.Color.Teal;
+            this.btnManageReturnbook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.btnManageReturnbook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnManageReturnbook.FlatAppearance.BorderSize = 0;
             this.btnManageReturnbook.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -136,7 +139,7 @@
             // 
             // btnrenewbook
             // 
-            this.btnrenewbook.BackColor = System.Drawing.Color.Teal;
+            this.btnrenewbook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.btnrenewbook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnrenewbook.FlatAppearance.BorderSize = 0;
             this.btnrenewbook.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -209,21 +212,23 @@
             // 
             this.dataGridissueBook.AllowUserToResizeColumns = false;
             this.dataGridissueBook.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
+            this.dataGridissueBook.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridissueBook.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridissueBook.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridissueBook.BackgroundColor = System.Drawing.Color.White;
             this.dataGridissueBook.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(42)))), ((int)(((byte)(129)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(42)))), ((int)(((byte)(129)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridissueBook.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridissueBook.ColumnHeadersHeight = 45;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridissueBook.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridissueBook.ColumnHeadersHeight = 35;
             this.dataGridissueBook.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridissueBook.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Name,
@@ -242,25 +247,33 @@
             this.BookID,
             this.View,
             this.Delete});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(145)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridissueBook.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridissueBook.EnableHeadersVisualStyles = false;
-            this.dataGridissueBook.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(42)))), ((int)(((byte)(129)))));
+            this.dataGridissueBook.GridColor = System.Drawing.Color.White;
             this.dataGridissueBook.Location = new System.Drawing.Point(35, 71);
             this.dataGridissueBook.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridissueBook.Name = "dataGridissueBook";
             this.dataGridissueBook.ReadOnly = true;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(42)))), ((int)(((byte)(129)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridissueBook.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(42)))), ((int)(((byte)(129)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridissueBook.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridissueBook.RowHeadersVisible = false;
             this.dataGridissueBook.RowHeadersWidth = 60;
             this.dataGridissueBook.RowTemplate.Height = 30;
             this.dataGridissueBook.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridissueBook.Size = new System.Drawing.Size(1376, 559);
+            this.dataGridissueBook.Size = new System.Drawing.Size(1419, 465);
             this.dataGridissueBook.TabIndex = 117;
             this.dataGridissueBook.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridissueBook_CellContentClick);
             // 
@@ -450,6 +463,10 @@
             // 
             // pnlManageBook
             // 
+            this.pnlManageBook.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlManageBook.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnlManageBook.Controls.Add(this.picboxrefersh);
             this.pnlManageBook.Controls.Add(this.button3);
             this.pnlManageBook.Controls.Add(this.label1);
@@ -457,24 +474,39 @@
             this.pnlManageBook.Controls.Add(this.txtSearch);
             this.pnlManageBook.Controls.Add(this.label3);
             this.pnlManageBook.Controls.Add(this.label4);
-            this.pnlManageBook.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlManageBook.Location = new System.Drawing.Point(0, 49);
+            this.pnlManageBook.Location = new System.Drawing.Point(16, 57);
             this.pnlManageBook.Margin = new System.Windows.Forms.Padding(4);
             this.pnlManageBook.Name = "pnlManageBook";
-            this.pnlManageBook.Size = new System.Drawing.Size(1424, 667);
+            this.pnlManageBook.Size = new System.Drawing.Size(1467, 573);
             this.pnlManageBook.TabIndex = 112;
+            this.pnlManageBook.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlManageBook_Paint);
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel5.Location = new System.Drawing.Point(0, 645);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1496, 12);
+            this.panel5.TabIndex = 154;
             // 
             // ManageIssuebook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1424, 716);
+            this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1496, 657);
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.pnlManageBook);
             this.Controls.Add(this.panel2);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
-           
+       
             this.Text = "ManageIssuebook";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.ManageIssuebook_Load);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridissueBook)).EndInit();
@@ -497,7 +529,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtSearch;
-        private System.Windows.Forms.DataGridView dataGridissueBook;
         private System.Windows.Forms.DataGridViewTextBoxColumn Name;
         private System.Windows.Forms.DataGridViewTextBoxColumn Author;
         private System.Windows.Forms.DataGridViewTextBoxColumn Language;
@@ -518,5 +549,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.PictureBox picboxrefersh;
         private System.Windows.Forms.Panel pnlManageBook;
+        private System.Windows.Forms.DataGridView dataGridissueBook;
+        private System.Windows.Forms.Panel panel5;
     }
 }

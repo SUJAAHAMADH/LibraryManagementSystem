@@ -74,6 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DB\Store Procedures\SP_Modified_SaveJournal%2808.02.2025%29.sql" />
+    <Content Include="DB\Store Procedures\SP_ShowCandidate.sql" />
     <Content Include="DB\Store Procedures\SP_Modify_ShowCandidate%2806.02.2025%29.sql" />
     <Content Include="DB\Store Procedures\SP_DeactiveJournal%2807.02.2025%29.sql" />
     <Content Include="DB\Store Procedures\SP_ShowJournal%2807.02.2025%29.sql" />

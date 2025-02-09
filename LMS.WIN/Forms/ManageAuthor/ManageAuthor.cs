@@ -29,7 +29,7 @@ namespace LMS.WIN.Forms.ManageAuthor
                 dataGridAuthor.AutoGenerateColumns = false;
                 dataGridAuthor.Refresh();
                 dataGridAuthor.DataSource = data;
-                getGridviewByDefaultDesign();
+               // getGridviewByDefaultDesign();
             }
             else
             {
@@ -51,7 +51,7 @@ namespace LMS.WIN.Forms.ManageAuthor
             dataGridAuthor.BackgroundColor = Color.White;
             dataGridAuthor.EnableHeadersVisualStyles = false;
             dataGridAuthor.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridAuthor.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(50, 50, 58);
+            dataGridAuthor.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(52, 56, 129);
             dataGridAuthor.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
         }
 
