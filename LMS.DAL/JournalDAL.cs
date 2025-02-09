@@ -28,8 +28,7 @@ namespace LMS.DAL
                 new SqlParameter { ParameterName = "@InvoiceDate", DbType = DbType.DateTime, Value = journal.InvoiceDate },
                 new SqlParameter { ParameterName = "@OrderNo", DbType = DbType.String, Value = journal.OrderNo ?? (object)DBNull.Value },
                 new SqlParameter { ParameterName = "@IsActive", DbType = DbType.Boolean, Value = journal.IsActive },
-                new SqlParameter { ParameterName = "@LanguageID", DbType = DbType.Int32, Value = journal.LanguageID },
-                new SqlParameter { ParameterName = "@JournalID", DbType = DbType.Int32, Value = journalID },
+                new SqlParameter { ParameterName = "@SubjectID", DbType = DbType.Int32, Value = journal.SubjectID },
                 new SqlParameter { ParameterName = "@ID", DbType = DbType.Int32, Direction = ParameterDirection.Output },
                 new SqlParameter { ParameterName = "@OutputMessage", DbType = DbType.String, Direction = ParameterDirection.Output, Size = 2000 }
             };
@@ -69,7 +68,7 @@ namespace LMS.DAL
             return journal;
         }
 
-        public static List<Journal> Get(int journalID, string name, int languageID)
+        public static List<Journal> Get(int journalID, string name, int subjectID)
         {
             #region Declaration
             List<Journal> journals = null;
@@ -85,9 +84,9 @@ namespace LMS.DAL
             {
                 param.Add(new SqlParameter("@JournalName", name));
             }
-            if (languageID != -1)
+            if (subjectID != -1)
             {
-                param.Add(new SqlParameter("@LanguageID", languageID));
+                param.Add(new SqlParameter("@SubjectID", subjectID));
             }
             #endregion
 
@@ -120,7 +119,7 @@ namespace LMS.DAL
                             InvoiceDate = row["InvoiceDate"] as DateTime? ?? DateTime.MinValue,
                             OrderNo = row["OrderNo"] as string ?? string.Empty,
                             IsActive = row["IsActive"] as bool? ?? false,
-                            LanguageID = row["LanguageID"] as int? ?? 0,
+                            SubjectID = row["SubjectID"] as int? ?? 0,
                         };
 
                         journals.Add(journal);
@@ -179,7 +178,7 @@ namespace LMS.DAL
                         InvoiceDate = row["InvoiceDate"] as DateTime? ?? DateTime.MinValue,
                         OrderNo = row["OrderNo"] as string ?? string.Empty,
                         IsActive = row["IsActive"] as bool? ?? false,
-                        LanguageID = row["LanguageID"] as int? ?? 0
+                        SubjectID = row["SubjectID"] as int? ?? 0
                     };
                 }
                 #endregion

@@ -11,7 +11,7 @@ namespace LMS.MOD
         public string InvoiceNo { get; set; } // Invoice number
         public DateTime InvoiceDate { get; set; } // Order date
         public string OrderNo { get; set; } // Order number
-        public int LanguageID { get; set; } // Foreign key for the Language table
+        public int SubjectID { get; set; } // Foreign key for the Subject table
 
         public bool IsActive { get; set; } // Indicates if the journal is active (true/false)
     }

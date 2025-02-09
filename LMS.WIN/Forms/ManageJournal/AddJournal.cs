@@ -1,16 +1,10 @@
-﻿using DocumentFormat.OpenXml.Bibliography;
-using LMS.BL;
+﻿using LMS.BL;
 using LMS.DAL.Shared;
 using LMS.MOD;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LMS.WIN.Forms.ManageJournal
@@ -113,7 +107,7 @@ namespace LMS.WIN.Forms.ManageJournal
                     InvoiceNo = tbInvoiceNo.Text,
                     InvoiceDate = dtpIDATE.Value,
                     OrderNo = tbOrderNo.Text,
-                    LanguageID = int.TryParse(cbSubjects.SelectedValue.ToString(), out int languageID) ? languageID : -1,
+                    SubjectID = int.TryParse(cbSubjects.SelectedValue.ToString(), out int subjectID) ? subjectID : -1,
                     IsActive = true
                 };
 
@@ -138,7 +132,7 @@ namespace LMS.WIN.Forms.ManageJournal
             {
                 using (SqlConnection con = SqlConnectionHelper.GetConnectionSync())
                 {
-                    string query = "SELECT LanguageID, Name FROM Language ORDER BY Name";
+                    string query = "SELECT SubjectID, Name FROM Subjects ORDER BY Name";
 
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
@@ -150,9 +144,9 @@ namespace LMS.WIN.Forms.ManageJournal
                             if (dt.Rows.Count > 0)
                             {
                                 cbSubjects.DataSource = dt;
-                                cbSubjects.DisplayMember = "Name"; // Display language name
-                                cbSubjects.ValueMember = "LanguageID"; // Use LanguageID as value
-                                cbSubjects.SelectedIndex = -1; // Optional: No selection initially
+                                cbSubjects.DisplayMember = "Name"; 
+                                cbSubjects.ValueMember = "SubjectID"; 
+                                cbSubjects.SelectedIndex = -1; 
                             }
                         }
                     }
@@ -170,6 +164,15 @@ namespace LMS.WIN.Forms.ManageJournal
         private void AddJournal_Load(object sender, EventArgs e)
         {
             LoadSubjects();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            ManageSubject.AddSubject frm = new ManageSubject.AddSubject();
+            frm.ShowDialog();
+            LoadSubjects();
+
+
         }
     }
 }
