@@ -31,7 +31,7 @@ namespace LMS.WIN.Forms.ManageBooks
                 dataGridBook.AutoGenerateColumns = false;
                 dataGridBook.DataSource = data;
                 dataGridBook.Refresh();
-                getGridviewByDefaultDesign();
+                //getGridviewByDefaultDesign();
             }
             else
             {
@@ -412,6 +412,182 @@ namespace LMS.WIN.Forms.ManageBooks
         static int GetIntegerDigitCountString(int value)
         {
             return value.ToString().Length;
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            bindBookList();
+        }
+
+        private void btnAddNewBooks_Click(object sender, EventArgs e)
+        {
+            frmAddbook addbook = new frmAddbook();
+            addbook.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MOD.Language language = null;
+                Publisher publisher = null;
+                Author author = null;
+                Category category = null;
+
+                OpenFileDialog openFileDialog = new OpenFileDialog();
+                openFileDialog.Filter = "Excel Files(.xls)|*.xls| Excel Files(.xlsx)| *.xlsx";
+                openFileDialog.ShowDialog();
+                string fileName = openFileDialog.FileName;
+
+                System.Data.DataTable dt = Utill.ImportExcel.ImportExcelData(fileName);
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    Book book = new Book();
+                    bool isRestricted = false;
+                    if (dt.Rows[i]["Type"].ToString() == "Restricted")
+                    {
+                        isRestricted = true;
+                    }
+
+                    //For Publisher
+                    if (dt.Rows[i]["Publisher"].ToString() != null && dt.Rows[i]["Publisher"].ToString() != "")
+                    {
+                        publisher = PublisherBL.GetByName(dt.Rows[i]["Publisher"].ToString(), userID);
+                    }
+                    else
+                    {
+                        publisher.PublisherID = -1;
+                    }
+
+                    //For Language
+                    if (dt.Rows[i]["Language"].ToString() != null && dt.Rows[i]["Language"].ToString() != "")
+                    {
+                        language = LanguageBL.GetByName(dt.Rows[i]["Language"].ToString(), userID);
+                    }
+                    else
+                    {
+                        language.LanguageID = -1;
+                    }
+
+                    //For Author
+                    if (dt.Rows[i]["Author"].ToString() != null && dt.Rows[i]["Author"].ToString() != "")
+                    {
+                        author = AuthorBL.GetByName(dt.Rows[i]["Author"].ToString(), userID);
+                    }
+                    else
+                    {
+                        author.AuthorID = -1;
+                    }
+
+                    //For Category
+                    if (dt.Rows[i]["Category"].ToString() != null && dt.Rows[i]["Category"].ToString() != "")
+                    {
+                        category = CategoryBL.GetByName(dt.Rows[i]["Category"].ToString(), userID);
+                    }
+                    else
+                    {
+                        category.CategoryID = -1;
+                    }
+
+                    #region Start Barcode Generating Code 
+                    string barcode = null;
+                    List<BookBarcode> bookBarcodes = new List<BookBarcode>();
+                    if (!string.IsNullOrEmpty(dt.Rows[i]["Total Quantity"].ToString()))
+                    {
+                        int totalBookCopies = Convert.ToInt32(dt.Rows[i]["Total Quantity"].ToString());
+                        if (isRestricted == true)
+                        {
+                            barcode = BookBL.GetBarcode(true);
+                        }
+                        else
+                        {
+                            barcode = BookBL.GetBarcode(false);
+                        }
+
+                        BookBarcode b = new BookBarcode();
+                        b.BookBarcodeID = -1;
+                        b.Barcode = barcode;
+                        bookBarcodes.Add(b);
+
+                        string[] row = null;
+                        for (int j = 1; j < totalBookCopies; j++)
+                        {
+                            row = new string[] { j.ToString(), barcode };
+                            string prefix = barcode.Substring(0, 2);
+                            barcode = barcode.Substring(2);
+
+                            int code = Convert.ToInt32(barcode);
+                            code += 1;
+
+                            int length = GetIntegerDigitCountString(code);
+                            if (length == 1)
+                            {
+                                barcode = prefix + "00000" + code.ToString();
+                            }
+                            else if (length == 2)
+                            {
+                                barcode = prefix + "0000" + code.ToString();
+                            }
+                            else if (length == 3)
+                            {
+                                barcode = prefix + "000" + code.ToString();
+                            }
+                            else if (length == 4)
+                            {
+                                barcode = prefix + "00" + code.ToString();
+                            }
+                            else if (length == 5)
+                            {
+                                barcode = prefix + "0" + code.ToString();
+                            }
+
+                            BookBarcode bookBarcode = new BookBarcode();
+                            bookBarcode.BookBarcodeID = -1;
+                            bookBarcode.Barcode = barcode;
+                            bookBarcodes.Add(bookBarcode);
+                        }
+                    }
+                    #endregion
+
+                    book.BookID = -1;
+                    book.Name = dt.Rows[i]["Name"].ToString();
+                    book.Edition = dt.Rows[i]["Edition"].ToString();
+                    book.Funds = dt.Rows[i]["Funds"].ToString();
+                    book.Price = Convert.ToDecimal(dt.Rows[i]["Price"].ToString());
+                    book.Isbn = dt.Rows[i]["ISBN"].ToString();
+                    book.IsRestricted = isRestricted;
+                    book.TotalQuantity = Convert.ToInt32(dt.Rows[i]["Total Quantity"].ToString());
+                    book.PublisherID = publisher.PublisherID;
+                    book.AuthorID = author.AuthorID;
+                    book.LanguageID = language.LanguageID;
+                    book.CategoryID = category.CategoryID;
+                    book.UserID = userID;
+                    book.BookBarcodes = bookBarcodes;
+
+                    BookBL.Save(book);
+                }
+                MessageBox.Show("Book Details Saved successfully...!");
+                bindBookList();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

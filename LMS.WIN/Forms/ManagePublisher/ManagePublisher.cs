@@ -65,18 +65,7 @@ namespace LMS.WIN.Forms.ManagePublisher
             //dataGridPublisher.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
             //dataGridPublisher.ColumnHeadersDefaultCellStyle.Font = new Font("Microsoft Sans Serif", 10, FontStyle.Bold);
 
-            dataGridPublisher.ColumnHeadersHeight = 35;
-            dataGridPublisher.BorderStyle = BorderStyle.None;
-            dataGridPublisher.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
-            dataGridPublisher.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridPublisher.DefaultCellStyle.SelectionBackColor = Color.Teal;
-            dataGridPublisher.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
-            dataGridPublisher.BackgroundColor = Color.White;
-
-            dataGridPublisher.EnableHeadersVisualStyles = false;
-            dataGridPublisher.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridPublisher.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(50, 50, 58);
-            dataGridPublisher.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+   
         }
 
         private void dataGridPublisher_CellContentClick(object sender, DataGridViewCellEventArgs e)

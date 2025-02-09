@@ -121,5 +121,10 @@ namespace LMS.WIN.Forms
         {
             bindAvilableBookList();
         }
+
+        private void pnlManageBook_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
