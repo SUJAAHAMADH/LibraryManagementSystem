@@ -28,7 +28,7 @@ namespace LMS.WIN.Forms.Language
         {
             if (txtLanguage.Text != string.Empty)
             {
-                if (MessageBox.Show("Do You Want To Save the Subject ?", "Done ?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                if (MessageBox.Show("Do You Want To Save the Language ?", "Done ?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                 {
                     try
                     {
@@ -38,14 +38,14 @@ namespace LMS.WIN.Forms.Language
                             UserID = userID,
                         };
                         language = LanguageBL.Save(language);
-                        MessageBox.Show("Subject Save successfully.", "Subject", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Language Save successfully.", "Language", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         txtLanguage.Text = string.Empty;
                         Close();
 
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message, "Subject", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show(ex.Message, "Language", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }

@@ -20,11 +20,11 @@ namespace LMS.BL
             }
         }
 
-        public static List<Journal> Get(int journalID = -1, string name = "", int languageID = -1)
+        public static List<Journal> Get(int journalID = -1, string name = "", int SubjectID = -1)
         {
             try
             {
-                List<Journal> journals = JournalDAL.Get(journalID, name, languageID);
+                List<Journal> journals = JournalDAL.Get(journalID, name, SubjectID);
                 return journals;
             }
             catch (Exception ex)

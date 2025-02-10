@@ -1,6 +1,6 @@
-﻿namespace LMS.WIN.Forms.Language
+﻿namespace LMS.WIN.Forms.ManageSubject
 {
-    partial class frmAddLanguage
+    partial class AddSubject
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddLanguage));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddSubject));
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -40,7 +40,7 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtLanguage = new System.Windows.Forms.TextBox();
+            this.tbSubject = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLibrary)).BeginInit();
             this.SuspendLayout();
@@ -52,7 +52,7 @@
             this.panel4.Location = new System.Drawing.Point(5, 137);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(481, 5);
-            this.panel4.TabIndex = 107;
+            this.panel4.TabIndex = 115;
             // 
             // panel3
             // 
@@ -61,7 +61,7 @@
             this.panel3.Location = new System.Drawing.Point(486, 40);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(5, 102);
-            this.panel3.TabIndex = 106;
+            this.panel3.TabIndex = 114;
             // 
             // panel1
             // 
@@ -70,7 +70,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 40);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(5, 102);
-            this.panel1.TabIndex = 104;
+            this.panel1.TabIndex = 112;
             // 
             // panel2
             // 
@@ -83,13 +83,13 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(491, 40);
-            this.panel2.TabIndex = 105;
+            this.panel2.TabIndex = 113;
             // 
             // pbLibrary
             // 
             this.pbLibrary.BackColor = System.Drawing.Color.Transparent;
             this.pbLibrary.Image = ((System.Drawing.Image)(resources.GetObject("pbLibrary.Image")));
-            this.pbLibrary.Location = new System.Drawing.Point(10, 3);
+            this.pbLibrary.Location = new System.Drawing.Point(10, 4);
             this.pbLibrary.Name = "pbLibrary";
             this.pbLibrary.Size = new System.Drawing.Size(36, 30);
             this.pbLibrary.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -99,9 +99,9 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(184, 16);
+            this.panel5.Location = new System.Drawing.Point(162, 17);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(250, 4);
+            this.panel5.Size = new System.Drawing.Size(270, 4);
             this.panel5.TabIndex = 25;
             // 
             // btnCloses
@@ -111,7 +111,7 @@
             this.btnCloses.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCloses.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.btnCloses.ForeColor = System.Drawing.Color.White;
-            this.btnCloses.Location = new System.Drawing.Point(450, 5);
+            this.btnCloses.Location = new System.Drawing.Point(450, 4);
             this.btnCloses.Name = "btnCloses";
             this.btnCloses.Size = new System.Drawing.Size(29, 26);
             this.btnCloses.TabIndex = 24;
@@ -126,11 +126,11 @@
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.label7.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(52, 7);
+            this.label7.Location = new System.Drawing.Point(52, 8);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(120, 23);
+            this.label7.Size = new System.Drawing.Size(105, 23);
             this.label7.TabIndex = 23;
-            this.label7.Text = "Add Language";
+            this.label7.Text = "Add Subject";
             // 
             // btnClose
             // 
@@ -142,7 +142,7 @@
             this.btnClose.Location = new System.Drawing.Point(330, 86);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(120, 36);
-            this.btnClose.TabIndex = 102;
+            this.btnClose.TabIndex = 111;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
@@ -157,7 +157,7 @@
             this.btnSave.Location = new System.Drawing.Point(196, 86);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(120, 36);
-            this.btnSave.TabIndex = 100;
+            this.btnSave.TabIndex = 109;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -166,25 +166,24 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(46, 54);
+            this.label1.Location = new System.Drawing.Point(52, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 19);
-            this.label1.TabIndex = 101;
-            this.label1.Text = "Language Name";
+            this.label1.Size = new System.Drawing.Size(115, 19);
+            this.label1.TabIndex = 110;
+            this.label1.Text = "Subject Name";
             // 
-            // txtLanguage
+            // tbSubject
             // 
-            this.txtLanguage.Font = new System.Drawing.Font("Calibri", 16F);
-            this.txtLanguage.Location = new System.Drawing.Point(186, 46);
-            this.txtLanguage.Name = "txtLanguage";
-            this.txtLanguage.Size = new System.Drawing.Size(269, 34);
-            this.txtLanguage.TabIndex = 98;
+            this.tbSubject.Font = new System.Drawing.Font("Calibri", 16F);
+            this.tbSubject.Location = new System.Drawing.Point(186, 46);
+            this.tbSubject.Name = "tbSubject";
+            this.tbSubject.Size = new System.Drawing.Size(269, 34);
+            this.tbSubject.TabIndex = 108;
             // 
-            // frmAddLanguage
+            // AddSubject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(491, 142);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -193,11 +192,11 @@
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtLanguage);
+            this.Controls.Add(this.tbSubject);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmAddLanguage";
+            this.Name = "AddSubject";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmAddLanguage";
+            this.Text = "AddSubject";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLibrary)).EndInit();
@@ -212,13 +211,13 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pbLibrary;
+        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btnCloses;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtLanguage;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.PictureBox pbLibrary;
+        private System.Windows.Forms.TextBox tbSubject;
     }
 }

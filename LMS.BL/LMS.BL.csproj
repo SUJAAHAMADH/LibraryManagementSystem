@@ -56,6 +56,7 @@
     <Compile Include="CourseBL.cs" />
     <Compile Include="DashboardBL.cs" />
     <Compile Include="IssueBookBL.cs" />
+    <Compile Include="SubjectBL.cs" />
     <Compile Include="LanguageBL.cs" />
     <Compile Include="MissingBookBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

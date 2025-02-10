@@ -330,6 +330,18 @@
     <Compile Include="Forms\ManageJournal\AddJournal.Designer.cs">
       <DependentUpon>AddJournal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ManageJournal\ManageJournal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageJournal\ManageJournal.Designer.cs">
+      <DependentUpon>ManageJournal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageJournal\ViewJournalDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageJournal\ViewJournalDetails.Designer.cs">
+      <DependentUpon>ViewJournalDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ManagePublisher\frmAddPublisher.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -341,6 +353,12 @@
     </Compile>
     <Compile Include="Forms\ManagePublisher\ManagePublisher.Designer.cs">
       <DependentUpon>ManagePublisher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageSubject\AddSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageSubject\AddSubject.Designer.cs">
+      <DependentUpon>AddSubject.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\ManageUser\frmAddUser.cs">
       <SubType>Form</SubType>
@@ -559,11 +577,20 @@
     <EmbeddedResource Include="Forms\ManageJournal\AddJournal.resx">
       <DependentUpon>AddJournal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageJournal\ManageJournal.resx">
+      <DependentUpon>ManageJournal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageJournal\ViewJournalDetails.resx">
+      <DependentUpon>ViewJournalDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ManagePublisher\frmAddPublisher.resx">
       <DependentUpon>frmAddPublisher.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ManagePublisher\ManagePublisher.resx">
       <DependentUpon>ManagePublisher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageSubject\AddSubject.resx">
+      <DependentUpon>AddSubject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ManageUser\frmAddUser.resx">
       <DependentUpon>frmAddUser.cs</DependentUpon>

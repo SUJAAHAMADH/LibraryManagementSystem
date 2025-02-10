@@ -266,7 +266,7 @@ namespace LMS.WIN.Forms
             if (expend2 == false)
             {
                 panel9.Height += 40;
-                if (panel9.Height >= 210)
+                if (panel9.Height >= 205)
                 {
                     MasterTimer.Stop();
                     expend2 = true;
@@ -309,15 +309,15 @@ namespace LMS.WIN.Forms
         private void button13_Click(object sender, EventArgs e)
         {
             panelContenedor.Controls.Clear();
-            Language.frmAddLanguage frmAddLanguage = new Language.frmAddLanguage();
-            frmAddLanguage.Show();
+            ManageSubject.AddSubject addSubject = new ManageSubject.AddSubject();
+            addSubject.Show();
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            ManageJournal.AddJournal manageJournal = new ManageJournal.AddJournal();
             panelContenedor.Controls.Clear();
-            manageJournal.Show();
+            ManageJournal.ManageJournal manageJournal = new ManageJournal.ManageJournal();
+            AbrirFormInPanel(manageJournal);
         }
 
         private void iconMinimizar_Click(object sender, EventArgs e)
