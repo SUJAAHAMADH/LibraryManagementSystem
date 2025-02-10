@@ -65,6 +65,7 @@
     <Compile Include="Shared\ResponseWrapper.cs" />
     <Compile Include="StudentBL.cs" />
     <Compile Include="UserBL.cs" />
+    <Compile Include="VolumeBL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LMS.DAL\LMS.DAL.csproj">

@@ -66,6 +66,7 @@
     <Compile Include="Shared\SqlConnectionHelper.cs" />
     <Compile Include="StudentDAL.cs" />
     <Compile Include="UserDAL.cs" />
+    <Compile Include="VolumeDAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LMS.MOD\LMS.MOD.csproj">
@@ -75,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DB\Store Procedures\SP_Modified_SaveJournal%2808.02.2025%29.sql" />
+    <Content Include="DB\Store Procedures\SP_Volume.sql" />
     <Content Include="DB\Store Procedures\SP_SaveJournal.sql" />
     <Content Include="DB\Store Procedures\SP_ShowSubject.sql" />
     <Content Include="DB\Store Procedures\SP_ShowCandidate.sql" />
