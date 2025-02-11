@@ -20,6 +20,20 @@ namespace LMS.BL
             }
         }
 
+        public static Journal Update(Journal journal)
+        {
+            try
+            {
+                journal = JournalDAL.Update(journal, journal.ID);
+                return journal;
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
+        }
+
         public static List<Journal> Get(int journalID = -1, string name = "", int SubjectID = -1)
         {
             try

@@ -353,6 +353,7 @@
             // 
             // InvoiceDate
             // 
+            this.InvoiceDate.DataPropertyName = "InvoiceDate";
             this.InvoiceDate.HeaderText = "InvoiceDate";
             this.InvoiceDate.Name = "InvoiceDate";
             this.InvoiceDate.ReadOnly = true;
@@ -360,7 +361,7 @@
             // 
             // OrderNo
             // 
-            this.OrderNo.DataPropertyName = "InvoiceDate";
+            this.OrderNo.DataPropertyName = "OrderNo";
             this.OrderNo.HeaderText = "OrderNo";
             this.OrderNo.Name = "OrderNo";
             this.OrderNo.ReadOnly = true;

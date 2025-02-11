@@ -66,7 +66,7 @@ namespace LMS.WIN.Forms.ManageJournal
 
         private void btnAddNewJournal_Click(object sender, EventArgs e)
         {
-            AddJournal addJournal = new AddJournal();
+            AddJournal addJournal = new AddJournal(null);
             addJournal.ShowDialog();
             bindJournalList();
         }
@@ -139,19 +139,27 @@ namespace LMS.WIN.Forms.ManageJournal
             {
                 if (dgvRow != null)
                 {
+                    int id = dgvRow.Cells["ID"].Value == DBNull.Value ? -1 : Convert.ToInt32(dgvRow.Cells["ID"].Value);
+                    string name = dgvRow.Cells["Name"].Value?.ToString() ?? string.Empty;
+                    int frequency = dgvRow.Cells["Frequency"].Value == DBNull.Value ? 0 : Convert.ToInt32(dgvRow.Cells["Frequency"].Value);
+                    decimal price = dgvRow.Cells["Price"].Value == DBNull.Value ? 0.0m : Convert.ToDecimal(dgvRow.Cells["Price"].Value);
+                    string invoiceNo = dgvRow.Cells["InvoiceNo"].Value?.ToString() ?? string.Empty;
+                    DateTime invoiceDate = dgvRow.Cells["InvoiceDate"].Value == DBNull.Value ? DateTime.MinValue : Convert.ToDateTime(dgvRow.Cells["InvoiceDate"].Value);
+                    string orderNo = dgvRow.Cells["OrderNo"].Value?.ToString() ?? string.Empty;
+                    int subjectId = dgvRow.Cells["SubjectID"].Value == DBNull.Value ? -1 : Convert.ToInt32(dgvRow.Cells["SubjectID"].Value);
+
                     Journal journal = new Journal
                     {
-                        ID = Convert.ToInt32(dgvRow.Cells["ID"].Value),
-                        JournalName = dgvRow.Cells["Name"].Value?.ToString() ?? string.Empty,
-                        Frequency = Convert.ToInt32(dgvRow.Cells["Frequency"].Value),
-                        Price = Convert.ToDecimal(dgvRow.Cells["Price"].Value),
-                        InvoiceNo = dgvRow.Cells["InvoiceNo"].Value?.ToString() ?? string.Empty,
-                        InvoiceDate = Convert.ToDateTime(dgvRow.Cells["InvoiceDate"].Value),
-                        OrderNo = dgvRow.Cells["OrderNo"].Value?.ToString() ?? string.Empty,
-                        SubjectID = Convert.ToInt32(dgvRow.Cells["SubjectID"].Value)
+                        ID = id,
+                        JournalName = name,
+                        Frequency = frequency,
+                        Price = price,
+                        InvoiceNo = invoiceNo,
+                        InvoiceDate = invoiceDate,
+                        OrderNo = orderNo,
+                        SubjectID = subjectId,
                     };
-
-                    AddJournal addJournal = new AddJournal();
+                    AddJournal addJournal = new AddJournal(journal);
                     addJournal.ShowDialog();
                     bindJournalList();
                 }

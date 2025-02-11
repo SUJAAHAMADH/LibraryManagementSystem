@@ -11,10 +11,11 @@ namespace LMS.WIN.Forms.ManageJournal
 {
     public partial class AddJournal : Form
     {
-        public AddJournal()
+        private Journal _journal;
+        public AddJournal(Journal journal)
         {
             InitializeComponent();
-    
+            _journal = journal;
         }
 
 
@@ -76,28 +77,23 @@ namespace LMS.WIN.Forms.ManageJournal
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            // Validate Journal Name
             if (string.IsNullOrEmpty(tbJName.Text))
             {
-                MessageBox.Show("Journal Name cannot be empty. Please fill in the Journal Name.",
-                                "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Journal Name cannot be empty.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            // Confirm Save Action
             DialogResult result = MessageBox.Show("Do you want to save the journal?",
                                                   "Confirm Save", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (result == DialogResult.No)
-            {
                 return;
-            }
 
             try
             {
-                // Create Journal Object
                 Journal journal = new Journal
                 {
+                    ID = _journal?.ID ?? -1,  // Keep ID for updates
                     JournalName = tbJName.Text,
                     Frequency = int.TryParse(tbFrequency.Text, out int frequency) ? frequency : 0,
                     Price = decimal.TryParse(tbPrice.Text, out decimal price) ? price : 0,
@@ -108,13 +104,14 @@ namespace LMS.WIN.Forms.ManageJournal
                     IsActive = true
                 };
 
-                // Save Journal
-                journal = JournalBL.Save(journal, -1);
+                if (_journal == null || _journal.ID == -1)
+                    journal = JournalBL.Save(journal, -1);  // Add new journal
+                else
+                    journal = JournalBL.Update(journal);  // Update existing journal
 
-                MessageBox.Show($"Journal saved successfully. Journal ID: {journal.ID}",
+                MessageBox.Show($"Journal {(journal.ID == -1 ? "saved" : "updated")} successfully.",
                                 "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // Clear Fields and Close Form
                 Clear();
                 Close();
             }
@@ -123,6 +120,7 @@ namespace LMS.WIN.Forms.ManageJournal
                 MessageBox.Show($"Error: {ex.Message}", "Journal", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
         private void LoadSubjects()
         {
             try
@@ -161,7 +159,19 @@ namespace LMS.WIN.Forms.ManageJournal
         private void AddJournal_Load(object sender, EventArgs e)
         {
             LoadSubjects();
+
+            if (_journal != null)
+            {
+                tbJName.Text = _journal.JournalName;
+                tbFrequency.Text = _journal.Frequency.ToString();
+                tbPrice.Text = _journal.Price.ToString();
+                tbInvoiceNo.Text = _journal.InvoiceNo;
+                dtpIDATE.Value = _journal.InvoiceDate == DateTime.MinValue ? DateTime.Now : _journal.InvoiceDate;
+                tbOrderNo.Text = _journal.OrderNo;
+                cbSubjects.SelectedValue = _journal.SubjectID;
+            }
         }
+
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
