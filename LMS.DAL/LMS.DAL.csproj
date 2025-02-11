@@ -66,6 +66,7 @@
     <Compile Include="Shared\SqlConnectionHelper.cs" />
     <Compile Include="StudentDAL.cs" />
     <Compile Include="UserDAL.cs" />
+    <Compile Include="VolumeDAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LMS.MOD\LMS.MOD.csproj">
@@ -74,23 +75,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DB\Store Procedures\SP_Modified_SaveJournal%2808.02.2025%29.sql" />
-    <Content Include="DB\Store Procedures\SP_SaveJournal.sql" />
-    <Content Include="DB\Store Procedures\SP_ShowSubject.sql" />
-    <Content Include="DB\Store Procedures\SP_ShowCandidate.sql" />
-    <Content Include="DB\Store Procedures\SP_Modify_ShowCandidate%2806.02.2025%29.sql" />
-    <Content Include="DB\Store Procedures\SP_DeactiveJournal%2807.02.2025%29.sql" />
-    <Content Include="DB\Store Procedures\SP_ShowJournal%2807.02.2025%29.sql" />
-    <Content Include="DB\Store Procedures\SP_SaveJournal%2807.02.2025%29.sql" />
-    <Content Include="DB\Store Procedures\StoreProcedures%2804.02.2025%29.sql" />
-    <Content Include="DB\LibraryManagement%2818-12-2019%29.sql" />
+    <Content Include="DB\Store Procedures\SP_Volume.sql" />
+    <Content Include="DB\Store Procedures\SP_Journal.sql" />
+    <Content Include="DB\Store Procedures\SP_Subject.sql" />
+    <Content Include="DB\Store Procedures\SP_Candidate.sql" />
     <Content Include="DB\LibraryManagement%2802.02.2025%29.sql" />
-    <Content Include="DB\LibraryManagement%2824-12-2019%29.sql" />
-    <Content Include="DB\LibraryManagement%2825-12-2019%29.sql" />
-    <Content Include="DB\LibraryManagement-Army%2822-09-2020%29.sql" />
-    <Content Include="DB\LibraryManagementSystem-Army%2802-09-2020%29.sql" />
-    <Content Include="DB\LMS%2817-11-2019%29.sql" />
-    <Content Include="DB\LMS%2823-09-2020%29.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

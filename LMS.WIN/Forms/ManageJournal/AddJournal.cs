@@ -17,9 +17,6 @@ namespace LMS.WIN.Forms.ManageJournal
     
         }
 
-        Journal journal = null;
-
-
 
         private void Clear()
         {
