@@ -71,26 +71,26 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtvendor = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtdiscount = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txtBookCopies = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtBillNo = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtofficeorder = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtrackno = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtvolume = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
+            this.dtpbilldate = new System.Windows.Forms.DateTimePicker();
+            this.orderdate = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.gridBookList)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
@@ -603,15 +603,15 @@
             this.panel4.Size = new System.Drawing.Size(1366, 6);
             this.panel4.TabIndex = 123;
             // 
-            // textBox1
+            // txtvendor
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(232, 380);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(435, 26);
-            this.textBox1.TabIndex = 124;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtvendor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtvendor.Location = new System.Drawing.Point(232, 380);
+            this.txtvendor.Margin = new System.Windows.Forms.Padding(4);
+            this.txtvendor.Name = "txtvendor";
+            this.txtvendor.Size = new System.Drawing.Size(435, 26);
+            this.txtvendor.TabIndex = 124;
+            this.txtvendor.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label10
             // 
@@ -625,14 +625,14 @@
             this.label10.Text = "Vendor and Source";
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
-            // textBox2
+            // txtdiscount
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(232, 613);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(435, 26);
-            this.textBox2.TabIndex = 126;
+            this.txtdiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtdiscount.Location = new System.Drawing.Point(232, 613);
+            this.txtdiscount.Margin = new System.Windows.Forms.Padding(4);
+            this.txtdiscount.Name = "txtdiscount";
+            this.txtdiscount.Size = new System.Drawing.Size(435, 26);
+            this.txtdiscount.TabIndex = 126;
             // 
             // label17
             // 
@@ -667,14 +667,14 @@
             this.txtBookCopies.TextChanged += new System.EventHandler(this.txtBookCopies_TextChanged);
             this.txtBookCopies.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBookCopies_KeyPress);
             // 
-            // textBox3
+            // txtBillNo
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(232, 414);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(435, 26);
-            this.textBox3.TabIndex = 128;
+            this.txtBillNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBillNo.Location = new System.Drawing.Point(232, 414);
+            this.txtBillNo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBillNo.Name = "txtBillNo";
+            this.txtBillNo.Size = new System.Drawing.Size(435, 26);
+            this.txtBillNo.TabIndex = 128;
             // 
             // label18
             // 
@@ -687,15 +687,6 @@
             this.label18.TabIndex = 129;
             this.label18.Text = "Bill No.";
             // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(232, 448);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(435, 26);
-            this.textBox4.TabIndex = 130;
-            // 
             // label19
             // 
             this.label19.AutoSize = true;
@@ -706,15 +697,6 @@
             this.label19.Size = new System.Drawing.Size(77, 21);
             this.label19.TabIndex = 131;
             this.label19.Text = "Bill Date";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(232, 516);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(435, 26);
-            this.textBox5.TabIndex = 134;
             // 
             // label20
             // 
@@ -727,14 +709,14 @@
             this.label20.TabIndex = 135;
             this.label20.Text = "Office Order Date";
             // 
-            // textBox6
+            // txtofficeorder
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(232, 482);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(435, 26);
-            this.textBox6.TabIndex = 132;
+            this.txtofficeorder.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtofficeorder.Location = new System.Drawing.Point(232, 482);
+            this.txtofficeorder.Margin = new System.Windows.Forms.Padding(4);
+            this.txtofficeorder.Name = "txtofficeorder";
+            this.txtofficeorder.Size = new System.Drawing.Size(435, 26);
+            this.txtofficeorder.TabIndex = 132;
             // 
             // label21
             // 
@@ -747,14 +729,14 @@
             this.label21.TabIndex = 133;
             this.label21.Text = "Office Order";
             // 
-            // textBox7
+            // txtrackno
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(232, 550);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(435, 26);
-            this.textBox7.TabIndex = 136;
+            this.txtrackno.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtrackno.Location = new System.Drawing.Point(232, 550);
+            this.txtrackno.Margin = new System.Windows.Forms.Padding(4);
+            this.txtrackno.Name = "txtrackno";
+            this.txtrackno.Size = new System.Drawing.Size(435, 26);
+            this.txtrackno.TabIndex = 136;
             // 
             // label22
             // 
@@ -769,34 +751,34 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox8);
+            this.groupBox1.Controls.Add(this.orderdate);
+            this.groupBox1.Controls.Add(this.dtpbilldate);
+            this.groupBox1.Controls.Add(this.txtvolume);
             this.groupBox1.Controls.Add(this.label23);
             this.groupBox1.Controls.Add(this.txtISBN);
-            this.groupBox1.Controls.Add(this.textBox7);
+            this.groupBox1.Controls.Add(this.txtrackno);
             this.groupBox1.Controls.Add(this.txtbookName);
             this.groupBox1.Controls.Add(this.label22);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox5);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label20);
             this.groupBox1.Controls.Add(this.txtAuthor);
-            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.txtofficeorder);
             this.groupBox1.Controls.Add(this.txtEdition);
             this.groupBox1.Controls.Add(this.label21);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox4);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label19);
             this.groupBox1.Controls.Add(this.txtPublisher);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txtBillNo);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label18);
             this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtdiscount);
             this.groupBox1.Controls.Add(this.label17);
             this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.comboBoxtype);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtvendor);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.comboBoxSubCategry);
@@ -840,14 +822,14 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Barcode Details";
             // 
-            // textBox8
+            // txtvolume
             // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(232, 348);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(435, 26);
-            this.textBox8.TabIndex = 138;
+            this.txtvolume.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtvolume.Location = new System.Drawing.Point(232, 348);
+            this.txtvolume.Margin = new System.Windows.Forms.Padding(4);
+            this.txtvolume.Name = "txtvolume";
+            this.txtvolume.Size = new System.Drawing.Size(435, 26);
+            this.txtvolume.TabIndex = 138;
             // 
             // label23
             // 
@@ -859,6 +841,32 @@
             this.label23.Size = new System.Drawing.Size(144, 21);
             this.label23.TabIndex = 139;
             this.label23.Text = "Volume Number";
+            // 
+            // dtpbilldate
+            // 
+            this.dtpbilldate.CalendarFont = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpbilldate.CustomFormat = " dd/MM/yyyy";
+            this.dtpbilldate.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpbilldate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpbilldate.Location = new System.Drawing.Point(232, 446);
+            this.dtpbilldate.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpbilldate.Name = "dtpbilldate";
+            this.dtpbilldate.Size = new System.Drawing.Size(435, 28);
+            this.dtpbilldate.TabIndex = 140;
+            this.dtpbilldate.Value = new System.DateTime(2025, 2, 3, 0, 0, 0, 0);
+            // 
+            // orderdate
+            // 
+            this.orderdate.CalendarFont = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.orderdate.CustomFormat = " dd/MM/yyyy";
+            this.orderdate.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.orderdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.orderdate.Location = new System.Drawing.Point(232, 516);
+            this.orderdate.Margin = new System.Windows.Forms.Padding(4);
+            this.orderdate.Name = "orderdate";
+            this.orderdate.Size = new System.Drawing.Size(435, 28);
+            this.orderdate.TabIndex = 141;
+            this.orderdate.Value = new System.DateTime(2025, 2, 3, 0, 0, 0, 0);
             // 
             // frmAddbook
             // 
@@ -939,25 +947,25 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtvendor;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtdiscount;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtBookCopies;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtBillNo;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtofficeorder;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtrackno;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtvolume;
         private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.DateTimePicker orderdate;
+        private System.Windows.Forms.DateTimePicker dtpbilldate;
     }
 }

@@ -31,6 +31,16 @@ namespace LMS.DAL
                     new SqlParameter{ParameterName = "@IsRestricted", DbType = DbType.Boolean, Value = book.IsRestricted},
                     new SqlParameter{ParameterName = "@Funds", DbType = DbType.String, Value = book.Funds},
                     new SqlParameter{ParameterName = "@UserID", DbType = DbType.Int32, Value = book.UserID},
+
+                    new SqlParameter{ParameterName = "@VolumeNo", DbType = DbType.String, Value = book.VolumeNo},
+                    new SqlParameter{ParameterName = "@Vendor", DbType = DbType.String, Value = book.Vendor},
+                    new SqlParameter{ParameterName = "@BillNo", DbType = DbType.String, Value = book.BillNo},
+                    new SqlParameter{ParameterName = "@BillDate", DbType = DbType.DateTime, Value = book.BillDate},
+                    new SqlParameter{ParameterName = "@OfficeOrder", DbType = DbType.String, Value = book.OfficeOrder},
+                    new SqlParameter{ParameterName = "@OfficeOrderDate", DbType = DbType.DateTime, Value = book.OfficeOrderDate},
+                    new SqlParameter{ParameterName = "@Discount", DbType = DbType.Decimal, Value = book.Discount},
+                    new SqlParameter{ParameterName = "@RackNo", DbType = DbType.Int32, Value = book.RackNo},
+
                     new SqlParameter{ParameterName = "@ID", DbType = DbType.Int32, Direction = ParameterDirection.Output},
                     new SqlParameter{ParameterName = "@OutputMessage", DbType = DbType.String, Direction = ParameterDirection.Output, Size = 2000}
                 };

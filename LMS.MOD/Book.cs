@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace LMS.MOD
 {
@@ -23,5 +24,15 @@ namespace LMS.MOD
         public string Publisher { get; set; }
         public int UserID { get; set; }
         public List<BookBarcode> BookBarcodes { get; set; }
+
+        public string VolumeNo { get; set; }
+        public string Vendor { get; set; }
+        public string BillNo { get; set; }
+        public DateTime? BillDate { get; set; }
+        public string OfficeOrder { get; set; }
+        public DateTime? OfficeOrderDate { get; set; }
+        public decimal? Discount { get; set; }
+        public string RackNo { get; set; }
+
     }
 }
