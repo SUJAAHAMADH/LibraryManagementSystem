@@ -120,7 +120,7 @@
             this.btnCancel.Location = new System.Drawing.Point(802, 382);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(199, 46);
-            this.btnCancel.TabIndex = 10;
+            this.btnCancel.TabIndex = 11;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -135,7 +135,7 @@
             this.btnClear.Location = new System.Drawing.Point(802, 321);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(199, 46);
-            this.btnClear.TabIndex = 9;
+            this.btnClear.TabIndex = 10;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
@@ -152,7 +152,7 @@
             this.btnSave.Location = new System.Drawing.Point(802, 260);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(199, 46);
-            this.btnSave.TabIndex = 8;
+            this.btnSave.TabIndex = 9;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -341,7 +341,7 @@
             this.cbSubjects.Location = new System.Drawing.Point(294, 502);
             this.cbSubjects.Name = "cbSubjects";
             this.cbSubjects.Size = new System.Drawing.Size(365, 34);
-            this.cbSubjects.TabIndex = 104;
+            this.cbSubjects.TabIndex = 7;
             // 
             // btnAdd
             // 
@@ -353,7 +353,7 @@
             this.btnAdd.Location = new System.Drawing.Point(674, 502);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(49, 34);
-            this.btnAdd.TabIndex = 105;
+            this.btnAdd.TabIndex = 8;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
