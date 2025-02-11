@@ -1,6 +1,8 @@
 ﻿using LMS.BL;
 using LMS.MOD;
 using LMS.WIN.Forms.ManageBooks;
+using LMS.WIN.Forms.ManageCandidate;
+using LMS.WIN.Forms.ManageVolume;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +17,7 @@ namespace LMS.WIN.Forms.ManageJournal
 {
     public partial class ManageJournal : Form
     {
+
         public ManageJournal()
         {
             InitializeComponent();
@@ -76,46 +79,108 @@ namespace LMS.WIN.Forms.ManageJournal
 
         private void dataGridBook_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            // Ensure a row is selected
+            DataGridViewRow dgvRow = dataGridBook.CurrentRow;
+            if (dgvRow == null)
+            {
+                MessageBox.Show("No row selected.");
+                return;
+            }
+
+            // Handle "View" column click
             if (dataGridBook.Columns[e.ColumnIndex].Name == "View")
             {
-                DataGridViewRow dgvRow = dataGridBook.CurrentRow;
+                int id = dgvRow.Cells["ID"].Value == DBNull.Value ? -1 : Convert.ToInt32(dgvRow.Cells["ID"].Value);
+                string name = dgvRow.Cells["Name"].Value?.ToString() ?? string.Empty;
+                int frequency = dgvRow.Cells["Frequency"].Value == DBNull.Value ? 0 : Convert.ToInt32(dgvRow.Cells["Frequency"].Value);
+                decimal price = dgvRow.Cells["Price"].Value == DBNull.Value ? 0.0m : Convert.ToDecimal(dgvRow.Cells["Price"].Value);
+                string invoiceNo = dgvRow.Cells["InvoiceNo"].Value?.ToString() ?? string.Empty;
+                DateTime invoiceDate = dgvRow.Cells["InvoiceDate"].Value == DBNull.Value ? DateTime.MinValue : Convert.ToDateTime(dgvRow.Cells["InvoiceDate"].Value);
+                string orderNo = dgvRow.Cells["OrderNo"].Value?.ToString() ?? string.Empty;
+                int subjectId = dgvRow.Cells["SubjectID"].Value == DBNull.Value ? -1 : Convert.ToInt32(dgvRow.Cells["SubjectID"].Value);
+
                 Journal journal = new Journal
                 {
-                    ID = Convert.ToInt32(dgvRow.Cells["ID"].Value.ToString()),
-                    JournalName = dgvRow.Cells["JournalName"].Value.ToString(),
+                    ID = id,
+                    JournalName = name,
+                    Frequency = frequency,
+                    Price = price,
+                    InvoiceNo = invoiceNo,
+                    InvoiceDate = invoiceDate,
+                    OrderNo = orderNo,
+                    SubjectID = subjectId,
                 };
-                ViewJournalDetails journalDetails = new ViewJournalDetails(journal);
+
+                ViewJournalWithVolume journalDetails = new ViewJournalWithVolume(journal);
                 journalDetails.Show();
             }
 
+            // Handle "Delete" column click
             else if (dataGridBook.Columns[e.ColumnIndex].Name == "Delete")
             {
-                if (MessageBox.Show("Do you want to Delete the Journal ?", " Journal ?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                if (MessageBox.Show("Do you want to Delete the Journal?", "Journal?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                 {
-                    DataGridViewRow dgvRow = dataGridBook.CurrentRow;
-                    Journal journal = new Journal
+                    // Ensure the row is selected before deleting
+                    if (dgvRow != null)
                     {
-                        ID = Convert.ToInt32(dgvRow.Cells["ID"].Value.ToString()),
-                    };
-                    journal = JournalBL.Deactive(journal);
+                        Journal journal = new Journal
+                        {
+                            ID = Convert.ToInt32(dgvRow.Cells["ID"].Value)
+                        };
+                        journal = JournalBL.Deactive(journal);
 
-                    MessageBox.Show("Journal Delete successfully.");
-                    bindJournalList();
+                        MessageBox.Show("Journal deleted successfully.");
+                        bindJournalList();
+                    }
                 }
             }
 
             else if (dataGridBook.Columns[e.ColumnIndex].Name == "Edit")
             {
-                Journal journal = new Journal();
-                journal = (Journal)dataGridBook.CurrentRow.DataBoundItem;
-                AddJournal addJournal = new AddJournal();
-                addJournal.Show();
+                if (dgvRow != null)
+                {
+                    Journal journal = new Journal
+                    {
+                        ID = Convert.ToInt32(dgvRow.Cells["ID"].Value),
+                        JournalName = dgvRow.Cells["Name"].Value?.ToString() ?? string.Empty,
+                        Frequency = Convert.ToInt32(dgvRow.Cells["Frequency"].Value),
+                        Price = Convert.ToDecimal(dgvRow.Cells["Price"].Value),
+                        InvoiceNo = dgvRow.Cells["InvoiceNo"].Value?.ToString() ?? string.Empty,
+                        InvoiceDate = Convert.ToDateTime(dgvRow.Cells["InvoiceDate"].Value),
+                        OrderNo = dgvRow.Cells["OrderNo"].Value?.ToString() ?? string.Empty,
+                        SubjectID = Convert.ToInt32(dgvRow.Cells["SubjectID"].Value)
+                    };
+
+                    AddJournal addJournal = new AddJournal();
+                    addJournal.ShowDialog();
+                    bindJournalList();
+                }
             }
+
+            // Handle "Volume" column click
+            else if (dataGridBook.Columns[e.ColumnIndex].Name == "Volume")
+            {
+                if (dgvRow != null)
+                {
+                    Journal journal = new Journal
+                    {
+                        ID = Convert.ToInt32(dgvRow.Cells["ID"].Value),
+                        JournalName = dgvRow.Cells["Name"].Value?.ToString() ?? string.Empty,
+                    };
+
+                    // Open the AddVolume form and pass the Journal data
+                    AddVolume addVolume = new AddVolume(journal);
+                    addVolume.ShowDialog();
+                }
+            }
+
+
         }
 
         private void picboxrefersh_Click(object sender, EventArgs e)
         {
             bindJournalList();
         }
+
     }
 }

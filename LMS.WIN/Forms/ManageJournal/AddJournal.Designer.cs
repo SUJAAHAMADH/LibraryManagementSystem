@@ -161,7 +161,7 @@
             // 
             // tbFrequency
             // 
-            this.tbFrequency.BackColor = System.Drawing.Color.White;
+            this.tbFrequency.BackColor = System.Drawing.SystemColors.Control;
             this.tbFrequency.Font = new System.Drawing.Font("Calibri", 16F);
             this.tbFrequency.Location = new System.Drawing.Point(294, 232);
             this.tbFrequency.Name = "tbFrequency";
@@ -181,7 +181,7 @@
             // 
             // tbJName
             // 
-            this.tbJName.BackColor = System.Drawing.Color.White;
+            this.tbJName.BackColor = System.Drawing.SystemColors.Control;
             this.tbJName.Font = new System.Drawing.Font("Calibri", 16F);
             this.tbJName.Location = new System.Drawing.Point(294, 178);
             this.tbJName.Name = "tbJName";
@@ -263,7 +263,7 @@
             // 
             // tbPrice
             // 
-            this.tbPrice.BackColor = System.Drawing.Color.White;
+            this.tbPrice.BackColor = System.Drawing.SystemColors.Control;
             this.tbPrice.Font = new System.Drawing.Font("Calibri", 16F);
             this.tbPrice.Location = new System.Drawing.Point(294, 286);
             this.tbPrice.Name = "tbPrice";
@@ -283,7 +283,7 @@
             // 
             // tbInvoiceNo
             // 
-            this.tbInvoiceNo.BackColor = System.Drawing.Color.White;
+            this.tbInvoiceNo.BackColor = System.Drawing.SystemColors.Control;
             this.tbInvoiceNo.Font = new System.Drawing.Font("Calibri", 16F);
             this.tbInvoiceNo.Location = new System.Drawing.Point(294, 340);
             this.tbInvoiceNo.Name = "tbInvoiceNo";
@@ -303,7 +303,7 @@
             // 
             // tbOrderNo
             // 
-            this.tbOrderNo.BackColor = System.Drawing.Color.White;
+            this.tbOrderNo.BackColor = System.Drawing.SystemColors.Control;
             this.tbOrderNo.Font = new System.Drawing.Font("Calibri", 16F);
             this.tbOrderNo.Location = new System.Drawing.Point(294, 448);
             this.tbOrderNo.Name = "tbOrderNo";
@@ -334,6 +334,7 @@
             // 
             // cbSubjects
             // 
+            this.cbSubjects.BackColor = System.Drawing.SystemColors.Control;
             this.cbSubjects.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbSubjects.Font = new System.Drawing.Font("Calibri", 16F);
             this.cbSubjects.FormattingEnabled = true;
@@ -361,6 +362,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1114, 631);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.cbSubjects);

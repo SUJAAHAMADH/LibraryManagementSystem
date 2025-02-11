@@ -48,21 +48,14 @@
             this.dataGridBook = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Author = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Publisher = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Edition = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Language = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ISBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Funds = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IsRestricted = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CategoryID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TotalQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AuthorID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PublisherID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SubjectID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Frequency = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.InvoiceNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.InvoiceDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OrderNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IsRestricted = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Volume = new System.Windows.Forms.DataGridViewImageColumn();
             this.View = new System.Windows.Forms.DataGridViewImageColumn();
             this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
@@ -276,21 +269,14 @@
             this.dataGridBook.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
             this.Name,
-            this.Category,
-            this.Author,
-            this.Publisher,
-            this.Edition,
-            this.Language,
-            this.ISBN,
-            this.Price,
-            this.Description,
-            this.Funds,
-            this.IsRestricted,
-            this.CategoryID,
-            this.TotalQuantity,
-            this.AuthorID,
-            this.PublisherID,
             this.SubjectID,
+            this.Frequency,
+            this.Price,
+            this.InvoiceNo,
+            this.InvoiceDate,
+            this.OrderNo,
+            this.IsRestricted,
+            this.Volume,
             this.View,
             this.Edit,
             this.Delete});
@@ -318,6 +304,7 @@
             // ID
             // 
             this.ID.DataPropertyName = "ID";
+            this.ID.FillWeight = 82.10664F;
             this.ID.HeaderText = "ID";
             this.ID.MinimumWidth = 6;
             this.ID.Name = "ID";
@@ -326,99 +313,58 @@
             // Name
             // 
             this.Name.DataPropertyName = "JournalName";
-            this.Name.FillWeight = 91.63923F;
+            this.Name.FillWeight = 75.24189F;
             this.Name.HeaderText = "Journal Name";
             this.Name.MinimumWidth = 6;
             this.Name.Name = "Name";
             this.Name.ReadOnly = true;
             // 
-            // Category
+            // SubjectID
             // 
-            this.Category.DataPropertyName = "Category";
-            this.Category.FillWeight = 67.88091F;
-            this.Category.HeaderText = "Category";
-            this.Category.MinimumWidth = 6;
-            this.Category.Name = "Category";
-            this.Category.ReadOnly = true;
-            this.Category.Visible = false;
+            this.SubjectID.DataPropertyName = "SubjectID";
+            this.SubjectID.FillWeight = 82.10664F;
+            this.SubjectID.HeaderText = "Subject";
+            this.SubjectID.Name = "SubjectID";
+            this.SubjectID.ReadOnly = true;
             // 
-            // Author
+            // Frequency
             // 
-            this.Author.DataPropertyName = "Author";
-            this.Author.FillWeight = 67.88091F;
-            this.Author.HeaderText = "Author";
-            this.Author.MinimumWidth = 6;
-            this.Author.Name = "Author";
-            this.Author.ReadOnly = true;
-            this.Author.Visible = false;
-            // 
-            // Publisher
-            // 
-            this.Publisher.DataPropertyName = "Publisher";
-            this.Publisher.FillWeight = 67.88091F;
-            this.Publisher.HeaderText = "Publisher";
-            this.Publisher.MinimumWidth = 6;
-            this.Publisher.Name = "Publisher";
-            this.Publisher.ReadOnly = true;
-            this.Publisher.Visible = false;
-            // 
-            // Edition
-            // 
-            this.Edition.DataPropertyName = "Edition";
-            this.Edition.FillWeight = 71.26904F;
-            this.Edition.HeaderText = "Edition";
-            this.Edition.MinimumWidth = 6;
-            this.Edition.Name = "Edition";
-            this.Edition.ReadOnly = true;
-            this.Edition.Visible = false;
-            // 
-            // Language
-            // 
-            this.Language.DataPropertyName = "Language";
-            this.Language.FillWeight = 50F;
-            this.Language.HeaderText = "Language";
-            this.Language.MinimumWidth = 6;
-            this.Language.Name = "Language";
-            this.Language.ReadOnly = true;
-            this.Language.Visible = false;
-            // 
-            // ISBN
-            // 
-            this.ISBN.DataPropertyName = "ISBN";
-            this.ISBN.HeaderText = "ISBN";
-            this.ISBN.MinimumWidth = 6;
-            this.ISBN.Name = "ISBN";
-            this.ISBN.ReadOnly = true;
-            this.ISBN.Visible = false;
+            this.Frequency.DataPropertyName = "Frequency";
+            this.Frequency.HeaderText = "Frequency";
+            this.Frequency.Name = "Frequency";
+            this.Frequency.ReadOnly = true;
+            this.Frequency.Visible = false;
             // 
             // Price
             // 
             this.Price.DataPropertyName = "Price";
-            this.Price.FillWeight = 48.37807F;
-            this.Price.HeaderText = "Cost";
-            this.Price.MinimumWidth = 6;
+            this.Price.HeaderText = "Price";
             this.Price.Name = "Price";
             this.Price.ReadOnly = true;
             this.Price.Visible = false;
             // 
-            // Description
+            // InvoiceNo
             // 
-            this.Description.DataPropertyName = "Description";
-            this.Description.FillWeight = 67.88091F;
-            this.Description.HeaderText = "Description";
-            this.Description.MinimumWidth = 6;
-            this.Description.Name = "Description";
-            this.Description.ReadOnly = true;
-            this.Description.Visible = false;
+            this.InvoiceNo.DataPropertyName = "InvoiceNo";
+            this.InvoiceNo.HeaderText = "InvoiceNo";
+            this.InvoiceNo.Name = "InvoiceNo";
+            this.InvoiceNo.ReadOnly = true;
+            this.InvoiceNo.Visible = false;
             // 
-            // Funds
+            // InvoiceDate
             // 
-            this.Funds.DataPropertyName = "Funds";
-            this.Funds.HeaderText = "Funds";
-            this.Funds.MinimumWidth = 6;
-            this.Funds.Name = "Funds";
-            this.Funds.ReadOnly = true;
-            this.Funds.Visible = false;
+            this.InvoiceDate.HeaderText = "InvoiceDate";
+            this.InvoiceDate.Name = "InvoiceDate";
+            this.InvoiceDate.ReadOnly = true;
+            this.InvoiceDate.Visible = false;
+            // 
+            // OrderNo
+            // 
+            this.OrderNo.DataPropertyName = "InvoiceDate";
+            this.OrderNo.HeaderText = "OrderNo";
+            this.OrderNo.Name = "OrderNo";
+            this.OrderNo.ReadOnly = true;
+            this.OrderNo.Visible = false;
             // 
             // IsRestricted
             // 
@@ -429,53 +375,20 @@
             this.IsRestricted.ReadOnly = true;
             this.IsRestricted.Visible = false;
             // 
-            // CategoryID
+            // Volume
             // 
-            this.CategoryID.DataPropertyName = "CategoryID";
-            this.CategoryID.HeaderText = "CategoryID";
-            this.CategoryID.MinimumWidth = 6;
-            this.CategoryID.Name = "CategoryID";
-            this.CategoryID.ReadOnly = true;
-            this.CategoryID.Visible = false;
-            // 
-            // TotalQuantity
-            // 
-            this.TotalQuantity.DataPropertyName = "TotalQuantity";
-            this.TotalQuantity.FillWeight = 48.37807F;
-            this.TotalQuantity.HeaderText = "TotalQuantity";
-            this.TotalQuantity.MinimumWidth = 6;
-            this.TotalQuantity.Name = "TotalQuantity";
-            this.TotalQuantity.ReadOnly = true;
-            this.TotalQuantity.Visible = false;
-            // 
-            // AuthorID
-            // 
-            this.AuthorID.DataPropertyName = "AuthorID";
-            this.AuthorID.HeaderText = "AuthorID";
-            this.AuthorID.MinimumWidth = 6;
-            this.AuthorID.Name = "AuthorID";
-            this.AuthorID.ReadOnly = true;
-            this.AuthorID.Visible = false;
-            // 
-            // PublisherID
-            // 
-            this.PublisherID.DataPropertyName = "PublisherID";
-            this.PublisherID.HeaderText = "PublisherID";
-            this.PublisherID.MinimumWidth = 6;
-            this.PublisherID.Name = "PublisherID";
-            this.PublisherID.ReadOnly = true;
-            this.PublisherID.Visible = false;
-            // 
-            // SubjectID
-            // 
-            this.SubjectID.HeaderText = "Subject";
-            this.SubjectID.Name = "SubjectID";
-            this.SubjectID.ReadOnly = true;
+            this.Volume.DataPropertyName = "Volume";
+            this.Volume.FillWeight = 24.70527F;
+            this.Volume.HeaderText = "Volume";
+            this.Volume.Image = ((System.Drawing.Image)(resources.GetObject("Volume.Image")));
+            this.Volume.MinimumWidth = 6;
+            this.Volume.Name = "Volume";
+            this.Volume.ReadOnly = true;
             // 
             // View
             // 
             this.View.DataPropertyName = "View";
-            this.View.FillWeight = 20.36427F;
+            this.View.FillWeight = 16.72041F;
             this.View.HeaderText = "View";
             this.View.Image = ((System.Drawing.Image)(resources.GetObject("View.Image")));
             this.View.MinimumWidth = 6;
@@ -485,7 +398,7 @@
             // Edit
             // 
             this.Edit.DataPropertyName = "Edit";
-            this.Edit.FillWeight = 23.07951F;
+            this.Edit.FillWeight = 18.94981F;
             this.Edit.HeaderText = "Edit";
             this.Edit.Image = ((System.Drawing.Image)(resources.GetObject("Edit.Image")));
             this.Edit.MinimumWidth = 6;
@@ -495,7 +408,7 @@
             // Delete
             // 
             this.Delete.DataPropertyName = "Delete";
-            this.Delete.FillWeight = 30F;
+            this.Delete.FillWeight = 24.63199F;
             this.Delete.HeaderText = "Delete";
             this.Delete.Image = ((System.Drawing.Image)(resources.GetObject("Delete.Image")));
             this.Delete.MinimumWidth = 6;
@@ -545,28 +458,21 @@
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridBook;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Category;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Author;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Publisher;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Edition;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Language;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ISBN;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Description;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Funds;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IsRestricted;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CategoryID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TotalQuantity;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AuthorID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PublisherID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SubjectID;
-        private System.Windows.Forms.DataGridViewImageColumn View;
-        private System.Windows.Forms.DataGridViewImageColumn Edit;
-        private System.Windows.Forms.DataGridViewImageColumn Delete;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox picboxrefersh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SubjectID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Frequency;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn InvoiceNo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn InvoiceDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn OrderNo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IsRestricted;
+        private System.Windows.Forms.DataGridViewImageColumn Volume;
+        private System.Windows.Forms.DataGridViewImageColumn View;
+        private System.Windows.Forms.DataGridViewImageColumn Edit;
+        private System.Windows.Forms.DataGridViewImageColumn Delete;
     }
 }

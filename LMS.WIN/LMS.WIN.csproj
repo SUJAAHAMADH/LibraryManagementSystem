@@ -342,6 +342,12 @@
     <Compile Include="Forms\ManageJournal\ViewJournalDetails.Designer.cs">
       <DependentUpon>ViewJournalDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ManageJournal\ViewJournalWithVolume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageJournal\ViewJournalWithVolume.Designer.cs">
+      <DependentUpon>ViewJournalWithVolume.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ManagePublisher\frmAddPublisher.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -371,6 +377,12 @@
     </Compile>
     <Compile Include="Forms\ManageUser\ManageLibrarian.Designer.cs">
       <DependentUpon>ManageLibrarian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageVolume\AddVolume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageVolume\AddVolume.Designer.cs">
+      <DependentUpon>AddVolume.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Reports\frmBookWiseReport.cs">
       <SubType>Form</SubType>
@@ -583,6 +595,9 @@
     <EmbeddedResource Include="Forms\ManageJournal\ViewJournalDetails.resx">
       <DependentUpon>ViewJournalDetails.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageJournal\ViewJournalWithVolume.resx">
+      <DependentUpon>ViewJournalWithVolume.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ManagePublisher\frmAddPublisher.resx">
       <DependentUpon>frmAddPublisher.cs</DependentUpon>
     </EmbeddedResource>
@@ -597,6 +612,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ManageUser\ManageLibrarian.resx">
       <DependentUpon>ManageLibrarian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageVolume\AddVolume.resx">
+      <DependentUpon>AddVolume.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Reports\frmBookWiseReport.resx">
       <DependentUpon>frmBookWiseReport.cs</DependentUpon>
