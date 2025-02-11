@@ -366,6 +366,12 @@
     <Compile Include="Forms\ManageSubject\AddSubject.Designer.cs">
       <DependentUpon>AddSubject.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ManageSubject\ManageSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageSubject\ManageSubject.Designer.cs">
+      <DependentUpon>ManageSubject.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ManageUser\frmAddUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -606,6 +612,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ManageSubject\AddSubject.resx">
       <DependentUpon>AddSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageSubject\ManageSubject.resx">
+      <DependentUpon>ManageSubject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ManageUser\frmAddUser.resx">
       <DependentUpon>frmAddUser.cs</DependentUpon>

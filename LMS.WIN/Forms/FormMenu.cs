@@ -309,8 +309,8 @@ namespace LMS.WIN.Forms
         private void button13_Click(object sender, EventArgs e)
         {
             panelContenedor.Controls.Clear();
-            ManageSubject.AddSubject addSubject = new ManageSubject.AddSubject();
-            addSubject.Show();
+            ManageSubject.ManageSubject manageSubject = new ManageSubject.ManageSubject();
+            AbrirFormInPanel(manageSubject);
         }
 
         private void button9_Click(object sender, EventArgs e)

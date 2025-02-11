@@ -175,7 +175,7 @@ namespace LMS.WIN.Forms.ManageJournal
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            ManageSubject.AddSubject frm = new ManageSubject.AddSubject();
+            ManageSubject.AddSubject frm = new ManageSubject.AddSubject(null);
             frm.ShowDialog();
             LoadSubjects();
 

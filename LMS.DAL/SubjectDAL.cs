@@ -60,6 +60,48 @@ namespace LMS.DAL
             }
             return subject;
         }
+        public static Subject Update(Subject subject)
+        {
+            #region Declaration
+            SqlConnection con = null;
+            List<SqlParameter> param = new List<SqlParameter>
+            {
+                new SqlParameter{ParameterName = "@SubjectID", DbType = DbType.Int32, Value = subject.SubjectID},
+                new SqlParameter{ParameterName = "@Name", DbType = DbType.String, Value = subject.Name},
+                new SqlParameter{ParameterName = "@IsActive", DbType = DbType.Boolean, Value = subject.IsActive},
+                new SqlParameter{ParameterName = "@OutputMessage", DbType = DbType.String, Direction = ParameterDirection.Output, Size = 2000}
+            };
+            #endregion
+            try
+            {
+                #region Interacting with database
+                con = SqlConnectionHelper.GetConnectionSync();
+                SqlCommand cmd = new SqlCommand("UpdateSubject", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddRange(param.ToArray());
+                cmd.ExecuteNonQuery();
+                string outputMessage = cmd.Parameters["@OutputMessage"].Value.ToString();
+                if (!string.Equals(outputMessage, "SUCCESS", StringComparison.OrdinalIgnoreCase))
+                {
+                    throw new Exception(outputMessage);
+                }
+                #endregion
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                #region Close connection
+                if (con != null && con.State == ConnectionState.Open)
+                {
+                    con.Close();
+                }
+                #endregion
+            }
+            return subject;
+        }
 
         public static List<Subject> Get(int userID, string searchValue)
         {
@@ -134,7 +176,7 @@ namespace LMS.DAL
             {
                 #region Interacting with database
                 con = SqlConnectionHelper.GetConnectionSync();
-                SqlCommand cmd = new SqlCommand("ShowSubject", con);
+                SqlCommand cmd = new SqlCommand("GetSubjectByID", con);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add(param);
                 SqlDataAdapter adp = new SqlDataAdapter(cmd);
@@ -172,33 +214,26 @@ namespace LMS.DAL
 
         public static Subject Deactive(Subject subject)
         {
-            #region Declaration
             SqlConnection con = null;
-
             List<SqlParameter> param = new List<SqlParameter>
             {
-                new SqlParameter{ParameterName = "@SubjectID", DbType = DbType.Int32, Value = subject.SubjectID},
-                new SqlParameter{ParameterName = "@IsActive", DbType = DbType.Boolean, Value = false}, // Set inactive
-                new SqlParameter{ParameterName = "@OutputMessage", DbType = DbType.String, Direction = ParameterDirection.Output, Size = 2000}
+                new SqlParameter { ParameterName = "@SubjectID", DbType = DbType.Int32, Value = subject.SubjectID },
+                new SqlParameter { ParameterName = "@OutputMessage", DbType = DbType.String, Direction = ParameterDirection.Output, Size = 2000 }
             };
-            #endregion
 
             try
             {
-                #region Interacting with database
                 con = SqlConnectionHelper.GetConnectionSync();
                 SqlCommand cmd = new SqlCommand("DeactiveSubject", con);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddRange(param.ToArray());
                 cmd.ExecuteNonQuery();
+
                 string outputMessage = cmd.Parameters["@OutputMessage"].Value.ToString();
                 if (!string.Equals(outputMessage, "SUCCESS", StringComparison.OrdinalIgnoreCase))
                 {
                     throw new Exception(outputMessage);
                 }
-                int id = cmd.Parameters["@ID"].Value as int? ?? 0;
-                subject.SubjectID = id;
-                #endregion
             }
             catch (Exception ex)
             {
@@ -206,12 +241,10 @@ namespace LMS.DAL
             }
             finally
             {
-                #region Close connection
                 if (con != null && con.State == ConnectionState.Open)
                 {
                     con.Close();
                 }
-                #endregion
             }
             return subject;
         }

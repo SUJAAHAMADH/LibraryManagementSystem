@@ -19,6 +19,18 @@ namespace LMS.BL
                 throw new Exception(ex.Message);
             }
         }
+        public static Subject Update(Subject subject)
+        {
+            try
+            {
+                subject = SubjectDAL.Update(subject);
+                return subject;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
 
         public static List<Subject> Get(int userID = -1, string searchValue = null)
         {
