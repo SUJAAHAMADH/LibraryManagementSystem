@@ -75,6 +75,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DB\Store Procedures\SP_Book.sql" />
     <Content Include="DB\Store Procedures\SP_Volume.sql" />
     <Content Include="DB\Store Procedures\SP_Journal.sql" />
     <Content Include="DB\Store Procedures\SP_Subject.sql" />

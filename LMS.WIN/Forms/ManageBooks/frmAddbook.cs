@@ -187,7 +187,16 @@ namespace LMS.WIN.Forms.ManageBooks
                         IsRestricted = isRestrict,
                         Funds = txtFound.Text,
                         UserID = userID,
-                        BookBarcodes = bookBarcodes
+                        BookBarcodes = bookBarcodes,
+                        VolumeNo = txtvolume.Text,
+                        Vendor = txtvendor.Text,
+                        BillNo = txtBillNo.Text,
+                        BillDate = dtpbilldate.Checked ? dtpbilldate.Value : (DateTime?)null,
+                        OfficeOrder = txtofficeorder.Text,
+                        OfficeOrderDate = orderdate.Checked ? orderdate.Value : (DateTime?)null,
+                        Discount = Convert.ToDecimal(txtdiscount.Text),
+                        RackNo = txtrackno.Text
+
                     };
                     try
                     {
