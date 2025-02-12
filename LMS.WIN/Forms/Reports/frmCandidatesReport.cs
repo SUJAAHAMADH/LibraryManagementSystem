@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
 
@@ -35,136 +36,63 @@ namespace LMS.WIN.Forms.Reports
         {
             datagridReportList.ColumnHeadersHeight = 35;
             datagridReportList.BorderStyle = BorderStyle.None;
-            datagridReportList.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
+            datagridReportList.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(239, 246, 255);
             datagridReportList.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            datagridReportList.DefaultCellStyle.SelectionBackColor = Color.Teal;
+            datagridReportList.DefaultCellStyle.SelectionBackColor = Color.FromArgb(0, 123, 255); // Bright Blue
             datagridReportList.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
-            datagridReportList.BackgroundColor = Color.White;
+            datagridReportList.BackgroundColor = Color.FromArgb(245, 247, 250);
             datagridReportList.EnableHeadersVisualStyles = false;
             datagridReportList.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            datagridReportList.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(50, 50, 58);
+            datagridReportList.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(40, 53, 147); // Darker Blue
             datagridReportList.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+
+
+
+            // Center align columns' content
+            foreach (DataGridViewColumn column in datagridReportList.Columns)
+            {
+                column.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            }
+            datagridReportList.ColumnHeadersDefaultCellStyle.Font = new System.Drawing.Font("Arial", 10, FontStyle.Bold);
         }
 
-        private void bindCandidateList(int userID, int courseID)
+        private void bindCandidateList(int userID, int courseID, string roleFilter = "")
         {
-            List<Candidate> data = null;
-            data = ReportBL.GetCandidateWiseReport(userID, courseID);
+            List<Candidate> data = ReportBL.GetCandidateWiseReport(userID, courseID);
             if (data != null)
             {
+                // Apply role filter if it is not empty
+                if (!string.IsNullOrEmpty(roleFilter))
+                {
+                    data = data.Where(c => c.Role.IndexOf(roleFilter, StringComparison.OrdinalIgnoreCase) >= 0).ToList();
+                }
+
                 datagridReportList.AutoGenerateColumns = false;
-                datagridReportList.Refresh();
-                getGridviewByDefaultDesign();
                 datagridReportList.DataSource = data;
+                datagridReportList.Columns["CandidateID"].DataPropertyName = "CandidateID";
+
+                // Call to apply the default grid view design
+                getGridviewByDefaultDesign(); // Corrected call with parentheses
+
+                datagridReportList.Refresh();
             }
             else
             {
-                MessageBox.Show("data not found");
+                MessageBox.Show("Data not found");
                 datagridReportList.DataSource = null;
-                datagridReportList.AutoGenerateColumns = false;
                 datagridReportList.Refresh();
             }
         }
 
-        private void txtCourse_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                courseObj = null;
-                GlobalVariable.GlobalCourseObj = null;
-                Search_Control.frmSearchCourse frmSearchCourse = new Search_Control.frmSearchCourse();
-                frmSearchCourse.ShowDialog();
-                courseObj = GlobalVariable.GlobalCourseObj;
-                if (courseObj != null)
-                {
-                    txtCourse.Text = courseObj.Name;
-                    bindCandidateList(-1, courseObj.CourseID);
-                }
-            }
-        }
 
-        private void txtCountry_KeyDown(object sender, KeyEventArgs e)
-        {
-            //if (courseObj == null)
-            //{
-            //    courseObj = new Course();
-            //    courseObj.CourseID = -1;
-            //}
 
-            //if (e.KeyCode == Keys.Enter)
-            //{
-            //    //countryObj = null;
-            //    GlobalVariable.GlobalCountryObj = null;
-            //    Search_Control.frmSearchCountry frmSearchCountry = new Search_Control.frmSearchCountry();
-            //    frmSearchCountry.ShowDialog();
-            //    //countryObj = GlobalVariable.GlobalCountryObj;
-            //    //if (countryObj != null)
-            //    //{
-            //    //    txtCountry.Text = countryObj.Name;
-            //    //    bindCandidateList(-1, courseObj.CourseID, countryObj.CountryID, txtRank.Text, txtUnit.Text);
-            //    //}
-            //}
-        }
-
-        private void txtRank_KeyDown(object sender, KeyEventArgs e)
-        {
-            //if (courseObj == null)
-            //{
-            //    courseObj = new Course();
-            //    courseObj.CourseID = -1;
-            //}
-            ////if (countryObj == null)
-            ////{
-            ////    countryObj = new Country();
-            ////    countryObj.CountryID = -1;
-            ////}
-
-            //if (e.KeyCode == Keys.Enter)
-            //{
-            //    rankObj = null;
-            //    GlobalVariable.GlobalRankObj = null;
-            //    Search_Control.frmSearchRank frmSearchRank = new Search_Control.frmSearchRank();
-            //    frmSearchRank.ShowDialog();
-            //    rankObj = GlobalVariable.GlobalRankObj;
-            //    if (rankObj != null)
-            //    {
-            //        txtRank.Text = rankObj.RankName;
-            //        bindCandidateList(-1, courseObj.CourseID, countryObj.CountryID, txtRank.Text, txtUnit.Text);
-            //    }
-            //}
-        }
-
-        private void txtUnit_KeyDown(object sender, KeyEventArgs e)
-        {
-            //if (courseObj == null)
-            //{
-            //    courseObj = new Course();
-            //    courseObj.CourseID = -1;
-            //}
-            //if (countryObj == null)
-            //{
-            //    countryObj = new Country();
-            //    countryObj.CountryID = -1;
-            //}
-
-            //if (e.KeyCode == Keys.Enter)
-            //{
-            //    rankObj = null;
-            //    GlobalVariable.GlobalRankObj = null;
-            //    Search_Control.frmSearchUnit frmSearchUnit = new Search_Control.frmSearchUnit();
-            //    frmSearchUnit.ShowDialog();
-            //    rankObj = GlobalVariable.GlobalRankObj;
-            //    if (rankObj != null)
-            //    {
-            //        txtUnit.Text = rankObj.UnitName;
-            //        bindCandidateList(-1, courseObj.CourseID, countryObj.CountryID, txtRank.Text, txtUnit.Text);
-            //    }
-            //}
-        }
 
         private void BtnReset_Click(object sender, EventArgs e)
         {
-            txtCourse.Text = string.Empty;
+            // Reset filters
+            cbPersonType.SelectedIndex = -1; // Reset ComboBox (if applicable)
+
+            // Rebind the list without filters
             bindCandidateList(-1, -1);
         }
 
@@ -255,5 +183,17 @@ namespace LMS.WIN.Forms.Reports
             MessageBox.Show("Excel successfully created");
             #endregion
         }
+
+        private void cbPersonType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedRole = cbPersonType.SelectedItem?.ToString() ?? string.Empty;
+            bindCandidateList(-1, -1, roleFilter: selectedRole);
+        }
+
+        private void btnCloses_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
+

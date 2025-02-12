@@ -57,6 +57,14 @@ namespace LMS.DAL
                         candidate.TOSDate = row["TOSDate"] as string ?? string.Empty;
                         candidate.SOSDate = row["SOSDate"] as string ?? string.Empty;
                         candidate.ThumbImpression = row["ThumbImpression"] as string ?? string.Empty;
+                        //candidate.DOB = row["DOB"] as DateTime? ?? (DateTime?)null;
+                        candidate.Stream = row["Stream"] as string ?? string.Empty;
+                        candidate.AcademicYear = row["AcademicYear"] as int? ?? 0;
+                        candidate.PermanentAddress = row["PermanentAddress"] as string ?? string.Empty;
+                        candidate.PresentAddress = row["PresentAddress"] as string ?? string.Empty;
+                        candidate.Email = row["Email"] as string ?? string.Empty;
+                        candidate.ParentsContact = row["ParentsContact"] as string ?? string.Empty;
+                        candidate.Photo = row["Photo"] as byte[] ?? null;
                         candidates.Add(candidate);
                     }
                 }
