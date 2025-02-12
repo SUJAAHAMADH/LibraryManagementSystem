@@ -21,11 +21,11 @@ namespace LMS.BL
             }
         }
 
-        public static List<Book> GetBookWiseReport(int userID, int authorID = -1, int publisherID = -1, int bookID = -1, string funds = null)
+        public static List<Book> GetBookWiseReport(int userID, int authorID = -1, int publisherID = -1, int bookID = -1, int categoryID = -1)
         {
             try
             {
-                List<Book> reports = ReportDAL.GetBookWiseReport(userID, authorID, publisherID, bookID, funds);
+                List<Book> reports = ReportDAL.GetBookWiseReport(userID, authorID, publisherID, bookID, categoryID);
                 return reports;
             }
             catch (Exception ex)

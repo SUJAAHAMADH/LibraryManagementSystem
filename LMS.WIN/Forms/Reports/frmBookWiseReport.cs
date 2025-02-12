@@ -7,8 +7,10 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
-using System.Reflection;
+using System.Linq;
 using System.Windows.Forms;
+using DataTable = System.Data.DataTable;
+
 
 namespace LMS.WIN.Forms.Reports
 {
@@ -23,21 +25,146 @@ namespace LMS.WIN.Forms.Reports
 
         private void BtnReset_Click(object sender, EventArgs e)
         {
-            txtBookName.Text = string.Empty;
-            txtFound.Text = string.Empty;
-            bindBookList(null);
+            ResetBookList();
         }
 
         private void FrmBookWiseReport_Load(object sender, EventArgs e)
         {
-            bindBookList(null);
+            LoadCategory();
+            LoadAuther();
+            LoadPublication();
+            ResetBookList();
+        }
+        private void LoadCategory()
+        {
+            try
+            {
+                using (SqlConnection con = SqlConnectionHelper.GetConnectionSync())
+                {
+                    if (con.State != ConnectionState.Open)
+                    {
+                        con.Open(); // Open the connection only if it's not already open
+                    }
+
+                    string query = "SELECT CategoryID, Name FROM Category ORDER BY Name";
+
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        using (SqlDataAdapter adp = new SqlDataAdapter(cmd))
+                        {
+                            DataTable dt = new DataTable();
+                            adp.Fill(dt);
+
+                            if (dt.Rows.Count > 0)
+                            {
+                                cbSubject.DataSource = dt;
+                                cbSubject.DisplayMember = "Name";
+                                cbSubject.ValueMember = "CategoryID";
+                                cbSubject.SelectedIndex = -1;
+                            }
+                            else
+                            {
+                                MessageBox.Show("No subjects found in the database.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                cbSubject.DataSource = null;
+                            }
+                        }
+                    }
+                } // The using statement ensures the connection is closed properly
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading Subjects: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void LoadAuther()
+        {
+            try
+            {
+                using (SqlConnection con = SqlConnectionHelper.GetConnectionSync())
+                {
+                    if (con.State != ConnectionState.Open)
+                    {
+                        con.Open(); // Open the connection only if it's not already open
+                    }
+
+                    string query = "SELECT AuthorID, Name FROM Author ORDER BY Name";
+
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        using (SqlDataAdapter adp = new SqlDataAdapter(cmd))
+                        {
+                            DataTable dt = new DataTable();
+                            adp.Fill(dt);
+
+                            if (dt.Rows.Count > 0)
+                            {
+                                cbAuther.DataSource = dt;
+                                cbAuther.DisplayMember = "Name";
+                                cbAuther.ValueMember = "AuthorID";
+                                cbAuther.SelectedIndex = -1;
+                            }
+                            else
+                            {
+                                MessageBox.Show("No authors found in the database.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                cbAuther.DataSource = null;
+                            }
+                        }
+                    }
+                } // The using statement ensures the connection is closed properly
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading Author: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
-        private void bindBookList(string name)
+        private void LoadPublication()
         {
-            //string searchValue = txtBookName.Text;
+            try
+            {
+                using (SqlConnection con = SqlConnectionHelper.GetConnectionSync())
+                {
+                    if (con.State != ConnectionState.Open)
+                    {
+                        con.Open(); // Open the connection only if it's not already open
+                    }
+
+                    string query = "SELECT PublisherID, Name FROM Publisher ORDER BY Name";
+
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        using (SqlDataAdapter adp = new SqlDataAdapter(cmd))
+                        {
+                            DataTable dt = new DataTable();
+                            adp.Fill(dt);
+
+                            if (dt.Rows.Count > 0)
+                            {
+                                cbPublication.DataSource = dt;
+                                cbPublication.DisplayMember = "Name";
+                                cbPublication.ValueMember = "PublisherID";
+                                cbPublication.SelectedIndex = -1;
+                            }
+                            else
+                            {
+                                MessageBox.Show("No Publishers found in the database.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                cbPublication.DataSource = null;
+                            }
+                        }
+                    }
+                } // The using statement ensures the connection is closed properly
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading Publisher: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+        private void ResetBookList()
+        {
             List<Book> data = null;
-            data = BookBL.Get(-1, -1, -1, null);
+            data = ReportBL.GetBookWiseReport(-1, -1, -1, -1, -1);
             if (data != null)
             {
                 dataGridBook.AutoGenerateColumns = false;
@@ -52,236 +179,158 @@ namespace LMS.WIN.Forms.Reports
                 dataGridBook.AutoGenerateColumns = false;
                 dataGridBook.Refresh();
             }
+            cbSubject.Text = "";
+            cbPublication.Text = "";
+            cbAuther.Text = "";
+            cbSubject.Focus();
         }
+        private void SortBookList()
+        {
+           
+        }
+
+
+
+
 
         public void getGridviewByDefaultDesign()
         {
             dataGridBook.ColumnHeadersHeight = 35;
             dataGridBook.BorderStyle = BorderStyle.None;
-            dataGridBook.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
+            dataGridBook.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(239, 246, 255);
             dataGridBook.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridBook.DefaultCellStyle.SelectionBackColor = Color.Teal;
+            dataGridBook.DefaultCellStyle.SelectionBackColor = Color.FromArgb(0, 123, 255); // Bright Blue
             dataGridBook.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
-            dataGridBook.BackgroundColor = Color.White;
+            dataGridBook.BackgroundColor = Color.FromArgb(245, 247, 250);
             dataGridBook.EnableHeadersVisualStyles = false;
             dataGridBook.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridBook.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(50, 50, 58);
+            dataGridBook.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(40, 53, 147); // Darker Blue
             dataGridBook.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+
+
+
+            // Center align columns' content
+            foreach (DataGridViewColumn column in dataGridBook.Columns)
+            {
+                column.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            }
+            dataGridBook.ColumnHeadersDefaultCellStyle.Font = new System.Drawing.Font("Arial", 10, FontStyle.Bold);
         }
 
-        private void TxtBookName_KeyDown(object sender, KeyEventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
+            Close();
+        }
+
+        private void pbCategory_Click(object sender, EventArgs e)
+        {
+            int categoryId = Convert.ToInt32(cbSubject.SelectedValue); // Get the selected CategoryID from cbSubject
+
+            if (categoryId > 0) // Check if a category is selected
             {
-                bookObj = null;
-                GlobalVariable.GlobalBookObj = null;
-                Search_Control.frmSearchBook frmSearchBook = new Search_Control.frmSearchBook();
-                frmSearchBook.ShowDialog();
-                bookObj = GlobalVariable.GlobalBookObj;
-                if (bookObj != null)
+                try
                 {
-                    txtBookName.Text = bookObj.Name;
-                    List<Book> data = ReportBL.GetBookWiseReport(-1, -1, -1, Convert.ToInt32(bookObj.BookID), txtFound.Text);
-                    if (data != null)
+                    // Retrieve the filtered list based on selected category
+                    List<Book> filteredBooks = ReportBL.GetBookWiseReport(userID, -1, -1, -1, categoryId); // Add other parameters if needed
+
+                    if (filteredBooks != null && filteredBooks.Count > 0)
                     {
                         dataGridBook.AutoGenerateColumns = false;
-                        dataGridBook.DataSource = data;
+                        dataGridBook.DataSource = filteredBooks;
                         dataGridBook.Refresh();
-                        getGridviewByDefaultDesign();
+                        getGridviewByDefaultDesign(); // Optional, to retain grid style
                     }
                     else
                     {
-                        MessageBox.Show("data not found");
+                        MessageBox.Show("No books found for the selected category.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         dataGridBook.DataSource = null;
-                        dataGridBook.AutoGenerateColumns = false;
                         dataGridBook.Refresh();
                     }
                 }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error filtering books by category: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a category first.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
-        private void TxtFound_KeyDown(object sender, KeyEventArgs e)
+        private void pbAuthor_Click(object sender, EventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
+            int authorId = Convert.ToInt32(cbAuther.SelectedValue); // Get the selected CategoryID from cbSubject
+
+            if (authorId > 0) // Check if a category is selected
             {
-                bookObj = null;
-                GlobalVariable.GlobalBookObj = null;
-                Search_Control.frmSearchFund frmSearchFund = new Search_Control.frmSearchFund();
-                frmSearchFund.ShowDialog();
-                bookObj = GlobalVariable.GlobalBookObj;
-                if (bookObj != null)
+                try
                 {
-                    txtFound.Text = bookObj.Funds;
-                    List<Book> data = ReportBL.GetBookWiseReport(-1, -1, -1, Convert.ToInt32(bookObj.BookID), txtFound.Text);
-                    if (data != null)
+                    // Retrieve the filtered list based on selected category
+                    List<Book> filteredBooks = ReportBL.GetBookWiseReport(userID, authorId, -1, -1, -1); // Add other parameters if needed
+
+                    if (filteredBooks != null && filteredBooks.Count > 0)
                     {
                         dataGridBook.AutoGenerateColumns = false;
-                        dataGridBook.DataSource = data;
+                        dataGridBook.DataSource = filteredBooks;
                         dataGridBook.Refresh();
-                        getGridviewByDefaultDesign();
+                        getGridviewByDefaultDesign(); // Optional, to retain grid style
                     }
                     else
                     {
-                        MessageBox.Show("data not found");
+                        MessageBox.Show("No books found for the selected Auther.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         dataGridBook.DataSource = null;
-                        dataGridBook.AutoGenerateColumns = false;
                         dataGridBook.Refresh();
                     }
                 }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error filtering books by Auther: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
+            else
+            {
+                MessageBox.Show("Please select a auther first.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
         }
 
-        private void btnExport_Click(object sender, EventArgs e)
+        private void pbPublication_Click(object sender, EventArgs e)
         {
-            int boookID = -1;
-            if (bookObj != null)
-            {
-                boookID = Convert.ToInt32(bookObj.BookID);
-            }
-           
-            SqlConnection con = null;
-            #region Candidate-details
-            _Application app = new Microsoft.Office.Interop.Excel.Application();
-            _Workbook workbook = app.Workbooks.Add(Type.Missing);
-            Microsoft.Office.Interop.Excel._Worksheet worksheet = null;
-            worksheet = workbook.Sheets["Sheet1"];
-            worksheet = workbook.ActiveSheet;
-            worksheet.Name = "Client-Deatils";
 
-            #region Interacting with database
-            con = SqlConnectionHelper.GetConnectionSync();
-            if (con.State == ConnectionState.Closed)
-            {
-                con.Open();
-            }
-            SqlCommand cmd = new SqlCommand
-            {
-                CommandText = "ShowBook",
-                CommandType = CommandType.StoredProcedure,
-                Connection = con
-            };
-            cmd.Parameters.Clear();
-            if (!string.IsNullOrEmpty(txtFound.Text))
-            {
-                cmd.Parameters.Add("@Funds", SqlDbType.VarChar).Value = txtFound.Text;
-            }
-            if (!string.IsNullOrEmpty(txtBookName.Text))
-            {
-                cmd.Parameters.Add("@SearchValue", SqlDbType.VarChar).Value = txtBookName.Text;
-            }
-           
-            SqlDataAdapter adp = new SqlDataAdapter(cmd);
-            DataSet ds = new DataSet();
-            System.Data.DataTable dt = new System.Data.DataTable();
-            adp.Fill(dt);
-            #endregion
+            int publisherId = Convert.ToInt32(cbPublication.SelectedValue); // Get the selected CategoryID from cbSubject
 
-
-            worksheet.Cells[1, 1] = "SR";
-            worksheet.Cells[1, 2] = "Book Name                                        ";
-            worksheet.Cells[1, 3] = "Edition          ";
-            worksheet.Cells[1, 4] = "Author                     ";
-            worksheet.Cells[1, 5] = "Publisher                    ";
-            worksheet.Cells[1, 6] = "Language          ";
-            worksheet.Cells[1, 7] = "Category                                        ";
-            worksheet.Cells[1, 8] = "ISBN          ";
-            worksheet.Cells[1, 9] = "Price";
-            worksheet.Cells[1, 10] = "Total Quantity";
-            worksheet.Cells[1, 11] = "Funds";
-            worksheet.Cells[1, 12] = "Is Restricted";
-            worksheet.Cells[1, 13] = "Description                                        ";
-
-            #region Wrap data
-            if (dt.Rows.Count > 0)
+            if (publisherId > 0) // Check if a category is selected
             {
-                int sr = 1;
-                int i = 2;
-                foreach (DataRow row in dt.Rows)
+                try
                 {
-                    bool isRestricted = Convert.ToBoolean(row["IsRestricted"].ToString());
+                    // Retrieve the filtered list based on selected category
+                    List<Book> filteredBooks = ReportBL.GetBookWiseReport(userID, -1, publisherId, -1, -1); // Add other parameters if needed
 
-                    string bookType = null;
-                    if(isRestricted == true)
+                    if (filteredBooks != null && filteredBooks.Count > 0)
                     {
-                        bookType = "Restricted";
+                        dataGridBook.AutoGenerateColumns = false;
+                        dataGridBook.DataSource = filteredBooks;
+                        dataGridBook.Refresh();
+                        getGridviewByDefaultDesign(); // Optional, to retain grid style
                     }
                     else
                     {
-                        bookType = "Not-Restricted";
+                        MessageBox.Show("No books found for the selected publisher.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        dataGridBook.DataSource = null;
+                        dataGridBook.Refresh();
                     }
-
-                    worksheet.Cells[i, 1] = sr;
-                    worksheet.Cells[i, 2] = row["Name"] as string ?? string.Empty;
-                    worksheet.Cells[i, 3] = row["Edition"] as string ?? string.Empty;
-                    worksheet.Cells[i, 4] = row["Author"] as string ?? string.Empty;
-                    worksheet.Cells[i, 5] = row["Publisher"] as string ?? string.Empty;
-                    worksheet.Cells[i, 6] = row["Language"] as string ?? string.Empty;
-                    worksheet.Cells[i, 7] = row["Category"] as string ?? string.Empty;
-                    worksheet.Cells[i, 8] = row["ISBN"] as string ?? string.Empty;
-                    worksheet.Cells[i, 9] = row["Price"] as decimal? ?? 0;
-                    worksheet.Cells[i, 10] = row["TotalQuantity"] as int? ?? 0;
-                    worksheet.Cells[i, 11] = row["Funds"] as string ?? string.Empty;
-                    worksheet.Cells[i, 12] = bookType;
-                    worksheet.Cells[i, 13] = row["Description"] as string ?? string.Empty;
-                    i = i + 1;
-                    sr = sr + 1;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error filtering books by publisher: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            #endregion
-            worksheet.Columns.AutoFit();
-            Range rng = worksheet.get_Range("A1:N1", Missing.Value);
-            rng.Interior.Color = XlRgbColor.rgbLightBlue;
-
-            var saveFileDialoge = new SaveFileDialog();
-            saveFileDialoge.FileName = "Book-Report";
-            saveFileDialoge.DefaultExt = ".xlsx";
-            if (saveFileDialoge.ShowDialog() == DialogResult.OK)
+            else
             {
-                workbook.SaveAs(saveFileDialoge.FileName, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlExclusive, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
+                MessageBox.Show("Please select a publisher first.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            app.Quit();
-            MessageBox.Show("Excel successfully created");
-            #endregion
+
         }
-
-        //private void TxtBookName_TextChanged(object sender, EventArgs e)
-        //{
-        //    List<Book> data = null;
-        //    data = ReportBL.GetBookWiseReport(-1, -1, -1, Convert.ToInt32(bookObj.BookID), txtFound.Text);
-        //    if (data != null)
-        //    {
-        //        dataGridBook.AutoGenerateColumns = false;
-        //        dataGridBook.DataSource = data;
-        //        dataGridBook.Refresh();
-        //        getGridviewByDefaultDesign();
-        //    }
-        //    else
-        //    {
-        //        MessageBox.Show("data not found");
-        //        dataGridBook.DataSource = null;
-        //        dataGridBook.AutoGenerateColumns = false;
-        //        dataGridBook.Refresh();
-        //    }
-        //}
-
-        //private void TxtFound_TextChanged(object sender, EventArgs e)
-        //{
-        //    List<Book> data = null;
-        //    data = ReportBL.GetBookWiseReport(-1, -1, -1, Convert.ToInt32(bookObj.BookID), txtFound.Text);
-        //    if (data != null)
-        //    {
-        //        dataGridBook.AutoGenerateColumns = false;
-        //        dataGridBook.DataSource = data;
-        //        dataGridBook.Refresh();
-        //        getGridviewByDefaultDesign();
-        //    }
-        //    else
-        //    {
-        //        MessageBox.Show("data not found");
-        //        dataGridBook.DataSource = null;
-        //        dataGridBook.AutoGenerateColumns = false;
-        //        dataGridBook.Refresh();
-        //    }
-        //}
     }
 }

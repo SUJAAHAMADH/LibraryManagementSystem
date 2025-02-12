@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Linq;
 
 namespace LMS.DAL
 {
@@ -86,7 +87,7 @@ namespace LMS.DAL
             return candidates;
         }
 
-        public static List<Book> GetBookWiseReport(int userID, int authorID = -1, int publisherID = -1, int bookID = -1, string funds = null)
+       public static List<Book> GetBookWiseReport(int userID, int authorID = -1, int publisherID = -1, int bookID = -1, int categoryID = -1 )
         {
             #region Declaration
             List<Book> books = null;
@@ -109,9 +110,9 @@ namespace LMS.DAL
             {
                 param.Add(new SqlParameter("@BookID", bookID));
             }
-            if (!string.IsNullOrEmpty(funds))
+            if (categoryID != -1)
             {
-                param.Add(new SqlParameter("@funds", funds));
+                param.Add(new SqlParameter("@CategoryID", categoryID));
             }
             #endregion
 
@@ -177,5 +178,7 @@ namespace LMS.DAL
             }
             return books;
         }
+
+        
     }
 }
