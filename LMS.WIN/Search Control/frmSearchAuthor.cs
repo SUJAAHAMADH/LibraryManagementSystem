@@ -57,7 +57,7 @@ namespace LMS.WIN.Search_Control
 
             gridAuthorList.EnableHeadersVisualStyles = false;
             gridAuthorList.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            gridAuthorList.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
+            gridAuthorList.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(2, 56, 129);
             gridAuthorList.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
         }
 
