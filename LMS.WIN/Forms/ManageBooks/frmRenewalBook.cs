@@ -57,56 +57,56 @@ namespace LMS.WIN.Forms.ManageBooks
 
         private void frmRenewalBook_Load(object sender, EventArgs e)
         {
-            con.ConnectionString = ConfigurationManager.ConnectionStrings["LMS"].ToString();
-            if (con.State == ConnectionState.Closed)
-            {
-                con.Open();
-            }
-            Control.CheckForIllegalCrossThreadCalls = false;
-            resetControl();
-            mfs100 = new MFS100(key);
-            mfs100.OnCaptureCompleted += OnCaptureCompleted;
-            try
-            {
-                if (!Directory.Exists(datapath))
-                {
-                    Directory.CreateDirectory(datapath);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            try
-            {
-                int ret = mfs100.Init();
-                if (ret != 0)
-                {
-                    // MessageBox.Show(mfs100.GetErrorMsg(ret));
-                }
-                else
-                {
-                    deviceInfo = mfs100.GetDeviceInfo();
-                    if (deviceInfo != null)
-                    {
-                        string scannerInfo = "SERIAL NO.: " + deviceInfo.SerialNo + "     MAKE: " + deviceInfo.Make + "     MODEL: " + deviceInfo.Model + "\nWIDTH: " + deviceInfo.Width.ToString() + "     HEIGHT: " + deviceInfo.Height.ToString() + "     CERT: " + mfs100.GetCertification();
-                        //lblSerial.Text = scannerInfo;
-                    }
-                    else
-                    {
-                        //lblSerial.Text = "";
-                    }
-                    //MessageBox.Show(mfs100.GetErrorMsg(ret));
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-            finally
-            {
-                GC.Collect();
-            }
+            //con.ConnectionString = ConfigurationManager.ConnectionStrings["LMS"].ToString();
+            //if (con.State == ConnectionState.Closed)
+            //{
+            //    con.Open();
+            //}
+            //Control.CheckForIllegalCrossThreadCalls = false;
+            //resetControl();
+            //mfs100 = new MFS100(key);
+            //mfs100.OnCaptureCompleted += OnCaptureCompleted;
+            //try
+            //{
+            //    if (!Directory.Exists(datapath))
+            //    {
+            //        Directory.CreateDirectory(datapath);
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
+            //try
+            //{
+            //    int ret = mfs100.Init();
+            //    if (ret != 0)
+            //    {
+            //        // MessageBox.Show(mfs100.GetErrorMsg(ret));
+            //    }
+            //    else
+            //    {
+            //        deviceInfo = mfs100.GetDeviceInfo();
+            //        if (deviceInfo != null)
+            //        {
+            //            string scannerInfo = "SERIAL NO.: " + deviceInfo.SerialNo + "     MAKE: " + deviceInfo.Make + "     MODEL: " + deviceInfo.Model + "\nWIDTH: " + deviceInfo.Width.ToString() + "     HEIGHT: " + deviceInfo.Height.ToString() + "     CERT: " + mfs100.GetCertification();
+            //            //lblSerial.Text = scannerInfo;
+            //        }
+            //        else
+            //        {
+            //            //lblSerial.Text = "";
+            //        }
+            //        //MessageBox.Show(mfs100.GetErrorMsg(ret));
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.ToString());
+            //}
+            //finally
+            //{
+            //    GC.Collect();
+            //}
             dtReturnDate.Format = DateTimePickerFormat.Custom;
             dtReturnDate.CustomFormat = "dd-MM-yyyy";
             dtReturnDate.Value = DateTime.Today.AddDays(7);

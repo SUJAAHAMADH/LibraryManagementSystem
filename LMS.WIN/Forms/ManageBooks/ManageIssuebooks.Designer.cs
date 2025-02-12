@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageIssuebooks));
             this.dataGridissueBook = new System.Windows.Forms.DataGridView();
             this.IssueBookID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,12 +63,23 @@
             // 
             // dataGridissueBook
             // 
+            this.dataGridissueBook.AllowUserToResizeColumns = false;
             this.dataGridissueBook.AllowUserToResizeRows = false;
+            this.dataGridissueBook.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridissueBook.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridissueBook.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridissueBook.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
-            this.dataGridissueBook.ColumnHeadersHeight = 20;
-            this.dataGridissueBook.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridissueBook.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridissueBook.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridissueBook.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridissueBook.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IssueBookID,
             this.CandidateName,
@@ -81,15 +94,25 @@
             this.NoOfTimeRenewal,
             this.Remark,
             this.Delete});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(145)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridissueBook.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridissueBook.EnableHeadersVisualStyles = false;
             this.dataGridissueBook.GridColor = System.Drawing.Color.White;
-            this.dataGridissueBook.Location = new System.Drawing.Point(25, 91);
+            this.dataGridissueBook.Location = new System.Drawing.Point(23, 202);
+            this.dataGridissueBook.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridissueBook.Name = "dataGridissueBook";
             this.dataGridissueBook.ReadOnly = true;
             this.dataGridissueBook.RowHeadersVisible = false;
             this.dataGridissueBook.RowHeadersWidth = 60;
             this.dataGridissueBook.RowTemplate.Height = 30;
             this.dataGridissueBook.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridissueBook.Size = new System.Drawing.Size(1032, 424);
+            this.dataGridissueBook.Size = new System.Drawing.Size(1387, 258);
             this.dataGridissueBook.TabIndex = 123;
             // 
             // IssueBookID
@@ -206,7 +229,6 @@
             this.Delete.DataPropertyName = "Delete";
             this.Delete.FillWeight = 26.21115F;
             this.Delete.HeaderText = "Delete";
-          
             this.Delete.MinimumWidth = 6;
             this.Delete.Name = "Delete";
             this.Delete.ReadOnly = true;
@@ -216,9 +238,10 @@
             // txtSearch
             // 
             this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(128, 56);
+            this.txtSearch.Location = new System.Drawing.Point(157, 135);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(252, 26);
+            this.txtSearch.Size = new System.Drawing.Size(193, 30);
             this.txtSearch.TabIndex = 122;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
@@ -227,9 +250,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DarkGray;
-            this.label3.Location = new System.Drawing.Point(22, 33);
+            this.label3.Location = new System.Drawing.Point(29, 41);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(286, 14);
+            this.label3.Size = new System.Drawing.Size(355, 18);
             this.label3.TabIndex = 120;
             this.label3.Text = "Add, Edit, Delete your Book through manage issue Book.";
             // 
@@ -237,23 +261,25 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(21, 6);
+            this.label4.Location = new System.Drawing.Point(28, 7);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(198, 25);
+            this.label4.Size = new System.Drawing.Size(248, 32);
             this.label4.TabIndex = 119;
             this.label4.Text = "Manage Issue Book";
             // 
             // btnissuebook
             // 
-            this.btnissuebook.BackColor = System.Drawing.Color.Teal;
+            this.btnissuebook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.btnissuebook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnissuebook.FlatAppearance.BorderSize = 0;
-            this.btnissuebook.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnissuebook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnissuebook.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.btnissuebook.ForeColor = System.Drawing.Color.White;
-            this.btnissuebook.Location = new System.Drawing.Point(959, 55);
+            this.btnissuebook.Location = new System.Drawing.Point(1252, 66);
+            this.btnissuebook.Margin = new System.Windows.Forms.Padding(4);
             this.btnissuebook.Name = "btnissuebook";
-            this.btnissuebook.Size = new System.Drawing.Size(98, 27);
+            this.btnissuebook.Size = new System.Drawing.Size(158, 41);
             this.btnissuebook.TabIndex = 118;
             this.btnissuebook.Text = "Issue Book";
             this.btnissuebook.UseVisualStyleBackColor = false;
@@ -268,30 +294,34 @@
             this.button3.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(379, 51);
+            this.button3.Location = new System.Drawing.Point(358, 123);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(34, 34);
+            this.button3.Size = new System.Drawing.Size(57, 54);
             this.button3.TabIndex = 121;
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 12F);
-            this.label1.ForeColor = System.Drawing.Color.DarkGray;
-            this.label1.Location = new System.Drawing.Point(26, 60);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(33, 136);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 19);
+            this.label1.Size = new System.Drawing.Size(116, 23);
             this.label1.TabIndex = 124;
             this.label1.Text = "Search Book";
             // 
             // picboxrefersh
             // 
             this.picboxrefersh.Image = ((System.Drawing.Image)(resources.GetObject("picboxrefersh.Image")));
-            this.picboxrefersh.Location = new System.Drawing.Point(314, 26);
+            this.picboxrefersh.Location = new System.Drawing.Point(284, 5);
+            this.picboxrefersh.Margin = new System.Windows.Forms.Padding(4);
             this.picboxrefersh.Name = "picboxrefersh";
-            this.picboxrefersh.Size = new System.Drawing.Size(31, 26);
+            this.picboxrefersh.Size = new System.Drawing.Size(41, 32);
             this.picboxrefersh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picboxrefersh.TabIndex = 126;
             this.picboxrefersh.TabStop = false;
@@ -299,35 +329,41 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label2.Location = new System.Drawing.Point(762, 29);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(888, 144);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 17);
+            this.label2.Size = new System.Drawing.Size(102, 23);
             this.label2.TabIndex = 137;
             this.label2.Text = "End Date";
             // 
             // lblStart
             // 
+            this.lblStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblStart.AutoSize = true;
-            this.lblStart.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.lblStart.Location = new System.Drawing.Point(531, 29);
+            this.lblStart.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStart.Location = new System.Drawing.Point(505, 142);
+            this.lblStart.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStart.Name = "lblStart";
-            this.lblStart.Size = new System.Drawing.Size(73, 17);
+            this.lblStart.Size = new System.Drawing.Size(109, 23);
             this.lblStart.TabIndex = 136;
             this.lblStart.Text = "Start Date";
             // 
             // btnSearch
             // 
-            this.btnSearch.BackColor = System.Drawing.Color.Teal;
+            this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSearch.FlatAppearance.BorderSize = 0;
-            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.Location = new System.Drawing.Point(976, 24);
+            this.btnSearch.Location = new System.Drawing.Point(1262, 136);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(81, 27);
+            this.btnSearch.Size = new System.Drawing.Size(148, 41);
             this.btnSearch.TabIndex = 135;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
@@ -335,29 +371,33 @@
             // 
             // dtendDate
             // 
+            this.dtendDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.dtendDate.CustomFormat = "dd-MM-yyyy";
-            this.dtendDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.dtendDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtendDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtendDate.Location = new System.Drawing.Point(841, 24);
+            this.dtendDate.Location = new System.Drawing.Point(1007, 138);
+            this.dtendDate.Margin = new System.Windows.Forms.Padding(4);
             this.dtendDate.Name = "dtendDate";
-            this.dtendDate.Size = new System.Drawing.Size(126, 23);
+            this.dtendDate.Size = new System.Drawing.Size(247, 30);
             this.dtendDate.TabIndex = 134;
             // 
             // dtStartDateDate
             // 
+            this.dtStartDateDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.dtStartDateDate.CustomFormat = "dd-MM-yyyy";
-            this.dtStartDateDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.dtStartDateDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtStartDateDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtStartDateDate.Location = new System.Drawing.Point(610, 24);
+            this.dtStartDateDate.Location = new System.Drawing.Point(633, 136);
+            this.dtStartDateDate.Margin = new System.Windows.Forms.Padding(4);
             this.dtStartDateDate.Name = "dtStartDateDate";
-            this.dtStartDateDate.Size = new System.Drawing.Size(142, 23);
+            this.dtStartDateDate.Size = new System.Drawing.Size(247, 30);
             this.dtStartDateDate.TabIndex = 133;
             // 
             // ManageIssuebooks
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1065, 582);
+            this.ClientSize = new System.Drawing.Size(1436, 606);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblStart);
             this.Controls.Add(this.btnSearch);
@@ -372,9 +412,11 @@
             this.Controls.Add(this.btnissuebook);
             this.Controls.Add(this.button3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-           // this.Name = "ManageIssuebooks";
+            this.Margin = new System.Windows.Forms.Padding(4);
+
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ManageIssuebooks";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.ManageIssuebooks_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridissueBook)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxrefersh)).EndInit();
