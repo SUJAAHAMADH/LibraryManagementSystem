@@ -245,7 +245,7 @@
             this.Delete.DataPropertyName = "Delete";
             this.Delete.FillWeight = 30F;
             this.Delete.HeaderText = "Delete";
-            this.Delete.Image = global::LMS.WIN.Properties.Resources.delete;
+         
             this.Delete.MinimumWidth = 6;
             this.Delete.Name = "Delete";
             this.Delete.ReadOnly = true;
@@ -257,7 +257,7 @@
             this.dataGridViewImageColumn1.DataPropertyName = "Delete";
             this.dataGridViewImageColumn1.FillWeight = 30F;
             this.dataGridViewImageColumn1.HeaderText = "Delete";
-            this.dataGridViewImageColumn1.Image = global::LMS.WIN.Properties.Resources.delete;
+
             this.dataGridViewImageColumn1.MinimumWidth = 6;
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;

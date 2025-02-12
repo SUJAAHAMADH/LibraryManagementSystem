@@ -120,8 +120,28 @@ namespace LMS.WIN.Forms
             {
                 MenuVertical.Width = 53;          
             }
+            if (panelContenedor.Controls.Count > 0)
+            {
+                // Get the currently loaded form (first control in the panel)
+                Control loadedControl = panelContenedor.Controls[0];
 
-              
+                // Check if the loaded control is a form (or a specific type of form)
+                if (loadedControl is Form)
+                {
+                    Form loadedForm = (Form)loadedControl;
+                    string formName = loadedForm.GetType().Name;  // or loadedForm.GetType().Name to get the form's class name
+                    switch (formName) {
+                        case "ManageIssuebook":
+                        case "ManageIssuebooks":
+                            loadedForm.Width = panelContenedor.Width;
+                            break;
+                    }
+                    
+                                    
+                }
+            }
+            
+
         }
 
         private void label7_Click(object sender, EventArgs e)
@@ -228,9 +248,11 @@ namespace LMS.WIN.Forms
         private void button3_Click(object sender, EventArgs e)
         {
             panelContenedor.Controls.Clear();
-            ManageIssuebook manageIssuebook = new ManageIssuebook();
+            ManageBooks.ManageIssuebook manageIssuebook = new ManageBooks.ManageIssuebook();
             manageIssuebook.TopLevel = false;
             panelContenedor.Controls.Add(manageIssuebook);
+            manageIssuebook.Width = panelContenedor.Width;
+            manageIssuebook.Height = panelContenedor.Height;
             manageIssuebook.Show();
         }
 

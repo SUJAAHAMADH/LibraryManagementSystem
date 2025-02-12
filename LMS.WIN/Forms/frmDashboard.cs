@@ -119,7 +119,7 @@ namespace LMS.WIN.Forms
         private void btnReport_Click(object sender, EventArgs e)
         {
             MoveSidePanel(btnReport);
-            ManageIssuebook manageIssuebook = new ManageIssuebook();
+            ManageBooks.ManageIssuebook manageIssuebook = new ManageBooks.ManageIssuebook();
             manageIssuebook.TopLevel = false;
             PnlControl.Controls.Add(manageIssuebook);
             manageIssuebook.Show();

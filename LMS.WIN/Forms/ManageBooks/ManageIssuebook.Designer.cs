@@ -1,4 +1,4 @@
-﻿namespace LMS.WIN.Forms
+﻿namespace LMS.WIN.Forms.ManageBooks
 {
     partial class ManageIssuebook
     {
@@ -82,7 +82,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1496, 49);
+            this.panel2.Size = new System.Drawing.Size(1436, 49);
             this.panel2.TabIndex = 99;
             // 
             // btnissue
@@ -201,7 +201,7 @@
             // txtSearch
             // 
             this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(1028, 26);
+            this.txtSearch.Location = new System.Drawing.Point(939, 29);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(335, 30);
@@ -250,14 +250,14 @@
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(145)))), ((int)(((byte)(167)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridissueBook.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridissueBook.EnableHeadersVisualStyles = false;
             this.dataGridissueBook.GridColor = System.Drawing.Color.White;
-            this.dataGridissueBook.Location = new System.Drawing.Point(35, 71);
+            this.dataGridissueBook.Location = new System.Drawing.Point(32, 70);
             this.dataGridissueBook.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridissueBook.Name = "dataGridissueBook";
             this.dataGridissueBook.ReadOnly = true;
@@ -273,7 +273,7 @@
             this.dataGridissueBook.RowHeadersWidth = 60;
             this.dataGridissueBook.RowTemplate.Height = 30;
             this.dataGridissueBook.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridissueBook.Size = new System.Drawing.Size(1419, 465);
+            this.dataGridissueBook.Size = new System.Drawing.Size(1388, 526);
             this.dataGridissueBook.TabIndex = 117;
             this.dataGridissueBook.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridissueBook_CellContentClick);
             // 
@@ -425,7 +425,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.label1.ForeColor = System.Drawing.Color.DarkGray;
-            this.label1.Location = new System.Drawing.Point(895, 33);
+            this.label1.Location = new System.Drawing.Point(795, 26);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(113, 21);
@@ -441,7 +441,7 @@
             this.button3.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(1364, 20);
+            this.button3.Location = new System.Drawing.Point(1331, 26);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(45, 42);
@@ -463,9 +463,7 @@
             // 
             // pnlManageBook
             // 
-            this.pnlManageBook.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlManageBook.AutoSize = true;
             this.pnlManageBook.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnlManageBook.Controls.Add(this.picboxrefersh);
             this.pnlManageBook.Controls.Add(this.button3);
@@ -474,10 +472,11 @@
             this.pnlManageBook.Controls.Add(this.txtSearch);
             this.pnlManageBook.Controls.Add(this.label3);
             this.pnlManageBook.Controls.Add(this.label4);
-            this.pnlManageBook.Location = new System.Drawing.Point(16, 57);
+            this.pnlManageBook.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlManageBook.Location = new System.Drawing.Point(0, 49);
             this.pnlManageBook.Margin = new System.Windows.Forms.Padding(4);
             this.pnlManageBook.Name = "pnlManageBook";
-            this.pnlManageBook.Size = new System.Drawing.Size(1467, 573);
+            this.pnlManageBook.Size = new System.Drawing.Size(1436, 634);
             this.pnlManageBook.TabIndex = 112;
             this.pnlManageBook.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlManageBook_Paint);
             // 
@@ -485,28 +484,27 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 645);
+            this.panel5.Location = new System.Drawing.Point(0, 671);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1496, 12);
-            this.panel5.TabIndex = 154;
+            this.panel5.Size = new System.Drawing.Size(1436, 12);
+            this.panel5.TabIndex = 153;
             // 
             // ManageIssuebook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1496, 657);
+            this.ClientSize = new System.Drawing.Size(1436, 683);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.pnlManageBook);
             this.Controls.Add(this.panel2);
             this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
-       
+          
             this.Text = "ManageIssuebook";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.ManageIssuebook_Load);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridissueBook)).EndInit();
@@ -514,6 +512,7 @@
             this.pnlManageBook.ResumeLayout(false);
             this.pnlManageBook.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -529,6 +528,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.DataGridView dataGridissueBook;
         private System.Windows.Forms.DataGridViewTextBoxColumn Name;
         private System.Windows.Forms.DataGridViewTextBoxColumn Author;
         private System.Windows.Forms.DataGridViewTextBoxColumn Language;
@@ -549,7 +549,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.PictureBox picboxrefersh;
         private System.Windows.Forms.Panel pnlManageBook;
-        private System.Windows.Forms.DataGridView dataGridissueBook;
         private System.Windows.Forms.Panel panel5;
     }
 }

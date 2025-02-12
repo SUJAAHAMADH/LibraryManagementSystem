@@ -35,7 +35,7 @@ namespace LMS.WIN.Forms.ManageBooks
                 dataGridissueBook.AutoGenerateColumns = false;
                 dataGridissueBook.DataSource = data;
                 dataGridissueBook.Refresh();
-                getGridviewByDefaultDesign();
+                //getGridviewByDefaultDesign();
             }
             else
             {
@@ -80,6 +80,11 @@ namespace LMS.WIN.Forms.ManageBooks
             string startDate = dtStartDateDate.Text;
             string endDate = dtendDate.Text;
             bindIssueBookList(null, startDate, endDate);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

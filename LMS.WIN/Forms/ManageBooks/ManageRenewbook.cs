@@ -35,7 +35,7 @@ namespace LMS.WIN.Forms.ManageBooks
                 dataGridRenewBook.AutoGenerateColumns = false;
                 dataGridRenewBook.DataSource = data;
                 dataGridRenewBook.Refresh();
-                getGridviewByDefaultDesign();
+              //  getGridviewByDefaultDesign();
             }
             else
             {

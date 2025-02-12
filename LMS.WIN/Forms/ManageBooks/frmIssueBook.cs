@@ -7,6 +7,9 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Configuration;
 using MANTRA;
+using DocumentFormat.OpenXml.Wordprocessing;
+using System.Collections.Generic;
+using System.Runtime.InteropServices.ComTypes;
 
 namespace LMS.WIN.Forms.ManageBooks
 {
@@ -47,11 +50,11 @@ namespace LMS.WIN.Forms.ManageBooks
 
         private void frmIssueBook_Load(object sender, EventArgs e)
         {
-            con.ConnectionString = ConfigurationManager.ConnectionStrings["LMS"].ToString();
-            if (con.State == ConnectionState.Closed)
-            {
-                con.Open();
-            }
+            //con.ConnectionString = ConfigurationManager.ConnectionStrings["LMS"].ToString();
+            //if (con.State == ConnectionState.Closed)
+            //{
+            //    con.Open();
+            //}
 
             dtReturnDate.Format = DateTimePickerFormat.Custom;
             dtReturnDate.CustomFormat = "dd-MM-yyyy";
@@ -60,51 +63,51 @@ namespace LMS.WIN.Forms.ManageBooks
             dtIssuedDate.Format = DateTimePickerFormat.Custom;
             dtIssuedDate.CustomFormat = "dd-MM-yyyy";
 
-            Control.CheckForIllegalCrossThreadCalls = false;
-            resetControl();
-            mfs100 = new MFS100(key);
-            mfs100.OnCaptureCompleted += OnCaptureCompleted;
-            try
-            {
-                if (!Directory.Exists(datapath))
-                {
-                    Directory.CreateDirectory(datapath);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            try
-            {
-                int ret = mfs100.Init();
-                if (ret != 0)
-                {
-                    // MessageBox.Show(mfs100.GetErrorMsg(ret));
-                }
-                else
-                {
-                    deviceInfo = mfs100.GetDeviceInfo();
-                    if (deviceInfo != null)
-                    {
-                        string scannerInfo = "SERIAL NO.: " + deviceInfo.SerialNo + "     MAKE: " + deviceInfo.Make + "     MODEL: " + deviceInfo.Model + "\nWIDTH: " + deviceInfo.Width.ToString() + "     HEIGHT: " + deviceInfo.Height.ToString() + "     CERT: " + mfs100.GetCertification();
-                        //lblSerial.Text = scannerInfo;
-                    }
-                    else
-                    {
-                        //lblSerial.Text = "";
-                    }
-                    //MessageBox.Show(mfs100.GetErrorMsg(ret));
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-            finally
-            {
-                GC.Collect();
-            }
+            //Control.CheckForIllegalCrossThreadCalls = false;
+            //resetControl();
+            //mfs100 = new MFS100(key);
+            //mfs100.OnCaptureCompleted += OnCaptureCompleted;
+            //try
+            //{
+            //    if (!Directory.Exists(datapath))
+            //    {
+            //        Directory.CreateDirectory(datapath);
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
+            //try
+            //{
+            //    int ret = mfs100.Init();
+            //    if (ret != 0)
+            //    {
+            //        // MessageBox.Show(mfs100.GetErrorMsg(ret));
+            //    }
+            //    else
+            //    {
+            //        deviceInfo = mfs100.GetDeviceInfo();
+            //        if (deviceInfo != null)
+            //        {
+            //            string scannerInfo = "SERIAL NO.: " + deviceInfo.SerialNo + "     MAKE: " + deviceInfo.Make + "     MODEL: " + deviceInfo.Model + "\nWIDTH: " + deviceInfo.Width.ToString() + "     HEIGHT: " + deviceInfo.Height.ToString() + "     CERT: " + mfs100.GetCertification();
+            //            //lblSerial.Text = scannerInfo;
+            //        }
+            //        else
+            //        {
+            //            //lblSerial.Text = "";
+            //        }
+            //        //MessageBox.Show(mfs100.GetErrorMsg(ret));
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.ToString());
+            //}
+            //finally
+            //{
+            //    GC.Collect();
+            //}
         }
 
         private void txtCandidate_KeyDown(object sender, KeyEventArgs e)
@@ -268,9 +271,42 @@ namespace LMS.WIN.Forms.ManageBooks
                             Remark = richtextRemark.Text,
                             UserID = userID,
                         };
+                        var daysDifference = (issueBook?.ReturnDate - issueBook?.IssuedOn)?.Days;
+                        List<IssueBook> issuedBooksForCandidate = IssueBookBL.GetIssueBook(-1, -1, candidateDetail.CandidateID, null, null, null, null);
+
+
+
+                        if (candidateDetail.Role == "STUDENT")
+                        {
+                            if (candidateDetail.Stream == "UG" && (daysDifference == null || daysDifference > 10) && (issuedBooksForCandidate == null || issuedBooksForCandidate.Count <= 2 ))
+                            {
+                                MessageBox.Show("Cannot Issue books for More than 10 Days and Maximum 3 Books can be issued for UG Students", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                Close();
+                                return;
+                            }
+                            if (candidateDetail.Stream == "PG" && (daysDifference == null || daysDifference > 20) && (issuedBooksForCandidate == null || issuedBooksForCandidate.Count <= 3))
+                            {
+                                MessageBox.Show("Cannot Issue books for More than 20 Days and Maximum 3 Books can be issued for PG Students", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                Close();
+                                return;
+                            }
+                        }
+                        else if (candidateDetail.Role == "NON-TEACHER")
+                        {
+                            if (daysDifference == null || daysDifference > 10 && (issuedBooksForCandidate == null || issuedBooksForCandidate.Count <= 2))
+                            {
+                                MessageBox.Show("Cannot Issue books for More than 10 Days and Maximum 3 Books can be issued for Non Teachers", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                Close();
+                                return;
+                            }
+                        }
+              
                         issueBook = IssueBookBL.SaveIssueBook(issueBook);
                         MessageBox.Show("Book Issued successfully.", "Issued Book", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Close();
+                       
+
+                        
                     }
                     catch (Exception ex)
                     {

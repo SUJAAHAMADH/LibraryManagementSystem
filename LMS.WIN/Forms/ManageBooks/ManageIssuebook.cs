@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace LMS.WIN.Forms
+namespace LMS.WIN.Forms.ManageBooks
 {
     public partial class ManageIssuebook : Form
     {
