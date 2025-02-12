@@ -54,7 +54,7 @@ namespace LMS.WIN.Forms.ManageBooks
             dataGridBookHistory.BackgroundColor = Color.White;
             dataGridBookHistory.EnableHeadersVisualStyles = false;
             dataGridBookHistory.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridBookHistory.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(50, 50, 58);
+            dataGridBookHistory.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(2, 56, 129);
             dataGridBookHistory.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
         }
 
