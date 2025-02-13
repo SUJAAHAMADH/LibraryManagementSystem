@@ -344,6 +344,21 @@ namespace LMS.WIN.Forms
             AbrirFormInPanel(manageJournal);
         }
 
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            panelContenedor.Controls.Clear();
+            ManageUser.ManageLibrarian manageLibrarian = new ManageUser.ManageLibrarian();
+            AbrirFormInPanel(manageLibrarian);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            panelContenedor.Controls.Clear();
+            ManageBooks.SearchBooks book = new ManageBooks.SearchBooks();
+            AbrirFormInPanel(book);
+
+        }
+
         private void iconMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;

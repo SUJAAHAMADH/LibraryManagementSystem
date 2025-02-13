@@ -409,5 +409,10 @@ namespace LMS.WIN.Forms.ManageBooks
             //lblStatus.Text = "";
             picThumb.Image = null;
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

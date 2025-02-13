@@ -25,5 +25,10 @@ namespace LMS.WIN.Forms.ManageDue
         {
 
         }
+
+        private void btnCloses_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
