@@ -53,7 +53,7 @@
             this.dataGridViewImageColumn2.DataPropertyName = "Delete";
             this.dataGridViewImageColumn2.FillWeight = 26.21115F;
             this.dataGridViewImageColumn2.HeaderText = "Delete";
-            this.dataGridViewImageColumn2.Image = global::LMS.WIN.Properties.Resources.delete;
+            //this.dataGridViewImageColumn2.Image = global::LMS.WIN.Properties.Resources.delete;
             this.dataGridViewImageColumn2.MinimumWidth = 6;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;

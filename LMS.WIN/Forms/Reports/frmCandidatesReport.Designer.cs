@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCandidatesReport));
             this.btnExport = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.datagridReportList = new System.Windows.Forms.DataGridView();
@@ -48,18 +49,21 @@
             this.ToDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TOSDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SOSDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnCloses = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.cbPersonType = new System.Windows.Forms.ComboBox();
             this.lblPerson = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.datagridReportList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -271,82 +275,14 @@
             this.SOSDate.ReadOnly = true;
             this.SOSDate.Visible = false;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 8F);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(194, 14);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(245, 14);
-            this.label7.TabIndex = 142;
-            this.label7.Text = "See Member Report throughMember Report Page.";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(8, 4);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(180, 26);
-            this.label9.TabIndex = 141;
-            this.label9.Text = "Members Report";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
-            this.panel2.Controls.Add(this.panel5);
-            this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(5, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1060, 33);
-            this.panel2.TabIndex = 163;
-            // 
-            // btnCloses
-            // 
-            this.btnCloses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
-            this.btnCloses.FlatAppearance.BorderSize = 0;
-            this.btnCloses.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCloses.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCloses.ForeColor = System.Drawing.Color.White;
-            this.btnCloses.Location = new System.Drawing.Point(11, 3);
-            this.btnCloses.Name = "btnCloses";
-            this.btnCloses.Size = new System.Drawing.Size(28, 26);
-            this.btnCloses.TabIndex = 24;
-            this.btnCloses.Text = "X";
-            this.btnCloses.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCloses.UseVisualStyleBackColor = false;
-            this.btnCloses.Click += new System.EventHandler(this.btnCloses_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(1065, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(5, 577);
-            this.panel3.TabIndex = 166;
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(5, 577);
+            this.panel4.Location = new System.Drawing.Point(0, 577);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1065, 5);
+            this.panel4.Size = new System.Drawing.Size(1070, 5);
             this.panel4.TabIndex = 165;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(5, 582);
-            this.panel1.TabIndex = 164;
             // 
             // cbPersonType
             // 
@@ -355,7 +291,7 @@
             this.cbPersonType.Items.AddRange(new object[] {
             "STUDENT",
             "TEACHER"});
-            this.cbPersonType.Location = new System.Drawing.Point(275, 64);
+            this.cbPersonType.Location = new System.Drawing.Point(199, 71);
             this.cbPersonType.Name = "cbPersonType";
             this.cbPersonType.Size = new System.Drawing.Size(241, 34);
             this.cbPersonType.TabIndex = 168;
@@ -364,21 +300,85 @@
             // lblPerson
             // 
             this.lblPerson.AutoSize = true;
-            this.lblPerson.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold);
-            this.lblPerson.ForeColor = System.Drawing.Color.Red;
-            this.lblPerson.Location = new System.Drawing.Point(19, 67);
+            this.lblPerson.Font = new System.Drawing.Font("Calibri", 16F);
+            this.lblPerson.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            this.lblPerson.Location = new System.Drawing.Point(12, 71);
             this.lblPerson.Name = "lblPerson";
-            this.lblPerson.Size = new System.Drawing.Size(199, 29);
+            this.lblPerson.Size = new System.Drawing.Size(181, 27);
             this.lblPerson.TabIndex = 167;
             this.lblPerson.Text = "Select Person Type";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(3, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(39, 36);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(7, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(56, 51);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(77, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(168, 26);
+            this.label2.TabIndex = 141;
+            this.label2.Text = "Member Report";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 8F);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(251, 21);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(256, 14);
+            this.label3.TabIndex = 142;
+            this.label3.Text = "See All Member Details Here and Filter as you want.";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Controls.Add(this.panel5);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1070, 54);
+            this.panel2.TabIndex = 169;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(71, 54);
+            this.panel1.TabIndex = 144;
+            // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.btnCloses);
+            this.panel5.Controls.Add(this.pictureBox1);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(1015, 0);
+            this.panel5.Location = new System.Drawing.Point(1025, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(45, 33);
+            this.panel5.Size = new System.Drawing.Size(45, 54);
             this.panel5.TabIndex = 143;
             // 
             // frmCandidatesReport
@@ -386,12 +386,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1070, 582);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.cbPersonType);
             this.Controls.Add(this.lblPerson);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.datagridReportList);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnExport);
@@ -399,8 +397,11 @@
             this.Text = "frmCandidatesReport";
             this.Load += new System.EventHandler(this.FrmCandidatesReport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.datagridReportList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -411,13 +412,7 @@
         private System.Windows.Forms.Button btnExport;
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.DataGridView datagridReportList;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnCloses;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox cbPersonType;
         private System.Windows.Forms.Label lblPerson;
         private System.Windows.Forms.DataGridViewTextBoxColumn CandidateID;
@@ -436,6 +431,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ToDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn TOSDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn SOSDate;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel5;
     }
 }

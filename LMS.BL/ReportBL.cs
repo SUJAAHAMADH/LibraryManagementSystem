@@ -33,5 +33,18 @@ namespace LMS.BL
                 throw new Exception(ex.Message);
             }
         }
+
+        public static List<IssueBook> GetIssueBook(int userID = -1, int bookBarcodeID = -1, int candidateID = -1, string barcode = null, string searchValue = null, string startDate = null, string endDate = null)
+        {
+            try
+            {
+                List<IssueBook> issueBooks = IssueBookDAL.GetIssueBook(userID, bookBarcodeID, candidateID, barcode, searchValue, startDate, endDate);
+                return issueBooks;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

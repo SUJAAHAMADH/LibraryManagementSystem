@@ -520,5 +520,10 @@ namespace LMS.WIN.Forms.ManageBooks
             frmBarcodePrint.reportViewer1.SetPageSettings(pg);
             frmBarcodePrint.ShowDialog();
         }
+
+        private void pbClose_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

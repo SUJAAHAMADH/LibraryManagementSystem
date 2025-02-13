@@ -279,7 +279,7 @@ namespace LMS.WIN.Forms
         private void button1_Click(object sender, EventArgs e)
         {
             panelContenedor.Controls.Clear();
-            Reports.ManageReport manageReport = new Reports.ManageReport();
+            Reports.frmBookTransactionReport manageReport = new Reports.frmBookTransactionReport();
             manageReport.TopLevel = false;
             panelContenedor.Controls.Add(manageReport);
             manageReport.Show();

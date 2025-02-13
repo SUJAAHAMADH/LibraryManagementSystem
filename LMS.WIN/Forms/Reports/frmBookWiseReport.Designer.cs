@@ -504,6 +504,7 @@
             this.Controls.Add(this.btnExport);
             this.Controls.Add(this.dataGridBook);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmBookWiseReport";
             this.Load += new System.EventHandler(this.FrmBookWiseReport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridBook)).EndInit();

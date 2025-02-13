@@ -62,19 +62,20 @@
             // 
             // txtSearch
             // 
-            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(127, 57);
+            this.txtSearch.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(126, 61);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(280, 23);
+            this.txtSearch.Size = new System.Drawing.Size(280, 25);
             this.txtSearch.TabIndex = 126;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.Control;
             this.label3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DarkGray;
-            this.label3.Location = new System.Drawing.Point(23, 31);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            this.label3.Location = new System.Drawing.Point(23, 36);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(295, 14);
             this.label3.TabIndex = 124;
@@ -83,8 +84,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.Control;
             this.label4.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(22, 4);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            this.label4.Location = new System.Drawing.Point(22, 9);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(213, 25);
             this.label4.TabIndex = 123;
@@ -92,11 +95,11 @@
             // 
             // btnrenewbook
             // 
-            this.btnrenewbook.BackColor = System.Drawing.Color.Teal;
+            this.btnrenewbook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(73)))), ((int)(((byte)(49)))));
             this.btnrenewbook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnrenewbook.FlatAppearance.BorderSize = 0;
-            this.btnrenewbook.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnrenewbook.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.btnrenewbook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnrenewbook.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnrenewbook.ForeColor = System.Drawing.Color.White;
             this.btnrenewbook.Location = new System.Drawing.Point(945, 55);
             this.btnrenewbook.Name = "btnrenewbook";
@@ -245,7 +248,6 @@
             this.Delete.DataPropertyName = "Delete";
             this.Delete.FillWeight = 30F;
             this.Delete.HeaderText = "Delete";
-         
             this.Delete.MinimumWidth = 6;
             this.Delete.Name = "Delete";
             this.Delete.ReadOnly = true;
@@ -257,7 +259,6 @@
             this.dataGridViewImageColumn1.DataPropertyName = "Delete";
             this.dataGridViewImageColumn1.FillWeight = 30F;
             this.dataGridViewImageColumn1.HeaderText = "Delete";
-
             this.dataGridViewImageColumn1.MinimumWidth = 6;
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -272,9 +273,9 @@
             this.button3.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(402, 54);
+            this.button3.Location = new System.Drawing.Point(412, 59);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(34, 32);
+            this.button3.Size = new System.Drawing.Size(27, 28);
             this.button3.TabIndex = 125;
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = true;
@@ -301,11 +302,11 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.BackColor = System.Drawing.Color.Teal;
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSearch.FlatAppearance.BorderSize = 0;
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSearch.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.btnSearch.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.White;
             this.btnSearch.Location = new System.Drawing.Point(981, 19);
             this.btnSearch.Name = "btnSearch";
@@ -318,41 +319,46 @@
             // lblStart
             // 
             this.lblStart.AutoSize = true;
-            this.lblStart.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.lblStart.BackColor = System.Drawing.SystemColors.Control;
+            this.lblStart.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.lblStart.Location = new System.Drawing.Point(539, 24);
             this.lblStart.Name = "lblStart";
-            this.lblStart.Size = new System.Drawing.Size(73, 17);
+            this.lblStart.Size = new System.Drawing.Size(70, 16);
             this.lblStart.TabIndex = 131;
             this.lblStart.Text = "Start Date";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.label1.BackColor = System.Drawing.SystemColors.Control;
+            this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.label1.Location = new System.Drawing.Point(770, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 17);
+            this.label1.Size = new System.Drawing.Size(64, 16);
             this.label1.TabIndex = 132;
             this.label1.Text = "End Date";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Cambria", 12F);
-            this.label2.ForeColor = System.Drawing.Color.DarkGray;
-            this.label2.Location = new System.Drawing.Point(25, 58);
+            this.label2.BackColor = System.Drawing.SystemColors.Control;
+            this.label2.Font = new System.Drawing.Font("Arial", 12F);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            this.label2.Location = new System.Drawing.Point(24, 64);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 19);
+            this.label2.Size = new System.Drawing.Size(99, 18);
             this.label2.TabIndex = 133;
             this.label2.Text = "Search Book";
             // 
             // picboxrefersh
             // 
             this.picboxrefersh.Image = ((System.Drawing.Image)(resources.GetObject("picboxrefersh.Image")));
-            this.picboxrefersh.Location = new System.Drawing.Point(324, 25);
+            this.picboxrefersh.Location = new System.Drawing.Point(333, 10);
             this.picboxrefersh.Name = "picboxrefersh";
-            this.picboxrefersh.Size = new System.Drawing.Size(31, 26);
-            this.picboxrefersh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picboxrefersh.Size = new System.Drawing.Size(43, 37);
+            this.picboxrefersh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picboxrefersh.TabIndex = 143;
             this.picboxrefersh.TabStop = false;
             this.picboxrefersh.Click += new System.EventHandler(this.picboxrefersh_Click);
@@ -376,7 +382,7 @@
             this.Controls.Add(this.btnrenewbook);
             this.Controls.Add(this.button3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-          //  this.Name = "ManageRenewbook";
+
             this.Load += new System.EventHandler(this.ManageRenewbook_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridRenewBook)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxrefersh)).EndInit();
