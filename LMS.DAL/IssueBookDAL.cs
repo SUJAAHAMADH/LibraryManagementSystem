@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Globalization;
 
 namespace LMS.DAL
 {
@@ -95,11 +96,21 @@ namespace LMS.DAL
             }
             if (!string.IsNullOrEmpty(startDate))
             {
-                param.Add(new SqlParameter { ParameterName = "@StartDate", DbType = DbType.Date, Value = DateTime.ParseExact(startDate, "dd-MM-yyyy", null) });
+                param.Add(new SqlParameter
+                {
+                    ParameterName = "@StartDate",
+                    DbType = DbType.Date,
+                    Value = DateTime.ParseExact(startDate, "dd-MM-yyyy", CultureInfo.InvariantCulture)
+                });
             }
             if (!string.IsNullOrEmpty(endDate))
             {
-                param.Add(new SqlParameter { ParameterName = "@EndDate", DbType = DbType.Date, Value = DateTime.ParseExact(endDate, "dd-MM-yyyy", null) });
+                param.Add(new SqlParameter
+                {
+                    ParameterName = "@EndDate",
+                    DbType = DbType.Date,
+                    Value = DateTime.ParseExact(endDate, "dd-MM-yyyy", CultureInfo.InvariantCulture)
+                });
             }
             #endregion
 

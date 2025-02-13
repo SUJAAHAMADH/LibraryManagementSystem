@@ -76,6 +76,7 @@
             this.menuTransition = new System.Windows.Forms.Timer(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.MasterTimer = new System.Windows.Forms.Timer(this.components);
+            this.panel10 = new System.Windows.Forms.Panel();
             this.MenuVertical.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.reportPanel.SuspendLayout();
@@ -98,6 +99,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconCerrar)).BeginInit();
             this.panelContenedor.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel10.SuspendLayout();
             this.SuspendLayout();
             // 
             // MenuVertical
@@ -572,7 +574,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.panel10);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.txtuserName);
@@ -592,7 +594,7 @@
             this.button4.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(205, 21);
+            this.button4.Location = new System.Drawing.Point(5, 18);
             this.button4.Margin = new System.Windows.Forms.Padding(1);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(39, 41);
@@ -604,7 +606,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(11, 52);
+            this.panel2.Location = new System.Drawing.Point(59, 58);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(179, 4);
             this.panel2.TabIndex = 33;
@@ -612,7 +614,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(11, 21);
+            this.pictureBox2.Location = new System.Drawing.Point(59, 27);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(28, 25);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -624,7 +626,7 @@
             this.txtuserName.AutoSize = true;
             this.txtuserName.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtuserName.ForeColor = System.Drawing.Color.White;
-            this.txtuserName.Location = new System.Drawing.Point(58, 23);
+            this.txtuserName.Location = new System.Drawing.Point(106, 29);
             this.txtuserName.Name = "txtuserName";
             this.txtuserName.Size = new System.Drawing.Size(113, 23);
             this.txtuserName.TabIndex = 31;
@@ -773,6 +775,15 @@
             this.MasterTimer.Interval = 40;
             this.MasterTimer.Tick += new System.EventHandler(this.MasterTimer_Tick);
             // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.button4);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel10.Location = new System.Drawing.Point(0, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(53, 72);
+            this.panel10.TabIndex = 34;
+            // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -814,6 +825,7 @@
             this.panelContenedor.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel10.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -865,5 +877,6 @@
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Timer MasterTimer;
+        private System.Windows.Forms.Panel panel10;
     }
 }

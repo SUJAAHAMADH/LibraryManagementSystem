@@ -45,8 +45,12 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridAvailablebook)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridAvailablebook
@@ -135,7 +139,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DarkGray;
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(13, 36);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(284, 14);
@@ -145,11 +149,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(12, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(241, 25);
+            this.label4.Size = new System.Drawing.Size(251, 24);
             this.label4.TabIndex = 154;
             this.label4.Text = "Available Book Barcode";
             // 
@@ -171,16 +175,16 @@
             this.button3.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(217, 57);
+            this.button3.Location = new System.Drawing.Point(217, 61);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(34, 34);
+            this.button3.Size = new System.Drawing.Size(30, 27);
             this.button3.TabIndex = 152;
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.Teal;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel3.Location = new System.Drawing.Point(508, 55);
             this.panel3.Name = "panel3";
@@ -198,7 +202,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Teal;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 55);
             this.panel1.Name = "panel1";
@@ -207,7 +211,8 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Teal;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -215,6 +220,26 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(513, 55);
             this.panel2.TabIndex = 157;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.pictureBox1);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel6.Location = new System.Drawing.Point(468, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(45, 55);
+            this.panel6.TabIndex = 156;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(3, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(39, 36);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // ViewAvailableBookDetails
             // 
@@ -228,6 +253,7 @@
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.dataGridAvailablebook);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.ShowIcon = false;
@@ -236,6 +262,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridAvailablebook)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -259,5 +287,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Language;
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
         private System.Windows.Forms.DataGridViewTextBoxColumn ISBN;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -70,11 +70,11 @@
             // 
             // btnreturnbook
             // 
-            this.btnreturnbook.BackColor = System.Drawing.Color.Teal;
+            this.btnreturnbook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(73)))), ((int)(((byte)(49)))));
             this.btnreturnbook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnreturnbook.FlatAppearance.BorderSize = 0;
-            this.btnreturnbook.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnreturnbook.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.btnreturnbook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnreturnbook.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnreturnbook.ForeColor = System.Drawing.Color.White;
             this.btnreturnbook.Location = new System.Drawing.Point(964, 61);
             this.btnreturnbook.Name = "btnreturnbook";
@@ -93,9 +93,9 @@
             this.button3.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(380, 59);
+            this.button3.Location = new System.Drawing.Point(391, 61);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(34, 34);
+            this.button3.Size = new System.Drawing.Size(27, 27);
             this.button3.TabIndex = 129;
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = true;
@@ -104,7 +104,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DarkGray;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.label3.Location = new System.Drawing.Point(24, 35);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(294, 14);
@@ -115,6 +115,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.label4.Location = new System.Drawing.Point(23, 8);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(216, 25);
@@ -260,7 +261,6 @@
             this.Delete.DataPropertyName = "Delete";
             this.Delete.FillWeight = 30F;
             this.Delete.HeaderText = "Delete";
-            this.Delete.Image = global::LMS.WIN.Properties.Resources.delete;
             this.Delete.MinimumWidth = 6;
             this.Delete.Name = "Delete";
             this.Delete.ReadOnly = true;
@@ -271,7 +271,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cambria", 12F);
-            this.label2.ForeColor = System.Drawing.Color.DarkGray;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.label2.Location = new System.Drawing.Point(31, 66);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 19);
@@ -281,10 +281,10 @@
             // picboxrefersh
             // 
             this.picboxrefersh.Image = ((System.Drawing.Image)(resources.GetObject("picboxrefersh.Image")));
-            this.picboxrefersh.Location = new System.Drawing.Point(324, 31);
+            this.picboxrefersh.Location = new System.Drawing.Point(338, 12);
             this.picboxrefersh.Name = "picboxrefersh";
             this.picboxrefersh.Size = new System.Drawing.Size(31, 26);
-            this.picboxrefersh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picboxrefersh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picboxrefersh.TabIndex = 144;
             this.picboxrefersh.TabStop = false;
             this.picboxrefersh.Click += new System.EventHandler(this.picboxrefersh_Click);
@@ -292,30 +292,32 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.label1.Location = new System.Drawing.Point(769, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 17);
+            this.label1.Size = new System.Drawing.Size(64, 16);
             this.label1.TabIndex = 149;
             this.label1.Text = "End Date";
             // 
             // lblStart
             // 
             this.lblStart.AutoSize = true;
-            this.lblStart.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.lblStart.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.lblStart.Location = new System.Drawing.Point(538, 34);
             this.lblStart.Name = "lblStart";
-            this.lblStart.Size = new System.Drawing.Size(73, 17);
+            this.lblStart.Size = new System.Drawing.Size(70, 16);
             this.lblStart.TabIndex = 148;
             this.lblStart.Text = "Start Date";
             // 
             // btnSearch
             // 
-            this.btnSearch.BackColor = System.Drawing.Color.Teal;
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSearch.FlatAppearance.BorderSize = 0;
-            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSearch.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.White;
             this.btnSearch.Location = new System.Drawing.Point(980, 29);
             this.btnSearch.Name = "btnSearch";
@@ -330,7 +332,7 @@
             this.dtendDate.CustomFormat = "dd-MM-yyyy";
             this.dtendDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.dtendDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtendDate.Location = new System.Drawing.Point(848, 29);
+            this.dtendDate.Location = new System.Drawing.Point(848, 31);
             this.dtendDate.Name = "dtendDate";
             this.dtendDate.Size = new System.Drawing.Size(126, 23);
             this.dtendDate.TabIndex = 146;
@@ -340,7 +342,7 @@
             this.dtStartDateDate.CustomFormat = "dd-MM-yyyy";
             this.dtStartDateDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.dtStartDateDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtStartDateDate.Location = new System.Drawing.Point(617, 29);
+            this.dtStartDateDate.Location = new System.Drawing.Point(617, 31);
             this.dtStartDateDate.Name = "dtStartDateDate";
             this.dtStartDateDate.Size = new System.Drawing.Size(142, 23);
             this.dtStartDateDate.TabIndex = 145;

@@ -28,7 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBookWiseReport));
             this.dataGridBook = new System.Windows.Forms.DataGridView();
+            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BookID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Author = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,17 +48,36 @@
             this.TotalQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AuthorID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PublisherID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtFound = new System.Windows.Forms.TextBox();
-            this.txt = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txtBookName = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnExport = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pbPublication = new System.Windows.Forms.PictureBox();
+            this.pbAuthor = new System.Windows.Forms.PictureBox();
+            this.pbCategory = new System.Windows.Forms.PictureBox();
+            this.cbPublication = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cbSubject = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cbAuther = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridBook)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPublication)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAuthor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCategory)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridBook
@@ -63,9 +86,18 @@
             this.dataGridBook.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridBook.BackgroundColor = System.Drawing.Color.White;
             this.dataGridBook.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridBook.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridBook.ColumnHeadersHeight = 20;
             this.dataGridBook.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridBook.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Name,
             this.BookID,
             this.Category,
             this.Author,
@@ -81,16 +113,31 @@
             this.TotalQuantity,
             this.AuthorID,
             this.PublisherID});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridBook.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridBook.GridColor = System.Drawing.Color.White;
-            this.dataGridBook.Location = new System.Drawing.Point(24, 83);
+            this.dataGridBook.Location = new System.Drawing.Point(23, 157);
             this.dataGridBook.Name = "dataGridBook";
             this.dataGridBook.ReadOnly = true;
             this.dataGridBook.RowHeadersVisible = false;
             this.dataGridBook.RowHeadersWidth = 60;
             this.dataGridBook.RowTemplate.Height = 30;
             this.dataGridBook.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridBook.Size = new System.Drawing.Size(1044, 393);
+            this.dataGridBook.Size = new System.Drawing.Size(1093, 393);
             this.dataGridBook.TabIndex = 142;
+            // 
+            // Name
+            // 
+            this.Name.DataPropertyName = "Name";
+            this.Name.HeaderText = "Name";
+            this.Name.Name = "Name";
+            this.Name.ReadOnly = true;
             // 
             // BookID
             // 
@@ -213,145 +260,289 @@
             this.PublisherID.ReadOnly = true;
             this.PublisherID.Visible = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(723, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(161, 15);
-            this.label1.TabIndex = 148;
-            this.label1.Text = "Press Enter For Search Funds";
-            // 
-            // txtFound
-            // 
-            this.txtFound.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFound.Location = new System.Drawing.Point(723, 37);
-            this.txtFound.Name = "txtFound";
-            this.txtFound.Size = new System.Drawing.Size(182, 23);
-            this.txtFound.TabIndex = 146;
-            this.txtFound.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtFound_KeyDown);
-            // 
-            // txt
-            // 
-            this.txt.AutoSize = true;
-            this.txt.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt.Location = new System.Drawing.Point(677, 40);
-            this.txt.Name = "txt";
-            this.txt.Size = new System.Drawing.Size(41, 16);
-            this.txt.TabIndex = 147;
-            this.txt.Text = "Funds";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold);
-            this.label15.ForeColor = System.Drawing.Color.Red;
-            this.label15.Location = new System.Drawing.Point(443, 20);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(191, 15);
-            this.label15.TabIndex = 145;
-            this.label15.Text = "Press Enter For Search Book Name";
-            // 
-            // txtBookName
-            // 
-            this.txtBookName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBookName.Location = new System.Drawing.Point(446, 37);
-            this.txtBookName.Name = "txtBookName";
-            this.txtBookName.Size = new System.Drawing.Size(183, 23);
-            this.txtBookName.TabIndex = 143;
-            this.txtBookName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtBookName_KeyDown);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(362, 40);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(77, 16);
-            this.label8.TabIndex = 144;
-            this.label8.Text = "Book Name";
-            // 
             // btnReset
             // 
-            this.btnReset.BackColor = System.Drawing.Color.Teal;
+            this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.btnReset.FlatAppearance.BorderSize = 0;
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReset.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.ForeColor = System.Drawing.Color.White;
-            this.btnReset.Location = new System.Drawing.Point(911, 35);
+            this.btnReset.Image = ((System.Drawing.Image)(resources.GetObject("btnReset.Image")));
+            this.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReset.Location = new System.Drawing.Point(993, 119);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(56, 26);
+            this.btnReset.Size = new System.Drawing.Size(123, 32);
             this.btnReset.TabIndex = 150;
-            this.btnReset.Text = "Reset";
+            this.btnReset.Text = "  Reset";
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.BtnReset_Click);
             // 
             // btnExport
             // 
-            this.btnExport.BackColor = System.Drawing.Color.Teal;
+            this.btnExport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.btnExport.FlatAppearance.BorderSize = 0;
             this.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExport.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExport.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnExport.ForeColor = System.Drawing.Color.White;
-            this.btnExport.Location = new System.Drawing.Point(973, 35);
+            this.btnExport.Location = new System.Drawing.Point(812, 119);
             this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(88, 26);
+            this.btnExport.Size = new System.Drawing.Size(155, 32);
             this.btnExport.TabIndex = 149;
             this.btnExport.Text = "Export Excel";
             this.btnExport.UseVisualStyleBackColor = false;
-            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
+            this.btnExport.Visible = false;
             // 
-            // label7
+            // label2
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.DarkGray;
-            this.label7.Location = new System.Drawing.Point(21, 38);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(217, 14);
-            this.label7.TabIndex = 152;
-            this.label7.Text = "See All Books Here and Filter as you want.";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(77, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(153, 26);
+            this.label2.TabIndex = 141;
+            this.label2.Text = "Books Report";
             // 
-            // label9
+            // label3
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(20, 9);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(135, 25);
-            this.label9.TabIndex = 151;
-            this.label9.Text = "Book Report";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 8F);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(260, 20);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(213, 14);
+            this.label3.TabIndex = 142;
+            this.label3.Text = "See All Books Here and Filter as you want.";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Controls.Add(this.panel5);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1132, 54);
+            this.panel2.TabIndex = 164;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(71, 54);
+            this.panel1.TabIndex = 144;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(3, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(65, 51);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.pictureBox1);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel5.Location = new System.Drawing.Point(1087, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(45, 54);
+            this.panel5.TabIndex = 143;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(3, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(39, 36);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(0, 577);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1132, 5);
+            this.panel4.TabIndex = 166;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel3.Controls.Add(this.pbPublication);
+            this.panel3.Controls.Add(this.pbAuthor);
+            this.panel3.Controls.Add(this.pbCategory);
+            this.panel3.Controls.Add(this.cbPublication);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.cbSubject);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.cbAuther);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 54);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1132, 55);
+            this.panel3.TabIndex = 167;
+            // 
+            // pbPublication
+            // 
+            this.pbPublication.Image = ((System.Drawing.Image)(resources.GetObject("pbPublication.Image")));
+            this.pbPublication.Location = new System.Drawing.Point(1087, 15);
+            this.pbPublication.Name = "pbPublication";
+            this.pbPublication.Size = new System.Drawing.Size(29, 26);
+            this.pbPublication.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbPublication.TabIndex = 176;
+            this.pbPublication.TabStop = false;
+            this.pbPublication.Click += new System.EventHandler(this.pbPublication_Click);
+            // 
+            // pbAuthor
+            // 
+            this.pbAuthor.Image = ((System.Drawing.Image)(resources.GetObject("pbAuthor.Image")));
+            this.pbAuthor.Location = new System.Drawing.Point(668, 15);
+            this.pbAuthor.Name = "pbAuthor";
+            this.pbAuthor.Size = new System.Drawing.Size(29, 26);
+            this.pbAuthor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbAuthor.TabIndex = 175;
+            this.pbAuthor.TabStop = false;
+            this.pbAuthor.Click += new System.EventHandler(this.pbAuthor_Click);
+            // 
+            // pbCategory
+            // 
+            this.pbCategory.Image = ((System.Drawing.Image)(resources.GetObject("pbCategory.Image")));
+            this.pbCategory.Location = new System.Drawing.Point(335, 15);
+            this.pbCategory.Name = "pbCategory";
+            this.pbCategory.Size = new System.Drawing.Size(29, 26);
+            this.pbCategory.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbCategory.TabIndex = 174;
+            this.pbCategory.TabStop = false;
+            this.pbCategory.Click += new System.EventHandler(this.pbCategory_Click);
+            // 
+            // cbPublication
+            // 
+            this.cbPublication.BackColor = System.Drawing.Color.White;
+            this.cbPublication.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cbPublication.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbPublication.FormattingEnabled = true;
+            this.cbPublication.Location = new System.Drawing.Point(821, 15);
+            this.cbPublication.Name = "cbPublication";
+            this.cbPublication.Size = new System.Drawing.Size(262, 26);
+            this.cbPublication.TabIndex = 173;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            this.label5.Location = new System.Drawing.Point(728, 19);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(87, 18);
+            this.label5.TabIndex = 172;
+            this.label5.Text = "Publication";
+            // 
+            // cbSubject
+            // 
+            this.cbSubject.BackColor = System.Drawing.Color.White;
+            this.cbSubject.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cbSubject.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbSubject.FormattingEnabled = true;
+            this.cbSubject.Location = new System.Drawing.Point(105, 15);
+            this.cbSubject.Name = "cbSubject";
+            this.cbSubject.Size = new System.Drawing.Size(223, 26);
+            this.cbSubject.TabIndex = 171;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            this.label4.Location = new System.Drawing.Point(27, 19);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(72, 18);
+            this.label4.TabIndex = 170;
+            this.label4.Text = "Category";
+            // 
+            // cbAuther
+            // 
+            this.cbAuther.BackColor = System.Drawing.Color.White;
+            this.cbAuther.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cbAuther.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbAuther.FormattingEnabled = true;
+            this.cbAuther.Location = new System.Drawing.Point(444, 15);
+            this.cbAuther.Name = "cbAuther";
+            this.cbAuther.Size = new System.Drawing.Size(218, 26);
+            this.cbAuther.TabIndex = 169;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            this.label1.Location = new System.Drawing.Point(383, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(55, 18);
+            this.label1.TabIndex = 168;
+            this.label1.Text = "Auther";
             // 
             // frmBookWiseReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1075, 582);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label9);
+            this.ClientSize = new System.Drawing.Size(1132, 582);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnExport);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtFound);
-            this.Controls.Add(this.txt);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.txtBookName);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.dataGridBook);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmBookWiseReport";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmBookWiseReport";
             this.Load += new System.EventHandler(this.FrmBookWiseReport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridBook)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPublication)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAuthor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCategory)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.DataGridView dataGridBook;
+        private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Button btnExport;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cbPublication;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox cbSubject;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cbAuther;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
         private System.Windows.Forms.DataGridViewTextBoxColumn BookID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Category;
         private System.Windows.Forms.DataGridViewTextBoxColumn Author;
@@ -367,15 +558,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TotalQuantity;
         private System.Windows.Forms.DataGridViewTextBoxColumn AuthorID;
         private System.Windows.Forms.DataGridViewTextBoxColumn PublisherID;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtFound;
-        private System.Windows.Forms.Label txt;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox txtBookName;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button btnReset;
-        private System.Windows.Forms.Button btnExport;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pbPublication;
+        private System.Windows.Forms.PictureBox pbAuthor;
+        private System.Windows.Forms.PictureBox pbCategory;
     }
 }

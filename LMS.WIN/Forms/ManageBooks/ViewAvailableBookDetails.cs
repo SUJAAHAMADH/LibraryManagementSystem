@@ -63,5 +63,10 @@ namespace LMS.WIN.Forms.ManageBooks
             string searchValue = txtSearch.Text;
             bindBookBarcodeList(searchValue);
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -541,5 +541,10 @@ namespace LMS.WIN.Forms.ManageBooks
                 }
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

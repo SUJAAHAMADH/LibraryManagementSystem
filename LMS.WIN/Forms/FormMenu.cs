@@ -2,6 +2,7 @@
 using LMS.MOD;
 using LMS.WIN.Forms.Login;
 using LMS.WIN.Forms.ManageAuthor;
+using LMS.WIN.Forms.ManageBooks;
 using LMS.WIN.Forms.ManagePublisher;
 using Microsoft.Reporting.WinForms;
 using System;
@@ -31,16 +32,19 @@ namespace LMS.WIN.Forms
         private void AbrirFormInPanel(object formHijo)
         {
             if (this.panelContenedor.Controls.Count > 0)
-                this.panelContenedor.Controls.RemoveAt(0);
-            Form fh = formHijo as Form;
-            fh.TopLevel = false;
-            fh.FormBorderStyle = FormBorderStyle.None;
-            fh.Dock = DockStyle.Fill;
-            this.panelContenedor.Controls.Add(fh);
-            this.panelContenedor.Tag = fh;
-            fh.Show();
+                this.panelContenedor.Controls.RemoveAt(0);  // Remove the existing form, if any
+
+            Form fh = formHijo as Form;  // Cast the passed form to a Form object
+            fh.TopLevel = false;  // Make the form a child control of the panel
+            fh.FormBorderStyle = FormBorderStyle.None;  // Remove the form border
+            fh.Dock = DockStyle.Fill;  // Ensure the form fills the entire panel
+
+            this.panelContenedor.Controls.Add(fh);  // Add the form to the panel
+            this.panelContenedor.Tag = fh;  // Optional: Store a reference to the form (if needed)
+            fh.Show();  // Show the form
+
         }
-     
+
         int LX, LY, SW, SH;
 
         private void btnREPORTES_Click(object sender, EventArgs e)
@@ -260,9 +264,7 @@ namespace LMS.WIN.Forms
         {
             panelContenedor.Controls.Clear();
             Reports.frmCandidatesReport frmCandidatesReport = new Reports.frmCandidatesReport();
-            frmCandidatesReport.TopLevel = false;
-            panelContenedor.Controls.Add(frmCandidatesReport);
-            frmCandidatesReport.Show();
+            AbrirFormInPanel(frmCandidatesReport);
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -277,7 +279,7 @@ namespace LMS.WIN.Forms
         private void button1_Click(object sender, EventArgs e)
         {
             panelContenedor.Controls.Clear();
-            Reports.ManageReport manageReport = new Reports.ManageReport();
+            Reports.frmBookTransactionReport manageReport = new Reports.frmBookTransactionReport();
             manageReport.TopLevel = false;
             panelContenedor.Controls.Add(manageReport);
             manageReport.Show();
