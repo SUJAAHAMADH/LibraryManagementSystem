@@ -28,12 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnCloses = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRenewalBook));
             this.panel5 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.txtType = new System.Windows.Forms.Label();
@@ -80,79 +75,31 @@
             this.Remark = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Select = new System.Windows.Forms.DataGridViewButtonColumn();
             this.picThumb = new System.Windows.Forms.PictureBox();
-            this.panel2.SuspendLayout();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridissueBook)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picThumb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Teal;
-            this.panel2.Controls.Add(this.btnCloses);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(944, 37);
-            this.panel2.TabIndex = 96;
-            // 
-            // btnCloses
-            // 
-            this.btnCloses.BackColor = System.Drawing.Color.Teal;
-            this.btnCloses.FlatAppearance.BorderSize = 0;
-            this.btnCloses.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCloses.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCloses.ForeColor = System.Drawing.Color.White;
-            this.btnCloses.Location = new System.Drawing.Point(911, 7);
-            this.btnCloses.Name = "btnCloses";
-            this.btnCloses.Size = new System.Drawing.Size(29, 26);
-            this.btnCloses.TabIndex = 24;
-            this.btnCloses.Text = "X";
-            this.btnCloses.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCloses.UseVisualStyleBackColor = false;
-            this.btnCloses.Click += new System.EventHandler(this.btnCloses_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(11, 9);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(159, 21);
-            this.label7.TabIndex = 23;
-            this.label7.Text = "Book Renewal Here";
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Teal;
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(5, 492);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(934, 5);
-            this.panel4.TabIndex = 100;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Teal;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(939, 37);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(5, 460);
-            this.panel3.TabIndex = 99;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Teal;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 37);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(5, 460);
-            this.panel1.TabIndex = 98;
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.pictureBox3);
             this.panel5.Controls.Add(this.label2);
             this.panel5.Controls.Add(this.txtType);
             this.panel5.Controls.Add(this.label6);
@@ -182,7 +129,7 @@
             this.panel5.Controls.Add(this.dtReturnDate);
             this.panel5.Controls.Add(this.label8);
             this.panel5.Controls.Add(this.txtBarcode);
-            this.panel5.Location = new System.Drawing.Point(12, 193);
+            this.panel5.Location = new System.Drawing.Point(9, 219);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(921, 296);
             this.panel5.TabIndex = 121;
@@ -191,7 +138,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.label2.Location = new System.Drawing.Point(631, 191);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(45, 19);
@@ -201,7 +148,7 @@
             // txtType
             // 
             this.txtType.AutoSize = true;
-            this.txtType.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.txtType.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtType.ForeColor = System.Drawing.Color.Black;
             this.txtType.Location = new System.Drawing.Point(688, 191);
             this.txtType.Name = "txtType";
@@ -213,7 +160,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.label6.Location = new System.Drawing.Point(567, 217);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(109, 19);
@@ -223,7 +170,7 @@
             // txtSubCategory
             // 
             this.txtSubCategory.AutoSize = true;
-            this.txtSubCategory.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.txtSubCategory.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSubCategory.ForeColor = System.Drawing.Color.Black;
             this.txtSubCategory.Location = new System.Drawing.Point(688, 217);
             this.txtSubCategory.Name = "txtSubCategory";
@@ -234,7 +181,7 @@
             // txtRole
             // 
             this.txtRole.AutoSize = true;
-            this.txtRole.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.txtRole.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRole.Location = new System.Drawing.Point(172, 123);
             this.txtRole.Name = "txtRole";
             this.txtRole.Size = new System.Drawing.Size(13, 19);
@@ -245,8 +192,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(119, 123);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            this.label1.Location = new System.Drawing.Point(124, 123);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 19);
             this.label1.TabIndex = 152;
@@ -256,7 +203,8 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label16.Location = new System.Drawing.Point(47, 158);
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            this.label16.Location = new System.Drawing.Point(48, 158);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(119, 19);
             this.label16.TabIndex = 149;
@@ -265,17 +213,18 @@
             // lblBarcode
             // 
             this.lblBarcode.AutoSize = true;
-            this.lblBarcode.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.lblBarcode.Location = new System.Drawing.Point(7, 20);
+            this.lblBarcode.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBarcode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            this.lblBarcode.Location = new System.Drawing.Point(7, 17);
             this.lblBarcode.Name = "lblBarcode";
-            this.lblBarcode.Size = new System.Drawing.Size(213, 19);
+            this.lblBarcode.Size = new System.Drawing.Size(212, 17);
             this.lblBarcode.TabIndex = 148;
             this.lblBarcode.Text = "Enter Barcode And Press Enter";
             // 
             // txtbookName
             // 
             this.txtbookName.AutoSize = true;
-            this.txtbookName.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.txtbookName.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbookName.Location = new System.Drawing.Point(689, 75);
             this.txtbookName.Name = "txtbookName";
             this.txtbookName.Size = new System.Drawing.Size(13, 19);
@@ -284,9 +233,10 @@
             // 
             // btnCapture
             // 
-            this.btnCapture.BackColor = System.Drawing.Color.Teal;
-            this.btnCapture.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCapture.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.btnCapture.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(73)))), ((int)(((byte)(49)))));
+            this.btnCapture.FlatAppearance.BorderSize = 0;
+            this.btnCapture.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCapture.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnCapture.ForeColor = System.Drawing.Color.White;
             this.btnCapture.Location = new System.Drawing.Point(767, 10);
             this.btnCapture.Name = "btnCapture";
@@ -300,6 +250,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.label4.Location = new System.Drawing.Point(621, 75);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 19);
@@ -309,7 +260,7 @@
             // txtLanguage
             // 
             this.txtLanguage.AutoSize = true;
-            this.txtLanguage.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.txtLanguage.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLanguage.Location = new System.Drawing.Point(688, 165);
             this.txtLanguage.Name = "txtLanguage";
             this.txtLanguage.Size = new System.Drawing.Size(13, 19);
@@ -319,7 +270,7 @@
             // txtPublisher
             // 
             this.txtPublisher.AutoSize = true;
-            this.txtPublisher.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.txtPublisher.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPublisher.Location = new System.Drawing.Point(689, 140);
             this.txtPublisher.Name = "txtPublisher";
             this.txtPublisher.Size = new System.Drawing.Size(13, 19);
@@ -329,7 +280,7 @@
             // txtAuthor
             // 
             this.txtAuthor.AutoSize = true;
-            this.txtAuthor.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.txtAuthor.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAuthor.Location = new System.Drawing.Point(689, 108);
             this.txtAuthor.Name = "txtAuthor";
             this.txtAuthor.Size = new System.Drawing.Size(13, 19);
@@ -340,7 +291,8 @@
             // 
             this.lblLanguage.AutoSize = true;
             this.lblLanguage.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.lblLanguage.Location = new System.Drawing.Point(597, 165);
+            this.lblLanguage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            this.lblLanguage.Location = new System.Drawing.Point(592, 165);
             this.lblLanguage.Name = "lblLanguage";
             this.lblLanguage.Size = new System.Drawing.Size(84, 19);
             this.lblLanguage.TabIndex = 141;
@@ -350,6 +302,7 @@
             // 
             this.lblPublisher.AutoSize = true;
             this.lblPublisher.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.lblPublisher.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.lblPublisher.Location = new System.Drawing.Point(603, 140);
             this.lblPublisher.Name = "lblPublisher";
             this.lblPublisher.Size = new System.Drawing.Size(73, 19);
@@ -360,6 +313,7 @@
             // 
             this.lblAuthor.AutoSize = true;
             this.lblAuthor.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.lblAuthor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.lblAuthor.Location = new System.Drawing.Point(618, 108);
             this.lblAuthor.Name = "lblAuthor";
             this.lblAuthor.Size = new System.Drawing.Size(58, 19);
@@ -369,7 +323,7 @@
             // txtContactNumber
             // 
             this.txtContactNumber.AutoSize = true;
-            this.txtContactNumber.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.txtContactNumber.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContactNumber.Location = new System.Drawing.Point(172, 93);
             this.txtContactNumber.Name = "txtContactNumber";
             this.txtContactNumber.Size = new System.Drawing.Size(13, 19);
@@ -379,7 +333,7 @@
             // txtName
             // 
             this.txtName.AutoSize = true;
-            this.txtName.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.txtName.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.Location = new System.Drawing.Point(172, 65);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(13, 19);
@@ -390,7 +344,8 @@
             // 
             this.lblContactNumber.AutoSize = true;
             this.lblContactNumber.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.lblContactNumber.Location = new System.Drawing.Point(72, 93);
+            this.lblContactNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            this.lblContactNumber.Location = new System.Drawing.Point(73, 93);
             this.lblContactNumber.Name = "lblContactNumber";
             this.lblContactNumber.Size = new System.Drawing.Size(94, 19);
             this.lblContactNumber.TabIndex = 131;
@@ -400,7 +355,8 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.lblName.Location = new System.Drawing.Point(111, 65);
+            this.lblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            this.lblName.Location = new System.Drawing.Point(112, 65);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(55, 19);
             this.lblName.TabIndex = 130;
@@ -409,19 +365,20 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold);
             this.label11.ForeColor = System.Drawing.Color.Red;
-            this.label11.Location = new System.Drawing.Point(39, 48);
+            this.label11.Location = new System.Drawing.Point(49, 46);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(123, 17);
+            this.label11.Size = new System.Drawing.Size(133, 18);
             this.label11.TabIndex = 129;
-            this.label11.Text = "Candidate Details:";
+            this.label11.Text = "Candidate Details";
             // 
             // closebutton
             // 
-            this.closebutton.BackColor = System.Drawing.Color.Teal;
-            this.closebutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.closebutton.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.closebutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(73)))), ((int)(((byte)(49)))));
+            this.closebutton.FlatAppearance.BorderSize = 0;
+            this.closebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closebutton.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold);
             this.closebutton.ForeColor = System.Drawing.Color.White;
             this.closebutton.Location = new System.Drawing.Point(767, 255);
             this.closebutton.Name = "closebutton";
@@ -433,9 +390,10 @@
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.Color.Teal;
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSave.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Location = new System.Drawing.Point(641, 255);
             this.btnSave.Name = "btnSave";
@@ -447,6 +405,7 @@
             // 
             // richtextRemark
             // 
+            this.richtextRemark.Font = new System.Drawing.Font("Arial", 12F);
             this.richtextRemark.Location = new System.Drawing.Point(176, 191);
             this.richtextRemark.Name = "richtextRemark";
             this.richtextRemark.Size = new System.Drawing.Size(308, 62);
@@ -457,7 +416,8 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label3.Location = new System.Drawing.Point(101, 191);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            this.label3.Location = new System.Drawing.Point(102, 191);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 19);
             this.label3.TabIndex = 125;
@@ -476,20 +436,20 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 11F);
+            this.label8.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(551, 58);
+            this.label8.Location = new System.Drawing.Point(567, 48);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(102, 20);
+            this.label8.Size = new System.Drawing.Size(98, 18);
             this.label8.TabIndex = 122;
-            this.label8.Text = "Book Details:";
+            this.label8.Text = "Book Details";
             // 
             // txtBarcode
             // 
-            this.txtBarcode.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBarcode.Location = new System.Drawing.Point(226, 20);
+            this.txtBarcode.Font = new System.Drawing.Font("Arial", 12F);
+            this.txtBarcode.Location = new System.Drawing.Point(226, 12);
             this.txtBarcode.Name = "txtBarcode";
-            this.txtBarcode.Size = new System.Drawing.Size(308, 23);
+            this.txtBarcode.Size = new System.Drawing.Size(308, 26);
             this.txtBarcode.TabIndex = 120;
             this.txtBarcode.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBarcode_KeyDown_1);
             // 
@@ -518,7 +478,7 @@
             this.Remark,
             this.Select});
             this.dataGridissueBook.GridColor = System.Drawing.Color.White;
-            this.dataGridissueBook.Location = new System.Drawing.Point(15, 43);
+            this.dataGridissueBook.Location = new System.Drawing.Point(12, 69);
             this.dataGridissueBook.Name = "dataGridissueBook";
             this.dataGridissueBook.ReadOnly = true;
             this.dataGridissueBook.RowHeadersVisible = false;
@@ -650,48 +610,158 @@
             // picThumb
             // 
             this.picThumb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picThumb.Location = new System.Drawing.Point(741, 43);
+            this.picThumb.Location = new System.Drawing.Point(738, 69);
             this.picThumb.Name = "picThumb";
             this.picThumb.Size = new System.Drawing.Size(192, 144);
             this.picThumb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picThumb.TabIndex = 131;
             this.picThumb.TabStop = false;
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(5, 526);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(934, 5);
+            this.panel4.TabIndex = 168;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(939, 54);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(5, 477);
+            this.panel3.TabIndex = 167;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 54);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(5, 477);
+            this.panel1.TabIndex = 166;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(3, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(65, 51);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(71, 54);
+            this.panel2.TabIndex = 144;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.pictureBox1);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel6.Location = new System.Drawing.Point(899, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(45, 54);
+            this.panel6.TabIndex = 143;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(3, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(39, 36);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(77, 13);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(161, 26);
+            this.label5.TabIndex = 141;
+            this.label5.Text = "Book Renewel";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial", 8F);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(238, 21);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(125, 14);
+            this.label7.TabIndex = 142;
+            this.label7.Text = "Add  a book for renewel";
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            this.panel7.Controls.Add(this.panel2);
+            this.panel7.Controls.Add(this.panel6);
+            this.panel7.Controls.Add(this.label5);
+            this.panel7.Controls.Add(this.label7);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(944, 54);
+            this.panel7.TabIndex = 169;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(540, 7);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(41, 36);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 170;
+            this.pictureBox3.TabStop = false;
+            // 
             // frmRenewalBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(944, 497);
-            this.Controls.Add(this.picThumb);
-            this.Controls.Add(this.dataGridissueBook);
-            this.Controls.Add(this.panel5);
+            this.ClientSize = new System.Drawing.Size(944, 531);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.picThumb);
+            this.Controls.Add(this.dataGridissueBook);
+            this.Controls.Add(this.panel5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-         //   this.Name = "frmRenewalBook";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmRenewalBook";
             this.Load += new System.EventHandler(this.frmRenewalBook_Load);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridissueBook)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picThumb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnCloses;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label txtLanguage;
         private System.Windows.Forms.Label txtPublisher;
@@ -738,5 +808,16 @@
         private System.Windows.Forms.Label txtType;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label txtSubCategory;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

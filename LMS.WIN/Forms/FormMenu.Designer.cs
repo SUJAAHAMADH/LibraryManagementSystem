@@ -59,6 +59,7 @@
             this.panelTopSide = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -76,7 +77,6 @@
             this.menuTransition = new System.Windows.Forms.Timer(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.MasterTimer = new System.Windows.Forms.Timer(this.components);
-            this.panel10 = new System.Windows.Forms.Panel();
             this.MenuVertical.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.reportPanel.SuspendLayout();
@@ -90,6 +90,7 @@
             this.panelTopSide.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconrestaurar)).BeginInit();
@@ -99,7 +100,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconCerrar)).BeginInit();
             this.panelContenedor.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel10.SuspendLayout();
             this.SuspendLayout();
             // 
             // MenuVertical
@@ -288,6 +288,7 @@
             this.button7.Text = "   OPAC (Search a book)";
             this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // panel6
             // 
@@ -584,6 +585,15 @@
             this.panel1.Size = new System.Drawing.Size(266, 72);
             this.panel1.TabIndex = 22;
             // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.button4);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel10.Location = new System.Drawing.Point(0, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(53, 72);
+            this.panel10.TabIndex = 34;
+            // 
             // button4
             // 
             this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -620,6 +630,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 32;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // txtuserName
             // 
@@ -775,15 +786,6 @@
             this.MasterTimer.Interval = 40;
             this.MasterTimer.Tick += new System.EventHandler(this.MasterTimer_Tick);
             // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.button4);
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel10.Location = new System.Drawing.Point(0, 0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(53, 72);
-            this.panel10.TabIndex = 34;
-            // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -814,6 +816,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();
@@ -825,7 +828,6 @@
             this.panelContenedor.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel10.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

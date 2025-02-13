@@ -187,7 +187,6 @@
             this.Delete.DataPropertyName = "Delete";
             this.Delete.FillWeight = 26.21115F;
             this.Delete.HeaderText = "Delete";
-            this.Delete.Image = global::LMS.WIN.Properties.Resources.delete;
             this.Delete.Name = "Delete";
             this.Delete.ReadOnly = true;
             this.Delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -196,21 +195,22 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DarkGray;
+            this.label3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.label3.Location = new System.Drawing.Point(12, 43);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(400, 14);
+            this.label3.Size = new System.Drawing.Size(460, 15);
             this.label3.TabIndex = 126;
             this.label3.Text = "All Alerts Messages and expirey dates seen here thurogh a manage alerts page.";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.label4.Location = new System.Drawing.Point(11, 12);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(156, 25);
+            this.label4.Size = new System.Drawing.Size(159, 24);
             this.label4.TabIndex = 125;
             this.label4.Text = "Manage Alerts ";
             // 
@@ -232,9 +232,9 @@
             this.button3.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(773, 33);
+            this.button3.Location = new System.Drawing.Point(783, 37);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(34, 34);
+            this.button3.Size = new System.Drawing.Size(22, 24);
             this.button3.TabIndex = 127;
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = true;

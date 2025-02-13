@@ -14,7 +14,7 @@ namespace LMS.WIN
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Forms.FormMenu());
+            Application.Run(new Forms.Login.frmLogin());
         }
     }
 }

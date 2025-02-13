@@ -34,6 +34,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridUser = new System.Windows.Forms.DataGridView();
+            this.btnAddLibrarian = new System.Windows.Forms.Button();
+            this.picboxrefersh = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.UserID1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,16 +47,13 @@
             this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
-            this.btnAddLibrarian = new System.Windows.Forms.Button();
-            this.picboxrefersh = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxrefersh)).BeginInit();
             this.SuspendLayout();
             // 
             // txtSearch
             // 
-            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Font = new System.Drawing.Font("Arial", 12F);
             this.txtSearch.Location = new System.Drawing.Point(653, 20);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(252, 26);
@@ -69,9 +69,9 @@
             this.button3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(900, 16);
+            this.button3.Location = new System.Drawing.Point(911, 21);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(34, 34);
+            this.button3.Size = new System.Drawing.Size(22, 24);
             this.button3.TabIndex = 19;
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = true;
@@ -79,21 +79,22 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DarkGray;
+            this.label3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.label3.Location = new System.Drawing.Point(29, 35);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(306, 14);
+            this.label3.Size = new System.Drawing.Size(347, 15);
             this.label3.TabIndex = 18;
             this.label3.Text = "Add, Edit, Delete your Laibrarian through manage Laibrarian.";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.label4.Location = new System.Drawing.Point(28, 8);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(196, 25);
+            this.label4.Size = new System.Drawing.Size(196, 24);
             this.label4.TabIndex = 17;
             this.label4.Text = "Manage Laibrarian";
             // 
@@ -128,6 +129,44 @@
             this.dataGridUser.TabIndex = 16;
             this.dataGridUser.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridUser_CellContentClick);
             this.dataGridUser.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dataGridUser_KeyDown);
+            // 
+            // btnAddLibrarian
+            // 
+            this.btnAddLibrarian.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            this.btnAddLibrarian.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAddLibrarian.FlatAppearance.BorderSize = 0;
+            this.btnAddLibrarian.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddLibrarian.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddLibrarian.ForeColor = System.Drawing.Color.White;
+            this.btnAddLibrarian.Location = new System.Drawing.Point(940, 19);
+            this.btnAddLibrarian.Name = "btnAddLibrarian";
+            this.btnAddLibrarian.Size = new System.Drawing.Size(120, 29);
+            this.btnAddLibrarian.TabIndex = 15;
+            this.btnAddLibrarian.Text = "Add Laibrarian";
+            this.btnAddLibrarian.UseVisualStyleBackColor = false;
+            this.btnAddLibrarian.Click += new System.EventHandler(this.btnAddLibrarian_Click);
+            // 
+            // picboxrefersh
+            // 
+            this.picboxrefersh.Image = ((System.Drawing.Image)(resources.GetObject("picboxrefersh.Image")));
+            this.picboxrefersh.Location = new System.Drawing.Point(398, 20);
+            this.picboxrefersh.Name = "picboxrefersh";
+            this.picboxrefersh.Size = new System.Drawing.Size(31, 26);
+            this.picboxrefersh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picboxrefersh.TabIndex = 147;
+            this.picboxrefersh.TabStop = false;
+            this.picboxrefersh.Click += new System.EventHandler(this.picboxrefersh_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 10F);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            this.label1.Location = new System.Drawing.Point(526, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(112, 16);
+            this.label1.TabIndex = 148;
+            this.label1.Text = "Search Librarian";
             // 
             // UserID1
             // 
@@ -203,7 +242,7 @@
             this.Edit.DataPropertyName = "Edit";
             this.Edit.FillWeight = 20F;
             this.Edit.HeaderText = "Edit";
-            this.Edit.Image = global::LMS.WIN.Properties.Resources.icons8_pencil_20__1_;
+            this.Edit.Image = ((System.Drawing.Image)(resources.GetObject("Edit.Image")));
             this.Edit.MinimumWidth = 6;
             this.Edit.Name = "Edit";
             this.Edit.ReadOnly = true;
@@ -213,49 +252,11 @@
             this.Delete.DataPropertyName = "Delete";
             this.Delete.FillWeight = 22F;
             this.Delete.HeaderText = "Delete";
-            this.Delete.Image = global::LMS.WIN.Properties.Resources.icons8_trash_can_20__1_;
+            this.Delete.Image = ((System.Drawing.Image)(resources.GetObject("Delete.Image")));
             this.Delete.MinimumWidth = 6;
             this.Delete.Name = "Delete";
             this.Delete.ReadOnly = true;
             this.Delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // btnAddLibrarian
-            // 
-            this.btnAddLibrarian.BackColor = System.Drawing.Color.Teal;
-            this.btnAddLibrarian.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAddLibrarian.FlatAppearance.BorderSize = 0;
-            this.btnAddLibrarian.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAddLibrarian.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.btnAddLibrarian.ForeColor = System.Drawing.Color.White;
-            this.btnAddLibrarian.Location = new System.Drawing.Point(940, 20);
-            this.btnAddLibrarian.Name = "btnAddLibrarian";
-            this.btnAddLibrarian.Size = new System.Drawing.Size(120, 29);
-            this.btnAddLibrarian.TabIndex = 15;
-            this.btnAddLibrarian.Text = "Add Laibrarian";
-            this.btnAddLibrarian.UseVisualStyleBackColor = false;
-            this.btnAddLibrarian.Click += new System.EventHandler(this.btnAddLibrarian_Click);
-            // 
-            // picboxrefersh
-            // 
-            this.picboxrefersh.Image = ((System.Drawing.Image)(resources.GetObject("picboxrefersh.Image")));
-            this.picboxrefersh.Location = new System.Drawing.Point(341, 28);
-            this.picboxrefersh.Name = "picboxrefersh";
-            this.picboxrefersh.Size = new System.Drawing.Size(31, 26);
-            this.picboxrefersh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picboxrefersh.TabIndex = 147;
-            this.picboxrefersh.TabStop = false;
-            this.picboxrefersh.Click += new System.EventHandler(this.picboxrefersh_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label1.ForeColor = System.Drawing.Color.DarkGray;
-            this.label1.Location = new System.Drawing.Point(526, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 19);
-            this.label1.TabIndex = 148;
-            this.label1.Text = "Search Librarian";
             // 
             // ManageLibrarian
             // 

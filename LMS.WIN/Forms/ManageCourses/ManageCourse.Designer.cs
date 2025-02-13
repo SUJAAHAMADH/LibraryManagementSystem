@@ -147,7 +147,7 @@
             this.Edit.DataPropertyName = "Edit";
             this.Edit.FillWeight = 30F;
             this.Edit.HeaderText = "        Edit";
-            this.Edit.Image = global::LMS.WIN.Properties.Resources.icons8_pencil_20__1_;
+            //this.Edit.Image = global::LMS.WIN.Properties.Resources.icons8_pencil_20__1_;
             this.Edit.MinimumWidth = 6;
             this.Edit.Name = "Edit";
             this.Edit.ReadOnly = true;

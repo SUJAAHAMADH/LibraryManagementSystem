@@ -148,5 +148,10 @@ namespace LMS.WIN.Forms.ManageUser
             txtPassword.BackColor = Color.White;
             txtPassword.ForeColor = Color.Black;
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
