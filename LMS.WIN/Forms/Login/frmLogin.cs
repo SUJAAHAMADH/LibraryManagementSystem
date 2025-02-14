@@ -17,7 +17,7 @@ namespace LMS.WIN.Forms.Login
             {
                 lblWarning.Text = "Caps Lock On";
                 lblWarning.Visible = true;
-                lblWarning.ForeColor = System.Drawing.Color.White;
+                lblWarning.ForeColor = System.Drawing.Color.FromArgb(235, 175, 41);
             }
             else
             {
@@ -138,6 +138,11 @@ namespace LMS.WIN.Forms.Login
             tbPassword.Text = string.Empty;
             cbRole.SelectedIndex = -1;
             tbUsername.Focus();
+        }
+
+        private void tbUsername_KeyDown(object sender, KeyEventArgs e)
+        {
+            Caps();
         }
     }
 }

@@ -59,6 +59,7 @@
             this.panelTopSide = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblUser = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -77,6 +78,8 @@
             this.menuTransition = new System.Windows.Forms.Timer(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.MasterTimer = new System.Windows.Forms.Timer(this.components);
+            this.ttUser = new System.Windows.Forms.ToolTip(this.components);
+            this.ttLogout = new System.Windows.Forms.ToolTip(this.components);
             this.MenuVertical.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.reportPanel.SuspendLayout();
@@ -155,10 +158,10 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button1.Location = new System.Drawing.Point(5, 154);
+            this.button1.Location = new System.Drawing.Point(22, 154);
             this.button1.Margin = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(256, 40);
+            this.button1.Size = new System.Drawing.Size(240, 40);
             this.button1.TabIndex = 21;
             this.button1.Text = "     Transaction Report";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -177,11 +180,11 @@
             this.btnREPORTES.ForeColor = System.Drawing.Color.White;
             this.btnREPORTES.Image = ((System.Drawing.Image)(resources.GetObject("btnREPORTES.Image")));
             this.btnREPORTES.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnREPORTES.Location = new System.Drawing.Point(5, 6);
+            this.btnREPORTES.Location = new System.Drawing.Point(4, 6);
             this.btnREPORTES.Name = "btnREPORTES";
             this.btnREPORTES.Size = new System.Drawing.Size(258, 50);
             this.btnREPORTES.TabIndex = 9;
-            this.btnREPORTES.Text = "   Reports";
+            this.btnREPORTES.Text = "     Reports";
             this.btnREPORTES.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnREPORTES.UseVisualStyleBackColor = false;
             this.btnREPORTES.Click += new System.EventHandler(this.btnREPORTES_Click);
@@ -198,10 +201,10 @@
             this.button8.ForeColor = System.Drawing.Color.White;
             this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
             this.button8.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button8.Location = new System.Drawing.Point(5, 62);
+            this.button8.Location = new System.Drawing.Point(22, 62);
             this.button8.Name = "button8";
             this.button8.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.button8.Size = new System.Drawing.Size(256, 40);
+            this.button8.Size = new System.Drawing.Size(240, 40);
             this.button8.TabIndex = 20;
             this.button8.Text = "    Member Report";
             this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -220,10 +223,10 @@
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button6.Location = new System.Drawing.Point(5, 108);
+            this.button6.Location = new System.Drawing.Point(22, 108);
             this.button6.Margin = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(256, 40);
+            this.button6.Size = new System.Drawing.Size(240, 40);
             this.button6.TabIndex = 19;
             this.button6.Text = "     Book Report";
             this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -255,7 +258,7 @@
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(258, 50);
             this.button9.TabIndex = 21;
-            this.button9.Text = "   Journals";
+            this.button9.Text = "      Journals";
             this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
@@ -285,7 +288,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(258, 50);
             this.button7.TabIndex = 20;
-            this.button7.Text = "   OPAC (Search a book)";
+            this.button7.Text = "     OPAC (Search a book)";
             this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
@@ -315,7 +318,7 @@
             this.btnEMPLEADOS.Name = "btnEMPLEADOS";
             this.btnEMPLEADOS.Size = new System.Drawing.Size(259, 50);
             this.btnEMPLEADOS.TabIndex = 7;
-            this.btnEMPLEADOS.Text = "   Member Management";
+            this.btnEMPLEADOS.Text = "     Member Management";
             this.btnEMPLEADOS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEMPLEADOS.UseVisualStyleBackColor = false;
             this.btnEMPLEADOS.Click += new System.EventHandler(this.btnEMPLEADOS_Click);
@@ -345,7 +348,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(258, 50);
             this.button3.TabIndex = 12;
-            this.button3.Text = "   Book Transaction";
+            this.button3.Text = "     Book Transaction";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -373,9 +376,9 @@
             this.btnBookHistory.ForeColor = System.Drawing.Color.White;
             this.btnBookHistory.Image = ((System.Drawing.Image)(resources.GetObject("btnBookHistory.Image")));
             this.btnBookHistory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBookHistory.Location = new System.Drawing.Point(4, 112);
+            this.btnBookHistory.Location = new System.Drawing.Point(21, 111);
             this.btnBookHistory.Name = "btnBookHistory";
-            this.btnBookHistory.Size = new System.Drawing.Size(258, 40);
+            this.btnBookHistory.Size = new System.Drawing.Size(241, 40);
             this.btnBookHistory.TabIndex = 22;
             this.btnBookHistory.Text = "    Book History";
             this.btnBookHistory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -394,9 +397,9 @@
             this.btnManageBook.ForeColor = System.Drawing.Color.White;
             this.btnManageBook.Image = ((System.Drawing.Image)(resources.GetObject("btnManageBook.Image")));
             this.btnManageBook.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnManageBook.Location = new System.Drawing.Point(4, 64);
+            this.btnManageBook.Location = new System.Drawing.Point(21, 63);
             this.btnManageBook.Name = "btnManageBook";
-            this.btnManageBook.Size = new System.Drawing.Size(258, 40);
+            this.btnManageBook.Size = new System.Drawing.Size(241, 40);
             this.btnManageBook.TabIndex = 21;
             this.btnManageBook.Text = "    Manage Book";
             this.btnManageBook.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -419,7 +422,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(258, 50);
             this.button2.TabIndex = 11;
-            this.button2.Text = "   Book Management";
+            this.button2.Text = "     Book Management";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -448,9 +451,9 @@
             this.button13.ForeColor = System.Drawing.Color.White;
             this.button13.Image = ((System.Drawing.Image)(resources.GetObject("button13.Image")));
             this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button13.Location = new System.Drawing.Point(4, 158);
+            this.button13.Location = new System.Drawing.Point(22, 162);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(258, 40);
+            this.button13.Size = new System.Drawing.Size(240, 40);
             this.button13.TabIndex = 23;
             this.button13.Text = "    Subjects";
             this.button13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -469,9 +472,9 @@
             this.button10.ForeColor = System.Drawing.Color.White;
             this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
             this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.Location = new System.Drawing.Point(4, 111);
+            this.button10.Location = new System.Drawing.Point(22, 113);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(258, 40);
+            this.button10.Size = new System.Drawing.Size(240, 40);
             this.button10.TabIndex = 22;
             this.button10.Text = "    Publishers";
             this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -490,9 +493,9 @@
             this.button11.ForeColor = System.Drawing.Color.White;
             this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
             this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.Location = new System.Drawing.Point(4, 64);
+            this.button11.Location = new System.Drawing.Point(22, 64);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(258, 40);
+            this.button11.Size = new System.Drawing.Size(240, 40);
             this.button11.TabIndex = 21;
             this.button11.Text = "    Authers";
             this.button11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -515,7 +518,7 @@
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(258, 50);
             this.button12.TabIndex = 11;
-            this.button12.Text = "   Master";
+            this.button12.Text = "     Master";
             this.button12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button12.UseVisualStyleBackColor = false;
             this.button12.Click += new System.EventHandler(this.button12_Click);
@@ -545,7 +548,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(258, 50);
             this.button5.TabIndex = 19;
-            this.button5.Text = "   Dashboard";
+            this.button5.Text = "     Dashboard";
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
@@ -575,6 +578,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.lblUser);
             this.panel1.Controls.Add(this.panel10);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.pictureBox2);
@@ -584,6 +588,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(266, 72);
             this.panel1.TabIndex = 22;
+            // 
+            // lblUser
+            // 
+            this.lblUser.AutoSize = true;
+            this.lblUser.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUser.ForeColor = System.Drawing.Color.White;
+            this.lblUser.Location = new System.Drawing.Point(96, 26);
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(57, 23);
+            this.lblUser.TabIndex = 35;
+            this.lblUser.Text = "User -";
             // 
             // panel10
             // 
@@ -610,26 +625,28 @@
             this.button4.Size = new System.Drawing.Size(39, 41);
             this.button4.TabIndex = 30;
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ttLogout.SetToolTip(this.button4, "Click Here to Logout");
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(59, 58);
+            this.panel2.Location = new System.Drawing.Point(62, 55);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(179, 4);
+            this.panel2.Size = new System.Drawing.Size(195, 4);
             this.panel2.TabIndex = 33;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(59, 27);
+            this.pictureBox2.Location = new System.Drawing.Point(62, 26);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(28, 25);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 32;
             this.pictureBox2.TabStop = false;
+            this.ttUser.SetToolTip(this.pictureBox2, "Click to Add New User");
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // txtuserName
@@ -637,11 +654,11 @@
             this.txtuserName.AutoSize = true;
             this.txtuserName.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtuserName.ForeColor = System.Drawing.Color.White;
-            this.txtuserName.Location = new System.Drawing.Point(106, 29);
+            this.txtuserName.Location = new System.Drawing.Point(159, 26);
             this.txtuserName.Name = "txtuserName";
-            this.txtuserName.Size = new System.Drawing.Size(113, 23);
+            this.txtuserName.Size = new System.Drawing.Size(15, 23);
             this.txtuserName.TabIndex = 31;
-            this.txtuserName.Text = "User - Admin";
+            this.txtuserName.Text = ".";
             // 
             // panelHeader
             // 
@@ -880,5 +897,8 @@
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Timer MasterTimer;
         private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Label lblUser;
+        private System.Windows.Forms.ToolTip ttLogout;
+        private System.Windows.Forms.ToolTip ttUser;
     }
 }

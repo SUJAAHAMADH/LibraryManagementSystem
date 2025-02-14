@@ -516,5 +516,59 @@ namespace LMS.DAL
             }
             return candidate;
         }
+
+        public static string DeactivateCandidate(int candidateID, string updatedBy)
+        {
+            #region Declaration
+            SqlConnection con = null;
+            string outputMessage;
+            try
+            {
+                #region Interacting with database
+                con = SqlConnectionHelper.GetConnectionSync();
+                SqlCommand cmd = new SqlCommand("DeactivateCandidate", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@CandidateID", candidateID);
+                cmd.Parameters.AddWithValue("@UpdatedBy", updatedBy);
+                
+                SqlParameter outputParam = new SqlParameter
+                {
+                    ParameterName = "@OutputMessage",
+                    SqlDbType = SqlDbType.NVarChar,
+                    Size = 2000,
+                    Direction = ParameterDirection.Output
+                };
+                cmd.Parameters.Add(outputParam);
+                cmd.ExecuteNonQuery();
+                outputMessage = cmd.Parameters["@OutputMessage"].Value.ToString();
+                if (!string.Equals(outputMessage, "SUCCESS", StringComparison.OrdinalIgnoreCase))
+                {
+                    throw new Exception(outputMessage);
+                }
+                #endregion
+
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                #region Close connection
+                if (con != null && con.State == ConnectionState.Open)
+                {
+                    con.Close();
+                }
+                #endregion
+            }
+
+            #endregion
+
+            return outputMessage;
+        }
+
     }
+
 }
+

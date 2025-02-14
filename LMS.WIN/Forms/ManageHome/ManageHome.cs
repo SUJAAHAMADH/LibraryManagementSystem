@@ -33,6 +33,7 @@ namespace LMS.WIN.Forms.ManageHome
                 lbltotalbooks.Text = dashboard.TotalBook.ToString();
                 lbltotalIssueBok.Text = dashboard.TotalIssueBook.ToString();
                 lblPendingBook.Text = dashboard.TotalPendingBook.ToString();
+                lblTPublish.Text = dashboard.TotalPublisher.ToString();
             }
         }
 
