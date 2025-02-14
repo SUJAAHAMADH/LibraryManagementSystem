@@ -273,5 +273,94 @@ namespace LMS.DAL
             }
             return category;
         }
+
+        public static List<Category> GetAll()
+        {
+            #region Declaration
+            SqlCommand cmd = null;
+            DataTable dt = new DataTable();
+            SqlConnection con = null;
+            List<Category> categories = null;         
+            #endregion
+
+            try
+            {
+                #region Interacting with database
+                con = SqlConnectionHelper.GetConnectionSync();
+                cmd = new SqlCommand("ShowCategoryByName", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                SqlDataAdapter adp = new SqlDataAdapter(cmd);
+                adp.Fill(dt);
+                #endregion
+
+                #region Wrap data
+                if (dt.Rows.Count > 0)
+                {
+                    categories = new List<Category>();
+                    foreach (DataRow row in dt.Rows)
+                    {
+                        Category category = new Category();
+                        category.CategoryID = row["CategoryID"] as int? ?? 0;
+                        category.Name = row["Name"] as string ?? string.Empty;
+                        category.ParentID = row["ParentID"] as int? ?? 0;
+                        category.ParentName = category.ParentID == 1 ? "Technical" : "Others";
+                        categories.Add(category);
+                    }
+                }
+
+                #endregion
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                #region Close connection
+                if (con != null && con.State == ConnectionState.Open)
+                {
+                    con.Close();
+                }
+                #endregion
+            }
+            return categories;
+        }
+
+        public static Category DeactiveCategory(Category category)
+        {
+            SqlConnection con = null;
+            List<SqlParameter> param = new List<SqlParameter>
+            {
+                new SqlParameter { ParameterName = "@CategoryID", DbType = DbType.Int32, Value = category.CategoryID },
+                new SqlParameter { ParameterName = "@OutputMessage", DbType = DbType.String, Direction = ParameterDirection.Output, Size = 2000 }
+            };
+
+            try
+            {
+                con = SqlConnectionHelper.GetConnectionSync();
+                SqlCommand cmd = new SqlCommand("[DeactiveCategory]", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddRange(param.ToArray());
+                cmd.ExecuteNonQuery();
+
+                string outputMessage = cmd.Parameters["@OutputMessage"].Value.ToString();
+                if (!string.Equals(outputMessage, "SUCCESS", StringComparison.OrdinalIgnoreCase))
+                {
+                    throw new Exception(outputMessage);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                if (con != null && con.State == ConnectionState.Open)
+                {
+                    con.Close();
+                }
+            }
+            return category;
+        }
     }
 }
