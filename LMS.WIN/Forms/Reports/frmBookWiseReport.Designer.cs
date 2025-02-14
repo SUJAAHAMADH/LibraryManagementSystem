@@ -56,7 +56,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pbPublication = new System.Windows.Forms.PictureBox();
@@ -72,8 +71,6 @@
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPublication)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAuthor)).BeginInit();
@@ -122,20 +119,22 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridBook.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridBook.GridColor = System.Drawing.Color.White;
-            this.dataGridBook.Location = new System.Drawing.Point(23, 157);
+            this.dataGridBook.Location = new System.Drawing.Point(31, 193);
+            this.dataGridBook.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridBook.Name = "dataGridBook";
             this.dataGridBook.ReadOnly = true;
             this.dataGridBook.RowHeadersVisible = false;
             this.dataGridBook.RowHeadersWidth = 60;
             this.dataGridBook.RowTemplate.Height = 30;
             this.dataGridBook.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridBook.Size = new System.Drawing.Size(1093, 393);
+            this.dataGridBook.Size = new System.Drawing.Size(1457, 484);
             this.dataGridBook.TabIndex = 142;
             // 
             // Name
             // 
             this.Name.DataPropertyName = "Name";
             this.Name.HeaderText = "Name";
+            this.Name.MinimumWidth = 6;
             this.Name.Name = "Name";
             this.Name.ReadOnly = true;
             // 
@@ -143,6 +142,7 @@
             // 
             this.BookID.DataPropertyName = "BookID";
             this.BookID.HeaderText = "BookID";
+            this.BookID.MinimumWidth = 6;
             this.BookID.Name = "BookID";
             this.BookID.ReadOnly = true;
             this.BookID.Visible = false;
@@ -152,6 +152,7 @@
             this.Category.DataPropertyName = "Category";
             this.Category.FillWeight = 67.88091F;
             this.Category.HeaderText = "Category";
+            this.Category.MinimumWidth = 6;
             this.Category.Name = "Category";
             this.Category.ReadOnly = true;
             // 
@@ -160,6 +161,7 @@
             this.Author.DataPropertyName = "Author";
             this.Author.FillWeight = 67.88091F;
             this.Author.HeaderText = "Author";
+            this.Author.MinimumWidth = 6;
             this.Author.Name = "Author";
             this.Author.ReadOnly = true;
             // 
@@ -168,6 +170,7 @@
             this.Publisher.DataPropertyName = "Publisher";
             this.Publisher.FillWeight = 67.88091F;
             this.Publisher.HeaderText = "Publisher";
+            this.Publisher.MinimumWidth = 6;
             this.Publisher.Name = "Publisher";
             this.Publisher.ReadOnly = true;
             // 
@@ -176,6 +179,7 @@
             this.Edition.DataPropertyName = "Edition";
             this.Edition.FillWeight = 71.26904F;
             this.Edition.HeaderText = "Edition";
+            this.Edition.MinimumWidth = 6;
             this.Edition.Name = "Edition";
             this.Edition.ReadOnly = true;
             this.Edition.Visible = false;
@@ -185,6 +189,7 @@
             this.Language.DataPropertyName = "Language";
             this.Language.FillWeight = 50F;
             this.Language.HeaderText = "Language";
+            this.Language.MinimumWidth = 6;
             this.Language.Name = "Language";
             this.Language.ReadOnly = true;
             // 
@@ -192,6 +197,7 @@
             // 
             this.ISBN.DataPropertyName = "ISBN";
             this.ISBN.HeaderText = "ISBN";
+            this.ISBN.MinimumWidth = 6;
             this.ISBN.Name = "ISBN";
             this.ISBN.ReadOnly = true;
             this.ISBN.Visible = false;
@@ -201,6 +207,7 @@
             this.Price.DataPropertyName = "Price";
             this.Price.FillWeight = 48.37807F;
             this.Price.HeaderText = "Cost";
+            this.Price.MinimumWidth = 6;
             this.Price.Name = "Price";
             this.Price.ReadOnly = true;
             // 
@@ -209,6 +216,7 @@
             this.Description.DataPropertyName = "Description";
             this.Description.FillWeight = 67.88091F;
             this.Description.HeaderText = "Description";
+            this.Description.MinimumWidth = 6;
             this.Description.Name = "Description";
             this.Description.ReadOnly = true;
             // 
@@ -216,6 +224,7 @@
             // 
             this.Funds.DataPropertyName = "Funds";
             this.Funds.HeaderText = "Funds";
+            this.Funds.MinimumWidth = 6;
             this.Funds.Name = "Funds";
             this.Funds.ReadOnly = true;
             this.Funds.Visible = false;
@@ -224,6 +233,7 @@
             // 
             this.IsRestricted.DataPropertyName = "IsRestricted";
             this.IsRestricted.HeaderText = "IsRestricted";
+            this.IsRestricted.MinimumWidth = 6;
             this.IsRestricted.Name = "IsRestricted";
             this.IsRestricted.ReadOnly = true;
             this.IsRestricted.Visible = false;
@@ -232,6 +242,7 @@
             // 
             this.CategoryID.DataPropertyName = "CategoryID";
             this.CategoryID.HeaderText = "CategoryID";
+            this.CategoryID.MinimumWidth = 6;
             this.CategoryID.Name = "CategoryID";
             this.CategoryID.ReadOnly = true;
             this.CategoryID.Visible = false;
@@ -241,6 +252,7 @@
             this.TotalQuantity.DataPropertyName = "TotalQuantity";
             this.TotalQuantity.FillWeight = 48.37807F;
             this.TotalQuantity.HeaderText = "TotalQuantity";
+            this.TotalQuantity.MinimumWidth = 6;
             this.TotalQuantity.Name = "TotalQuantity";
             this.TotalQuantity.ReadOnly = true;
             // 
@@ -248,6 +260,7 @@
             // 
             this.AuthorID.DataPropertyName = "AuthorID";
             this.AuthorID.HeaderText = "AuthorID";
+            this.AuthorID.MinimumWidth = 6;
             this.AuthorID.Name = "AuthorID";
             this.AuthorID.ReadOnly = true;
             this.AuthorID.Visible = false;
@@ -256,6 +269,7 @@
             // 
             this.PublisherID.DataPropertyName = "PublisherID";
             this.PublisherID.HeaderText = "PublisherID";
+            this.PublisherID.MinimumWidth = 6;
             this.PublisherID.Name = "PublisherID";
             this.PublisherID.ReadOnly = true;
             this.PublisherID.Visible = false;
@@ -269,9 +283,10 @@
             this.btnReset.ForeColor = System.Drawing.Color.White;
             this.btnReset.Image = ((System.Drawing.Image)(resources.GetObject("btnReset.Image")));
             this.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReset.Location = new System.Drawing.Point(993, 119);
+            this.btnReset.Location = new System.Drawing.Point(1324, 146);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(123, 32);
+            this.btnReset.Size = new System.Drawing.Size(164, 39);
             this.btnReset.TabIndex = 150;
             this.btnReset.Text = "  Reset";
             this.btnReset.UseVisualStyleBackColor = false;
@@ -284,9 +299,10 @@
             this.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExport.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnExport.ForeColor = System.Drawing.Color.White;
-            this.btnExport.Location = new System.Drawing.Point(812, 119);
+            this.btnExport.Location = new System.Drawing.Point(1083, 146);
+            this.btnExport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(155, 32);
+            this.btnExport.Size = new System.Drawing.Size(207, 39);
             this.btnExport.TabIndex = 149;
             this.btnExport.Text = "Export Excel";
             this.btnExport.UseVisualStyleBackColor = false;
@@ -297,9 +313,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(77, 13);
+            this.label2.Location = new System.Drawing.Point(103, 16);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(153, 26);
+            this.label2.Size = new System.Drawing.Size(195, 32);
             this.label2.TabIndex = 141;
             this.label2.Text = "Books Report";
             // 
@@ -308,9 +325,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 8F);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(260, 20);
+            this.label3.Location = new System.Drawing.Point(347, 25);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(213, 14);
+            this.label3.Size = new System.Drawing.Size(274, 16);
             this.label3.TabIndex = 142;
             this.label3.Text = "See All Books Here and Filter as you want.";
             // 
@@ -323,8 +341,9 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1132, 54);
+            this.panel2.Size = new System.Drawing.Size(1509, 66);
             this.panel2.TabIndex = 164;
             // 
             // panel1
@@ -332,47 +351,39 @@
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(71, 54);
+            this.panel1.Size = new System.Drawing.Size(95, 66);
             this.panel1.TabIndex = 144;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(3, 0);
+            this.pictureBox2.Location = new System.Drawing.Point(4, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(65, 51);
+            this.pictureBox2.Size = new System.Drawing.Size(87, 63);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.pictureBox1);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(1087, 0);
+            this.panel5.Location = new System.Drawing.Point(1449, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(45, 54);
+            this.panel5.Size = new System.Drawing.Size(60, 66);
             this.panel5.TabIndex = 143;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 8);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(39, 36);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 577);
+            this.panel4.Location = new System.Drawing.Point(0, 710);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1132, 5);
+            this.panel4.Size = new System.Drawing.Size(1509, 6);
             this.panel4.TabIndex = 166;
             // 
             // panel3
@@ -388,17 +399,19 @@
             this.panel3.Controls.Add(this.cbAuther);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 54);
+            this.panel3.Location = new System.Drawing.Point(0, 66);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1132, 55);
+            this.panel3.Size = new System.Drawing.Size(1509, 68);
             this.panel3.TabIndex = 167;
             // 
             // pbPublication
             // 
             this.pbPublication.Image = ((System.Drawing.Image)(resources.GetObject("pbPublication.Image")));
-            this.pbPublication.Location = new System.Drawing.Point(1087, 15);
+            this.pbPublication.Location = new System.Drawing.Point(1449, 18);
+            this.pbPublication.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbPublication.Name = "pbPublication";
-            this.pbPublication.Size = new System.Drawing.Size(29, 26);
+            this.pbPublication.Size = new System.Drawing.Size(39, 32);
             this.pbPublication.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbPublication.TabIndex = 176;
             this.pbPublication.TabStop = false;
@@ -407,9 +420,10 @@
             // pbAuthor
             // 
             this.pbAuthor.Image = ((System.Drawing.Image)(resources.GetObject("pbAuthor.Image")));
-            this.pbAuthor.Location = new System.Drawing.Point(668, 15);
+            this.pbAuthor.Location = new System.Drawing.Point(891, 18);
+            this.pbAuthor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbAuthor.Name = "pbAuthor";
-            this.pbAuthor.Size = new System.Drawing.Size(29, 26);
+            this.pbAuthor.Size = new System.Drawing.Size(39, 32);
             this.pbAuthor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbAuthor.TabIndex = 175;
             this.pbAuthor.TabStop = false;
@@ -418,9 +432,10 @@
             // pbCategory
             // 
             this.pbCategory.Image = ((System.Drawing.Image)(resources.GetObject("pbCategory.Image")));
-            this.pbCategory.Location = new System.Drawing.Point(335, 15);
+            this.pbCategory.Location = new System.Drawing.Point(447, 18);
+            this.pbCategory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbCategory.Name = "pbCategory";
-            this.pbCategory.Size = new System.Drawing.Size(29, 26);
+            this.pbCategory.Size = new System.Drawing.Size(39, 32);
             this.pbCategory.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbCategory.TabIndex = 174;
             this.pbCategory.TabStop = false;
@@ -432,9 +447,10 @@
             this.cbPublication.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cbPublication.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbPublication.FormattingEnabled = true;
-            this.cbPublication.Location = new System.Drawing.Point(821, 15);
+            this.cbPublication.Location = new System.Drawing.Point(1095, 18);
+            this.cbPublication.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbPublication.Name = "cbPublication";
-            this.cbPublication.Size = new System.Drawing.Size(262, 26);
+            this.cbPublication.Size = new System.Drawing.Size(348, 31);
             this.cbPublication.TabIndex = 173;
             // 
             // label5
@@ -442,9 +458,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
-            this.label5.Location = new System.Drawing.Point(728, 19);
+            this.label5.Location = new System.Drawing.Point(971, 23);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(87, 18);
+            this.label5.Size = new System.Drawing.Size(114, 22);
             this.label5.TabIndex = 172;
             this.label5.Text = "Publication";
             // 
@@ -454,9 +471,10 @@
             this.cbSubject.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cbSubject.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbSubject.FormattingEnabled = true;
-            this.cbSubject.Location = new System.Drawing.Point(105, 15);
+            this.cbSubject.Location = new System.Drawing.Point(140, 18);
+            this.cbSubject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbSubject.Name = "cbSubject";
-            this.cbSubject.Size = new System.Drawing.Size(223, 26);
+            this.cbSubject.Size = new System.Drawing.Size(296, 31);
             this.cbSubject.TabIndex = 171;
             // 
             // label4
@@ -464,9 +482,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
-            this.label4.Location = new System.Drawing.Point(27, 19);
+            this.label4.Location = new System.Drawing.Point(36, 23);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 18);
+            this.label4.Size = new System.Drawing.Size(95, 22);
             this.label4.TabIndex = 170;
             this.label4.Text = "Category";
             // 
@@ -476,9 +495,10 @@
             this.cbAuther.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cbAuther.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbAuther.FormattingEnabled = true;
-            this.cbAuther.Location = new System.Drawing.Point(444, 15);
+            this.cbAuther.Location = new System.Drawing.Point(592, 18);
+            this.cbAuther.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbAuther.Name = "cbAuther";
-            this.cbAuther.Size = new System.Drawing.Size(218, 26);
+            this.cbAuther.Size = new System.Drawing.Size(289, 31);
             this.cbAuther.TabIndex = 169;
             // 
             // label1
@@ -486,17 +506,18 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
-            this.label1.Location = new System.Drawing.Point(383, 19);
+            this.label1.Location = new System.Drawing.Point(511, 23);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 18);
+            this.label1.Size = new System.Drawing.Size(72, 22);
             this.label1.TabIndex = 168;
             this.label1.Text = "Auther";
             // 
             // frmBookWiseReport
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1132, 582);
+            this.ClientSize = new System.Drawing.Size(1509, 716);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
@@ -504,6 +525,8 @@
             this.Controls.Add(this.btnExport);
             this.Controls.Add(this.dataGridBook);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+          
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmBookWiseReport";
             this.Load += new System.EventHandler(this.FrmBookWiseReport_Load);
@@ -512,8 +535,6 @@
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPublication)).EndInit();
@@ -534,7 +555,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbPublication;

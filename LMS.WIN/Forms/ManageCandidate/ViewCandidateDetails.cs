@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Printing;
+using System.IO;
 using System.Windows.Forms;
 
 namespace LMS.WIN.Forms.ManageCandidate
@@ -100,7 +101,7 @@ namespace LMS.WIN.Forms.ManageCandidate
         
         private void btnPrint_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(lblCandidateBarcode.Text))
+            if (!string.IsNullOrEmpty(lblCandidateBarcode.Text))
             {
                 //List<Candidate> barcodes = new List<Candidate>();
                 List<BookBarcode> barcodes = new List<BookBarcode>();
@@ -126,10 +127,11 @@ namespace LMS.WIN.Forms.ManageCandidate
                 rs.Name = "DataSet1";
                 rs.Value = barcodes;
 
-                LMS.WIN.Forms.ManageBooks.frmBarcodePrint frmBarcodePrint = new LMS.WIN.Forms.ManageBooks.frmBarcodePrint();
+                frmCandidateBarcode frmBarcodePrint = new frmCandidateBarcode();
                 frmBarcodePrint.reportViewer1.LocalReport.DataSources.Clear();
                 frmBarcodePrint.reportViewer1.LocalReport.DataSources.Add(rs);
-                frmBarcodePrint.reportViewer1.LocalReport.ReportPath = Application.StartupPath + "/RptBarcode.rdlc";
+                string projectRoot = Path.GetFullPath(Path.Combine(Application.StartupPath, @"..\..\"));
+                frmBarcodePrint.reportViewer1.LocalReport.ReportPath = projectRoot + @"Forms\ManageCandidate\rptCandidate.rdlc";
 
                 PageSettings pg = new PageSettings();
                 pg.Margins.Top = 0;

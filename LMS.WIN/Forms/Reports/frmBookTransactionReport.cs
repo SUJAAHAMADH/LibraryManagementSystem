@@ -36,7 +36,8 @@ namespace LMS.WIN.Forms.Reports
         private void bindIssueBookList(string startDate, string endDate)
         {
 
-            if (DateTime.TryParse(startDate, out DateTime start) && DateTime.TryParse(endDate, out DateTime end))
+            if (DateTime.TryParseExact(startDate, "dd-MM-yyyy", null, System.Globalization.DateTimeStyles.None, out DateTime start)
+                && DateTime.TryParseExact(endDate, "dd-MM-yyyy", null, System.Globalization.DateTimeStyles.None, out DateTime end))
             {
                 List<IssueBook> data = IssueBookBL.GetIssueBook(-1, -1, -1, null, null, startDate, endDate);
                 if (data != null && data.Count > 0)
@@ -91,6 +92,30 @@ namespace LMS.WIN.Forms.Reports
                 column.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             }
             dataGridissueBook.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 10, FontStyle.Bold);
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            string searchValue = txtSearch.Text;
+            string startDate = dtStartDateDate.Text;
+            string endDate = dtendDate.Text;
+            List<IssueBook> data = IssueBookBL.GetIssueBook(-1, -1, -1, null, searchValue, startDate, endDate);
+            if (data != null && data.Count > 0)
+            {
+                dataGridissueBook.AutoGenerateColumns = false;
+                dataGridissueBook.DataSource = data;
+                dataGridissueBook.Refresh();
+            }
+            else
+            {
+                MessageBox.Show("No records found.");
+                dataGridissueBook.DataSource = null;
+            }
+        }
+
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

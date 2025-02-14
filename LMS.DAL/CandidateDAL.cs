@@ -379,9 +379,10 @@ namespace LMS.DAL
                 new SqlParameter{ParameterName = "@Name", DbType = DbType.String, Value = candidate.Name},
                 new SqlParameter{ParameterName = "@ContactNumber", DbType = DbType.String, Value = candidate.ContactNumber},
                 new SqlParameter{ParameterName = "@ServiceNo", DbType = DbType.String, Value = candidate.RoleID},
-                //new SqlParameter{ParameterName = "@Rank", DbType = DbType.String, Value = candidate.Rank},
-                //new SqlParameter{ParameterName = "@Unit", DbType = DbType.String, Value = candidate.Unit},
-                //new SqlParameter{ParameterName = "@CountryID", DbType = DbType.Int32, Value = candidate.CountryID},
+                new SqlParameter{ParameterName = "@Email", DbType = DbType.String, Value = candidate.Email},
+                new SqlParameter{ParameterName = "@Stream", DbType = DbType.String, Value = candidate.Stream},
+                new SqlParameter{ParameterName = "@AcademicYear", DbType = DbType.Int32, Value = candidate.AcademicYear},
+
                 new SqlParameter{ParameterName = "@UserID", DbType = DbType.Int32, Value = candidate.UserID},
                 new SqlParameter{ParameterName = "@ID", DbType = DbType.Int32, Direction = ParameterDirection.Output},
                 new SqlParameter{ParameterName = "@OutputMessage", DbType = DbType.String, Direction = ParameterDirection.Output, Size = 2000}

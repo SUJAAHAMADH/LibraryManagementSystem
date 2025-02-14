@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Printing;
+using System.IO;
 using System.Windows.Forms;
 
 namespace LMS.WIN.Forms.ManageBooks
@@ -101,7 +102,8 @@ namespace LMS.WIN.Forms.ManageBooks
             frmBarcodePrint frmBarcodePrint = new frmBarcodePrint();
             frmBarcodePrint.reportViewer1.LocalReport.DataSources.Clear();
             frmBarcodePrint.reportViewer1.LocalReport.DataSources.Add(rs);
-            frmBarcodePrint.reportViewer1.LocalReport.ReportPath = Application.StartupPath + "/RptBarcode.rdlc";
+            string projectRoot = Path.GetFullPath(Path.Combine(Application.StartupPath, @"..\..\"));
+            frmBarcodePrint.reportViewer1.LocalReport.ReportPath = projectRoot + @"Forms\ManageBooks\RptBarcode.rdlc";
 
             PageSettings pg = new PageSettings();
             pg.Margins.Top = 0;

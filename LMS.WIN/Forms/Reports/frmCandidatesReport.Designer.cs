@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCandidatesReport));
             this.btnExport = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
@@ -52,7 +52,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.cbPersonType = new System.Windows.Forms.ComboBox();
             this.lblPerson = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -60,11 +59,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.datagridReportList)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnExport
@@ -74,9 +71,10 @@
             this.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExport.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExport.ForeColor = System.Drawing.Color.White;
-            this.btnExport.Location = new System.Drawing.Point(896, 91);
+            this.btnExport.Location = new System.Drawing.Point(1195, 112);
+            this.btnExport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(88, 26);
+            this.btnExport.Size = new System.Drawing.Size(117, 32);
             this.btnExport.TabIndex = 10;
             this.btnExport.Text = "Export Excel";
             this.btnExport.UseVisualStyleBackColor = false;
@@ -90,9 +88,10 @@
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReset.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnReset.ForeColor = System.Drawing.Color.White;
-            this.btnReset.Location = new System.Drawing.Point(990, 91);
+            this.btnReset.Location = new System.Drawing.Point(1320, 112);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(68, 26);
+            this.btnReset.Size = new System.Drawing.Size(91, 32);
             this.btnReset.TabIndex = 139;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = false;
@@ -105,14 +104,14 @@
             this.datagridReportList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.datagridReportList.BackgroundColor = System.Drawing.Color.White;
             this.datagridReportList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SunkenVertical;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagridReportList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagridReportList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.datagridReportList.ColumnHeadersHeight = 20;
             this.datagridReportList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.datagridReportList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -133,7 +132,8 @@
             this.TOSDate,
             this.SOSDate});
             this.datagridReportList.GridColor = System.Drawing.Color.White;
-            this.datagridReportList.Location = new System.Drawing.Point(17, 123);
+            this.datagridReportList.Location = new System.Drawing.Point(23, 151);
+            this.datagridReportList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.datagridReportList.MultiSelect = false;
             this.datagridReportList.Name = "datagridReportList";
             this.datagridReportList.ReadOnly = true;
@@ -141,7 +141,7 @@
             this.datagridReportList.RowHeadersWidth = 60;
             this.datagridReportList.RowTemplate.Height = 30;
             this.datagridReportList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.datagridReportList.Size = new System.Drawing.Size(1044, 393);
+            this.datagridReportList.Size = new System.Drawing.Size(1392, 484);
             this.datagridReportList.TabIndex = 140;
             // 
             // CandidateID
@@ -189,6 +189,7 @@
             // 
             this.DOB.DataPropertyName = "DOB";
             this.DOB.HeaderText = "DOB";
+            this.DOB.MinimumWidth = 6;
             this.DOB.Name = "DOB";
             this.DOB.ReadOnly = true;
             this.DOB.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -197,6 +198,7 @@
             // 
             this.Stream.DataPropertyName = "Stream";
             this.Stream.HeaderText = "Stream";
+            this.Stream.MinimumWidth = 6;
             this.Stream.Name = "Stream";
             this.Stream.ReadOnly = true;
             // 
@@ -204,6 +206,7 @@
             // 
             this.AcademicYear.DataPropertyName = "AcademicYear";
             this.AcademicYear.HeaderText = "Academic Year";
+            this.AcademicYear.MinimumWidth = 6;
             this.AcademicYear.Name = "AcademicYear";
             this.AcademicYear.ReadOnly = true;
             // 
@@ -211,6 +214,7 @@
             // 
             this.PermanentAddress.DataPropertyName = "PermanentAddress";
             this.PermanentAddress.HeaderText = "Address";
+            this.PermanentAddress.MinimumWidth = 6;
             this.PermanentAddress.Name = "PermanentAddress";
             this.PermanentAddress.ReadOnly = true;
             // 
@@ -218,6 +222,7 @@
             // 
             this.Email.DataPropertyName = "Email";
             this.Email.HeaderText = "Email";
+            this.Email.MinimumWidth = 6;
             this.Email.Name = "Email";
             this.Email.ReadOnly = true;
             // 
@@ -279,9 +284,10 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 577);
+            this.panel4.Location = new System.Drawing.Point(0, 710);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1070, 5);
+            this.panel4.Size = new System.Drawing.Size(1427, 6);
             this.panel4.TabIndex = 165;
             // 
             // cbPersonType
@@ -291,9 +297,10 @@
             this.cbPersonType.Items.AddRange(new object[] {
             "STUDENT",
             "TEACHER"});
-            this.cbPersonType.Location = new System.Drawing.Point(199, 71);
+            this.cbPersonType.Location = new System.Drawing.Point(265, 87);
+            this.cbPersonType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbPersonType.Name = "cbPersonType";
-            this.cbPersonType.Size = new System.Drawing.Size(241, 34);
+            this.cbPersonType.Size = new System.Drawing.Size(320, 41);
             this.cbPersonType.TabIndex = 168;
             this.cbPersonType.SelectedIndexChanged += new System.EventHandler(this.cbPersonType_SelectedIndexChanged);
             // 
@@ -302,28 +309,20 @@
             this.lblPerson.AutoSize = true;
             this.lblPerson.Font = new System.Drawing.Font("Calibri", 16F);
             this.lblPerson.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
-            this.lblPerson.Location = new System.Drawing.Point(12, 71);
+            this.lblPerson.Location = new System.Drawing.Point(16, 87);
+            this.lblPerson.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPerson.Name = "lblPerson";
-            this.lblPerson.Size = new System.Drawing.Size(181, 27);
+            this.lblPerson.Size = new System.Drawing.Size(216, 33);
             this.lblPerson.TabIndex = 167;
             this.lblPerson.Text = "Select Person Type";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 8);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(39, 36);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(7, 0);
+            this.pictureBox2.Location = new System.Drawing.Point(9, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(56, 51);
+            this.pictureBox2.Size = new System.Drawing.Size(75, 63);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -333,9 +332,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(77, 13);
+            this.label2.Location = new System.Drawing.Point(103, 16);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(168, 26);
+            this.label2.Size = new System.Drawing.Size(216, 32);
             this.label2.TabIndex = 141;
             this.label2.Text = "Member Report";
             // 
@@ -344,9 +344,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 8F);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(251, 21);
+            this.label3.Location = new System.Drawing.Point(335, 26);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(256, 14);
+            this.label3.Size = new System.Drawing.Size(333, 16);
             this.label3.TabIndex = 142;
             this.label3.Text = "See All Member Details Here and Filter as you want.";
             // 
@@ -359,8 +360,9 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1070, 54);
+            this.panel2.Size = new System.Drawing.Size(1427, 66);
             this.panel2.TabIndex = 169;
             // 
             // panel1
@@ -368,24 +370,25 @@
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(71, 54);
+            this.panel1.Size = new System.Drawing.Size(95, 66);
             this.panel1.TabIndex = 144;
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.pictureBox1);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(1025, 0);
+            this.panel5.Location = new System.Drawing.Point(1367, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(45, 54);
+            this.panel5.Size = new System.Drawing.Size(60, 66);
             this.panel5.TabIndex = 143;
             // 
             // frmCandidatesReport
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1070, 582);
+            this.ClientSize = new System.Drawing.Size(1427, 716);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.cbPersonType);
             this.Controls.Add(this.lblPerson);
@@ -394,15 +397,15 @@
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnExport);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+         
             this.Text = "frmCandidatesReport";
             this.Load += new System.EventHandler(this.FrmCandidatesReport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.datagridReportList)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -431,7 +434,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ToDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn TOSDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn SOSDate;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
