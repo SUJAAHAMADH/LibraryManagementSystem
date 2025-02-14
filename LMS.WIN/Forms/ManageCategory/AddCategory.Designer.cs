@@ -51,30 +51,27 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(7, 303);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Location = new System.Drawing.Point(5, 246);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(644, 6);
+            this.panel4.Size = new System.Drawing.Size(484, 5);
             this.panel4.TabIndex = 115;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(651, 49);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Location = new System.Drawing.Point(489, 40);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(7, 260);
+            this.panel3.Size = new System.Drawing.Size(5, 211);
             this.panel3.TabIndex = 114;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 49);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(0, 40);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(7, 260);
+            this.panel1.Size = new System.Drawing.Size(5, 211);
             this.panel1.TabIndex = 112;
             // 
             // panel2
@@ -86,19 +83,17 @@
             this.panel2.Controls.Add(this.label7);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(658, 49);
+            this.panel2.Size = new System.Drawing.Size(494, 40);
             this.panel2.TabIndex = 113;
             // 
             // pbLibrary
             // 
             this.pbLibrary.BackColor = System.Drawing.Color.Transparent;
             this.pbLibrary.Image = ((System.Drawing.Image)(resources.GetObject("pbLibrary.Image")));
-            this.pbLibrary.Location = new System.Drawing.Point(13, 5);
-            this.pbLibrary.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbLibrary.Location = new System.Drawing.Point(10, 4);
             this.pbLibrary.Name = "pbLibrary";
-            this.pbLibrary.Size = new System.Drawing.Size(48, 37);
+            this.pbLibrary.Size = new System.Drawing.Size(36, 33);
             this.pbLibrary.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbLibrary.TabIndex = 99;
             this.pbLibrary.TabStop = false;
@@ -106,10 +101,9 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(216, 21);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Location = new System.Drawing.Point(184, 18);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(360, 5);
+            this.panel5.Size = new System.Drawing.Size(270, 4);
             this.panel5.TabIndex = 25;
             // 
             // btnCloses
@@ -119,10 +113,9 @@
             this.btnCloses.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCloses.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.btnCloses.ForeColor = System.Drawing.Color.White;
-            this.btnCloses.Location = new System.Drawing.Point(600, 5);
-            this.btnCloses.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCloses.Location = new System.Drawing.Point(462, 7);
             this.btnCloses.Name = "btnCloses";
-            this.btnCloses.Size = new System.Drawing.Size(39, 32);
+            this.btnCloses.Size = new System.Drawing.Size(29, 26);
             this.btnCloses.TabIndex = 24;
             this.btnCloses.Text = "X";
             this.btnCloses.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -135,10 +128,9 @@
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.label7.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(69, 10);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(52, 9);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(148, 29);
+            this.label7.Size = new System.Drawing.Size(117, 23);
             this.label7.TabIndex = 23;
             this.label7.Text = "Add Category";
             // 
@@ -147,12 +139,11 @@
             this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(8)))), ((int)(((byte)(26)))));
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.btnClose.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(445, 210);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClose.Location = new System.Drawing.Point(334, 171);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(160, 44);
+            this.btnClose.Size = new System.Drawing.Size(120, 36);
             this.btnClose.TabIndex = 111;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = false;
@@ -163,12 +154,11 @@
             this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSave.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(248, 210);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave.Location = new System.Drawing.Point(186, 171);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(160, 44);
+            this.btnSave.Size = new System.Drawing.Size(120, 36);
             this.btnSave.TabIndex = 109;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -178,51 +168,47 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(70, 158);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(52, 128);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(155, 24);
+            this.label1.Size = new System.Drawing.Size(127, 19);
             this.label1.TabIndex = 110;
             this.label1.Text = "Category Name";
             // 
             // tbSubject
             // 
-            this.tbSubject.Font = new System.Drawing.Font("Calibri", 16F);
-            this.tbSubject.Location = new System.Drawing.Point(248, 148);
-            this.tbSubject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbSubject.Font = new System.Drawing.Font("Arial", 16F);
+            this.tbSubject.Location = new System.Drawing.Point(186, 120);
             this.tbSubject.Name = "tbSubject";
-            this.tbSubject.Size = new System.Drawing.Size(357, 40);
+            this.tbSubject.Size = new System.Drawing.Size(269, 32);
             this.tbSubject.TabIndex = 108;
             // 
             // comboBoxcategory
             // 
-            this.comboBoxcategory.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxcategory.Font = new System.Drawing.Font("Arial", 16F);
             this.comboBoxcategory.FormattingEnabled = true;
             this.comboBoxcategory.Items.AddRange(new object[] {
             "Technical",
             "Others"});
-            this.comboBoxcategory.Location = new System.Drawing.Point(248, 75);
-            this.comboBoxcategory.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxcategory.Location = new System.Drawing.Point(186, 61);
             this.comboBoxcategory.Name = "comboBoxcategory";
-            this.comboBoxcategory.Size = new System.Drawing.Size(357, 41);
+            this.comboBoxcategory.Size = new System.Drawing.Size(269, 32);
             this.comboBoxcategory.TabIndex = 117;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(65, 75);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Location = new System.Drawing.Point(49, 68);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(160, 24);
+            this.label15.Size = new System.Drawing.Size(130, 19);
             this.label15.TabIndex = 118;
             this.label15.Text = "Select Category";
             // 
             // AddCategory
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(658, 309);
+            this.ClientSize = new System.Drawing.Size(494, 251);
             this.Controls.Add(this.comboBoxcategory);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.panel4);
@@ -234,7 +220,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbSubject);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AddCategory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddSubject";
