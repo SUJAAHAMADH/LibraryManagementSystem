@@ -146,6 +146,7 @@ namespace LMS.DAL
                         issueBook.NoOfTimeRenewal = row["NoOfTimeRenewal"] as int? ?? 0;
                         issueBook.Remark = row["Remark"] as string ?? string.Empty;
                         issueBook.CandidateNames = row["CandidateNames"] as string ?? string.Empty;
+                        issueBook.RollId = row["ROllNo"] as string ?? string.Empty;
                         issueBooks.Add(issueBook);
                     }
                 }

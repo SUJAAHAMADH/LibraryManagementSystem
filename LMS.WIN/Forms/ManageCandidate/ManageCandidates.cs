@@ -191,102 +191,7 @@ namespace LMS.WIN.Forms.ManageCandidate
 
         private void btnExportExcel_Click(object sender, EventArgs e)
         {
-            SqlConnection con = null;
-            string role = cmboxCandidateType.Text;
-            #region Candidate-details
-            _Application app = new Microsoft.Office.Interop.Excel.Application();
-            _Workbook workbook = app.Workbooks.Add(Type.Missing);
-            _Worksheet worksheet = null;
-            worksheet = workbook.Sheets["Sheet1"];
-            worksheet = workbook.ActiveSheet;
-            worksheet.Name = "Client-Deatils";
-
-            #region Interacting with database
-            con = SqlConnectionHelper.GetConnectionSync();
-            if (con.State == ConnectionState.Closed)
-            {
-                con.Open();
-            }
-            SqlCommand cmd = new SqlCommand
-            {
-                CommandText = "ShowCandidate",
-                CommandType = CommandType.StoredProcedure,
-                Connection = con
-            };
-            cmd.Parameters.Clear();
-            if (!string.IsNullOrEmpty(role))
-            {
-                cmd.Parameters.Add("@Role", SqlDbType.VarChar).Value = role;
-            }
-            SqlDataAdapter adp = new SqlDataAdapter(cmd);
-            DataSet ds = new DataSet();
-            System.Data.DataTable dt = new System.Data.DataTable();
-            adp.Fill(dt);
-            #endregion
-
-            worksheet.Cells[1, 1] = "SR";
-            worksheet.Cells[1, 2] = "Name";
-            worksheet.Cells[1, 3] = "Role";
-            worksheet.Cells[1, 4] = "Contact Number";
-            worksheet.Cells[1, 5] = "Service No";
-            worksheet.Cells[1, 6] = "Course";
-            worksheet.Cells[1, 7] = "From Date";
-            worksheet.Cells[1, 8] = "To Date";
-            worksheet.Cells[1, 9] = "TOS Date";
-            worksheet.Cells[1, 10] = "SOS Date";
-
-            #region Wrap data
-            if (dt.Rows.Count > 0)
-            {
-                int sr = 1;
-                int i = 2;
-                foreach (DataRow row in dt.Rows)
-                {
-                    worksheet.Cells[i, 1] = sr;
-                    worksheet.Cells[i, 2] = row["Name"] as string ?? string.Empty;
-
-                    worksheet.Cells[i, 3] = row["Role"] as string ?? string.Empty;
-                    worksheet.Cells[i, 4] = row["ContactNumber"] as string ?? string.Empty;
-                    worksheet.Cells[i, 5] = row["ServiceNo"] as string ?? string.Empty;
-                    worksheet.Cells[i, 6] = row["CourseName"] as string ?? string.Empty;
-                    worksheet.Cells[i, 7] = row["FromDate"] as string ?? string.Empty;
-                    worksheet.Cells[i, 8] = row["ToDate"] as string ?? string.Empty;
-                    worksheet.Cells[i, 9] = row["TOSDate"] as string ?? string.Empty;
-                    worksheet.Cells[i, 10] = row["SOSDate"] as string ?? string.Empty;
-
-                    Microsoft.Office.Interop.Excel.Range rg = (Microsoft.Office.Interop.Excel.Range)worksheet.Cells[i, 10];
-                    rg.EntireColumn.NumberFormat = "MM-DD-YYYY";
-
-                    Microsoft.Office.Interop.Excel.Range rg1 = (Microsoft.Office.Interop.Excel.Range)worksheet.Cells[i, 11];
-                    rg1.EntireColumn.ToString();
-
-
-                    Microsoft.Office.Interop.Excel.Range rg2 = (Microsoft.Office.Interop.Excel.Range)worksheet.Cells[i, 13];
-                    rg2.EntireColumn.NumberFormat = "MM-DD-YYYY";
-
-                    Microsoft.Office.Interop.Excel.Range rg3 = (Microsoft.Office.Interop.Excel.Range)worksheet.Cells[i, 14];
-                    rg3.EntireColumn.NumberFormat = "MM-DD-YYYY";
-
-
-                    i = i + 1;
-                    sr = sr + 1;
-                }
-            }
-            #endregion
-            worksheet.Columns.AutoFit();
-            Range rng = worksheet.get_Range("A1:N1", Missing.Value);
-            rng.Interior.Color = XlRgbColor.rgbLightBlue;
-
-            var saveFileDialoge = new SaveFileDialog();
-            saveFileDialoge.FileName = "Candidate-Details";
-            saveFileDialoge.DefaultExt = ".xlsx";
-            if (saveFileDialoge.ShowDialog() == DialogResult.OK)
-            {
-                workbook.SaveAs(saveFileDialoge.FileName, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlExclusive, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
-            }
-            app.Quit();
-            MessageBox.Show("Excel successfully created");
-            #endregion
+            
 
         }
 
@@ -410,44 +315,24 @@ namespace LMS.WIN.Forms.ManageCandidate
                 for (int i = 0; i < dt.Rows.Count; i++)
                 {
                     string role = dt.Rows[i]["Role"].ToString();
-                    if (role == "Student")
+                    if (role == "STUDENT")
                     {
-                        double dFromDate = double.Parse(dt.Rows[i]["FromDateValue"].ToString());
-                        DateTime fromDate = DateTime.FromOADate(dFromDate);
-
-                        double dToDate = double.Parse(dt.Rows[i]["ToDateValue"].ToString());
-                        DateTime toDate = DateTime.FromOADate(dToDate);
-
-                        if (dt.Rows[i]["Course"].ToString() != null && dt.Rows[i]["Course"].ToString() != "")
-                        {
-                            course = CourseBL.GetByName(dt.Rows[i]["Course"].ToString(), userID, fromDate.ToShortDateString(), toDate.ToShortDateString());
-                        }
-                        else
-                        {
-                            course = new Course();
-                            course.CourseID = -1;
-                        }
+                        
 
                         Candidate candidate = new Candidate();
                         candidate.CandidateID = -1;
                         candidate.Role = role;
                         candidate.Name = dt.Rows[i]["Name"].ToString();
                         candidate.ContactNumber = dt.Rows[i]["Contact Number"].ToString();
-                        candidate.RoleID = dt.Rows[i]["Service No"].ToString();
-                        candidate.CourseID = course.CourseID;
-                        candidate.FromDate = fromDate.ToString();
-                        candidate.ToDate = toDate.ToString();
+                        candidate.RoleID = dt.Rows[i]["RollNo"].ToString();
+                        candidate.Stream = dt.Rows[i]["Stream"].ToString();
+                        candidate.AcademicYear = Convert.ToInt32(dt.Rows[i]["Academic Year"].ToString());
+                        candidate.Email = dt.Rows[i]["Email"].ToString();
                         candidate.UserID = userID;
                         CandidateBL.SaveByExcel(candidate);
                     }
-                    else if (role == "Teacher")
+                    else if (role == "TEACHER")
                     {
-
-                        double dTosDate = double.Parse(dt.Rows[i]["TOSDateValue"].ToString());
-                        DateTime tosDate = DateTime.FromOADate(dTosDate);
-
-                        double dSosDate = double.Parse(dt.Rows[i]["SOSDateValue"].ToString());
-                        DateTime sosDate = DateTime.FromOADate(dSosDate);
 
                         Candidate candidate = new Candidate();
                         candidate.CandidateID = -1;
@@ -455,8 +340,8 @@ namespace LMS.WIN.Forms.ManageCandidate
                         candidate.Name = dt.Rows[i]["Name"].ToString();
                         candidate.ContactNumber = dt.Rows[i]["Contact Number"].ToString();
                         candidate.RoleID = dt.Rows[i]["Service No"].ToString();
-                        candidate.TOSDate = tosDate.ToString();
-                        candidate.SOSDate = sosDate.ToString();
+                        candidate.RoleID = dt.Rows[i]["RollNo"].ToString();
+                        candidate.Email = dt.Rows[i]["Email"].ToString();
                         candidate.UserID = userID;
                         CandidateBL.Save(candidate);
                     }
@@ -509,12 +394,13 @@ namespace LMS.WIN.Forms.ManageCandidate
             worksheet.Cells[1, 2] = "Name";
             worksheet.Cells[1, 3] = "Role";
             worksheet.Cells[1, 4] = "Contact Number";
-            worksheet.Cells[1, 5] = "Service No";
-            worksheet.Cells[1, 6] = "Course";
-            worksheet.Cells[1, 7] = "From Date";
-            worksheet.Cells[1, 8] = "To Date";
-            worksheet.Cells[1, 9] = "TOS Date";
-            worksheet.Cells[1, 10] = "SOS Date";
+            worksheet.Cells[1, 5] = "Roll ID";
+            worksheet.Cells[1, 6] = "Stream";
+            worksheet.Cells[1, 7] = "Academic Year";
+            worksheet.Cells[1, 8] = "Parents Contact";
+            worksheet.Cells[1, 9] = "Email";
+            worksheet.Cells[1, 10] = "Permanent Address";
+            worksheet.Cells[1, 11] = "Present Address";
 
             #region Wrap data
             if (dt.Rows.Count > 0)
@@ -529,11 +415,12 @@ namespace LMS.WIN.Forms.ManageCandidate
                     worksheet.Cells[i, 3] = row["Role"] as string ?? string.Empty;
                     worksheet.Cells[i, 4] = row["ContactNumber"] as string ?? string.Empty;
                     worksheet.Cells[i, 5] = row["ServiceNo"] as string ?? string.Empty;
-                    worksheet.Cells[i, 6] = row["CourseName"] as string ?? string.Empty;
-                    worksheet.Cells[i, 7] = row["FromDate"] as string ?? string.Empty;
-                    worksheet.Cells[i, 8] = row["ToDate"] as string ?? string.Empty;
-                    worksheet.Cells[i, 9] = row["TOSDate"] as string ?? string.Empty;
-                    worksheet.Cells[i, 10] = row["SOSDate"] as string ?? string.Empty;
+                    worksheet.Cells[i, 6] = row["Stream"] as string ?? string.Empty;
+                    worksheet.Cells[i, 7] = row["AcademicYear"] as string ?? string.Empty;
+                    worksheet.Cells[i, 8] = row["ParentsContact"] as string ?? string.Empty;
+                    worksheet.Cells[i, 9] = row["Email"] as string ?? string.Empty;
+                    worksheet.Cells[i, 10] = row["PermanentAddress"] as string ?? string.Empty;
+                    worksheet.Cells[i, 11] = row["PresentAddress"] as string ?? string.Empty;
 
                     Microsoft.Office.Interop.Excel.Range rg = (Microsoft.Office.Interop.Excel.Range)worksheet.Cells[i, 10];
                     rg.EntireColumn.NumberFormat = "MM-DD-YYYY";

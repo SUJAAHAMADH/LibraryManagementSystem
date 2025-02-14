@@ -54,7 +54,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.btnImport = new System.Windows.Forms.Button();
             this.btnAddNewJournal = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -69,10 +68,10 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 503);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2);
+            this.panel5.Location = new System.Drawing.Point(0, 619);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(908, 10);
+            this.panel5.Size = new System.Drawing.Size(1211, 12);
             this.panel5.TabIndex = 166;
             // 
             // dataGridBook
@@ -116,14 +115,15 @@
             this.dataGridBook.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridBook.EnableHeadersVisualStyles = false;
             this.dataGridBook.GridColor = System.Drawing.Color.DarkGray;
-            this.dataGridBook.Location = new System.Drawing.Point(92, 154);
+            this.dataGridBook.Location = new System.Drawing.Point(123, 190);
+            this.dataGridBook.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridBook.Name = "dataGridBook";
             this.dataGridBook.ReadOnly = true;
             this.dataGridBook.RowHeadersVisible = false;
             this.dataGridBook.RowHeadersWidth = 60;
             this.dataGridBook.RowTemplate.Height = 30;
             this.dataGridBook.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridBook.Size = new System.Drawing.Size(719, 272);
+            this.dataGridBook.Size = new System.Drawing.Size(959, 335);
             this.dataGridBook.TabIndex = 161;
             this.dataGridBook.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridBook_CellContentClick);
             // 
@@ -150,6 +150,7 @@
             // 
             this.Frequency.DataPropertyName = "Frequency";
             this.Frequency.HeaderText = "Frequency";
+            this.Frequency.MinimumWidth = 6;
             this.Frequency.Name = "Frequency";
             this.Frequency.ReadOnly = true;
             this.Frequency.Visible = false;
@@ -158,6 +159,7 @@
             // 
             this.Price.DataPropertyName = "Price";
             this.Price.HeaderText = "Price";
+            this.Price.MinimumWidth = 6;
             this.Price.Name = "Price";
             this.Price.ReadOnly = true;
             this.Price.Visible = false;
@@ -166,6 +168,7 @@
             // 
             this.InvoiceNo.DataPropertyName = "InvoiceNo";
             this.InvoiceNo.HeaderText = "InvoiceNo";
+            this.InvoiceNo.MinimumWidth = 6;
             this.InvoiceNo.Name = "InvoiceNo";
             this.InvoiceNo.ReadOnly = true;
             this.InvoiceNo.Visible = false;
@@ -174,6 +177,7 @@
             // 
             this.InvoiceDate.DataPropertyName = "InvoiceDate";
             this.InvoiceDate.HeaderText = "InvoiceDate";
+            this.InvoiceDate.MinimumWidth = 6;
             this.InvoiceDate.Name = "InvoiceDate";
             this.InvoiceDate.ReadOnly = true;
             this.InvoiceDate.Visible = false;
@@ -182,6 +186,7 @@
             // 
             this.OrderNo.DataPropertyName = "OrderNo";
             this.OrderNo.HeaderText = "OrderNo";
+            this.OrderNo.MinimumWidth = 6;
             this.OrderNo.Name = "OrderNo";
             this.OrderNo.ReadOnly = true;
             this.OrderNo.Visible = false;
@@ -254,9 +259,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(208, 107);
+            this.label1.Location = new System.Drawing.Point(277, 132);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 19);
+            this.label1.Size = new System.Drawing.Size(155, 23);
             this.label1.TabIndex = 163;
             this.label1.Text = "Search Subject";
             // 
@@ -266,9 +272,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(62, 18);
+            this.label4.Location = new System.Drawing.Point(83, 22);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 20);
+            this.label4.Size = new System.Drawing.Size(79, 25);
             this.label4.TabIndex = 153;
             this.label4.Text = "Refresh";
             this.label4.UseWaitCursor = true;
@@ -276,9 +283,10 @@
             // picboxrefersh
             // 
             this.picboxrefersh.Image = ((System.Drawing.Image)(resources.GetObject("picboxrefersh.Image")));
-            this.picboxrefersh.Location = new System.Drawing.Point(14, 11);
+            this.picboxrefersh.Location = new System.Drawing.Point(19, 14);
+            this.picboxrefersh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picboxrefersh.Name = "picboxrefersh";
-            this.picboxrefersh.Size = new System.Drawing.Size(42, 33);
+            this.picboxrefersh.Size = new System.Drawing.Size(56, 41);
             this.picboxrefersh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picboxrefersh.TabIndex = 145;
             this.picboxrefersh.TabStop = false;
@@ -289,9 +297,10 @@
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.picboxrefersh);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(366, 0);
+            this.panel2.Location = new System.Drawing.Point(253, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(158, 60);
+            this.panel2.Size = new System.Drawing.Size(211, 74);
             this.panel2.TabIndex = 29;
             // 
             // panel1
@@ -300,13 +309,12 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.btnImport);
             this.panel1.Controls.Add(this.btnAddNewJournal);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(908, 64);
+            this.panel1.Size = new System.Drawing.Size(1211, 78);
             this.panel1.TabIndex = 164;
             // 
             // panel3
@@ -314,9 +322,10 @@
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(525, 0);
+            this.panel3.Location = new System.Drawing.Point(702, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(379, 60);
+            this.panel3.Size = new System.Drawing.Size(505, 74);
             this.panel3.TabIndex = 28;
             // 
             // label2
@@ -325,9 +334,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(213, 35);
+            this.label2.Location = new System.Drawing.Point(284, 43);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(156, 13);
+            this.label2.Size = new System.Drawing.Size(206, 17);
             this.label2.TabIndex = 26;
             this.label2.Text = "Add, Edit, Delete Your Subjects";
             // 
@@ -337,30 +347,12 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(208, 9);
+            this.label5.Location = new System.Drawing.Point(277, 11);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(161, 24);
+            this.label5.Size = new System.Drawing.Size(201, 29);
             this.label5.TabIndex = 25;
             this.label5.Text = "Manage Subject";
-            // 
-            // btnImport
-            // 
-            this.btnImport.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnImport.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnImport.FlatAppearance.BorderSize = 0;
-            this.btnImport.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
-            this.btnImport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnImport.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImport.ForeColor = System.Drawing.Color.White;
-            this.btnImport.Image = ((System.Drawing.Image)(resources.GetObject("btnImport.Image")));
-            this.btnImport.Location = new System.Drawing.Point(190, 0);
-            this.btnImport.Margin = new System.Windows.Forms.Padding(2);
-            this.btnImport.Name = "btnImport";
-            this.btnImport.Size = new System.Drawing.Size(176, 60);
-            this.btnImport.TabIndex = 16;
-            this.btnImport.Text = "   Import Excel";
-            this.btnImport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnImport.UseVisualStyleBackColor = true;
             // 
             // btnAddNewJournal
             // 
@@ -373,9 +365,9 @@
             this.btnAddNewJournal.ForeColor = System.Drawing.Color.White;
             this.btnAddNewJournal.Image = ((System.Drawing.Image)(resources.GetObject("btnAddNewJournal.Image")));
             this.btnAddNewJournal.Location = new System.Drawing.Point(0, 0);
-            this.btnAddNewJournal.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddNewJournal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddNewJournal.Name = "btnAddNewJournal";
-            this.btnAddNewJournal.Size = new System.Drawing.Size(190, 60);
+            this.btnAddNewJournal.Size = new System.Drawing.Size(253, 74);
             this.btnAddNewJournal.TabIndex = 15;
             this.btnAddNewJournal.Text = "   Add Subject";
             this.btnAddNewJournal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -386,10 +378,11 @@
             // 
             this.txtSearch.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(339, 100);
+            this.txtSearch.Location = new System.Drawing.Point(452, 123);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(258, 32);
+            this.txtSearch.Size = new System.Drawing.Size(343, 38);
             this.txtSearch.TabIndex = 162;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
@@ -403,18 +396,19 @@
             this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(606, 101);
+            this.button1.Location = new System.Drawing.Point(808, 124);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(32, 31);
+            this.button1.Size = new System.Drawing.Size(43, 38);
             this.button1.TabIndex = 165;
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
             // 
             // ManageSubject
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(908, 513);
+            this.ClientSize = new System.Drawing.Size(1211, 631);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.dataGridBook);
             this.Controls.Add(this.label1);
@@ -422,6 +416,8 @@
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+           
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ManageSubject";
             this.Load += new System.EventHandler(this.ManageSubject_Load);
@@ -449,7 +445,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btnImport;
         private System.Windows.Forms.Button btnAddNewJournal;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button button1;

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageReturnbook));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnreturnbook = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -62,9 +63,10 @@
             // txtSearch
             // 
             this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(133, 62);
+            this.txtSearch.Location = new System.Drawing.Point(177, 76);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(252, 26);
+            this.txtSearch.Size = new System.Drawing.Size(335, 30);
             this.txtSearch.TabIndex = 130;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
@@ -76,9 +78,10 @@
             this.btnreturnbook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnreturnbook.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnreturnbook.ForeColor = System.Drawing.Color.White;
-            this.btnreturnbook.Location = new System.Drawing.Point(964, 61);
+            this.btnreturnbook.Location = new System.Drawing.Point(1285, 75);
+            this.btnreturnbook.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnreturnbook.Name = "btnreturnbook";
-            this.btnreturnbook.Size = new System.Drawing.Size(98, 27);
+            this.btnreturnbook.Size = new System.Drawing.Size(131, 33);
             this.btnreturnbook.TabIndex = 127;
             this.btnreturnbook.Text = "Return Book";
             this.btnreturnbook.UseVisualStyleBackColor = false;
@@ -93,9 +96,10 @@
             this.button3.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(391, 61);
+            this.button3.Location = new System.Drawing.Point(521, 75);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(27, 27);
+            this.button3.Size = new System.Drawing.Size(36, 33);
             this.button3.TabIndex = 129;
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = true;
@@ -105,9 +109,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
-            this.label3.Location = new System.Drawing.Point(24, 35);
+            this.label3.Location = new System.Drawing.Point(32, 43);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(294, 14);
+            this.label3.Size = new System.Drawing.Size(365, 18);
             this.label3.TabIndex = 132;
             this.label3.Text = "Add, Edit, Delete your Book through manage Return Book.";
             // 
@@ -116,19 +121,31 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
-            this.label4.Location = new System.Drawing.Point(23, 8);
+            this.label4.Location = new System.Drawing.Point(31, 10);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(216, 25);
+            this.label4.Size = new System.Drawing.Size(271, 32);
             this.label4.TabIndex = 131;
             this.label4.Text = "Manage Return Book";
             // 
             // dataGridReturnBook
             // 
             this.dataGridReturnBook.AllowUserToResizeRows = false;
+            this.dataGridReturnBook.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridReturnBook.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridReturnBook.BackgroundColor = System.Drawing.Color.White;
             this.dataGridReturnBook.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
-            this.dataGridReturnBook.ColumnHeadersHeight = 20;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridReturnBook.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridReturnBook.ColumnHeadersHeight = 35;
             this.dataGridReturnBook.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridReturnBook.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IssueBookID,
@@ -144,15 +161,17 @@
             this.NoOfTimeRenewal,
             this.Remark,
             this.Delete});
+            this.dataGridReturnBook.EnableHeadersVisualStyles = false;
             this.dataGridReturnBook.GridColor = System.Drawing.Color.White;
-            this.dataGridReturnBook.Location = new System.Drawing.Point(28, 94);
+            this.dataGridReturnBook.Location = new System.Drawing.Point(37, 116);
+            this.dataGridReturnBook.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridReturnBook.Name = "dataGridReturnBook";
             this.dataGridReturnBook.ReadOnly = true;
             this.dataGridReturnBook.RowHeadersVisible = false;
             this.dataGridReturnBook.RowHeadersWidth = 60;
             this.dataGridReturnBook.RowTemplate.Height = 30;
             this.dataGridReturnBook.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridReturnBook.Size = new System.Drawing.Size(1033, 423);
+            this.dataGridReturnBook.Size = new System.Drawing.Size(1377, 521);
             this.dataGridReturnBook.TabIndex = 133;
             // 
             // IssueBookID
@@ -272,18 +291,20 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cambria", 12F);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
-            this.label2.Location = new System.Drawing.Point(31, 66);
+            this.label2.Location = new System.Drawing.Point(41, 81);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 19);
+            this.label2.Size = new System.Drawing.Size(116, 23);
             this.label2.TabIndex = 134;
             this.label2.Text = "Search Book";
             // 
             // picboxrefersh
             // 
             this.picboxrefersh.Image = ((System.Drawing.Image)(resources.GetObject("picboxrefersh.Image")));
-            this.picboxrefersh.Location = new System.Drawing.Point(338, 12);
+            this.picboxrefersh.Location = new System.Drawing.Point(451, 15);
+            this.picboxrefersh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picboxrefersh.Name = "picboxrefersh";
-            this.picboxrefersh.Size = new System.Drawing.Size(31, 26);
+            this.picboxrefersh.Size = new System.Drawing.Size(41, 32);
             this.picboxrefersh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picboxrefersh.TabIndex = 144;
             this.picboxrefersh.TabStop = false;
@@ -294,9 +315,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
-            this.label1.Location = new System.Drawing.Point(769, 34);
+            this.label1.Location = new System.Drawing.Point(1025, 42);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 16);
+            this.label1.Size = new System.Drawing.Size(81, 19);
             this.label1.TabIndex = 149;
             this.label1.Text = "End Date";
             // 
@@ -305,9 +327,10 @@
             this.lblStart.AutoSize = true;
             this.lblStart.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
-            this.lblStart.Location = new System.Drawing.Point(538, 34);
+            this.lblStart.Location = new System.Drawing.Point(717, 42);
+            this.lblStart.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStart.Name = "lblStart";
-            this.lblStart.Size = new System.Drawing.Size(70, 16);
+            this.lblStart.Size = new System.Drawing.Size(89, 19);
             this.lblStart.TabIndex = 148;
             this.lblStart.Text = "Start Date";
             // 
@@ -319,9 +342,10 @@
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.Location = new System.Drawing.Point(980, 29);
+            this.btnSearch.Location = new System.Drawing.Point(1307, 36);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(81, 27);
+            this.btnSearch.Size = new System.Drawing.Size(108, 33);
             this.btnSearch.TabIndex = 147;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
@@ -332,9 +356,10 @@
             this.dtendDate.CustomFormat = "dd-MM-yyyy";
             this.dtendDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.dtendDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtendDate.Location = new System.Drawing.Point(848, 31);
+            this.dtendDate.Location = new System.Drawing.Point(1131, 38);
+            this.dtendDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtendDate.Name = "dtendDate";
-            this.dtendDate.Size = new System.Drawing.Size(126, 23);
+            this.dtendDate.Size = new System.Drawing.Size(167, 26);
             this.dtendDate.TabIndex = 146;
             // 
             // dtStartDateDate
@@ -342,16 +367,17 @@
             this.dtStartDateDate.CustomFormat = "dd-MM-yyyy";
             this.dtStartDateDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.dtStartDateDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtStartDateDate.Location = new System.Drawing.Point(617, 31);
+            this.dtStartDateDate.Location = new System.Drawing.Point(823, 38);
+            this.dtStartDateDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtStartDateDate.Name = "dtStartDateDate";
-            this.dtStartDateDate.Size = new System.Drawing.Size(142, 23);
+            this.dtStartDateDate.Size = new System.Drawing.Size(188, 26);
             this.dtStartDateDate.TabIndex = 145;
             // 
             // ManageReturnbook
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1074, 582);
+            this.ClientSize = new System.Drawing.Size(1432, 716);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblStart);
             this.Controls.Add(this.btnSearch);
@@ -366,6 +392,7 @@
             this.Controls.Add(this.btnreturnbook);
             this.Controls.Add(this.button3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ManageReturnbook";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ManageReturnbook";

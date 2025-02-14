@@ -10,6 +10,7 @@ namespace LMS.MOD
         public int BookID { get; set; }
         public string BookName { get; set; }
         public int CandidateID { get; set; }
+        public string RollId { get; set; }
         public DateTime? IssuedOn { get; set; }
         public DateTime? ReturnDate { get; set; }
         public DateTime? ReturnedOn { get; set; }

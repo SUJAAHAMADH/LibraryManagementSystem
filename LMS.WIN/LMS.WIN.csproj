@@ -571,7 +571,9 @@
     <EmbeddedResource Include="Forms\ManageBooks\ManageReturnbook.resx">
       <DependentUpon>ManageReturnbook.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ManageBooks\RptBarcode.rdlc" />
+    <EmbeddedResource Include="Forms\ManageBooks\RptBarcode.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ManageBooks\SearchBooks.resx">
       <DependentUpon>SearchBooks.cs</DependentUpon>
     </EmbeddedResource>
