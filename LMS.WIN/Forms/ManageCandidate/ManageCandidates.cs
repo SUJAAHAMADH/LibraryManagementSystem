@@ -81,22 +81,20 @@ namespace LMS.WIN.Forms.ManageCandidate
             {
                 try
                 {
-                    if (MessageBox.Show("Do You Want To Delete The Member ?", " Member ?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                    if (MessageBox.Show("Do you want to deactivate the member?", "Confirm Deactivation", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                     {
                         DataGridViewRow dgvRow = dataGridCandidate.CurrentRow;
-                        Candidate candidate = new Candidate
-                        {
-                            CandidateID = Convert.ToInt32(dgvRow.Cells["CandidateID"].Value.ToString()),
-                            UserID = userID,
-                        };
-                        //candidate = CandidateBL.Deactive(candidate);
-                        MessageBox.Show("Member Delete Successfully...! ");
+                        int candidateID = Convert.ToInt32(dgvRow.Cells["CandidateID"].Value);
+                        string updatedBy = userID.ToString(); 
+
+                        CandidateBL.DeactivateCandidate(candidateID, updatedBy);
+                        MessageBox.Show("Member deactivated successfully.");
                         bindCandidateList();
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show("Error: " + ex.Message);
                 }
             }
 
@@ -179,6 +177,8 @@ namespace LMS.WIN.Forms.ManageCandidate
 
         private void picboxrefersh_Click(object sender, EventArgs e)
         {
+            cmboxCandidateType.SelectedIndex = -1;
+            txtSearch.Text = string.Empty;
             bindCandidateList();
         }
 

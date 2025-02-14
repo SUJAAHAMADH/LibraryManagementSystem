@@ -97,5 +97,22 @@ namespace LMS.BL
                 throw new Exception(ex.Message);
             }
         }
+
+        public static void DeactivateCandidate(int candidateID, string updatedBy)
+        {
+            try
+            {
+                string result = CandidateDAL.DeactivateCandidate(candidateID, updatedBy);
+                if (!string.Equals(result, "SUCCESS", StringComparison.OrdinalIgnoreCase))
+                {
+                    throw new Exception(result);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("An error occurred while deactivating the candidate: " + ex.Message);
+            }
+        }
+
     }
 }

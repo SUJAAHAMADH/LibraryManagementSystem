@@ -1,18 +1,7 @@
 ﻿using LMS.BL;
 using LMS.MOD;
-using LMS.WIN.Forms.Login;
-using LMS.WIN.Forms.ManageAuthor;
-using LMS.WIN.Forms.ManageBooks;
-using LMS.WIN.Forms.ManagePublisher;
-using Microsoft.Reporting.WinForms;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LMS.WIN.Forms
@@ -54,11 +43,12 @@ namespace LMS.WIN.Forms
 
         private void bindUserList(string searchValue = null)
         {
-            User data = new User();
-            data = UserBL.GetByID(userID);
+            // Retrieve user data based on userID
+            MOD.User data = UserBL.GetByID(userID);
             if (data != null)
             {
-                txtuserName.Text = data.UserName.ToString();
+                // Display the user's role in lblUser
+                txtuserName.Text = data.Role.ToString();
             }
         }
 
@@ -72,6 +62,7 @@ namespace LMS.WIN.Forms
             manageHome.Dock = DockStyle.Fill;
             panelContenedor.Controls.Add(manageHome);
             manageHome.Show();
+
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -116,35 +107,34 @@ namespace LMS.WIN.Forms
 
         private void btnmenu_Click_1(object sender, EventArgs e)
         {
-            if (MenuVertical.Width == 53)
+            // Toggle the width of MenuVertical
+            if (MenuVertical.Width == 60)
             {
                 MenuVertical.Width = 260;
+
+                //btnmenu.Image = Properties.Resources.; // Replace with your actual resource name
             }
             else
             {
-                MenuVertical.Width = 53;          
+                MenuVertical.Width = 60;
+
+                //btnmenu.Image = Properties.Resources.YourCollapsedImage; // Replace with your actual resource name
             }
+
+            // Adjust the width of the loaded form if necessary
             if (panelContenedor.Controls.Count > 0)
             {
-                // Get the currently loaded form (first control in the panel)
                 Control loadedControl = panelContenedor.Controls[0];
-
-                // Check if the loaded control is a form (or a specific type of form)
-                if (loadedControl is Form)
+                if (loadedControl is Form loadedForm)
                 {
-                    Form loadedForm = (Form)loadedControl;
-                    string formName = loadedForm.GetType().Name;  // or loadedForm.GetType().Name to get the form's class name
-                    switch (formName) {
-                        case "ManageIssuebook":
-                        case "ManageIssuebooks":
-                            loadedForm.Width = panelContenedor.Width;
-                            break;
+                    string formName = loadedForm.GetType().Name;
+                    if (formName == "ManageIssuebook" || formName == "ManageIssuebooks")
+                    {
+                        loadedForm.Width = panelContenedor.Width;
                     }
-                    
-                                    
                 }
             }
-            
+
 
         }
 
@@ -290,7 +280,7 @@ namespace LMS.WIN.Forms
             if (expend2 == false)
             {
                 panel9.Height += 40;
-                if (panel9.Height >= 205)
+                if (panel9.Height >= 195)
                 {
                     MasterTimer.Stop();
                     expend2 = true;
@@ -346,9 +336,18 @@ namespace LMS.WIN.Forms
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            panelContenedor.Controls.Clear();
-            ManageUser.ManageLibrarian manageLibrarian = new ManageUser.ManageLibrarian();
-            AbrirFormInPanel(manageLibrarian);
+            if (txtuserName.Text == "ADMIN")
+            {
+                panelContenedor.Controls.Clear();
+                ManageUser.ManageLibrarian manageLibrarian = new ManageUser.ManageLibrarian();
+                AbrirFormInPanel(manageLibrarian);
+            }
+            else
+            {
+      
+                MessageBox.Show("You do not have permission to Add a User.");
+            }
+            
         }
 
         private void button7_Click(object sender, EventArgs e)
