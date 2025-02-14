@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageBookHistory));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtBarcode = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,6 +48,11 @@
             this.lblPublisher = new System.Windows.Forms.Label();
             this.lblAuthor = new System.Windows.Forms.Label();
             this.dataGridBookHistory = new System.Windows.Forms.DataGridView();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BookBarcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ContactNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,11 +65,6 @@
             this.BookHistoryID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BookBarcodeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CandidateID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.pnlbookDetails.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridBookHistory)).BeginInit();
             this.panel1.SuspendLayout();
@@ -75,9 +75,10 @@
             // 
             this.txtBarcode.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtBarcode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBarcode.Location = new System.Drawing.Point(401, 89);
+            this.txtBarcode.Location = new System.Drawing.Point(535, 110);
+            this.txtBarcode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBarcode.Name = "txtBarcode";
-            this.txtBarcode.Size = new System.Drawing.Size(269, 26);
+            this.txtBarcode.Size = new System.Drawing.Size(357, 30);
             this.txtBarcode.TabIndex = 134;
             this.txtBarcode.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBarcode_KeyDown);
             // 
@@ -91,9 +92,10 @@
             this.button3.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(676, 89);
+            this.button3.Location = new System.Drawing.Point(901, 110);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(32, 33);
+            this.button3.Size = new System.Drawing.Size(43, 41);
             this.button3.TabIndex = 133;
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = true;
@@ -104,9 +106,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
-            this.label1.Location = new System.Drawing.Point(262, 90);
+            this.label1.Location = new System.Drawing.Point(349, 111);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 21);
+            this.label1.Size = new System.Drawing.Size(133, 28);
             this.label1.TabIndex = 146;
             this.label1.Text = "Enter Barcode";
             // 
@@ -116,9 +119,10 @@
             this.lblmessage.AutoSize = true;
             this.lblmessage.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblmessage.ForeColor = System.Drawing.Color.Red;
-            this.lblmessage.Location = new System.Drawing.Point(437, 116);
+            this.lblmessage.Location = new System.Drawing.Point(583, 143);
+            this.lblmessage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblmessage.Name = "lblmessage";
-            this.lblmessage.Size = new System.Drawing.Size(185, 25);
+            this.lblmessage.Size = new System.Drawing.Size(230, 32);
             this.lblmessage.TabIndex = 160;
             this.lblmessage.Text = "Data Not Found...!";
             this.lblmessage.Visible = false;
@@ -142,9 +146,10 @@
             this.pnlbookDetails.Controls.Add(this.lblPublisher);
             this.pnlbookDetails.Controls.Add(this.lblAuthor);
             this.pnlbookDetails.Controls.Add(this.dataGridBookHistory);
-            this.pnlbookDetails.Location = new System.Drawing.Point(10, 145);
+            this.pnlbookDetails.Location = new System.Drawing.Point(13, 178);
+            this.pnlbookDetails.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlbookDetails.Name = "pnlbookDetails";
-            this.pnlbookDetails.Size = new System.Drawing.Size(1047, 314);
+            this.pnlbookDetails.Size = new System.Drawing.Size(1396, 386);
             this.pnlbookDetails.TabIndex = 161;
             this.pnlbookDetails.Visible = false;
             // 
@@ -152,9 +157,10 @@
             // 
             this.txtSubCategory.AutoSize = true;
             this.txtSubCategory.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.txtSubCategory.Location = new System.Drawing.Point(437, 37);
+            this.txtSubCategory.Location = new System.Drawing.Point(583, 46);
+            this.txtSubCategory.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtSubCategory.Name = "txtSubCategory";
-            this.txtSubCategory.Size = new System.Drawing.Size(13, 19);
+            this.txtSubCategory.Size = new System.Drawing.Size(15, 21);
             this.txtSubCategory.TabIndex = 161;
             this.txtSubCategory.Text = ".";
             // 
@@ -163,9 +169,10 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
-            this.label6.Location = new System.Drawing.Point(336, 37);
+            this.label6.Location = new System.Drawing.Point(448, 46);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(104, 17);
+            this.label6.Size = new System.Drawing.Size(127, 19);
             this.label6.TabIndex = 160;
             this.label6.Text = "Sub-Category:";
             // 
@@ -173,9 +180,10 @@
             // 
             this.txtbookname.AutoSize = true;
             this.txtbookname.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.txtbookname.Location = new System.Drawing.Point(115, 8);
+            this.txtbookname.Location = new System.Drawing.Point(153, 10);
+            this.txtbookname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtbookname.Name = "txtbookname";
-            this.txtbookname.Size = new System.Drawing.Size(13, 19);
+            this.txtbookname.Size = new System.Drawing.Size(15, 21);
             this.txtbookname.TabIndex = 159;
             this.txtbookname.Text = ".";
             // 
@@ -184,9 +192,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
-            this.label5.Location = new System.Drawing.Point(65, 9);
+            this.label5.Location = new System.Drawing.Point(87, 11);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 17);
+            this.label5.Size = new System.Drawing.Size(56, 19);
             this.label5.TabIndex = 158;
             this.label5.Text = "Book:";
             // 
@@ -194,9 +203,10 @@
             // 
             this.txtLanguage.AutoSize = true;
             this.txtLanguage.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.txtLanguage.Location = new System.Drawing.Point(437, 65);
+            this.txtLanguage.Location = new System.Drawing.Point(583, 80);
+            this.txtLanguage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtLanguage.Name = "txtLanguage";
-            this.txtLanguage.Size = new System.Drawing.Size(13, 19);
+            this.txtLanguage.Size = new System.Drawing.Size(15, 21);
             this.txtLanguage.TabIndex = 157;
             this.txtLanguage.Text = ".";
             // 
@@ -204,9 +214,10 @@
             // 
             this.txtType.AutoSize = true;
             this.txtType.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.txtType.Location = new System.Drawing.Point(115, 64);
+            this.txtType.Location = new System.Drawing.Point(153, 79);
+            this.txtType.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtType.Name = "txtType";
-            this.txtType.Size = new System.Drawing.Size(13, 19);
+            this.txtType.Size = new System.Drawing.Size(15, 21);
             this.txtType.TabIndex = 156;
             this.txtType.Text = ".";
             // 
@@ -214,9 +225,10 @@
             // 
             this.txtPublisher.AutoSize = true;
             this.txtPublisher.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.txtPublisher.Location = new System.Drawing.Point(437, 10);
+            this.txtPublisher.Location = new System.Drawing.Point(583, 12);
+            this.txtPublisher.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtPublisher.Name = "txtPublisher";
-            this.txtPublisher.Size = new System.Drawing.Size(13, 19);
+            this.txtPublisher.Size = new System.Drawing.Size(15, 21);
             this.txtPublisher.TabIndex = 155;
             this.txtPublisher.Text = ".";
             // 
@@ -224,9 +236,10 @@
             // 
             this.txtAuthor.AutoSize = true;
             this.txtAuthor.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.txtAuthor.Location = new System.Drawing.Point(115, 36);
+            this.txtAuthor.Location = new System.Drawing.Point(153, 44);
+            this.txtAuthor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtAuthor.Name = "txtAuthor";
-            this.txtAuthor.Size = new System.Drawing.Size(13, 19);
+            this.txtAuthor.Size = new System.Drawing.Size(15, 21);
             this.txtAuthor.TabIndex = 154;
             this.txtAuthor.Text = ".";
             // 
@@ -235,9 +248,10 @@
             this.lblLanguage.AutoSize = true;
             this.lblLanguage.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.lblLanguage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
-            this.lblLanguage.Location = new System.Drawing.Point(359, 66);
+            this.lblLanguage.Location = new System.Drawing.Point(479, 81);
+            this.lblLanguage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLanguage.Name = "lblLanguage";
-            this.lblLanguage.Size = new System.Drawing.Size(79, 17);
+            this.lblLanguage.Size = new System.Drawing.Size(96, 19);
             this.lblLanguage.TabIndex = 153;
             this.lblLanguage.Text = "Language:";
             // 
@@ -246,9 +260,10 @@
             this.lblEdition.AutoSize = true;
             this.lblEdition.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.lblEdition.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
-            this.lblEdition.Location = new System.Drawing.Point(68, 65);
+            this.lblEdition.Location = new System.Drawing.Point(91, 80);
+            this.lblEdition.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEdition.Name = "lblEdition";
-            this.lblEdition.Size = new System.Drawing.Size(43, 17);
+            this.lblEdition.Size = new System.Drawing.Size(53, 19);
             this.lblEdition.TabIndex = 152;
             this.lblEdition.Text = "Type:";
             // 
@@ -257,9 +272,10 @@
             this.lblPublisher.AutoSize = true;
             this.lblPublisher.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.lblPublisher.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
-            this.lblPublisher.Location = new System.Drawing.Point(366, 10);
+            this.lblPublisher.Location = new System.Drawing.Point(488, 12);
+            this.lblPublisher.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPublisher.Name = "lblPublisher";
-            this.lblPublisher.Size = new System.Drawing.Size(72, 17);
+            this.lblPublisher.Size = new System.Drawing.Size(87, 19);
             this.lblPublisher.TabIndex = 151;
             this.lblPublisher.Text = "Publisher:";
             // 
@@ -268,9 +284,10 @@
             this.lblAuthor.AutoSize = true;
             this.lblAuthor.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.lblAuthor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
-            this.lblAuthor.Location = new System.Drawing.Point(56, 37);
+            this.lblAuthor.Location = new System.Drawing.Point(75, 46);
+            this.lblAuthor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAuthor.Name = "lblAuthor";
-            this.lblAuthor.Size = new System.Drawing.Size(55, 17);
+            this.lblAuthor.Size = new System.Drawing.Size(67, 19);
             this.lblAuthor.TabIndex = 150;
             this.lblAuthor.Text = "Author:";
             // 
@@ -284,14 +301,14 @@
             this.dataGridBookHistory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridBookHistory.BackgroundColor = System.Drawing.Color.White;
             this.dataGridBookHistory.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridBookHistory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridBookHistory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridBookHistory.ColumnHeadersHeight = 20;
             this.dataGridBookHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridBookHistory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -308,20 +325,80 @@
             this.BookBarcodeID,
             this.CandidateID});
             this.dataGridBookHistory.GridColor = System.Drawing.Color.White;
-            this.dataGridBookHistory.Location = new System.Drawing.Point(3, 103);
+            this.dataGridBookHistory.Location = new System.Drawing.Point(4, 127);
+            this.dataGridBookHistory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridBookHistory.Name = "dataGridBookHistory";
             this.dataGridBookHistory.ReadOnly = true;
             this.dataGridBookHistory.RowHeadersVisible = false;
             this.dataGridBookHistory.RowHeadersWidth = 60;
             this.dataGridBookHistory.RowTemplate.Height = 30;
             this.dataGridBookHistory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridBookHistory.Size = new System.Drawing.Size(1033, 197);
+            this.dataGridBookHistory.Size = new System.Drawing.Size(1377, 242);
             this.dataGridBookHistory.TabIndex = 149;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel5.Location = new System.Drawing.Point(0, 594);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1436, 12);
+            this.panel5.TabIndex = 162;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1436, 78);
+            this.panel1.TabIndex = 163;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.label7);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(867, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(565, 74);
+            this.panel3.TabIndex = 28;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(29, 43);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(504, 17);
+            this.label2.TabIndex = 26;
+            this.label2.Text = "Here you can see the record of your All Books  Thurogh Manage Book History.";
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(265, 7);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(261, 29);
+            this.label7.TabIndex = 25;
+            this.label7.Text = "Manage Book History";
             // 
             // UserName
             // 
             this.UserName.DataPropertyName = "UserName";
-            this.UserName.HeaderText = "Candidate Name";
+            this.UserName.HeaderText = "Member Name";
             this.UserName.MinimumWidth = 6;
             this.UserName.Name = "UserName";
             this.UserName.ReadOnly = true;
@@ -357,6 +434,7 @@
             this.Unit.MinimumWidth = 6;
             this.Unit.Name = "Unit";
             this.Unit.ReadOnly = true;
+            this.Unit.Visible = false;
             // 
             // Date
             // 
@@ -419,68 +497,12 @@
             this.CandidateID.ReadOnly = true;
             this.CandidateID.Visible = false;
             // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 482);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1077, 10);
-            this.panel5.TabIndex = 162;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1077, 64);
-            this.panel1.TabIndex = 163;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.label7);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(649, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(424, 60);
-            this.panel3.TabIndex = 28;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(22, 35);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(378, 13);
-            this.label2.TabIndex = 26;
-            this.label2.Text = "Here you can see the record of your All Books  Thurogh Manage Book History.";
-            // 
-            // label7
-            // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(199, 6);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(208, 24);
-            this.label7.TabIndex = 25;
-            this.label7.Text = "Manage Book History";
-            // 
             // ManageBookHistory
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1077, 492);
+            this.ClientSize = new System.Drawing.Size(1436, 606);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.pnlbookDetails);
@@ -489,6 +511,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.lblmessage);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ManageBookHistory";
             this.Text = "ManageBookHistory";
             this.Load += new System.EventHandler(this.ManageBookHistory_Load);
@@ -520,6 +543,13 @@
         private System.Windows.Forms.Label lblPublisher;
         private System.Windows.Forms.Label lblAuthor;
         private System.Windows.Forms.DataGridView dataGridBookHistory;
+        private System.Windows.Forms.Label txtSubCategory;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridViewTextBoxColumn UserName;
         private System.Windows.Forms.DataGridViewTextBoxColumn BookBarcode;
         private System.Windows.Forms.DataGridViewTextBoxColumn ContactNumber;
@@ -532,12 +562,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn BookHistoryID;
         private System.Windows.Forms.DataGridViewTextBoxColumn BookBarcodeID;
         private System.Windows.Forms.DataGridViewTextBoxColumn CandidateID;
-        private System.Windows.Forms.Label txtSubCategory;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label7;
     }
 }

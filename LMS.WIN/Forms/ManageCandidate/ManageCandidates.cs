@@ -1,6 +1,7 @@
 ﻿using LMS.BL;
 using LMS.DAL.Shared;
 using LMS.MOD;
+using LMS.WIN.Forms.ManageBooks;
 using Microsoft.Office.Interop.Excel;
 using System;
 using System.Collections.Generic;
@@ -455,6 +456,41 @@ namespace LMS.WIN.Forms.ManageCandidate
             app.Quit();
             MessageBox.Show("Excel successfully created");
             #endregion
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string sampleFolderPath = System.Windows.Forms.Application.StartupPath + @"\sample"; ;
+            string fileName = "Member-Sample.xlsx"; 
+            string filePath = Path.Combine(sampleFolderPath, fileName);
+
+            if (File.Exists(filePath))
+            {
+                SaveFileDialog saveFileDialog = new SaveFileDialog
+                {
+                    FileName = fileName, 
+                    Filter = "Excel Files (*.xlsx)|*.xlsx|All Files (*.*)|*.*", 
+                    DefaultExt = "xlsx" 
+                };
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string destinationPath = saveFileDialog.FileName;
+                    try
+                    {
+                        File.Copy(filePath, destinationPath, true); 
+                        MessageBox.Show("File downloaded successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error downloading the file: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("The file does not exist in the sample folder.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
