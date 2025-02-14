@@ -58,5 +58,32 @@ namespace LMS.BL
                 throw new Exception(ex.Message);
             }
         }
+
+        public static List<Category> GetAll()
+        {
+            try
+            {
+                List<Category> category = CategoryDAL.GetAll();
+                return category;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+
+        public static Category Deactive(Category category)
+        {
+            try
+            {
+                category = CategoryDAL.DeactiveCategory(category);
+                return category;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

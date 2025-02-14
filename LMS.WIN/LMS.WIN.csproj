@@ -304,6 +304,12 @@
     <Compile Include="Forms\ManageCandidate\ViewCandidateDetails.Designer.cs">
       <DependentUpon>ViewCandidateDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ManageCategory\ManageCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageCategory\ManageCategory.Designer.cs">
+      <DependentUpon>ManageCategory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ManageCourses\AddCourse.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -369,6 +375,12 @@
     </Compile>
     <Compile Include="Forms\ManagePublisher\ManagePublisher.Designer.cs">
       <DependentUpon>ManagePublisher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageCategory\AddCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageCategory\AddCategory.Designer.cs">
+      <DependentUpon>AddCategory.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\ManageSubject\AddSubject.cs">
       <SubType>Form</SubType>
@@ -603,6 +615,9 @@
     <EmbeddedResource Include="Forms\ManageCandidate\ViewCandidateDetails.resx">
       <DependentUpon>ViewCandidateDetails.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageCategory\ManageCategory.resx">
+      <DependentUpon>ManageCategory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ManageCourses\AddCourse.resx">
       <DependentUpon>AddCourse.cs</DependentUpon>
     </EmbeddedResource>
@@ -635,6 +650,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ManagePublisher\ManagePublisher.resx">
       <DependentUpon>ManagePublisher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageCategory\AddCategory.resx">
+      <DependentUpon>AddCategory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ManageSubject\AddSubject.resx">
       <DependentUpon>AddSubject.cs</DependentUpon>
@@ -814,8 +832,6 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Forms\ManageCategory\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
