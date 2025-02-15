@@ -33,6 +33,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.pbAuthor = new System.Windows.Forms.PictureBox();
             this.dtendDate = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -69,6 +70,7 @@
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel3.SuspendLayout();
             this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAuthor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFilter)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -84,23 +86,39 @@
             this.panel3.Controls.Add(this.panel7);
             this.panel3.Controls.Add(this.panel6);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 54);
+            this.panel3.Location = new System.Drawing.Point(0, 66);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1077, 55);
+            this.panel3.Size = new System.Drawing.Size(1436, 68);
             this.panel3.TabIndex = 173;
             // 
             // panel8
             // 
+            this.panel8.Controls.Add(this.pbAuthor);
             this.panel8.Controls.Add(this.dtendDate);
             this.panel8.Controls.Add(this.label4);
             this.panel8.Controls.Add(this.label1);
             this.panel8.Controls.Add(this.dtStartDateDate);
             this.panel8.Controls.Add(this.pbFilter);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(560, 0);
+            this.panel8.Location = new System.Drawing.Point(714, 0);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(507, 55);
+            this.panel8.Size = new System.Drawing.Size(709, 68);
             this.panel8.TabIndex = 2;
+            // 
+            // pbAuthor
+            // 
+            this.pbAuthor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbAuthor.Image = ((System.Drawing.Image)(resources.GetObject("pbAuthor.Image")));
+            this.pbAuthor.Location = new System.Drawing.Point(652, 18);
+            this.pbAuthor.Margin = new System.Windows.Forms.Padding(4);
+            this.pbAuthor.Name = "pbAuthor";
+            this.pbAuthor.Size = new System.Drawing.Size(39, 32);
+            this.pbAuthor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbAuthor.TabIndex = 179;
+            this.pbAuthor.TabStop = false;
+            this.pbAuthor.Click += new System.EventHandler(this.pbAuthor_Click);
             // 
             // dtendDate
             // 
@@ -108,9 +126,10 @@
             this.dtendDate.CustomFormat = "dd-MM-yyyy";
             this.dtendDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtendDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtendDate.Location = new System.Drawing.Point(306, 15);
+            this.dtendDate.Location = new System.Drawing.Point(388, 18);
+            this.dtendDate.Margin = new System.Windows.Forms.Padding(4);
             this.dtendDate.Name = "dtendDate";
-            this.dtendDate.Size = new System.Drawing.Size(186, 26);
+            this.dtendDate.Size = new System.Drawing.Size(247, 30);
             this.dtendDate.TabIndex = 178;
             // 
             // label4
@@ -119,9 +138,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
-            this.label4.Location = new System.Drawing.Point(17, 19);
+            this.label4.Location = new System.Drawing.Point(3, 23);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 18);
+            this.label4.Size = new System.Drawing.Size(59, 22);
             this.label4.TabIndex = 170;
             this.label4.Text = "From";
             // 
@@ -131,9 +151,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
-            this.label1.Location = new System.Drawing.Point(274, 19);
+            this.label1.Location = new System.Drawing.Point(345, 23);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(26, 18);
+            this.label1.Size = new System.Drawing.Size(34, 22);
             this.label1.TabIndex = 176;
             this.label1.Text = "To";
             // 
@@ -143,18 +164,20 @@
             this.dtStartDateDate.CustomFormat = "dd-MM-yyyy";
             this.dtStartDateDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtStartDateDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtStartDateDate.Location = new System.Drawing.Point(67, 15);
+            this.dtStartDateDate.Location = new System.Drawing.Point(69, 18);
+            this.dtStartDateDate.Margin = new System.Windows.Forms.Padding(4);
             this.dtStartDateDate.Name = "dtStartDateDate";
-            this.dtStartDateDate.Size = new System.Drawing.Size(186, 26);
+            this.dtStartDateDate.Size = new System.Drawing.Size(247, 30);
             this.dtStartDateDate.TabIndex = 177;
             // 
             // pbFilter
             // 
             this.pbFilter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbFilter.Image = ((System.Drawing.Image)(resources.GetObject("pbFilter.Image")));
-            this.pbFilter.Location = new System.Drawing.Point(673, 11);
+            this.pbFilter.Location = new System.Drawing.Point(930, 14);
+            this.pbFilter.Margin = new System.Windows.Forms.Padding(4);
             this.pbFilter.Name = "pbFilter";
-            this.pbFilter.Size = new System.Drawing.Size(29, 26);
+            this.pbFilter.Size = new System.Drawing.Size(39, 32);
             this.pbFilter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbFilter.TabIndex = 174;
             this.pbFilter.TabStop = false;
@@ -163,9 +186,10 @@
             // panel7
             // 
             this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel7.Location = new System.Drawing.Point(1067, 0);
+            this.panel7.Location = new System.Drawing.Point(1423, 0);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(10, 55);
+            this.panel7.Size = new System.Drawing.Size(13, 68);
             this.panel7.TabIndex = 1;
             // 
             // panel6
@@ -175,16 +199,18 @@
             this.panel6.Controls.Add(this.label5);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(560, 55);
+            this.panel6.Size = new System.Drawing.Size(714, 68);
             this.panel6.TabIndex = 0;
             // 
             // txtSearch
             // 
             this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.txtSearch.Location = new System.Drawing.Point(256, 14);
+            this.txtSearch.Location = new System.Drawing.Point(341, 17);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(252, 29);
+            this.txtSearch.Size = new System.Drawing.Size(279, 34);
             this.txtSearch.TabIndex = 179;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
@@ -197,21 +223,24 @@
             this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(514, 14);
+            this.button1.Location = new System.Drawing.Point(649, 19);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(28, 28);
+            this.button1.Size = new System.Drawing.Size(37, 34);
             this.button1.TabIndex = 180;
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(10, 19);
+            this.label5.Location = new System.Drawing.Point(13, 23);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(240, 19);
+            this.label5.Size = new System.Drawing.Size(299, 24);
             this.label5.TabIndex = 181;
             this.label5.Text = "Find not return book by Roll Id";
             // 
@@ -220,9 +249,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 8F);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(363, 21);
+            this.label3.Location = new System.Drawing.Point(484, 26);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(267, 14);
+            this.label3.Size = new System.Drawing.Size(345, 16);
             this.label3.TabIndex = 142;
             this.label3.Text = "See All Book Transaction Here and Filter as you want.";
             // 
@@ -235,8 +265,9 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1077, 54);
+            this.panel2.Size = new System.Drawing.Size(1436, 66);
             this.panel2.TabIndex = 171;
             // 
             // panel1
@@ -244,16 +275,18 @@
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(71, 54);
+            this.panel1.Size = new System.Drawing.Size(95, 66);
             this.panel1.TabIndex = 144;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(9, 5);
+            this.pictureBox2.Location = new System.Drawing.Point(12, 6);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(52, 43);
+            this.pictureBox2.Size = new System.Drawing.Size(69, 53);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -261,9 +294,10 @@
             // panel5
             // 
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(1032, 0);
+            this.panel5.Location = new System.Drawing.Point(1376, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(45, 54);
+            this.panel5.Size = new System.Drawing.Size(60, 66);
             this.panel5.TabIndex = 143;
             // 
             // label2
@@ -271,9 +305,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(77, 13);
+            this.label2.Location = new System.Drawing.Point(103, 16);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(280, 26);
+            this.label2.Size = new System.Drawing.Size(359, 32);
             this.label2.TabIndex = 141;
             this.label2.Text = "Books Transaction Report";
             // 
@@ -281,9 +316,10 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 487);
+            this.panel4.Location = new System.Drawing.Point(0, 600);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1077, 5);
+            this.panel4.Size = new System.Drawing.Size(1436, 6);
             this.panel4.TabIndex = 172;
             // 
             // btnReset
@@ -295,9 +331,10 @@
             this.btnReset.ForeColor = System.Drawing.Color.White;
             this.btnReset.Image = ((System.Drawing.Image)(resources.GetObject("btnReset.Image")));
             this.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReset.Location = new System.Drawing.Point(44, 126);
+            this.btnReset.Location = new System.Drawing.Point(59, 155);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(4);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(123, 32);
+            this.btnReset.Size = new System.Drawing.Size(164, 39);
             this.btnReset.TabIndex = 170;
             this.btnReset.Text = "  Reset";
             this.btnReset.UseVisualStyleBackColor = false;
@@ -310,9 +347,10 @@
             this.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExport.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnExport.ForeColor = System.Drawing.Color.White;
-            this.btnExport.Location = new System.Drawing.Point(173, 126);
+            this.btnExport.Location = new System.Drawing.Point(231, 155);
+            this.btnExport.Margin = new System.Windows.Forms.Padding(4);
             this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(155, 32);
+            this.btnExport.Size = new System.Drawing.Size(207, 39);
             this.btnExport.TabIndex = 169;
             this.btnExport.Text = "Export Excel";
             this.btnExport.UseVisualStyleBackColor = false;
@@ -364,14 +402,15 @@
             this.dataGridissueBook.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridissueBook.EnableHeadersVisualStyles = false;
             this.dataGridissueBook.GridColor = System.Drawing.Color.White;
-            this.dataGridissueBook.Location = new System.Drawing.Point(44, 164);
+            this.dataGridissueBook.Location = new System.Drawing.Point(59, 202);
+            this.dataGridissueBook.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridissueBook.Name = "dataGridissueBook";
             this.dataGridissueBook.ReadOnly = true;
             this.dataGridissueBook.RowHeadersVisible = false;
             this.dataGridissueBook.RowHeadersWidth = 60;
             this.dataGridissueBook.RowTemplate.Height = 30;
             this.dataGridissueBook.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridissueBook.Size = new System.Drawing.Size(997, 300);
+            this.dataGridissueBook.Size = new System.Drawing.Size(1329, 369);
             this.dataGridissueBook.TabIndex = 178;
             // 
             // IssueBookID
@@ -504,9 +543,9 @@
             // 
             // frmBookTransactionReport
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1077, 492);
+            this.ClientSize = new System.Drawing.Size(1436, 606);
             this.Controls.Add(this.dataGridissueBook);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -514,12 +553,15 @@
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnExport);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
+            
             this.Text = "frmBookTransactionReport";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmBookTransactionReport_Load);
             this.panel3.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAuthor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFilter)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
@@ -570,5 +612,6 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.PictureBox pbAuthor;
     }
 }

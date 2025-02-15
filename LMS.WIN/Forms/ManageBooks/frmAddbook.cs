@@ -56,20 +56,21 @@ namespace LMS.WIN.Forms.ManageBooks
             try
             {
                 List<Category> categories = new List<Category>();
-                categories = CategoryBL.Get();
-                if (categories != null)
-                {
+                //categories = CategoryBL.Get();
+                //if (categories != null)
+                //{
                     //Insert the Default Item to DataTable.
 
                     Category category = new Category();
                     category.CategoryID = 0;
                     category.Name = "Select";
                     categories.Insert(0, category);
-
+                    categories.Add(new Category { CategoryID = 1, Name = "Technical" });
+                    categories.Add(new Category { CategoryID = 2, Name = "Others" });
                     comboBoxcategory.DataSource = categories;
                     comboBoxcategory.ValueMember = "CategoryID";
                     comboBoxcategory.DisplayMember = "Name";
-                }
+                //}
             }
             catch (Exception ex)
             {
@@ -144,6 +145,12 @@ namespace LMS.WIN.Forms.ManageBooks
 
                 if (MessageBox.Show("Do you want to save the Book ?", "Done ?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                 {
+                    bool isISBNAlreadyExist = BookBL.ValidateISBN(txtISBN.Text);
+                    if (isISBNAlreadyExist)
+                    {
+                        MessageBox.Show("Already this ISBN exists" , "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
                     bool isRestrict;
                     if (comboBoxtype.Text == "Restricted")
                     {

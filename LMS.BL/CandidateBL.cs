@@ -114,5 +114,18 @@ namespace LMS.BL
             }
         }
 
+        public static bool ValidateMemberId(string memberId)
+        {
+            try
+            {
+                return CandidateDAL.ValidateMemberId(memberId);
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
     }
 }

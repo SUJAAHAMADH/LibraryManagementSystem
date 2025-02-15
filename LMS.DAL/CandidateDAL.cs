@@ -569,6 +569,50 @@ namespace LMS.DAL
             return outputMessage;
         }
 
+        public static bool ValidateMemberId(string memberId)
+        {
+            #region Declaration
+            DataTable dt = new DataTable();
+            SqlConnection con = null;
+            SqlParameter param = new SqlParameter { ParameterName = "@memberId", Value = memberId, DbType = DbType.String };
+            #endregion
+
+            try
+            {
+                #region Interacting with database
+                con = SqlConnectionHelper.GetConnectionSync();
+                SqlCommand cmd = new SqlCommand("ValidateMemberId", con)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.Parameters.Add(param);
+                SqlDataAdapter adp = new SqlDataAdapter(cmd);
+                adp.Fill(dt);
+                #endregion
+                if (dt.Rows.Count > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                #region Close connection
+                if (con != null && con.State == ConnectionState.Open)
+                {
+                    con.Close();
+                }
+                #endregion
+            }
+        }
+
     }
 
 }

@@ -117,5 +117,15 @@ namespace LMS.WIN.Forms.Reports
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbAuthor_Click(object sender, EventArgs e)
+        {
+            BindBookIssueData();
+        }
     }
 }

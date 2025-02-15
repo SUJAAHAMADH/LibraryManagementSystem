@@ -74,6 +74,7 @@ namespace LMS.WIN.Forms.ManageBooks
             txtEdition.Text = book.Edition;
             txtPublisher.Text = book.Publisher.ToString();
             txtISBN.Text = book.Isbn;
+            txtISBN.ReadOnly = true;
             txtFound.Text = book.Funds;
             txtPrice.Text = book.Price.ToString();
             cmboxLanguage.Text = book.Language;

@@ -161,5 +161,18 @@ namespace LMS.BL
                 throw new Exception(ex.Message);
             }
         }
+
+        public static bool ValidateISBN(string isbn)
+        {
+            try
+            {
+                return BookDAL.ValidateISBN(isbn);
+                
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

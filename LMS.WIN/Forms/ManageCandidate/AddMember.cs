@@ -185,7 +185,12 @@ namespace LMS.WIN.Forms.ManageCandidate
                 MessageBox.Show("Role ID cannot be empty. Please fill in the Role ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
+            bool isMemberExist = CandidateBL.ValidateMemberId(tbRoleId.Text);
+            if (isMemberExist)
+            {
+                MessageBox.Show("Role ID already exists.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             if (tbName.Text != string.Empty)
             {
@@ -271,7 +276,7 @@ namespace LMS.WIN.Forms.ManageCandidate
                 tbPreAddress.Text = candidate.PresentAddress;
                 tbEmail.Text = candidate.Email;
                 tbPContact.Text = candidate.ParentsContact;
-
+                tbRoleId.ReadOnly = true;
 
                 candidateid = candidate.CandidateID;
                 var data = CandidateBL.GetByID(candidateid);

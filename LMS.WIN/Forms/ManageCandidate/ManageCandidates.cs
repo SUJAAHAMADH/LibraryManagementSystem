@@ -492,6 +492,11 @@ namespace LMS.WIN.Forms.ManageCandidate
                 MessageBox.Show("The file does not exist in the sample folder.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
