@@ -133,5 +133,10 @@ namespace LMS.WIN.Forms.ManageCategory
         {
             bindSubjectList();
         }
+
+        private void picboxrefersh_Click_1(object sender, EventArgs e)
+        {
+            bindSubjectList();
+        }
     }
 }

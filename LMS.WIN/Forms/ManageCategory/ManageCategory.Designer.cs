@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageCategory));
             this.panel5 = new System.Windows.Forms.Panel();
             this.dataGridBook = new System.Windows.Forms.DataGridView();
@@ -46,19 +46,22 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnAddNewJournal = new System.Windows.Forms.Button();
+            this.picboxrefersh = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridBook)).BeginInit();
+            this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxrefersh)).BeginInit();
             this.SuspendLayout();
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 619);
-            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel5.Location = new System.Drawing.Point(0, 503);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1211, 12);
+            this.panel5.Size = new System.Drawing.Size(908, 10);
             this.panel5.TabIndex = 166;
             // 
             // dataGridBook
@@ -69,14 +72,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridBook.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridBook.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(46)))), ((int)(((byte)(86)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridBook.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(46)))), ((int)(((byte)(86)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridBook.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridBook.ColumnHeadersHeight = 40;
             this.dataGridBook.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridBook.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -86,25 +89,24 @@
             this.View,
             this.Edit,
             this.Delete});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 10.2F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(145)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridBook.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 10.2F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(145)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridBook.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridBook.EnableHeadersVisualStyles = false;
             this.dataGridBook.GridColor = System.Drawing.Color.DarkGray;
-            this.dataGridBook.Location = new System.Drawing.Point(129, 128);
-            this.dataGridBook.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridBook.Location = new System.Drawing.Point(80, 115);
             this.dataGridBook.Name = "dataGridBook";
             this.dataGridBook.ReadOnly = true;
             this.dataGridBook.RowHeadersVisible = false;
             this.dataGridBook.RowHeadersWidth = 60;
             this.dataGridBook.RowTemplate.Height = 30;
             this.dataGridBook.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridBook.Size = new System.Drawing.Size(959, 335);
+            this.dataGridBook.Size = new System.Drawing.Size(719, 318);
             this.dataGridBook.TabIndex = 161;
             this.dataGridBook.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridBook_CellContentClick);
             // 
@@ -179,11 +181,11 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.picboxrefersh);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(253, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Location = new System.Drawing.Point(190, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(211, 74);
+            this.panel2.Size = new System.Drawing.Size(158, 60);
             this.panel2.TabIndex = 29;
             // 
             // panel1
@@ -195,9 +197,9 @@
             this.panel1.Controls.Add(this.btnAddNewJournal);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1211, 78);
+            this.panel1.Size = new System.Drawing.Size(908, 64);
             this.panel1.TabIndex = 164;
             // 
             // panel3
@@ -205,10 +207,9 @@
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(702, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Location = new System.Drawing.Point(525, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(505, 74);
+            this.panel3.Size = new System.Drawing.Size(379, 60);
             this.panel3.TabIndex = 28;
             // 
             // label2
@@ -217,10 +218,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(284, 43);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(212, 36);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(209, 17);
+            this.label2.Size = new System.Drawing.Size(157, 13);
             this.label2.TabIndex = 26;
             this.label2.Text = "Add, Edit, Delete Your Category";
             // 
@@ -230,10 +230,9 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(277, 11);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(197, 7);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(218, 29);
+            this.label5.Size = new System.Drawing.Size(174, 24);
             this.label5.TabIndex = 25;
             this.label5.Text = "Manage Category";
             // 
@@ -248,33 +247,45 @@
             this.btnAddNewJournal.ForeColor = System.Drawing.Color.White;
             this.btnAddNewJournal.Image = ((System.Drawing.Image)(resources.GetObject("btnAddNewJournal.Image")));
             this.btnAddNewJournal.Location = new System.Drawing.Point(0, 0);
-            this.btnAddNewJournal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddNewJournal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddNewJournal.Name = "btnAddNewJournal";
-            this.btnAddNewJournal.Size = new System.Drawing.Size(253, 74);
+            this.btnAddNewJournal.Size = new System.Drawing.Size(190, 60);
             this.btnAddNewJournal.TabIndex = 15;
             this.btnAddNewJournal.Text = "   Add Category";
             this.btnAddNewJournal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAddNewJournal.UseVisualStyleBackColor = true;
             this.btnAddNewJournal.Click += new System.EventHandler(this.btnAddNewJournal_Click);
             // 
+            // picboxrefersh
+            // 
+            this.picboxrefersh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picboxrefersh.Image = ((System.Drawing.Image)(resources.GetObject("picboxrefersh.Image")));
+            this.picboxrefersh.Location = new System.Drawing.Point(13, 15);
+            this.picboxrefersh.Name = "picboxrefersh";
+            this.picboxrefersh.Size = new System.Drawing.Size(42, 33);
+            this.picboxrefersh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picboxrefersh.TabIndex = 146;
+            this.picboxrefersh.TabStop = false;
+            this.picboxrefersh.Click += new System.EventHandler(this.picboxrefersh_Click_1);
+            // 
             // ManageCategory
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1211, 631);
+            this.ClientSize = new System.Drawing.Size(908, 513);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.dataGridBook);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "ManageCategory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ManageSubject";
             this.Load += new System.EventHandler(this.ManageSubject_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridBook)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxrefersh)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -295,5 +306,6 @@
         private System.Windows.Forms.DataGridViewImageColumn View;
         private System.Windows.Forms.DataGridViewImageColumn Edit;
         private System.Windows.Forms.DataGridViewImageColumn Delete;
+        private System.Windows.Forms.PictureBox picboxrefersh;
     }
 }

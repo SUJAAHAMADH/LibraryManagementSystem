@@ -21,16 +21,16 @@ namespace LMS.WIN.Forms
         private void AbrirFormInPanel(object formHijo)
         {
             if (this.panelContenedor.Controls.Count > 0)
-                this.panelContenedor.Controls.RemoveAt(0);  // Remove the existing form, if any
+                this.panelContenedor.Controls.RemoveAt(0);  
 
-            Form fh = formHijo as Form;  // Cast the passed form to a Form object
-            fh.TopLevel = false;  // Make the form a child control of the panel
-            fh.FormBorderStyle = FormBorderStyle.None;  // Remove the form border
-            fh.Dock = DockStyle.Fill;  // Ensure the form fills the entire panel
+            Form fh = formHijo as Form;  
+            fh.TopLevel = false;  
+            fh.FormBorderStyle = FormBorderStyle.None;  
+            fh.Dock = DockStyle.Fill;  
 
-            this.panelContenedor.Controls.Add(fh);  // Add the form to the panel
-            this.panelContenedor.Tag = fh;  // Optional: Store a reference to the form (if needed)
-            fh.Show();  // Show the form
+            this.panelContenedor.Controls.Add(fh);  
+            this.panelContenedor.Tag = fh;  
+            fh.Show(); 
 
         }
 
@@ -254,7 +254,11 @@ namespace LMS.WIN.Forms
         {
             panelContenedor.Controls.Clear();
             Reports.frmCandidatesReport frmCandidatesReport = new Reports.frmCandidatesReport();
-            AbrirFormInPanel(frmCandidatesReport);
+            frmCandidatesReport.TopLevel = false;
+            panelContenedor.Controls.Add(frmCandidatesReport);
+            frmCandidatesReport.Width = panelContenedor.Width;
+            frmCandidatesReport.Height = panelContenedor.Height;
+            frmCandidatesReport.Show();
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -263,6 +267,8 @@ namespace LMS.WIN.Forms
             Reports.frmBookWiseReport frmBooksReport = new Reports.frmBookWiseReport();
             frmBooksReport.TopLevel = false;
             panelContenedor.Controls.Add(frmBooksReport);
+            frmBooksReport.Width = panelContenedor.Width;
+            frmBooksReport.Height = panelContenedor.Height;
             frmBooksReport.Show();
         }
 
@@ -280,7 +286,7 @@ namespace LMS.WIN.Forms
             if (expend2 == false)
             {
                 panel9.Height += 40;
-                if (panel9.Height >= 195)
+                if (panel9.Height >= 260)
                 {
                     MasterTimer.Stop();
                     expend2 = true;
@@ -308,7 +314,7 @@ namespace LMS.WIN.Forms
             panelContenedor.Controls.Clear();
             ManageAuthor.ManageAuthor manageAuthor = new ManageAuthor.ManageAuthor();
             AbrirFormInPanel(manageAuthor);
-            
+
         }
 
         private void button10_Click(object sender, EventArgs e)
@@ -355,6 +361,14 @@ namespace LMS.WIN.Forms
             panelContenedor.Controls.Clear();
             ManageBooks.SearchBooks book = new ManageBooks.SearchBooks();
             AbrirFormInPanel(book);
+
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            panelContenedor.Controls.Clear();
+            ManageCategory.ManageCategory category = new ManageCategory.ManageCategory();
+            AbrirFormInPanel(category);
 
         }
 
