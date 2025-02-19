@@ -32,7 +32,7 @@ namespace LMS.MOD
         public string OfficeOrder { get; set; }
         public DateTime? OfficeOrderDate { get; set; }
         public decimal? Discount { get; set; }
-        public string RackNo { get; set; }
+        public int RackNo { get; set; }
 
     }
 }

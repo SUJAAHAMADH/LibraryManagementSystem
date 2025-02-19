@@ -34,6 +34,50 @@ namespace LMS.WIN.Forms.Reports
             LoadAuther();
             LoadPublication();
             ResetBookList();
+            LoadNames();
+        }
+
+
+        private void LoadNames()
+        {
+            try
+            {
+                using (SqlConnection con = SqlConnectionHelper.GetConnectionSync())
+                {
+                    if (con.State != ConnectionState.Open)
+                    {
+                        con.Open(); // Open the connection only if it's not already open
+                    }
+
+                    string query = "SELECT DISTINCT BookID, Name FROM Book ORDER BY Name";
+
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        using (SqlDataAdapter adp = new SqlDataAdapter(cmd))
+                        {
+                            DataTable dt = new DataTable();
+                            adp.Fill(dt);
+
+                            if (dt.Rows.Count > 0)
+                            {
+                                namcmb.DataSource = dt;
+                                namcmb.DisplayMember = "Name";
+                                namcmb.ValueMember = "BookID";
+                                namcmb.SelectedIndex = -1;
+                            }
+                            else
+                            {
+                                MessageBox.Show("No Names found in the database.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                namcmb.DataSource = null;
+                            }
+                        }
+                    }
+                } // The using statement ensures the connection is closed properly
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading Subjects: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         private void LoadCategory()
         {
@@ -306,6 +350,43 @@ namespace LMS.WIN.Forms.Reports
                 {
                     // Retrieve the filtered list based on selected category
                     List<Book> filteredBooks = ReportBL.GetBookWiseReport(userID, -1, publisherId, -1, -1); // Add other parameters if needed
+
+                    if (filteredBooks != null && filteredBooks.Count > 0)
+                    {
+                        dataGridBook.AutoGenerateColumns = false;
+                        dataGridBook.DataSource = filteredBooks;
+                        dataGridBook.Refresh();
+                        getGridviewByDefaultDesign(); // Optional, to retain grid style
+                    }
+                    else
+                    {
+                        MessageBox.Show("No books found for the selected publisher.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        dataGridBook.DataSource = null;
+                        dataGridBook.Refresh();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error filtering books by publisher: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a publisher first.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            int bookId = Convert.ToInt32(namcmb.SelectedValue); // Get the selected CategoryID from cbSubject
+
+            if (bookId > 0) // Check if a category is selected
+            {
+                try
+                {
+                    // Retrieve the filtered list based on selected category
+                    List<Book> filteredBooks = ReportBL.GetBookWiseReport(userID, -1, -1, bookId, -1); // Add other parameters if needed
 
                     if (filteredBooks != null && filteredBooks.Count > 0)
                     {

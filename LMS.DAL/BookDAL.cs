@@ -201,6 +201,8 @@ namespace LMS.DAL
 
                             CategoryID = row["CategoryID"] as int? ?? 0,
                             Category = row["Category"] as string ?? string.Empty,
+                            VolumeNo = row["VolumeNo"] as string ?? string.Empty,
+                            RackNo = row["RackNo"] as int? ?? 0
 
                         };
                         books.Add(book);

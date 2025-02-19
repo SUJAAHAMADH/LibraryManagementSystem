@@ -33,6 +33,7 @@ namespace LMS.WIN.Forms.ManageJournal
             string searchValue = txtSearch.Text;
             List<Journal> data = null;
             data = JournalBL.Get(-1,name, -1);
+            data = data.Where(x => x.IsActive).ToList();
             if (data != null)
             {
                 dataGridBook.AutoGenerateColumns = false;

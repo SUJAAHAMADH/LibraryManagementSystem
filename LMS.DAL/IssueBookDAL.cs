@@ -676,5 +676,106 @@ namespace LMS.DAL
             }
             return issueBooks;
         }
+
+        public static List<IssueBook> GetMonthlyTransaction(int userID, int bookBarcodeID, int candidateID, string barcode, string searchValue, string startDate = null, string endDate = null)
+        {
+            #region Declaration
+            List<IssueBook> issueBooks = null;
+            DataTable dt = new DataTable();
+            SqlConnection con = null;
+            List<SqlParameter> param = new List<SqlParameter>();
+            if (userID != -1)
+            {
+                param.Add(new SqlParameter("@UserID", userID));
+            }
+            if (bookBarcodeID != -1)
+            {
+                param.Add(new SqlParameter("@BookBarcodeID", bookBarcodeID));
+            }
+            if (candidateID != -1)
+            {
+                param.Add(new SqlParameter("@CandidateID", candidateID));
+            }
+            if (!string.IsNullOrEmpty(barcode))
+            {
+                param.Add(new SqlParameter("@Barcode", barcode));
+            }
+            if (!string.IsNullOrEmpty(searchValue))
+            {
+                param.Add(new SqlParameter("@SearchValue", searchValue));
+            }
+            if (!string.IsNullOrEmpty(startDate))
+            {
+                param.Add(new SqlParameter
+                {
+                    ParameterName = "@StartDate",
+                    DbType = DbType.Date,
+                    Value = DateTime.ParseExact(startDate, "dd-MM-yyyy", CultureInfo.InvariantCulture)
+                });
+            }
+            if (!string.IsNullOrEmpty(endDate))
+            {
+                param.Add(new SqlParameter
+                {
+                    ParameterName = "@EndDate",
+                    DbType = DbType.Date,
+                    Value = DateTime.ParseExact(endDate, "dd-MM-yyyy", CultureInfo.InvariantCulture)
+                });
+            }
+            #endregion
+
+            try
+            {
+                #region Interacting with database
+                con = SqlConnectionHelper.GetConnectionSync();
+                SqlCommand cmd = new SqlCommand("ShowBookTransactionInMonth", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddRange(param.ToArray());
+                SqlDataAdapter adp = new SqlDataAdapter(cmd);
+                adp.Fill(dt);
+                #endregion
+
+                #region Wrap data
+                if (dt.Rows.Count > 0)
+                {
+                    issueBooks = new List<IssueBook>();
+                    foreach (DataRow row in dt.Rows)
+                    {
+                        IssueBook issueBook = new IssueBook();
+
+                        issueBook.IssueBookID = row["IssueBookID"] as int? ?? 0;
+                        issueBook.BookBarcodeID = row["BookBarcodeID"] as int? ?? 0;
+                        issueBook.BookBarcode = row["BookBarcode"] as string ?? string.Empty;
+                        issueBook.BookID = row["BookID"] as int? ?? 0;
+                        issueBook.BookName = row["BookName"] as string ?? string.Empty;
+                        issueBook.CandidateID = row["CandidateID"] as int? ?? 0;
+                        issueBook.IssuedOn = row["IssuedOn"] as DateTime? ?? null;
+                        issueBook.ReturnDate = row["ReturnDate"] as DateTime? ?? null;
+                        issueBook.ReturnedOn = row["ReturnedOn"] as DateTime? ?? null;
+                        issueBook.RenewalOn = row["LastRenewaledOn"] as DateTime? ?? null;
+                        issueBook.NoOfTimeRenewal = row["NoOfTimeRenewal"] as int? ?? 0;
+                        issueBook.Remark = row["Remark"] as string ?? string.Empty;
+                        issueBook.CandidateNames = row["CandidateNames"] as string ?? string.Empty;
+                        issueBook.RollId = row["ROllNo"] as string ?? string.Empty;
+                        issueBooks.Add(issueBook);
+                    }
+                }
+                #endregion
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                #region Close connection
+                if (con != null && con.State == ConnectionState.Open)
+                {
+                    con.Close();
+                }
+                #endregion
+            }
+            return issueBooks;
+        }
     }
 }

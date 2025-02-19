@@ -33,6 +33,19 @@ namespace LMS.BL
             }
         }
 
+        public static List<IssueBook> GetMonthlyTransactionBook(int userID = -1, int bookBarcodeID = -1, int candidateID = -1, string barcode = null, string searchValue = null, string startDate = null, string endDate = null)
+        {
+            try
+            {
+                List<IssueBook> issueBooks = IssueBookDAL.GetMonthlyTransaction(userID, bookBarcodeID, candidateID, barcode, searchValue, startDate, endDate);
+                return issueBooks;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         public static IssueBook SaveReturnBook(IssueBook issueBook, int issueBookID = -1)
         {
             try

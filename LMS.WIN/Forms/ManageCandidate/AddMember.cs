@@ -13,6 +13,7 @@ namespace LMS.WIN.Forms.ManageCandidate
     {
         Candidate candidate = null;
         int candidateid = -1;
+        bool isEdit = false;
         public AddMember(Candidate candidateOBJ)
         {
             InitializeComponent();
@@ -186,7 +187,7 @@ namespace LMS.WIN.Forms.ManageCandidate
                 return;
             }
             bool isMemberExist = CandidateBL.ValidateMemberId(tbRoleId.Text);
-            if (isMemberExist)
+            if (isMemberExist && !isEdit)
             {
                 MessageBox.Show("Role ID already exists.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -277,7 +278,8 @@ namespace LMS.WIN.Forms.ManageCandidate
                 tbEmail.Text = candidate.Email;
                 tbPContact.Text = candidate.ParentsContact;
                 tbRoleId.ReadOnly = true;
-
+                tbRoleId.Enabled = false;
+                cbPersonType.Enabled = false;
                 candidateid = candidate.CandidateID;
                 var data = CandidateBL.GetByID(candidateid);
                 if (data.Photo != null)
@@ -291,8 +293,8 @@ namespace LMS.WIN.Forms.ManageCandidate
                         pbPhoto.Image = image;
                     }
                 }
-               
 
+                isEdit = true;
 
             }
         }

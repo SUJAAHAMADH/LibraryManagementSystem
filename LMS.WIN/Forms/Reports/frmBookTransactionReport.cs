@@ -39,7 +39,7 @@ namespace LMS.WIN.Forms.Reports
             if (DateTime.TryParseExact(startDate, "dd-MM-yyyy", null, System.Globalization.DateTimeStyles.None, out DateTime start)
                 && DateTime.TryParseExact(endDate, "dd-MM-yyyy", null, System.Globalization.DateTimeStyles.None, out DateTime end))
             {
-                List<IssueBook> data = IssueBookBL.GetIssueBook(-1, -1, -1, null, null, startDate, endDate);
+                List<IssueBook> data = IssueBookBL.GetMonthlyTransactionBook(-1, -1, -1, null, null, startDate, endDate);
                 if (data != null && data.Count > 0)
                 {
                     dataGridissueBook.AutoGenerateColumns = false;

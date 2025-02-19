@@ -28,25 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SearchBooks));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SearchBooks));
             this.panel5 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridBook = new System.Windows.Forms.DataGridView();
+            this.picboxrefersh = new System.Windows.Forms.PictureBox();
             this.BookID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Author = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Publisher = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edition = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VolumeNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RackNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Language = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ISBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,25 +65,22 @@
             this.View = new System.Windows.Forms.DataGridViewImageColumn();
             this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
-            this.picboxrefersh = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridBook)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picboxrefersh)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridBook)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxrefersh)).BeginInit();
             this.SuspendLayout();
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(56)))), ((int)(((byte)(129)))));
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 587);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2);
+            this.panel5.Location = new System.Drawing.Point(0, 723);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1098, 10);
+            this.panel5.Size = new System.Drawing.Size(1464, 12);
             this.panel5.TabIndex = 160;
             // 
             // label2
@@ -87,9 +89,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 9F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(204, 33);
+            this.label2.Location = new System.Drawing.Point(272, 41);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(163, 15);
+            this.label2.Size = new System.Drawing.Size(195, 17);
             this.label2.TabIndex = 26;
             this.label2.Text = " You can Search Books Here";
             // 
@@ -99,9 +102,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(214, 7);
+            this.label5.Location = new System.Drawing.Point(285, 9);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(156, 26);
+            this.label5.Size = new System.Drawing.Size(197, 32);
             this.label5.TabIndex = 25;
             this.label5.Text = "Search Books";
             // 
@@ -110,9 +114,10 @@
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(715, 0);
+            this.panel3.Location = new System.Drawing.Point(955, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(379, 60);
+            this.panel3.Size = new System.Drawing.Size(505, 74);
             this.panel3.TabIndex = 28;
             // 
             // panel1
@@ -123,10 +128,31 @@
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1098, 64);
+            this.panel1.Size = new System.Drawing.Size(1464, 78);
             this.panel1.TabIndex = 158;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(115, 74);
+            this.panel2.TabIndex = 29;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(19, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(75, 70);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -134,9 +160,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(282, 94);
+            this.label1.Location = new System.Drawing.Point(376, 116);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(144, 26);
+            this.label1.Size = new System.Drawing.Size(182, 32);
             this.label1.TabIndex = 157;
             this.label1.Text = "Search Book";
             // 
@@ -154,10 +181,11 @@
             // 
             this.txtSearch.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(432, 91);
+            this.txtSearch.Location = new System.Drawing.Point(576, 112);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(269, 32);
+            this.txtSearch.Size = new System.Drawing.Size(357, 38);
             this.txtSearch.TabIndex = 156;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
@@ -171,9 +199,10 @@
             this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(707, 92);
+            this.button1.Location = new System.Drawing.Point(943, 113);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(31, 31);
+            this.button1.Size = new System.Drawing.Size(41, 38);
             this.button1.TabIndex = 159;
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
@@ -203,6 +232,8 @@
             this.Author,
             this.Publisher,
             this.Edition,
+            this.VolumeNo,
+            this.RackNo,
             this.Language,
             this.ISBN,
             this.Price,
@@ -226,31 +257,44 @@
             this.dataGridBook.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridBook.EnableHeadersVisualStyles = false;
             this.dataGridBook.GridColor = System.Drawing.Color.DarkGray;
-            this.dataGridBook.Location = new System.Drawing.Point(18, 146);
+            this.dataGridBook.Location = new System.Drawing.Point(24, 180);
+            this.dataGridBook.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridBook.Name = "dataGridBook";
             this.dataGridBook.ReadOnly = true;
             this.dataGridBook.RowHeadersVisible = false;
             this.dataGridBook.RowHeadersWidth = 60;
             this.dataGridBook.RowTemplate.Height = 30;
             this.dataGridBook.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridBook.Size = new System.Drawing.Size(1068, 272);
+            this.dataGridBook.Size = new System.Drawing.Size(1424, 335);
             this.dataGridBook.TabIndex = 155;
             this.dataGridBook.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridBook_CellContentClick);
+            // 
+            // picboxrefersh
+            // 
+            this.picboxrefersh.Image = ((System.Drawing.Image)(resources.GetObject("picboxrefersh.Image")));
+            this.picboxrefersh.Location = new System.Drawing.Point(1068, 112);
+            this.picboxrefersh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picboxrefersh.Name = "picboxrefersh";
+            this.picboxrefersh.Size = new System.Drawing.Size(49, 39);
+            this.picboxrefersh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picboxrefersh.TabIndex = 161;
+            this.picboxrefersh.TabStop = false;
+            this.picboxrefersh.Visible = false;
+            this.picboxrefersh.Click += new System.EventHandler(this.picboxrefersh_Click);
             // 
             // BookID
             // 
             this.BookID.DataPropertyName = "BookID";
-            this.BookID.HeaderText = "BookID";
+            this.BookID.HeaderText = "Accession Number";
             this.BookID.MinimumWidth = 6;
             this.BookID.Name = "BookID";
             this.BookID.ReadOnly = true;
-            this.BookID.Visible = false;
             // 
             // Name
             // 
             this.Name.DataPropertyName = "Name";
             this.Name.FillWeight = 91.63923F;
-            this.Name.HeaderText = "Name";
+            this.Name.HeaderText = "Title";
             this.Name.MinimumWidth = 6;
             this.Name.Name = "Name";
             this.Name.ReadOnly = true;
@@ -272,6 +316,7 @@
             this.Author.MinimumWidth = 6;
             this.Author.Name = "Author";
             this.Author.ReadOnly = true;
+            this.Author.Visible = false;
             // 
             // Publisher
             // 
@@ -281,16 +326,32 @@
             this.Publisher.MinimumWidth = 6;
             this.Publisher.Name = "Publisher";
             this.Publisher.ReadOnly = true;
+            this.Publisher.Visible = false;
             // 
             // Edition
             // 
             this.Edition.DataPropertyName = "Edition";
             this.Edition.FillWeight = 71.26904F;
-            this.Edition.HeaderText = "Edition";
+            this.Edition.HeaderText = "Year & Edition";
             this.Edition.MinimumWidth = 6;
             this.Edition.Name = "Edition";
             this.Edition.ReadOnly = true;
-            this.Edition.Visible = false;
+            // 
+            // VolumeNo
+            // 
+            this.VolumeNo.DataPropertyName = "VolumeNo";
+            this.VolumeNo.HeaderText = "VolumeNo";
+            this.VolumeNo.MinimumWidth = 6;
+            this.VolumeNo.Name = "VolumeNo";
+            this.VolumeNo.ReadOnly = true;
+            // 
+            // RackNo
+            // 
+            this.RackNo.DataPropertyName = "RackNo";
+            this.RackNo.HeaderText = "Rack No";
+            this.RackNo.MinimumWidth = 6;
+            this.RackNo.Name = "RackNo";
+            this.RackNo.ReadOnly = true;
             // 
             // Language
             // 
@@ -300,6 +361,7 @@
             this.Language.MinimumWidth = 6;
             this.Language.Name = "Language";
             this.Language.ReadOnly = true;
+            this.Language.Visible = false;
             // 
             // ISBN
             // 
@@ -318,6 +380,7 @@
             this.Price.MinimumWidth = 6;
             this.Price.Name = "Price";
             this.Price.ReadOnly = true;
+            this.Price.Visible = false;
             // 
             // Description
             // 
@@ -327,6 +390,7 @@
             this.Description.MinimumWidth = 6;
             this.Description.Name = "Description";
             this.Description.ReadOnly = true;
+            this.Description.Visible = false;
             // 
             // Funds
             // 
@@ -363,6 +427,7 @@
             this.TotalQuantity.MinimumWidth = 6;
             this.TotalQuantity.Name = "TotalQuantity";
             this.TotalQuantity.ReadOnly = true;
+            this.TotalQuantity.Visible = false;
             // 
             // AuthorID
             // 
@@ -391,6 +456,7 @@
             this.View.MinimumWidth = 6;
             this.View.Name = "View";
             this.View.ReadOnly = true;
+            this.View.Visible = false;
             // 
             // Edit
             // 
@@ -415,42 +481,11 @@
             this.Delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Delete.Visible = false;
             // 
-            // picboxrefersh
-            // 
-            this.picboxrefersh.Image = ((System.Drawing.Image)(resources.GetObject("picboxrefersh.Image")));
-            this.picboxrefersh.Location = new System.Drawing.Point(801, 91);
-            this.picboxrefersh.Name = "picboxrefersh";
-            this.picboxrefersh.Size = new System.Drawing.Size(37, 32);
-            this.picboxrefersh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picboxrefersh.TabIndex = 161;
-            this.picboxrefersh.TabStop = false;
-            this.picboxrefersh.Visible = false;
-            this.picboxrefersh.Click += new System.EventHandler(this.picboxrefersh_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(86, 60);
-            this.panel2.TabIndex = 29;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(14, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(56, 57);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // SearchBooks
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1098, 597);
+            this.ClientSize = new System.Drawing.Size(1464, 735);
             this.Controls.Add(this.picboxrefersh);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
@@ -459,16 +494,18 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridBook);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+          
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SearchBooks";
             this.Load += new System.EventHandler(this.SearchBooks_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridBook)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picboxrefersh)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridBook)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxrefersh)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -486,12 +523,17 @@
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridBook;
+        private System.Windows.Forms.PictureBox picboxrefersh;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn BookID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Name;
         private System.Windows.Forms.DataGridViewTextBoxColumn Category;
         private System.Windows.Forms.DataGridViewTextBoxColumn Author;
         private System.Windows.Forms.DataGridViewTextBoxColumn Publisher;
         private System.Windows.Forms.DataGridViewTextBoxColumn Edition;
+        private System.Windows.Forms.DataGridViewTextBoxColumn VolumeNo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RackNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Language;
         private System.Windows.Forms.DataGridViewTextBoxColumn ISBN;
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
@@ -505,8 +547,5 @@
         private System.Windows.Forms.DataGridViewImageColumn View;
         private System.Windows.Forms.DataGridViewImageColumn Edit;
         private System.Windows.Forms.DataGridViewImageColumn Delete;
-        private System.Windows.Forms.PictureBox picboxrefersh;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -279,13 +279,13 @@ namespace LMS.WIN.Forms.ManageBooks
 
                         if (candidateDetail.Role == "STUDENT")
                         {
-                            if (candidateDetail.Stream == "UG" && ((daysDifference != null && daysDifference > 10) || (issuedBooksForCandidate != null && issuedBooksForCandidate.Count > 2 )))
+                            if (candidateDetail.Stream == "UG" && ((daysDifference != null && daysDifference > 10) || (issuedBooksForCandidate != null && issuedBooksForCandidate.Count >= 2 )))
                             {
                                 MessageBox.Show("Cannot Issue books for More than 10 Days and Maximum 3 Books can be issued for UG Students", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 Close();
                                 return;
                             }
-                            if (candidateDetail.Stream == "PG" && ((daysDifference != null && daysDifference > 20) || (issuedBooksForCandidate != null && issuedBooksForCandidate.Count > 3)))
+                            if (candidateDetail.Stream == "PG" && ((daysDifference != null && daysDifference > 20) || (issuedBooksForCandidate != null && issuedBooksForCandidate.Count >= 3)))
                             {
                                 MessageBox.Show("Cannot Issue books for More than 20 Days and Maximum 3 Books can be issued for PG Students", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 Close();
@@ -294,7 +294,7 @@ namespace LMS.WIN.Forms.ManageBooks
                         }
                         else if (candidateDetail.Role == "NON-TEACHER")
                         {
-                            if ((daysDifference != null && daysDifference > 10) || (issuedBooksForCandidate != null && issuedBooksForCandidate.Count > 2))
+                            if ((daysDifference != null && daysDifference > 10) || (issuedBooksForCandidate != null && issuedBooksForCandidate.Count >= 2))
                             {
                                 MessageBox.Show("Cannot Issue books for More than 10 Days and Maximum 3 Books can be issued for Non Teachers", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 Close();

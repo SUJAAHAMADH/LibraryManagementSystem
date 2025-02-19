@@ -202,7 +202,7 @@ namespace LMS.WIN.Forms.ManageBooks
                         OfficeOrder = txtofficeorder.Text,
                         OfficeOrderDate = orderdate.Checked ? orderdate.Value : (DateTime?)null,
                         Discount = Convert.ToDecimal(txtdiscount.Text),
-                        RackNo = txtrackno.Text
+                        RackNo = Convert.ToInt32(txtrackno.Text)
 
                     };
                     try
